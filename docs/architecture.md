@@ -1,5 +1,8 @@
 # TrustTrail architecture recommendation
 
+**31 October 2026 implementation update:** Chapters 1–2 are playable. The existing reducer now accepts guarded `chapter.continued` and `conversation.advanced` events. Each debrief closes at its chapter checkpoint; explicit continuation preserves shipped C1 saves. `Chapter.conversation` supplies profile and exchange content; Case Files retains prior-chapter evidence and action counts. Save schema/content/rubric versions remain compatible. Chapter 3, recovery, and the final report remain planned. See [Chapter 2 validation and current contracts](chapter-two-validation.md). Earlier planning sections below are retained as historical context.
+
+
 **Current presentation update (29 October 2026):** the approved Lacak OS desktop and Saku mobile system is integrated into production. See [production dual-OS architecture and validation](dual-os-integration/validation.md). `OperatingSystem` reads the existing provider, keeps game app instances stable across layout changes, and uses router URLs for presentation navigation. Earlier dossier/illustrated presentation notes below are historical; engine, event, scoring and persistence contracts remain authoritative.
 
 

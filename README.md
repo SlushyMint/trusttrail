@@ -4,13 +4,15 @@
 
 ## Current status
 
-**M1 — Core gameplay and Chapter 1 is implemented.** Start Ari's story, inspect a fictional recruitment email, gather four clues in the Evidence Journal, compare an independently opened careers record, and choose among three actions with distinct consequences and reflection. Versioned local saves restore the exact story/resolution cursor. No account or sensitive data is required.
+**Chapters 1–2 are fully playable.** Inspect the fictional recruitment email, then continue into **Perekrut yang ramah**: investigate Mira's profile and conversation in Messages, compare a separate company directory in Browser, and decide whether Ari should share fictional identity documents. All three Chapter 2 choices have distinct consequences, reflection, completion, and a lead-in to Chapter 3. See [Chapter 2 implementation and validation](docs/chapter-two-validation.md).
 
-All 23 direct dependency pins and the lockfile are retained. On **Node 26.13.0 / npm 11.6.3**, typecheck, ESLint, **38 unit/integration tests**, the production build and **40 desktop/mobile browser cases** pass. The approved **Lacak OS desktop and Saku mobile OS are now integrated into production**, sharing the existing provider, gameplay engine, scenario, save key and scoring. See [integration validation and screenshots](docs/dual-os-integration/validation.md). Earlier dossier/visual-novel reports are historical; the pixel identity supersedes them.
+The existing typed reducer, event-based scoring, and local save are extended. Completed Chapter 1 saves resume at their original checkpoint with an explicit **Lanjut ke Bab 2** action. Chapter 1 decisions, evidence, flags, verification, and action counts remain available in the Case Files archive. Chapter 3, recovery, and the final four-dimension Trust Report remain upcoming.
 
-Full development is authorized through [M1–M4 milestones](docs/production-milestones.md), replacing separate phase/vertical-slice approvals. M2 adds Chapters 2–3 and recovery; M3 adds the four-dimension Trust Report and full safety guide; M4 prepares release/demo materials. The M1 checkpoint is not final-game completion and shows no invented overall score. **No Git operations, public deployment or competition submission are authorized.**
+On **Node 26.13.0 / npm 11.6.3**, typecheck, lint, **45 unit/integration tests**, production build, and **66 desktop/mobile browser cases** pass. All dependency pins and the lockfile are retained. Lacak OS desktop, Saku mobile, and the animated homepage retain their existing design; the homepage now lists Chapter 2 as available. No real personal information, uploads, external recruiter messages, or live deceptive destinations are used.
 
-**Both representative designs are approved and production integration is complete.** Run `npm run dev` and open `http://127.0.0.1:5173/`, or `npm run build` followed by `npm run preview` at `http://127.0.0.1:4173/`. [Desktop gameplay](docs/dual-os-integration/desktop-gameplay.png), [Saku gameplay](docs/dual-os-integration/mobile-gameplay.png), [Saku home](docs/dual-os-integration/mobile-home.png) and [validation/architecture](docs/dual-os-integration/validation.md) document the result. Desktop uses windows at width >=1120px and height >=700px; smaller/shorter viewports use Saku, with an expanded layout at 768px. Viewport changes preserve app state and authoritative progress. The [approved design specification](docs/dual-os-review/design-spec.md) remains the visual reference. `/art-direction.html` and `/dual-os.html` are archived in-memory design previews in the explicit review build, not the production game. Core Chapters 2–3 remain targeted for 2–4 November.
+Run `npm run dev` at `http://127.0.0.1:5173/`, or build and preview at `http://127.0.0.1:4173/`. Desktop windows require width >=1120px and height >=700px; smaller/shorter viewports use Saku. Resizing preserves both authoritative progress and app interaction state. The [dual-OS specification](docs/dual-os-review/design-spec.md) remains the visual reference. Archived design-review entries are excluded from the production build.
+
+**The Product Owner handles Git manually. No commits, branch operations, pushes, deployment, or submission are part of this delivery.**
 
 ## Requirements and setup
 
@@ -46,10 +48,10 @@ Preview is local only. Static hosting deep-link fallback must be configured/test
 |---|---|---|
 | `npm run typecheck` | Strict TypeScript validation, including configs/tests | Passed on Node 26.13.0 |
 | `npm run lint` | ESLint, zero warnings | Passed on authored source/config/tests |
-| `npm run test:unit` | Engine/content/save tests and rendered control/gameplay integration | 38 passed, including all 7 original control tests |
+| `npm run test:unit` | Engine/content/save tests and rendered control/gameplay integration | 45 passed, including the original 38 unit/integration cases |
 | `npm run test:watch` | Interactive component test runner | Configured, not separately exercised |
 | `npm run build` | Typecheck then Vite production build | Passed on Node 26.13.0 |
-| `npm run test:smoke` | C1 branches, saves/conflicts, routes, keyboard, responsive and visual resilience checks | 40 passed in Chrome, desktop/mobile emulation |
+| `npm run test:smoke` | C1/C2 branches, continuity, saves/conflicts, routes, keyboard, responsive and visual resilience checks | 66 passed in Chrome, desktop/mobile emulation |
 | `npm run check` | Typecheck, lint, unit and build gates | Passed on Node 26.13.0 / npm 11.6.3 |
 
 Test expectations are behavior-based: keyboard activation, disabled controls, tab selection/relationships, hidden panel controls, drawer focus restoration and intentional live announcements. jsdom's dialog shim is limited to unit tests; native focus containment/Escape still require the browser suite.
@@ -59,7 +61,7 @@ Test expectations are behavior-based: keyboard activation, disabled controls, ta
 ```text
 src/app/             shell, routing, GameProvider and split state/action Context
 src/engine/          pure reducer, typed contracts, content validation and derived facts
-src/content/         scenario registry and authored Chapter 1
+src/content/         scenario registry and authored Chapters 1–2
 src/lib/             bounded save decoder, replay and storage operations
 src/features/gameplay/ email/source investigation, journal, choices, consequences/reflection
 src/components/ui/   Button, Tabs, native-dialog Drawer, Notice
@@ -76,7 +78,7 @@ Tailwind v4 uses the official PostCSS integration because that plugin was availa
 
 ## Accessibility, visuals and privacy
 
-Indonesian language, semantic controls, skip link, visible focus, scene/route focus management, keyboard tabs/radios, native modal dialog, reduced motion and forced-color styles are included. A keyboard-only C1 journey and reflow at 320px pass in Chrome. Real-device, second-engine and screen-reader testing remain release work; no WCAG conformance claim is made.
+Indonesian language, semantic controls, skip link, visible focus, scene/route focus management, keyboard tabs/radios, native modal dialog, reduced motion and forced-color styles are included. Keyboard-only C1/C2 journeys and reflow at 320px pass in Chrome. Real-device, second-engine and screen-reader testing remain release work; no WCAG conformance claim is made.
 
 The approved pixel desktop and Saku shells use original pixel SVG icons, a locally generated coastal wallpaper and accessible React application content. Inter and Silkscreen are self-hosted with usable fallbacks. Earlier editorial illustrations remain archived and are not rendered by production. No runtime font CDN requests, third-party images, analytics or APIs are needed. See [production assets and validation](docs/dual-os-integration/validation.md) and [asset/font provenance](docs/asset-credits.md).
 
@@ -86,7 +88,7 @@ This version has no credential, OTP, upload or payment inputs. Simulated domains
 
 `.gitignore` excludes dependencies, builds, caches, secrets and test artifacts. `.gitattributes` normalizes text files. Session-provided instructions remain binding. Original GDD/blueprint and all original source/test files are retained.
 
-**Git is managed independently by the Product Owner.** The agent must not stage, commit, branch, merge or push, and must not perform Git operations. None were performed during M1.
+**Git is managed independently by the Product Owner.** The agent must not stage, commit, branch, merge or push, and must not perform Git operations. None were performed for this delivery.
 
 Development proceeds within the approved milestones without repeated vertical-slice approval. Public deployment and competition submission require explicit Product Owner approval.
 

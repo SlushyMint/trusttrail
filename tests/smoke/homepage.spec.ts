@@ -37,7 +37,7 @@ test('fresh homepage starts the real game and attributes all three statistics', 
     await expect(link).toBeVisible();
     expect(new URL((await link.getAttribute('href'))!).hostname).toMatch(/(^|\.)(ojk|komdigi)\.go\.id$/);
   }
-  await expect(page.getByText('Bab 2 · Akan datang', { exact: true })).toBeVisible();
+  await expect(page.getByText('Bab 2 · Tersedia', { exact: true })).toBeVisible();
   await expect(page.getByText('Bab 3 · Akan datang', { exact: true })).toBeVisible();
   await page.getByRole('button', { name: /Mulai investigasi/ }).first().click();
   await expect(page).toHaveURL(/\/play/);

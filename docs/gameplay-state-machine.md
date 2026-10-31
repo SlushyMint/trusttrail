@@ -1,5 +1,8 @@
 # Gameplay state and transitions
 
+**31 October 2026 implementation update:** Chapters 1–2 are playable. The existing reducer now accepts guarded `chapter.continued` and `conversation.advanced` events. Each debrief closes at its chapter checkpoint; explicit continuation preserves shipped C1 saves. `Chapter.conversation` supplies profile and exchange content; Case Files retains prior-chapter evidence and action counts. Save schema/content/rubric versions remain compatible. Chapter 3, recovery, and the final report remain planned. See [Chapter 2 validation and current contracts](chapter-two-validation.md). Earlier planning sections below are retained as historical context.
+
+
 Status: approved gameplay baseline retained under full production authorization, 29 October 2026. M1 implements briefing → C1 narrative → investigation → decision → verification if needed → outcome → debrief → chapterComplete checkpoint. This is not final-game completion; C2/C3/recovery extend the existing spine at M2. Older per-phase gates are superseded by [milestones](production-milestones.md).
 
 ## State layers

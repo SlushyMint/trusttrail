@@ -41,6 +41,12 @@ export type Chapter = {
   title: string;
   subtitle: string;
   objective: string;
+  conversation?: {
+    id: string;
+    profile: { name: string; role: string; handle: string; bio: string; history: string; evidenceId: string };
+    opening: string;
+    exchanges: readonly { id: string; reply: string; response: string; evidenceId?: string }[];
+  };
   intro: readonly StoryLine[];
   evidence: readonly Evidence[];
   source: VerificationSource;
@@ -65,6 +71,8 @@ export type Position =
 export type GameEvent =
   | { type: 'run.started' }
   | { type: 'story.begun' }
+  | { type: 'chapter.continued'; chapterId: ChapterId }
+  | { type: 'conversation.advanced'; conversationId: string; stepIndex: number }
   | { type: 'line.advanced'; nodeId: string; lineIndex: number }
   | { type: 'evidence.inspected'; evidenceId: string }
   | { type: 'reference.inspected'; sourceId: string; inspectionId: string }

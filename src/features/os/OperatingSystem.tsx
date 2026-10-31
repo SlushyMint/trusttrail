@@ -9,7 +9,8 @@ import { GuidePage } from '../../pages/GuidePage';
 import { ReportPage } from '../../pages/ReportPage';
 import { NotFoundPage } from '../../pages/NotFoundPage';
 import { ProgressControls, SaveNotice, StartGameButton } from '../gameplay/ProgressControls';
-import { BrowserApp, JournalApp, MailApp } from './SharedApps';
+import { BrowserApp, JournalApp, JournalArchive, MailApp } from './SharedApps';
+import { MessagesApp } from './MessagesApp';
 import { applications, OsContext, type AppId, type Toast } from './model';
 import { PixelIcon, type PixelKind } from './PixelIcon';
 import { DesktopSystemBar, DesktopTaskbar, MobileStatusBar, MobileSystemNavigation } from './Shells';
@@ -33,13 +34,14 @@ export function OperatingSystem() {
   const location = useLocation();
   const navigate = useNavigate();
   const chapter = currentChapter(game);
+  const storyApp: AppId = chapter.conversation ? 'messages' : 'mail';
   const playing = location.pathname === '/play';
   const params = new URLSearchParams(location.search);
   const requested = params.get('app') === 'cases' ? 'journal' : params.get('app');
   const selected: Surface = playing
-    ? applications.find(app => app.id === requested)?.id ?? (game.position.kind === 'verification' ? 'browser' : 'mail')
+    ? applications.find(app => app.id === requested)?.id ?? (game.position.kind === 'verification' ? 'browser' : storyApp)
     : location.pathname === '/' ? 'home' : location.pathname === '/guide' ? 'guide' : location.pathname === '/report' ? 'report' : 'missing';
-  const [opened, setOpened] = useState<AppId[]>(['mail', 'journal']);
+  const [opened, setOpened] = useState<AppId[]>(() => [...new Set<AppId>(['mail', 'journal', storyApp])]);
   const [hiddenApps, setHiddenApps] = useState<AppId[]>([]);
   const [maximized, setMaximized] = useState<Surface | null>(null);
   const [menu, setMenu] = useState(false);
@@ -59,6 +61,15 @@ export function OperatingSystem() {
   const workspace = useRef<HTMLElement>(null);
   const preserveFocus = useRef(false);
   const saved = save.kind === 'saved' ? 'Tersimpan di browser ini' : save.kind === 'empty' ? 'Progres lokal · Tanpa akun' : 'Periksa penyimpanan';
+  const [windowPhase, setWindowPhase] = useState(phaseKey);
+  // Register automatically selected story windows before rendering the new phase.
+  // This keeps them reachable when keyboard focus moves to another open window.
+  if (windowPhase !== phaseKey) {
+    const app = game.position.kind === 'verification' ? 'browser' : storyApp;
+    setWindowPhase(phaseKey);
+    setOpened(items => items.includes(app) ? items : [...items, app]);
+    setHiddenApps(items => items.includes(app) ? items.filter(id => id !== app) : items);
+  }
 
   function pathFor(id: AppId, inbox = false) { return `/play?app=${id === 'journal' ? 'cases' : id}${id === 'mail' ? `&view=${inbox ? 'inbox' : 'read'}` : ''}`; }
   function go(to: string, replace = false) {
@@ -75,11 +86,11 @@ export function OperatingSystem() {
   function raise(id: string) { setOrder(items => items.at(-1) === id ? items : [...items.filter(item => item !== id), id]); }
   function resetLayout() { setSlots({}); setMaximized(null); setLayoutVersion(version => version + 1); }
   function compareWindows() {
-    setOpened(items => [...new Set([...items, 'mail' as AppId, 'browser' as AppId])]);
-    setHiddenApps(items => items.filter(id => id !== 'mail' && id !== 'browser'));
-    setSlots(items => ({ ...items, mail: 'left', browser: 'right' }));
+    setOpened(items => [...new Set([...items, storyApp, 'browser' as AppId])]);
+    setHiddenApps(items => items.filter(id => id !== storyApp && id !== 'browser'));
+    setSlots(items => ({ ...items, [storyApp]: 'left', browser: 'right' }));
     setMaximized(null); setLayoutVersion(version => version + 1);
-    setOrder(items => [...items.filter(id => id !== 'mail' && id !== 'browser'), 'mail', 'browser']);
+    setOrder(items => [...items.filter(id => id !== storyApp && id !== 'browser'), storyApp, 'browser']);
     go(pathFor('browser'));
   }
   function back() { if (Number(location.state?.osDepth) > 0) navigate(-1); else navigate('/'); }
@@ -101,10 +112,10 @@ export function OperatingSystem() {
     if (previousPhase.current === phaseKey) return;
     previousPhase.current = phaseKey;
     if (!playing) return;
-    const app = game.position.kind === 'verification' ? 'browser' : 'mail';
+    const app = game.position.kind === 'verification' ? 'browser' : storyApp;
     const next = `/play?app=${app}&view=read`;
     if (`${location.pathname}${location.search}` !== next) navigate(next, { replace: true, state: location.state });
-  }, [phaseKey, playing, game.position.kind, location.pathname, location.search, location.state, navigate]);
+  }, [phaseKey, playing, game.position.kind, storyApp, location.pathname, location.search, location.state, navigate]);
 
   useEffect(() => {
     document.title = location.pathname === '/' ? 'TrustTrail — Game investigasi keamanan digital' : `${playing ? chapter.title : label} — TrustTrail`;
@@ -117,7 +128,7 @@ export function OperatingSystem() {
 
   const last = game.history.at(-1);
   const found = last?.type === 'evidence.inspected' ? chapter.evidence.find(clue => clue.id === last.evidenceId) : last?.type === 'source.compared' ? chapter.evidence.find(clue => clue.id === chapter.source.evidenceId) : undefined;
-  const toast: Toast | null = found ? { title: 'Bukti tercatat', text: found.title } : last?.type === 'reference.inspected' ? { title: 'Detail sumber diperiksa', text: 'Bandingkan catatan ini dengan klaim undangan.' } : null;
+  const toast: Toast | null = found ? { title: 'Bukti tercatat', text: found.title } : last?.type === 'reference.inspected' ? { title: 'Detail sumber diperiksa', text: 'Bandingkan catatan ini dengan klaim pesan.' } : null;
   const visibleToast = toast && dismissed !== game.history.length;
   const notice = <div className="os-feedback"><p className="px-live discovery-receipt" role="status" aria-live="polite" aria-atomic="true">{found ? `Bukti tercatat: ${found.title}.` : toast ? `${toast.title}. ${toast.text}` : ''}</p>{visibleToast ? <div className="px-notification"><PixelIcon kind="journal" /><div><strong>{toast.title}</strong><p>{toast.text}</p></div><button aria-label="Tutup notifikasi" onClick={() => setDismissed(game.history.length)}>×</button></div> : null}</div>;
 
@@ -129,13 +140,14 @@ export function OperatingSystem() {
     if (id === 'guide') return <GuidePage />;
     if (id === 'report') return <ReportPage />;
     if (id === 'missing') return <NotFoundPage />;
+    if (id === 'mail' && chapter.conversation) return <div className="px-empty-app"><PixelIcon kind="mail" /><h3>Undangan tersimpan.</h3><p>Keputusan dan bukti Bab 1 tetap ada di Case Files. Pesan lanjutan kini ada di Messages.</p><button className="px-button" onClick={() => openApp('messages')}>Buka Messages</button></div>;
     if (id === 'mail') return <MailApp chapter={chapter} game={game} send={send} inspect={clue => send({ type: 'evidence.inspected', evidenceId: clue.id })} openApp={openApp} flow={<PlayPage />} navigation={{ inbox: params.get('view') === 'inbox', onInbox: inbox => go(pathFor('mail', inbox)), message: params.get('message') === 'campus' ? 'campus' : 'email', onSelect: message => go(`${pathFor('mail')}&message=${message}`) }} />;
-    if (id === 'journal') return <div className="dual-case-files"><div className="dual-case-context"><span className="dual-case-stamp">{chapter.id.slice(1).padStart(2, '0')}</span><div><p className="px-eyebrow">BERKAS AKTIF / {chapter.id}</p><h3>{chapter.title}</h3><span>{count} bukti ditemukan</span></div></div><JournalApp chapter={chapter} game={game} openApp={openApp} /></div>;
+    if (id === 'journal') return <div className="dual-case-files"><div className="dual-case-context"><span className="dual-case-stamp">{chapter.id.slice(1).padStart(2, '0')}</span><div><p className="px-eyebrow">BERKAS AKTIF / {chapter.id}</p><h3>{chapter.title}</h3><span>{count} bukti ditemukan</span></div></div><JournalApp chapter={chapter} game={game} openApp={openApp} /><JournalArchive chapter={chapter} game={game} /></div>;
     if (id === 'files') {
       const lines = game.position.kind === 'menu' || game.position.kind === 'briefing' ? [] : chapter.intro.slice(0, game.position.kind === 'narrative' ? game.position.lineIndex + 1 : undefined);
       return <article className="os-files-document"><p className="px-eyebrow">BERKAS LOKAL / JEJAK CERITA</p><h2>Catatan Ari</h2>{lines.length ? lines.map(line => <p key={line.id}><strong>{line.speaker}:</strong> {line.text}</p>) : <p>Cerita yang sudah kamu baca akan tercatat di sini.</p>}<p className="px-app-footnote">Tidak ada dokumen pribadi yang diminta atau diunggah.</p></article>;
     }
-    if (id === 'messages') return <div className="px-empty-app"><PixelIcon kind="messages" /><p className="px-eyebrow">PERCAKAPAN ARI</p><h3>Belum ada percakapan.</h3><p>Jejak pertama ada di kotak masuk.</p><button className="px-button" onClick={() => openApp('mail')}>Buka Mail</button><p className="px-app-footnote">Percakapan perekrut hadir di Bab 2. Belum tersedia pada build M1.</p></div>;
+    if (id === 'messages') return <MessagesApp key={chapter.id} chapter={chapter} game={game} send={send} openApp={openApp} flow={<PlayPage />} />;
     if (!canInvestigate) return <div className="px-empty-app"><PixelIcon kind="browser" /><h2>Buka berkas pertama.</h2><p>Direktori perusahaan tersedia saat investigasi dimulai.</p><StartGameButton /><Link className="button button--secondary" to="/play">Kembali ke cerita</Link></div>;
     return <>{game.position.kind === 'verification' ? <div className="os-verification-heading"><h2 data-scene-focus tabIndex={-1}>Periksa sebelum menyimpulkan.</h2><p>Pilihanmu sudah tercatat. Periksa detail, lalu bandingkan sumber.</p></div> : null}{!canInspect && !game.references[chapter.source.id] ? <p className="os-source-locked">Pemeriksaan baru dicatat saat investigasi atau langkah verifikasi. Pilihan yang sudah dijalankan tetap tercatat.</p> : null}<BrowserApp chapter={chapter} game={game} send={canInspect ? send : () => {}} notify={() => {}} openApp={openApp} origin={desktop ? 'Desktop' : 'Saku'} inspectionAllowed={canInspect} /></>;
   }
@@ -148,7 +160,7 @@ export function OperatingSystem() {
     {!desktop ? <aside className="saku-notification" aria-label="Notifikasi Saku">{notice}</aside> : null}
     <main ref={workspace} className={desktop ? 'px-workspace' : 'saku-main'} id="os-main" tabIndex={-1}>
       {desktop ? <><nav className="px-shortcuts" aria-label="Aplikasi desktop">{applications.map(app => <button key={app.id} id={`shortcut-${app.id}`} className="px-shortcut" onClick={() => openApp(app.id)} aria-label={`Buka ${app.label}`}><PixelIcon kind={app.id} /><span>{app.label}</span></button>)}</nav><div className="px-case-heading"><div><p className="px-eyebrow">TRUSTTRAIL <span>/</span> {playing ? chapter.subtitle : 'PERSONAL DESKTOP'}</p>{playing ? <h1 className="os-route-title" tabIndex={-1}>{title}</h1> : <p className="os-desktop-title">{title}</p>}<p>Simulasi fiktif · Tanpa data pribadi</p></div><button className="px-text-button" onClick={() => setProgress(true)}>Kelola progres</button></div></> : null}
-      {desktop ? <nav className="os-layout-controls" aria-label="Tata letak jendela">{playing && canInvestigate ? <button type="button" onClick={compareWindows}>Mail & sumber berdampingan</button> : null}<button type="button" onClick={resetLayout}>Rapikan jendela</button></nav> : null}
+      {desktop ? <nav className="os-layout-controls" aria-label="Tata letak jendela">{playing && canInvestigate ? <button type="button" onClick={compareWindows}>{chapter.conversation ? 'Messages' : 'Mail'} & sumber berdampingan</button> : null}<button type="button" onClick={resetLayout}>Rapikan jendela</button></nav> : null}
       <div className={desktop ? 'px-window-layout os-app-hosts' : 'os-app-hosts'} ref={foreground}>{surfaces.map(surface => {
         const isApp = applications.some(app => app.id === surface.id);
         const active = selected === surface.id;
@@ -158,7 +170,7 @@ export function OperatingSystem() {
       {desktop ? <><aside className="px-notification-area" aria-label="Notifikasi desktop">{notice}</aside><div className="px-wallpaper-credit" aria-hidden="true"><PixelIcon kind="signal" /><span>LACAK<br />PERSONAL DESKTOP</span></div></> : null}
     </main>
     {desktop ? <DesktopTaskbar active={selected} opened={opened} openApp={openApp} menu={() => setMenu(true)} /> : <MobileSystemNavigation back={back} menu={() => setMenu(true)} count={count} />}
-    {menu ? <Drawer open={menu} title="Menu TrustTrail" onClose={() => setMenu(false)}><nav className="os-app-menu" aria-label="Aplikasi dan navigasi">{applications.map(app => <button className="px-text-button" key={app.id} onClick={() => openApp(app.id)}><PixelIcon kind={app.id} /><span>{app.label}</span><span>{app.subtitle}</span></button>)}<Link to="/" onClick={() => setMenu(false)}>Beranda</Link><Link to="/play" onClick={() => setMenu(false)}>Ruang misi</Link><Link to="/guide" onClick={() => setMenu(false)}>Panduan</Link><Link to="/report" onClick={() => setMenu(false)}>Catatan refleksi</Link>{desktop ? <>{playing && canInvestigate ? <button className="px-text-button" onClick={compareWindows}>Mail & sumber berdampingan</button> : null}<button className="px-text-button" onClick={() => { resetLayout(); setMenu(false); }}>Rapikan jendela</button></> : null}<button className="px-text-button" onClick={() => { setMenu(false); setProgress(true); }}>Kelola progres</button></nav></Drawer> : null}
+    {menu ? <Drawer open={menu} title="Menu TrustTrail" onClose={() => setMenu(false)}><nav className="os-app-menu" aria-label="Aplikasi dan navigasi">{applications.map(app => <button className="px-text-button" key={app.id} onClick={() => openApp(app.id)}><PixelIcon kind={app.id} /><span>{app.label}</span><span>{app.subtitle}</span></button>)}<Link to="/" onClick={() => setMenu(false)}>Beranda</Link><Link to="/play" onClick={() => setMenu(false)}>Ruang misi</Link><Link to="/guide" onClick={() => setMenu(false)}>Panduan</Link><Link to="/report" onClick={() => setMenu(false)}>Catatan refleksi</Link>{desktop ? <>{playing && canInvestigate ? <button className="px-text-button" onClick={compareWindows}>{chapter.conversation ? 'Messages' : 'Mail'} & sumber berdampingan</button> : null}<button className="px-text-button" onClick={() => { resetLayout(); setMenu(false); }}>Rapikan jendela</button></> : null}<button className="px-text-button" onClick={() => { setMenu(false); setProgress(true); }}>Kelola progres</button></nav></Drawer> : null}
     {progress ? <Drawer open={progress} title="Progres lokal" onClose={() => setProgress(false)}><p>{save.message}</p><ProgressControls onComplete={() => setProgress(false)} /></Drawer> : null}
   </div></OsContext>;
 }

@@ -1,5 +1,8 @@
 # Scenario data and scoring contract
 
+**31 October 2026 implementation update:** Chapters 1–2 are playable. The existing reducer now accepts guarded `chapter.continued` and `conversation.advanced` events. Each debrief closes at its chapter checkpoint; explicit continuation preserves shipped C1 saves. `Chapter.conversation` supplies profile and exchange content; Case Files retains prior-chapter evidence and action counts. Save schema/content/rubric versions remain compatible. Chapter 3, recovery, and the final report remain planned. See [Chapter 2 validation and current contracts](chapter-two-validation.md). Earlier planning sections below are retained as historical context.
+
+
 Status: adopted baseline v1, now authorized for implementation through production milestones. M1 implements C1-E01–E04/D1, accepted-event replay and the pre-commit awareness/meaningful verification cutoffs. Later chapters, recovery and full four-competency report remain M2/M3 work. Type snippets below are the approved design contract, not a claim all modules exist. Current authority: [production milestones](production-milestones.md).
 
 ## Authoring principles

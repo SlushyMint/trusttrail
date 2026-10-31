@@ -20,6 +20,7 @@ function exactKeys(value: Record<string, unknown>, keys: readonly string[]) {
 
 const eventFields: Record<GameEvent['type'], readonly string[]> = {
   'run.started': [], 'story.begun': [],
+  'chapter.continued': ['chapterId'], 'conversation.advanced': ['conversationId', 'stepIndex'],
   'line.advanced': ['nodeId', 'lineIndex'], 'evidence.inspected': ['evidenceId'],
   'reference.inspected': ['sourceId', 'inspectionId'], 'source.compared': ['sourceId'],
   'decision.opened': ['decisionId'], 'decision.closed': ['decisionId'],
@@ -30,7 +31,7 @@ function gameEvent(value: unknown): value is GameEvent {
   if (!record(value) || typeof value.type !== 'string' || !Object.hasOwn(eventFields, value.type)) return false;
   const fields = eventFields[value.type as GameEvent['type']];
   if (!exactKeys(value, ['type', ...fields])) return false;
-  return fields.every(key => key === 'lineIndex'
+  return fields.every(key => key === 'lineIndex' || key === 'stepIndex'
     ? Number.isSafeInteger(value[key]) && Number(value[key]) >= 0
     : typeof value[key] === 'string' && value[key].length > 0 && value[key].length <= 128);
 }

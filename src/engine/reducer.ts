@@ -20,6 +20,10 @@ export function debriefNode(decisionId: string, optionId: string): string {
   return `${decisionId}-${optionId}-debrief`;
 }
 
+export function conversationStep(state: GameState, chapter: Chapter): number {
+  return state.history.filter(event => event.type === 'conversation.advanced' && event.conversationId === chapter.conversation?.id).length;
+}
+
 /** Invalid/stale/repeated actions preserve identity and never append a durable event. */
 export function reduceGame(state: GameState, event: GameEvent, content: Scenario = scenario): GameState {
   const position = state.position;
@@ -38,6 +42,16 @@ export function reduceGame(state: GameState, event: GameEvent, content: Scenario
     case 'story.begun':
       if (position.kind === 'briefing') move({ kind: 'narrative', chapterId: chapter.id, lineIndex: 0 });
       break;
+    case 'chapter.continued': {
+      const next = content.chapters[content.chapters.findIndex(item => item.id === chapter.id) + 1];
+      if (position.kind === 'chapterComplete' && event.chapterId === chapter.id && next) move({ kind: 'narrative', chapterId: next.id, lineIndex: 0 });
+      break;
+    }
+    case 'conversation.advanced': {
+      const conversation = chapter.conversation;
+      if (position.kind === 'investigation' && conversation && event.conversationId === conversation.id && event.stepIndex === conversationStep(state, chapter) && event.stepIndex < conversation.exchanges.length) change = {};
+      break;
+    }
     case 'line.advanced':
       if (position.kind === 'narrative' && event.nodeId === `${chapter.id}-intro` && event.lineIndex === position.lineIndex) {
         move(position.lineIndex + 1 < chapter.intro.length
@@ -47,7 +61,8 @@ export function reduceGame(state: GameState, event: GameEvent, content: Scenario
       break;
     case 'evidence.inspected': {
       const clue = chapter.evidence.find(item => item.id === event.evidenceId);
-      if (position.kind === 'investigation' && clue?.discovery === 'hotspot' && !state.discoveries[clue.id]) {
+      const exchangeIndex = chapter.conversation?.exchanges.findIndex(item => item.evidenceId === event.evidenceId) ?? -1;
+      if (position.kind === 'investigation' && clue?.discovery === 'hotspot' && !state.discoveries[clue.id] && (exchangeIndex < 0 || conversationStep(state, chapter) > exchangeIndex)) {
         change = { discoveries: { ...state.discoveries, [clue.id]: { eventIndex } } };
       }
       break;
@@ -70,7 +85,7 @@ export function reduceGame(state: GameState, event: GameEvent, content: Scenario
       break;
     }
     case 'decision.opened':
-      if (position.kind === 'investigation' && event.decisionId === decision.id) move({ kind: 'decision', chapterId: chapter.id, decisionId: decision.id });
+      if (position.kind === 'investigation' && event.decisionId === decision.id && (!chapter.conversation || conversationStep(state, chapter) === chapter.conversation.exchanges.length)) move({ kind: 'decision', chapterId: chapter.id, decisionId: decision.id });
       break;
     case 'decision.closed':
       if (position.kind === 'decision' && event.decisionId === decision.id) move({ kind: 'investigation', chapterId: chapter.id });
@@ -92,8 +107,8 @@ export function reduceGame(state: GameState, event: GameEvent, content: Scenario
       break;
     case 'debrief.continued': {
       if (position.kind !== 'debrief' || event.nodeId !== debriefNode(position.decisionId, position.optionId)) break;
-      const next = content.chapters[content.chapters.findIndex(item => item.id === chapter.id) + 1];
-      move(next ? { kind: 'narrative', chapterId: next.id, lineIndex: 0 } : { kind: 'chapterComplete', chapterId: chapter.id });
+      // Keep shipped chapter checkpoints stable when additive content is installed.
+      move({ kind: 'chapterComplete', chapterId: chapter.id });
       break;
     }
   }

@@ -30,6 +30,14 @@ export function validateScenario(content: Scenario): string[] {
     const comparisonClues = chapter.evidence.filter(clue => clue.discovery === 'source-comparison');
     if (comparisonClues.length !== 1 || comparisonClues[0]?.id !== source.evidenceId) problems.push(`Broken source evidence: ${source.id}`);
     if (!source.provenance || !source.claim || !source.reference || !source.comparison) problems.push(`Incomplete source: ${source.id}`);
+    if (chapter.conversation) {
+      const chat = chapter.conversation;
+      unique(chat.id);
+      if (!chat.opening.trim() || !chat.exchanges.length || Object.values(chat.profile).some(value => !value.trim())) problems.push(`Incomplete conversation: ${chat.id}`);
+      const hotspots = [chat.profile.evidenceId, ...chat.exchanges.flatMap(item => item.evidenceId ? [item.evidenceId] : [])];
+      if (new Set(hotspots).size !== hotspots.length || hotspots.some(id => !chapter.evidence.some(clue => clue.id === id && clue.discovery === 'hotspot'))) problems.push(`Broken conversation evidence: ${chat.id}`);
+      chat.exchanges.forEach(exchange => { unique(exchange.id); if (!exchange.reply.trim() || !exchange.response.trim()) problems.push(`Empty exchange: ${exchange.id}`); });
+    }
     if (chapter.decision.options.length < 2 || chapter.decision.options.length > 3) problems.push(`Option count: ${chapter.decision.id}`);
     const options = new Set<string>();
     for (const option of chapter.decision.options) {
