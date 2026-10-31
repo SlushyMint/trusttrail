@@ -23,6 +23,8 @@ const eventFields: Record<GameEvent['type'], readonly string[]> = {
   'chapter.continued': ['chapterId'], 'conversation.advanced': ['conversationId', 'stepIndex'],
   'line.advanced': ['nodeId', 'lineIndex'], 'evidence.inspected': ['evidenceId'],
   'reference.inspected': ['sourceId', 'inspectionId'], 'source.compared': ['sourceId'],
+  'portal.opened': ['chapterId'], 'claim.matched': ['comparisonId', 'answerId'],
+  'recovery.acted': ['stepId', 'actionId'], 'recovery.completed': ['chapterId'],
   'decision.opened': ['decisionId'], 'decision.closed': ['decisionId'],
   'choice.committed': ['decisionId', 'optionId'], 'outcome.continued': ['nodeId'], 'debrief.continued': ['nodeId'],
 };

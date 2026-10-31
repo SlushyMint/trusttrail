@@ -107,7 +107,7 @@ describe('Chapter 2 continuity, investigation and event scoring', () => {
     game = reduceGame(game, { type: 'outcome.continued', nodeId: `D2-${optionId}-outcome` });
     game = reduceGame(game, { type: 'debrief.continued', nodeId: `D2-${optionId}-debrief` });
     expect(game.position).toEqual({ kind: 'chapterComplete', chapterId: 'C2' });
-    expect(reduceGame(game, { type: 'chapter.continued', chapterId: 'C2' })).toBe(game);
+    expect(reduceGame(game, { type: 'chapter.continued', chapterId: 'C2' }).position).toEqual({ kind: 'narrative', chapterId: 'C3', lineIndex: 0 });
     // Replay every prefix: narrative, replies, clues, decision, partial verification and branch ending.
     for (let length = 1; length <= game.history.length; length++) {
       const prefix = game.history.slice(0, length).reduce((state, event) => reduceGame(state, event), initialGame());

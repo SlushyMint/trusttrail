@@ -37,7 +37,7 @@ export function PixelDesktop() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [toast, setToast] = useState<Toast | null>({ title: 'Undangan baru diterima', text: 'NovaTech Recruitment mengirim pesan. Periksa sebelum membalas.' });
   const count = chapter.evidence.filter(clue => game.discoveries[clue.id]).length;
-  const phases = { menu: 'Persiapan', briefing: 'Persiapan', narrative: 'Cerita', investigation: 'Investigasi', decision: 'Keputusan', verification: 'Verifikasi', outcome: 'Akibat pilihan', debrief: 'Refleksi', chapterComplete: 'Bab 1 selesai' };
+  const phases = { menu: 'Persiapan', briefing: 'Persiapan', narrative: 'Cerita', investigation: 'Investigasi', decision: 'Keputusan', verification: 'Verifikasi', outcome: 'Akibat pilihan', recovery: 'Pemulihan', debrief: 'Refleksi', chapterComplete: 'Bab 1 selesai' };
 
   function openApp(id: AppId) {
     setLaunched(items => items.includes(id) ? items : [...items, id]);

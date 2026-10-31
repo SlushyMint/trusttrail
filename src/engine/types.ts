@@ -25,6 +25,16 @@ export type VerificationSource = {
   evidenceId: string;
 };
 
+export type PortalComparison = {
+  id: string;
+  label: string;
+  claim: string;
+  evidenceId: string;
+  answers: readonly { id: string; text: string }[];
+  correctAnswerId: string;
+  explanation: string;
+};
+
 export type Option = {
   id: string;
   label: string;
@@ -41,6 +51,7 @@ export type Chapter = {
   title: string;
   subtitle: string;
   objective: string;
+  portal?: { address: string; comparisons: readonly PortalComparison[] };
   conversation?: {
     id: string;
     profile: { name: string; role: string; handle: string; bio: string; history: string; evidenceId: string };
@@ -63,6 +74,7 @@ export type Position =
   | { kind: 'briefing' }
   | { kind: 'narrative'; chapterId: ChapterId; lineIndex: number }
   | { kind: 'investigation'; chapterId: ChapterId }
+  | { kind: 'recovery'; chapterId: ChapterId }
   | { kind: 'decision'; chapterId: ChapterId; decisionId: string }
   | { kind: 'verification'; chapterId: ChapterId; decisionId: string; sourceId: string }
   | { kind: 'outcome' | 'debrief'; chapterId: ChapterId; decisionId: string; optionId: string }
@@ -77,6 +89,10 @@ export type GameEvent =
   | { type: 'evidence.inspected'; evidenceId: string }
   | { type: 'reference.inspected'; sourceId: string; inspectionId: string }
   | { type: 'source.compared'; sourceId: string }
+  | { type: 'portal.opened'; chapterId: ChapterId }
+  | { type: 'claim.matched'; comparisonId: string; answerId: string }
+  | { type: 'recovery.acted'; stepId: string; actionId: string }
+  | { type: 'recovery.completed'; chapterId: ChapterId }
   | { type: 'decision.opened' | 'decision.closed'; decisionId: string }
   | { type: 'choice.committed'; decisionId: string; optionId: string }
   | { type: 'outcome.continued' | 'debrief.continued'; nodeId: string };

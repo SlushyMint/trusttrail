@@ -1,0 +1,71 @@
+/* Browser canvas: two equal claim rows; 24px + fluid content + 24px closes the width.
+   Existing pixel OS is retained; the portal's own sheet uses quiet neutral surfaces. */
+.tt-portal-browser { background: #101214; color: #f3f4f4; font: 14px/1.65 var(--px-body); min-height: 100%; overflow-wrap: anywhere; }
+.tt-browser-tabs { display: flex; gap: 8px; padding: 8px 16px; background: #181b1e; }
+.tt-browser-tabs button { flex: 1; border: 0; background: transparent; color: #b4b8bb; min-height: 44px; padding: 8px; text-align: left; }
+.tt-browser-tabs button[aria-pressed=true] { color: #fff; background: #2a2d30; }
+.tt-browser-tabs button:hover { color: #fff; }
+.tt-browser-location { display: flex; gap: 12px; padding: 12px 24px; background: #222629; font-size: 12px; }
+.tt-browser-location > span:first-child { flex: none; color: #c5dcd7; }
+.tt-browser-location > span:last-child { min-width: 0; }
+.tt-mission-objective { margin: 0; padding: 16px 24px; background: #181b1e; color: #c4c8cb; }
+.tt-mission-objective strong { display: block; color: #fff; }
+.tt-portal-header { display: flex; gap: 12px; align-items: center; padding: 24px; }
+.tt-portal-header > div { display: flex; flex-direction: column; }
+.tt-portal-header strong { font: 600 24px/1.2 var(--px-body); }
+.tt-portal-header > div > span { color: #b4b8bb; font-size: 12px; }
+.tt-nova-mark { font-size: 32px; font-weight: 700; letter-spacing: -6px; padding-right: 4px; }
+.tt-nova-mark span { font-size: 23px; }
+.tt-portal-candidate { margin-left: auto; max-width: 155px; text-align: right; font-size: 12px; color: #b4b8bb; }
+.tt-portal-document, .tt-official-source, .tt-final-request { padding: 24px; }
+.tt-portal-document { padding-top: 0; }
+.tt-portal-browser h2, .tt-final-request h2 { font: 600 24px/1.3 var(--px-body); margin: 0 0 16px; text-wrap: balance; }
+.tt-portal-browser h3, .tt-recovery h3, .tt-final-request h3 { font: 600 16px/1.4 var(--px-body); margin: 0 0 12px; }
+.tt-portal-browser h4 { font: 600 14px/1.5 var(--px-body); }
+.tt-portal-browser p { margin: 0 0 16px; }
+.tt-portal-section { padding: 20px; margin-top: 16px; background: #1c1f22; }
+.tt-portal-demand { background: #26292c; }
+.tt-fictional-code { padding: 16px; margin-bottom: 16px; background: #131517; }
+.tt-fictional-code span, .tt-simulation-note { font-size: 12px; color: #b4b8bb; }
+.tt-portal-inspect .px-inspect-button { color: #e8ebed; background: transparent; border-color: #666d72; box-shadow: none; white-space: normal; text-align: left; }
+.tt-inspection-detail, .tt-official-record, .tt-continuity { padding: 16px; margin-top: 16px; background: #2a2d30; color: #edf0f1; }
+.tt-inspection-detail p:last-child { color: #c4c8cb; margin: 0; }
+.tt-portal-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.tt-portal-actions p { flex-basis: 100%; color: #b4b8bb; }
+.tt-portal-browser .px-button { background: #303437; color: #fff; border-color: #6a7074; box-shadow: none; white-space: normal; text-align: left; }
+.tt-portal-browser .px-button.px-primary { background: #edf0f1; color: #141617; }
+.tt-portal-browser .px-button:hover:not(:disabled) { background: #444a4f; color: #fff; }
+.tt-portal-browser button:disabled { color: #b4b8bb; background: #222629; }
+.tt-portal-browser > .tt-simulation-note { padding: 16px 24px; margin: 0; }
+.tt-claim-match { border: 1px solid #4d545a; margin: 24px 0; padding: 16px; min-width: 0; }
+.tt-claim-match legend { padding-inline: 6px; font-weight: 600; }
+.tt-claim-match label { display: flex; align-items: start; gap: 12px; min-height: 48px; padding: 12px; background: #222629; cursor: pointer; margin-bottom: 8px; }
+.tt-claim-match label:has(:checked) { background: #353b40; }
+.tt-claim-match input { width: 18px; height: 18px; flex: none; margin-top: 3px; accent-color: #b5d7ce; }
+.tt-claim-match [role=status] { margin-top: 16px; }
+.tt-comparison-result { padding: 20px; background: var(--px-surface); margin-block: 20px; }
+.tt-portal-browser .tt-comparison-result { background: #2a2d30; }
+.tt-final-request { font-size: 15px; overflow-wrap: anywhere; }
+.tt-final-request .tt-continuity { margin-bottom: 24px; background: var(--px-surface); }
+.tt-final-request .tt-simulation-note { color: var(--px-muted); }
+.tt-recovery-context { padding: 16px; background: var(--px-surface); }
+.tt-recovery-task { padding-block: 20px; }
+.tt-recovery-choices { display: flex; flex-direction: column; align-items: stretch; gap: 12px; }
+.tt-recovery-choices .button { text-align: left; justify-content: start; }
+.tt-recovery-feedback:not(:empty) { padding: 16px; border-left: 2px solid var(--px-teal); }
+.tt-recovery-receipts { padding-left: 24px; }
+.tt-recovery-receipts li { margin-block: 20px; }
+.tt-recovery-receipts summary { cursor: pointer; padding-block: 8px; }
+.tt-report-chapter { margin-block: 28px; padding: 20px; background: var(--px-surface); }
+.tt-report-chapter dl { display: grid; grid-template-columns: 1fr auto; gap: 10px 16px; }
+.tt-report-chapter dd { margin: 0; font-variant-numeric: tabular-nums; }
+.tt-portal-browser :focus-visible { outline: 3px solid #d9eee8; outline-offset: 3px; }
+@media (max-width: 600px) {
+  .tt-browser-tabs { padding: 8px; }
+  .tt-browser-location { flex-direction: column; gap: 4px; }
+  .tt-portal-header, .tt-portal-document, .tt-official-source, .tt-final-request, .tt-mission-objective, .tt-browser-location { padding: 16px; }
+  .tt-portal-header { flex-wrap: wrap; }
+  .tt-portal-candidate { max-width: none; flex-basis: 100%; margin: 0; text-align: left; }
+  .tt-portal-section, .tt-claim-match { padding: 16px; }
+  .tt-portal-browser h2, .tt-final-request h2 { font-size: 22px; }
+}

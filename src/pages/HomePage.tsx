@@ -24,7 +24,7 @@ export function HomePage() {
           <motion.h1 {...heading} id="portal-title" tabIndex={-1} data-os-focus>Undangan kerja.<br />Atau perangkap?</motion.h1>
           <motion.p {...rise} className="portal-intro"><strong>Game investigasi keamanan digital.</strong> Ari mendapat undangan rekrutmen yang tak ia ingat pernah lamar. Bantu ia memeriksa jejaknya sebelum percaya.</motion.p>
           <motion.div {...rise} whileTap={reduced ? undefined : { scale: .98 }} className="portal-start"><StartGameButton /></motion.div>
-          <motion.p {...rise} className="portal-experience">Main langsung di browser. Tanpa akun.<br />Bab 1–2 siap dimainkan · Progres tersimpan lokal.</motion.p>
+          <motion.p {...rise} className="portal-experience">Main langsung di browser. Tanpa akun.<br />Tiga bab dan misi pemulihan siap dimainkan · Progres tersimpan lokal.</motion.p>
           <a className="portal-text-link" href="#latihan">Coba satu pemeriksaan dulu</a>
           {game.history.length > 0 ? <details className="portal-progress"><summary>Kelola progres tersimpan</summary><ProgressControls /></details> : null}
           <SaveNotice />
@@ -55,7 +55,7 @@ export function HomePage() {
         <ol className="portal-case-list">
           <li><div><p>Bab 1 · Tersedia</p><h3>Undangan tanpa lamaran</h3></div><p>Sebuah tawaran tiba di kotak masuk. Periksa undangannya sebelum menentukan langkah Ari.</p><Link to="/play" aria-label="Buka Bab 1: Undangan tanpa lamaran">Buka berkas <span aria-hidden="true">↗</span></Link></li>
           <li><div><p>Bab 2 · Tersedia</p><h3>Perekrut yang ramah</h3></div><p>Percakapan menjadi semakin personal. Seberapa jauh sebuah perkenalan bisa dipercaya?</p><Link to="/play" aria-label="Lanjut perjalanan menuju Bab 2: Perekrut yang ramah">Lanjut perjalanan <span aria-hidden="true">↗</span></Link></li>
-          <li><div><p>Bab 3 · Akan datang</p><h3>Verifikasi terakhir</h3></div><p>Perjalanan mendekati akhir. Sebuah portal membuka pertanyaan baru tentang batas kepercayaan.</p><span className="portal-case-status">Belum tersedia</span></li>
+          <li><div><p>Bab 3 · Portal kandidat</p><h3>Verifikasi terakhir</h3></div><p>Perjalanan mendekati akhir. Sebuah portal membuka pertanyaan baru tentang batas kepercayaan.</p><span className="portal-case-status">Siap dimainkan</span></li>
         </ol>
       </section>
       <section className="portal-safety" aria-labelledby="safety-title"><div className="portal-wrap portal-safety-inner"><div><PixelIcon kind="signal" /><p>Ruang latihan yang aman</p><motion.h2 {...heading} id="safety-title">Bukti dulu.<br />Percaya kemudian.</motion.h2></div><div><p>Semua tokoh, perusahaan, pesan, dan alamat dalam game adalah fiktif. TrustTrail tidak meminta kata sandi asli, OTP, atau dokumen identitas.</p><p>Tanpa akun. Progres permainan disimpan di browser ini. Kamu bisa mengelolanya dari menu di dalam game.</p><motion.div {...rise} whileTap={reduced ? undefined : { scale: .98 }} className="portal-start"><StartGameButton /></motion.div><Link className="portal-text-link" to="/guide">Cara bermain & privasi</Link></div></div></section>

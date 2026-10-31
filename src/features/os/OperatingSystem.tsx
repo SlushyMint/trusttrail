@@ -11,6 +11,8 @@ import { NotFoundPage } from '../../pages/NotFoundPage';
 import { ProgressControls, SaveNotice, StartGameButton } from '../gameplay/ProgressControls';
 import { BrowserApp, JournalApp, JournalArchive, MailApp } from './SharedApps';
 import { MessagesApp } from './MessagesApp';
+import { FinalRequest, PortalApp } from './PortalApp';
+import { chapterTwo } from '../../content/chapters/c2';
 import { applications, OsContext, type AppId, type Toast } from './model';
 import { PixelIcon, type PixelKind } from './PixelIcon';
 import { DesktopSystemBar, DesktopTaskbar, MobileStatusBar, MobileSystemNavigation } from './Shells';
@@ -34,7 +36,7 @@ export function OperatingSystem() {
   const location = useLocation();
   const navigate = useNavigate();
   const chapter = currentChapter(game);
-  const storyApp: AppId = chapter.conversation ? 'messages' : 'mail';
+  const storyApp: AppId = chapter.portal ? 'browser' : chapter.conversation ? 'messages' : 'mail';
   const playing = location.pathname === '/play';
   const params = new URLSearchParams(location.search);
   const requested = params.get('app') === 'cases' ? 'journal' : params.get('app');
@@ -51,7 +53,7 @@ export function OperatingSystem() {
   const [slots, setSlots] = useState<Record<string, WindowSlot>>({});
   const [layoutVersion, setLayoutVersion] = useState(0);
   const count = chapter.evidence.filter(clue => game.discoveries[clue.id]).length;
-  const canInvestigate = ['investigation', 'verification', 'outcome', 'debrief', 'chapterComplete'].includes(game.position.kind);
+  const canInvestigate = ['investigation', 'verification', 'outcome', 'recovery', 'debrief', 'chapterComplete'].includes(game.position.kind);
   const canInspect = game.position.kind === 'investigation' || game.position.kind === 'verification';
   const label = surfaces.find(surface => surface.id === selected)!.title;
   const phaseKey = `${chapter.id}:${game.position.kind}${game.position.kind === 'narrative' ? `:${game.position.lineIndex}` : ''}`;
@@ -86,11 +88,12 @@ export function OperatingSystem() {
   function raise(id: string) { setOrder(items => items.at(-1) === id ? items : [...items.filter(item => item !== id), id]); }
   function resetLayout() { setSlots({}); setMaximized(null); setLayoutVersion(version => version + 1); }
   function compareWindows() {
-    setOpened(items => [...new Set([...items, storyApp, 'browser' as AppId])]);
-    setHiddenApps(items => items.filter(id => id !== storyApp && id !== 'browser'));
-    setSlots(items => ({ ...items, [storyApp]: 'left', browser: 'right' }));
+    const artifactApp = chapter.portal ? 'mail' : storyApp;
+    setOpened(items => [...new Set([...items, artifactApp, 'browser' as AppId])]);
+    setHiddenApps(items => items.filter(id => id !== artifactApp && id !== 'browser'));
+    setSlots(items => ({ ...items, [artifactApp]: 'left', browser: 'right' }));
     setMaximized(null); setLayoutVersion(version => version + 1);
-    setOrder(items => [...items.filter(id => id !== storyApp && id !== 'browser'), storyApp, 'browser']);
+    setOrder(items => [...items.filter(id => id !== artifactApp && id !== 'browser'), artifactApp, 'browser']);
     go(pathFor('browser'));
   }
   function back() { if (Number(location.state?.osDepth) > 0) navigate(-1); else navigate('/'); }
@@ -140,6 +143,9 @@ export function OperatingSystem() {
     if (id === 'guide') return <GuidePage />;
     if (id === 'report') return <ReportPage />;
     if (id === 'missing') return <NotFoundPage />;
+    if (chapter.portal && id === 'mail') return canInvestigate ? <FinalRequest chapter={chapter} game={game} send={send} openApp={openApp} /> : <p className="tt-final-request">Instruksi terakhir tersedia setelah cerita pengantar.</p>;
+    if (chapter.portal && id === 'browser') return <PortalApp key={chapter.id} chapter={chapter} game={game} send={send} openApp={openApp} flow={<PlayPage />} />;
+    if (chapter.portal && id === 'messages') return <article className="tt-final-request"><h2 data-os-focus tabIndex={-1}>Percakapan Mira tersimpan</h2><p>Pilihan Bab 2: {chapterTwo.decision.options.find(option => option.id === game.choices.D2?.optionId)?.label}</p><p>{chapterTwo.conversation.opening}</p>{chapterTwo.conversation.exchanges.map(exchange => <div key={exchange.id}><p><strong>Ari:</strong> {exchange.reply}</p><p><strong>Mira:</strong> {exchange.response}</p></div>)}<button className="px-button" onClick={() => openApp('mail')}>Lihat instruksi di Mail</button><button className="px-button" onClick={() => openApp('browser')}>Kembali ke misi</button></article>;
     if (id === 'mail' && chapter.conversation) return <div className="px-empty-app"><PixelIcon kind="mail" /><h3>Undangan tersimpan.</h3><p>Keputusan dan bukti Bab 1 tetap ada di Case Files. Pesan lanjutan kini ada di Messages.</p><button className="px-button" onClick={() => openApp('messages')}>Buka Messages</button></div>;
     if (id === 'mail') return <MailApp chapter={chapter} game={game} send={send} inspect={clue => send({ type: 'evidence.inspected', evidenceId: clue.id })} openApp={openApp} flow={<PlayPage />} navigation={{ inbox: params.get('view') === 'inbox', onInbox: inbox => go(pathFor('mail', inbox)), message: params.get('message') === 'campus' ? 'campus' : 'email', onSelect: message => go(`${pathFor('mail')}&message=${message}`) }} />;
     if (id === 'journal') return <div className="dual-case-files"><div className="dual-case-context"><span className="dual-case-stamp">{chapter.id.slice(1).padStart(2, '0')}</span><div><p className="px-eyebrow">BERKAS AKTIF / {chapter.id}</p><h3>{chapter.title}</h3><span>{count} bukti ditemukan</span></div></div><JournalApp chapter={chapter} game={game} openApp={openApp} /><JournalArchive chapter={chapter} game={game} /></div>;

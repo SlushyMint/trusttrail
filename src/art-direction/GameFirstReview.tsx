@@ -28,7 +28,7 @@ const expressions = {
 type Artifact = 'email' | 'campus' | 'source';
 const modes = {
   menu: 'Pembuka', briefing: 'Pembuka', narrative: 'Cerita', investigation: 'Investigasi',
-  decision: 'Keputusan', verification: 'Verifikasi', outcome: 'Akibat pilihan', debrief: 'Refleksi', chapterComplete: 'Bab selesai',
+  decision: 'Keputusan', verification: 'Verifikasi', outcome: 'Akibat pilihan', recovery: 'Pemulihan', debrief: 'Refleksi', chapterComplete: 'Bab selesai',
 } as const;
 
 /** Review-only entry: canonical reducer/content, deliberately no persistence adapter. */

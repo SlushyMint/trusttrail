@@ -29,7 +29,7 @@ export function NarrativeView({ chapter, lineIndex }: { chapter: Chapter; lineIn
     <div className="os-story-mark" aria-hidden="true"><PixelIcon kind="files" /></div>
     <div className="story-copy"><p className="section-label">{chapter.subtitle}</p><h2>{chapter.title}</h2>
       <div className="narrative-line" data-scene-focus tabIndex={-1}><p className="speaker">{line.speaker}</p><p>{line.text}</p></div>
-      <div className="story-pagination"><span>Catatan {lineIndex + 1} dari {chapter.intro.length}</span><Button onClick={() => send({ type: 'line.advanced', nodeId: `${chapter.id}-intro`, lineIndex })}>{lineIndex === chapter.intro.length - 1 ? chapter.conversation ? 'Buka pesan perekrut' : 'Periksa undangan' : 'Lanjut cerita'} <span aria-hidden="true">→</span></Button></div>
+      <div className="story-pagination"><span>Catatan {lineIndex + 1} dari {chapter.intro.length}</span><Button onClick={() => send({ type: 'line.advanced', nodeId: `${chapter.id}-intro`, lineIndex })}>{lineIndex === chapter.intro.length - 1 ? chapter.portal ? 'Buka instruksi terakhir' : chapter.conversation ? 'Buka pesan perekrut' : 'Periksa undangan' : 'Lanjut cerita'} <span aria-hidden="true">→</span></Button></div>
     </div>
   </section>;
 }
@@ -59,7 +59,7 @@ export function OutcomeView({ chapter, optionId }: { chapter: Chapter; optionId:
   const option = chapter.decision.options.find(item => item.id === optionId)!;
   return <section className="outcome-view" aria-labelledby="outcome-title"><p className="section-label">Akibat pilihanmu</p><h2 id="outcome-title" data-scene-focus tabIndex={-1}>{option.outcome.title}</h2>
     {option.id === 'follow-link' ? <div className="simulated-preview"><div className="artifact-chrome"><span>Pratinjau kandidat</span><span>Simulasi · Tidak ada pengiriman</span></div><div><p className="inert-address" translate="no">{chapter.email.destination}</p><p className="portal-wordmark">NovaTech</p><p>Selamat datang, kandidat.</p><p className="muted">Halaman dalam cerita belum terverifikasi. Tidak ada formulir masuk pada simulasi ini.</p></div></div> : null}
-    <p className="lead">{option.outcome.text}</p><blockquote>{option.outcome.reflection}</blockquote><Button onClick={() => send({ type: 'outcome.continued', nodeId: outcomeNode(chapter.decision.id, optionId) })}>Lihat refleksi <span aria-hidden="true">→</span></Button>
+    <p className="lead">{option.outcome.text}</p><blockquote>{option.outcome.reflection}</blockquote><Button onClick={() => send({ type: 'outcome.continued', nodeId: outcomeNode(chapter.decision.id, optionId) })}>{chapter.portal ? 'Mulai misi pemulihan' : 'Lihat refleksi'} <span aria-hidden="true">→</span></Button>
   </section>;
 }
 
@@ -73,7 +73,7 @@ export function DebriefView({ chapter, optionId }: { chapter: Chapter; optionId:
     <div className="debrief-grid"><div><h3>Yang terjadi</h3><p>{option.feedback.happened}</p><h3>Mengapa ini berarti</h3><p>{option.feedback.why}</p></div><div className="next-action"><h3>Langkah yang bisa kamu bawa pulang</h3><p>{option.feedback.next}</p></div></div>
     <div className="chapter-facts" aria-label={`Catatan tindakan Bab ${number}`}><p><strong>{facts.awareness} / {chapter.evidence.length}</strong><span>Bukti diperiksa sebelum memilih</span></p><p><strong>{facts.verification} / 2</strong><span>Langkah verifikasi dilakukan</span></p><p><strong>{facts.safety} / 2</strong><span>Kriteria perlindungan dipenuhi</span></p></div>
     {facts.lateEvidence.length ? <p className="muted">Ada {facts.lateEvidence.length} bukti yang ditemukan setelah pilihan. Bukti itu tetap ada di jurnal, tetapi tidak dihitung seolah sudah kamu ketahui sebelumnya.</p> : null}
-    <p className="limitation">{option.feedback.limitation}</p><p className="muted">Ini catatan Bab {number}. Nilai empat kompetensi dan nilai keseluruhan baru tersedia setelah tiga bab serta latihan pemulihan selesai.</p>
+    <p className="limitation">{option.feedback.limitation}</p><p className="muted">{chapter.portal ? 'Misi pemulihan selesai. Trust Report merangkum tindakan yang tercatat tanpa bonus pemulihan atau prediksi kemampuan di dunia nyata.' : `Ini catatan Bab ${number}. Trust Report tersedia setelah tiga bab serta latihan pemulihan selesai.`}</p>
     <Button onClick={() => send({ type: 'debrief.continued', nodeId: debriefNode(chapter.decision.id, optionId) })}>Tutup berkas Bab {number} <span aria-hidden="true">→</span></Button>
   </section>;
 }
@@ -82,10 +82,11 @@ export function ChapterComplete({ chapter }: { chapter: Chapter }) {
   const { game } = useGame();
   const { send } = useGameActions();
   const next = scenario.chapters[scenario.chapters.findIndex(item => item.id === chapter.id) + 1];
-  const exposed = chapter.id === 'C1' ? game.flags.openedSuspiciousLink : game.choices[chapter.decision.id]?.optionId === 'share-data';
-  return <section className="chapter-complete" aria-labelledby="chapter-complete-title"><p className="section-label">Berkas Bab {chapter.id.slice(1)} selesai</p><h2 id="chapter-complete-title" data-scene-focus tabIndex={-1}>{chapter.id === 'C1' ? <>Undangannya berhenti.<br />Jejaknya belum.</> : <>Percakapan selesai.<br />Jejaknya berlanjut.</>}</h2><p className="lead">{exposed ? chapter.bridge.exposed : chapter.bridge.cautious}</p>
-    <div className="milestone-note"><h3>Bab {chapter.id.slice(1)} selesai</h3><p>Progres, bukti, dan pilihanmu tetap tercatat. {next ? 'Pesan perekrut sudah menunggu di Messages. Lanjutkan saat kamu siap.' : 'Berikutnya: Bab 3 · Portal kandidat. Bab 3 dan latihan pemulihan belum tersedia pada build ini.'}</p></div>
+  const exposed = chapter.portal ? game.flags.simulatedAccountRisk || game.flags.simulatedDataExposure : chapter.id === 'C1' ? game.flags.openedSuspiciousLink : game.choices[chapter.decision.id]?.optionId === 'share-data';
+  return <section className="chapter-complete" aria-labelledby="chapter-complete-title"><p className="section-label">Berkas Bab {chapter.id.slice(1)} selesai</p><h2 id="chapter-complete-title" data-scene-focus tabIndex={-1}>{chapter.portal ? <>Jejaknya lengkap.<br />Ari kembali memegang kendali.</> : chapter.id === 'C1' ? <>Undangannya berhenti.<br />Jejaknya belum.</> : <>Percakapan selesai.<br />Jejaknya berlanjut.</>}</h2><p className="lead">{exposed ? chapter.bridge.exposed : chapter.bridge.cautious}</p>
+    <div className="milestone-note"><h3>Bab {chapter.id.slice(1)} selesai</h3><p>Progres, bukti, dan pilihanmu tetap tercatat. {next?.id === 'C2' ? 'Pesan perekrut sudah menunggu di Messages. Lanjutkan saat kamu siap.' : next ? 'Berikutnya: Bab 3 · Portal kandidat. Buka instruksi terakhir saat kamu siap.' : 'Tiga bab dan misi pemulihan selesai. Baca kembali perjalananmu di Trust Report.'}</p></div>
     {next ? <Button onClick={() => send({ type: 'chapter.continued', chapterId: chapter.id })}>Lanjut ke Bab {next.id.slice(1)} <span aria-hidden="true">→</span></Button> : null}
+    {chapter.portal ? <Link className="button button--primary" to="/report">Buka Trust Report →</Link> : null}
     <div className="action-row"><Link className="button button--primary" to="/">Kembali ke beranda</Link><Link className="button button--secondary" to="/guide">Buka panduan</Link></div><ProgressControls />
   </section>;
 }

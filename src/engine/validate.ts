@@ -30,6 +30,14 @@ export function validateScenario(content: Scenario): string[] {
     const comparisonClues = chapter.evidence.filter(clue => clue.discovery === 'source-comparison');
     if (comparisonClues.length !== 1 || comparisonClues[0]?.id !== source.evidenceId) problems.push(`Broken source evidence: ${source.id}`);
     if (!source.provenance || !source.claim || !source.reference || !source.comparison) problems.push(`Incomplete source: ${source.id}`);
+    if (chapter.portal) {
+      if (!/^[a-z0-9.-]+\.example(?:\/|$)/i.test(chapter.portal.address)) problems.push(`Unsafe portal: ${chapter.id}`);
+      if (chapter.portal.comparisons.length < 2) problems.push(`Missing comparisons: ${chapter.id}`);
+      for (const comparison of chapter.portal.comparisons) {
+        unique(comparison.id);
+        if (!chapter.evidence.some(clue => clue.id === comparison.evidenceId && clue.discovery === 'hotspot') || !comparison.answers.some(answer => answer.id === comparison.correctAnswerId) || new Set(comparison.answers.map(answer => answer.id)).size !== comparison.answers.length || !comparison.claim || !comparison.explanation) problems.push(`Broken comparison: ${comparison.id}`);
+      }
+    }
     if (chapter.conversation) {
       const chat = chapter.conversation;
       unique(chat.id);
