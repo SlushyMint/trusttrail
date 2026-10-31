@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TrustTrail — visual comparison</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; color: #111827; background: #f5f3ee; }
+    * { box-sizing: border-box; }
+    body { margin: 0 auto; padding: 32px 24px; max-width: 1600px; }
+    h1 { font-size: clamp(26px, 4vw, 40px); letter-spacing: -.04em; margin: 0 0 12px; }
+    p { max-width: 76ch; line-height: 1.6; }
+    a { color: inherit; text-underline-offset: 4px; }
+    .controls { display: flex; flex-wrap: wrap; gap: 24px; margin: 28px 0; }
+    label { display: grid; gap: 8px; font-weight: 600; }
+    select { min-height: 44px; padding: 8px 12px; font: inherit; color: #111827; background: #fff; border: 1px solid #687276; border-radius: 3px; }
+    :focus-visible { outline: 3px solid #111827; outline-offset: 4px; }
+    .comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+    figure { margin: 0; min-width: 0; }
+    figcaption { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 12px; }
+    figcaption strong { font-size: 20px; }
+    .sheet { max-height: 78vh; overflow: auto; border: 1px solid #c9ccc5; background: #fff; overscroll-behavior: contain; }
+    img { width: 100%; height: auto; display: block; }
+    .note { margin-top: 28px; font-size: 14px; }
+    @media (max-width: 700px) { .comparison { grid-template-columns: 1fr; } body { padding: 24px 16px; } }
+  </style>
+</head>
+<body>
+  <h1>Ari's case, before and after.</h1>
+  <p>TrustTrail's bounded visual upgrade, 29 October 2026. Compare the same Chapter 1 journey at 360, 768 and 1440 pixels. Screenshots are local files; this viewer sends no requests to external services.</p>
+  <div class="controls">
+    <label>Viewport width<select id="width"><option value="1440">1440 px — desktop</option><option value="768">768 px — tablet</option><option value="360">360 px — phone</option></select></label>
+    <label>Game screen<select id="state"><option value="home">Homepage</option><option value="briefing">Case briefing</option><option value="narrative">Narrative</option><option value="email">Email investigation</option><option value="discovery">Evidence discovered</option><option value="journal">Evidence Journal</option><option value="source">Independent source</option><option value="decision">Decision</option><option value="outcome">Consequence</option><option value="debrief">Reflection</option><option value="chapter-complete">Chapter complete</option></select></label>
+  </div>
+  <div class="comparison">
+    <figure><figcaption><strong>Before</strong><a id="before-link" href="before/1440-home.jpg">Open full screenshot</a></figcaption><div class="sheet" tabindex="0" role="region" aria-label="Before screenshot, scrollable"><img id="before" width="1440" height="1283" src="before/1440-home.jpg" alt="TrustTrail homepage before the visual upgrade at 1440 pixels"></div></figure>
+    <figure><figcaption><strong>After</strong><a id="after-link" href="after/1440-home.jpg">Open full screenshot</a></figcaption><div class="sheet" tabindex="0" role="region" aria-label="After screenshot, scrollable"><img id="after" width="1440" height="1839" src="after/1440-home.jpg" alt="TrustTrail homepage after the visual upgrade at 1440 pixels"></div></figure>
+  </div>
+  <p class="note">Full-page captures use a 1000 px viewport height. A modal occupies that viewport; the page visible below it in a tall full-page image is capture context, not an uncovered modal. Final after-images wait for artwork and finite reveal motion. Original before-captures can include a transient focus or reveal state.</p>
+  <p><a href="../visual-upgrade-validation.md">Validation and remaining work</a> · <a href="../visual-art-direction.md">Art direction</a> · <a href="../visual-artwork-prompts.md">Artwork provenance</a></p>
+  <script>
+    const width = document.getElementById('width');
+    const state = document.getElementById('state');
+    function update() {
+      for (const phase of ['before', 'after']) {
+        const path = `${phase}/${width.value}-${state.value}.jpg`;
+        const image = document.getElementById(phase);
+        image.src = path;
+        image.alt = `TrustTrail ${state.selectedOptions[0].text} ${phase} the visual upgrade at ${width.value} pixels`;
+        document.getElementById(`${phase}-link`).href = path;
+      }
+    }
+    width.addEventListener('change', update);
+    state.addEventListener('change', update);
+  </script>
+</body>
+</html>
+

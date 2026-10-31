@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TrustTrail — game-first visual review</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; background: #f5f3ee; color: #111827; }
+    * { box-sizing: border-box; }
+    body { max-width: 1440px; margin: auto; padding: 40px 32px 64px; }
+    h1 { font-size: clamp(32px, 4vw, 52px); letter-spacing: -.045em; line-height: 1.1; margin: 16px 0; }
+    h2 { font-size: 26px; letter-spacing: -.025em; margin: 0 0 16px; }
+    h3 { font-size: 18px; margin: 12px 0 8px; }
+    p { max-width: 80ch; font-size: 16px; line-height: 1.65; }
+    a { color: inherit; text-underline-offset: 4px; }
+    a:hover { color: #275b52; }
+    :focus-visible { outline: 3px solid #111827; outline-offset: 4px; }
+    .status { font-size: 14px; font-weight: 600; color: #4a5860; margin: 0; }
+    .links { display: flex; flex-wrap: wrap; gap: 16px 28px; margin: 24px 0; }
+    .links a { min-height: 44px; display: inline-flex; align-items: center; }
+    .play { background: #111827; color: #f5f3ee; padding: 10px 20px; border-radius: 3px; text-decoration: none; }
+    .play:hover { background: #1f3544; color: #fff; }
+    section { margin-top: 48px; }
+    .controls { display: flex; flex-wrap: wrap; gap: 24px; margin: 24px 0; }
+    label { display: grid; gap: 8px; font-size: 14px; font-weight: 600; }
+    select { min-height: 44px; padding: 8px 12px; font: inherit; color: #111827; background: #fff; border: 1px solid #687276; border-radius: 3px; }
+    figure { margin: 0; }
+    figcaption { font-size: 14px; line-height: 1.6; margin-top: 12px; }
+    .screen { max-height: 85vh; overflow: auto; border: 1px solid #98a4a0; overscroll-behavior: contain; background: #1f3544; }
+    .screen img { width: 100%; height: auto; display: block; }
+    .screen-link { display: inline-flex; align-items: center; min-height: 44px; margin-top: 8px; font-size: 14px; }
+    .comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+    .comparison img { display: block; width: 100%; height: auto; }
+    .comparison .screen { max-height: 70vh; }
+    .characters { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .characters img { display: block; width: 100%; height: 340px; object-fit: contain; background: #1f3544; }
+    .environments { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    .environments img { display: block; width: 100%; height: auto; }
+    .asset-note { font-size: 14px; color: #4a5860; }
+    .review-question { background: #eee9dc; padding: 28px; }
+    @media (max-width: 700px) { body { padding: 28px 16px 48px; } .comparison, .environments { grid-template-columns: 1fr; } .characters { gap: 12px; } .characters img { height: 200px; } .characters h3 { font-size: 15px; } .review-question { padding: 20px; } }
+  </style>
+</head>
+<body>
+  <p class="status">Product Owner review · 29 October 2026 · Adoption pending</p>
+  <h1>Ari's room.<br>Your investigation.</h1>
+  <p>An original illustrated stage with a present protagonist, compact game HUD, readable interactive artifacts and a case-file journal. The prototype uses TrustTrail's existing Chapter 1 reducer and content in memory. It does not access the player's saved progress.</p>
+  <nav class="links" aria-label="Review materials">
+    <a class="play" href="http://127.0.0.1:4384/art-direction.html">Play the local prototype ↗</a>
+    <a href="../game-first-art-direction.md">Art-direction specification</a>
+    <a href="../game-first-assets.md">Asset inventory & provenance</a>
+    <a href="../game-first-validation.md">Validation and limitations</a>
+  </nav>
+  <p class="asset-note">The play link requires the local preview: run <code>node scripts/review-art-direction.mjs</code> from the existing project. This review viewer and all screenshots work as local files.</p>
+  <section aria-labelledby="screen-title">
+    <h2 id="screen-title">Representative Chapter 1 stage</h2>
+    <p>Open the invitation, inspect the sender or destination, compare an independently opened directory, review your actual discoveries, and decide. Close the artifact to return to Ari's room. Choose the story view to see the dialogue presentation.</p>
+    <div class="controls">
+      <label>Viewport<select id="width"><option value="1440">1440 px — desktop</option><option value="768">768 px — tablet</option><option value="360">360 px — phone</option></select></label>
+      <label>Mode<select id="mode"><option value="investigation">Email investigation</option><option value="dialogue">Illustrated dialogue</option><option value="room">Room / artifact selection</option><option value="discovery">Evidence discovered</option><option value="journal">Evidence Journal</option><option value="decision">Decision scene</option></select></label>
+    </div>
+    <figure><div class="screen" tabindex="0" role="region" aria-label="Prototype screenshot, scrollable"><img id="screen" src="screenshots/1440-investigation.jpg" width="1440" height="1065" alt="Proposed TrustTrail Chapter 1 investigation stage at 1440 pixels"></div><figcaption>Actual browser capture. The room, portrait and artifact share a scene; all message text, evidence actions, dialogue and HUD remain real HTML in the playable prototype.</figcaption></figure>
+    <a class="screen-link" id="screen-link" href="screenshots/1440-investigation.jpg">Open full screenshot</a>
+  </section>
+  <section aria-labelledby="comparison-title">
+    <h2 id="comparison-title">Change in composition</h2>
+    <div class="comparison">
+      <figure><div class="screen" tabindex="0" role="region" aria-label="Current game screenshot, scrollable"><img src="../visual-review/after/1440-email.jpg" width="1440" height="1652" loading="lazy" alt="Current M1 investigation presented as a document workspace with website navigation"></div><figcaption><strong>Current implementation.</strong> Document workspace, website navigation, journal rail. This application remains unchanged.</figcaption></figure>
+      <figure><div class="screen" tabindex="0" role="region" aria-label="Proposed game screenshot, scrollable"><img src="screenshots/1440-investigation.jpg" width="1440" height="1065" loading="lazy" alt="Proposed scene with Ari in the foreground and the interactive email opened over the illustrated room"></div><figcaption><strong>Proposed system.</strong> Room and character establish the scene; the open artifact becomes the active reading surface. HUD and journal stay available.</figcaption></figure>
+    </div>
+  </section>
+  <section aria-labelledby="cast-title">
+    <h2 id="cast-title">One original protagonist, three expressions</h2>
+    <div class="characters">
+      <figure><img src="../../src/art-direction/assets/ari-curious-480.webp" width="480" height="720" loading="lazy" alt="Original Ari portrait with a curious expression"><h3>Curious</h3><figcaption>Investigation and early dialogue.</figcaption></figure>
+      <figure><img src="../../src/art-direction/assets/ari-uncertain-480.webp" width="480" height="720" loading="lazy" alt="Same Ari character with an uncertain expression"><h3>Uncertain</h3><figcaption>A moment of doubt, without fear or shame.</figcaption></figure>
+      <figure><img src="../../src/art-direction/assets/ari-composed-480.webp" width="480" height="720" loading="lazy" alt="Same Ari character with a composed expression"><h3>Composed</h3><figcaption>Decision/reflection; never predicts a correct answer.</figcaption></figure>
+    </div>
+  </section>
+  <section aria-labelledby="world-title">
+    <h2 id="world-title">A continuous illustrated world</h2>
+    <div class="environments">
+      <figure><img src="../../src/art-direction/assets/room-afternoon-800.webp" width="800" height="450" loading="lazy" alt="Ari's rented room in amber afternoon light"><h3>Chapter 1 · Afternoon</h3><figcaption>Used in the representative prototype.</figcaption></figure>
+      <figure><img src="../../src/art-direction/assets/room-evening-800.webp" width="800" height="450" loading="lazy" alt="The same room at early evening with a phone on the desk"><h3>Chapter 2 · Early evening</h3><figcaption>Prepared lighting variant. Chapter implementation pending.</figcaption></figure>
+      <figure><img src="../../src/art-direction/assets/room-night-800.webp" width="800" height="450" loading="lazy" alt="The same room at night with the desk lamp on"><h3>Chapter 3 · Night</h3><figcaption>Prepared lighting variant. No information is embedded in the blank screen.</figcaption></figure>
+      <figure><img src="../../src/art-direction/assets/recruitment-lounge-800.webp" width="800" height="450" loading="lazy" alt="Original fictional recruitment lounge environment study"><h3>Optional recruitment environment</h3><figcaption>A mood study, not a verified NovaTech office or a new canonical location.</figcaption></figure>
+    </div>
+    <figure style="max-width: 420px; margin-top: 28px;"><img src="../../src/art-direction/assets/stationery-480.webp" width="480" height="320" loading="lazy" alt="Unmarked folder, envelope and pencil in the matching illustration style" style="display:block;width:100%;height:auto;background:#1f3544;"><h3>Reusable case stationery</h3><figcaption>Journal cover and proposed chapter handoff atmosphere. All actual case labels remain HTML.</figcaption></figure>
+    <p class="asset-note">Built-in image generation; 8 original illustrations / 16 optimized variants / 1,239,338 bytes total. All new assets are isolated from the current production entry. <a href="../game-first-artwork-manifest.json">Exact file inventory</a> · <a href="../game-first-artwork-prompts.json">Actual prompt set</a>.</p>
+  </section>
+  <section class="review-question" aria-labelledby="decision-title">
+    <h2 id="decision-title">Review before adoption</h2>
+    <p>Review the character identity, room atmosphere, game HUD, dialogue/inspection composition and mobile readability. Approve this system for game-wide adoption, or identify the changes you want first. The existing production game, engine, scoring and saves remain in place.</p>
+  </section>
+  <script>
+    const width = document.getElementById('width');
+    const mode = document.getElementById('mode');
+    function update() {
+      const path = `screenshots/${width.value}-${mode.value}.jpg`;
+      const image = document.getElementById('screen');
+      image.src = path;
+      image.alt = `Proposed TrustTrail ${mode.selectedOptions[0].text} at ${width.value} pixels`;
+      document.getElementById('screen-link').href = path;
+    }
+    width.addEventListener('change', update);
+    mode.addEventListener('change', update);
+  </script>
+</body>
+</html>
+

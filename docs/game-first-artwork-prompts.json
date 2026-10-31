@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-29",
+  "mode": "built-in image generation",
+  "modelVersion": "not exposed by tool",
+  "status": "Product Owner visual review; unused by production game",
+  "sources": [
+    {
+      "name": "ari-curious",
+      "source": "exec-78acfef2-f13e-4c35-be12-6998d410b0cf.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent 2D narrative-game character portrait for TrustTrail. Create an ORIGINAL fictional protagonist named Ari, a 22-year-old Indonesian fresh graduate, shown from waist up, turned three-quarter toward the viewer's right. Warm medium-brown skin, short slightly wavy black hair with one recognizable loose forelock, dark expressive eyebrows, slim ordinary build, and a quiet thoughtful face. A deep desaturated teal overshirt with rolled sleeves over an ivory T-shirt. One hand lightly rests at the chin: attentive curiosity, not fear or exaggerated comedy. Strong readable silhouette, slightly enlarged expressive head, confident imperfect charcoal-ink contours, flat gouache color shapes, restrained paper grain and two-step cel-like shadows. Modern hand-illustrated graphic narrative game, no photorealism, no 3D, no generic anime, no glossy vector stock illustration. Palette: midnight #111827 contours, slate #1f3544 shadows, muted teal clothing, ivory and warm amber reflected light. Soft amber key light from upper left. Frame the COMPLETE hair, both shoulders, elbows and waist with generous transparent margin; no cropped hands or head. Genuinely transparent background. NO words, numbers, logos, watermark, scenery, interface or dialogue balloon. A reusable sprite with a clear likeness that can retain the same features in other expressions.",
+      "referenceRole": "none"
+    },
+    {
+      "name": "ari-uncertain",
+      "source": "exec-57a55922-c269-461b-a2e8-d2101b6a8976.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent game portrait expression variant for TrustTrail. Use Image 1, the project's original Ari portrait, as the exact character identity and illustration reference. Preserve Ari's facial proportions, warm brown skin, short wavy black hair and forelock, deep teal rolled-sleeve overshirt, ivory T-shirt, ink/gouache texture, warm upper-left lighting, waist-up scale and orientation toward the viewer's right. Change the gesture and expression to quiet uncertainty: slightly lifted inner brows, lips gently parted, one hand resting loosely at the opposite elbow, weighing an unexpected opportunity. Thoughtful, not terrified or distressed. Keep recognizable adult face and natural anatomy. Complete head, shoulders, elbows and waist with margin. STRICT clean cutout on genuinely transparent background: remove ALL background glow, haze, vignette, colored backdrop and ambient halo outside the silhouette. No scenery, text, dialogue, logo, watermark, interface, evidence or props. Same original visual style, no imitation of a commercial game.",
+      "referenceRole": "Only original project-generated illustration; no commercial reference image used"
+    },
+    {
+      "name": "ari-composed",
+      "source": "exec-8c785d90-539d-4c72-a16a-15bf79280897.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent Ari expression/gesture variant for an original 2D narrative detective game. Image 1 is the project's own Ari design; preserve the same likeness, face proportions, warm medium-brown skin, wavy short black forelock, ink contours and gouache grain. Same deep teal rolled-sleeve overshirt and ivory T-shirt, same warm light, waist-up framing and three-quarter orientation toward viewer's right. Change to a calm composed expression: relaxed brows, attentive steady eyes, mouth closed with only a very slight confident smile, one arm held naturally across the waist and the other relaxed. This is readiness to consider a decision, not celebration or a clue that a selected answer is correct. Complete head, shoulders, hands and waist, margins intact. Genuine transparent cutout background with NO background color, halo, mist, scenery, shadow outside silhouette or vignette. No text, logos, props, evidence, controls or speech balloons. Original illustration, no existing-game character.",
+      "referenceRole": "Only original project-generated illustration; no commercial reference image used"
+    },
+    {
+      "name": "room-afternoon",
+      "source": "exec-76b4dc23-3155-4b01-a8a7-a58b93ace066.png",
+      "prompt": "Use case: illustration-story. Asset type: wide original hand-illustrated 2D investigation-room background for TrustTrail. Image 1 is ONLY the project's own new Ari portrait for palette and ink/gouache treatment; do not put a character in this scene. Create Ari's modest Indonesian graduate's rented room at late afternoon, a full-width eye-level stage around 16:9. Richly composed but calm: slatted window and Indonesian neighborhood roofs on the left, a dark teal curtain, a lived-in wooden work desk across the middle, open laptop with entirely blank pale screen near the middle-right, plain notebooks and unmarked envelope at center, a small potted plant, a wall shelf with a few worn books. Left foreground is quieter dark negative space so a separate character sprite can stand there; right two-thirds have readable broad shapes behind an optional HTML artifact window. Desk, window and shelf have specific silhouettes, warm amber raking light against deep slate-blue shadows. Slightly exaggerated angular perspective, strong hand-drawn charcoal contours, flat gouache shapes, restrained grain, layered foreground/midground/background, cohesive with Image 1. Palette midnight #111827, slate #1f3544, muted teal, paper ivory #f5f3ee and amber #f0b35a. No characters, no readable text, no letters/numbers/logos, no message or UI on laptop, no controls, no annotation, no gradients as graphic decoration, no 3D, no photorealism. Original room layout; do not imitate any existing game's locations.",
+      "referenceRole": "Only original project-generated illustration; no commercial reference image used"
+    },
+    {
+      "name": "room-evening",
+      "source": "exec-ef904acb-8f2d-430d-a079-e75f2e722e5c.png",
+      "prompt": "Use case: lighting-weather. Asset type: Chapter 2 background variation for TrustTrail's original 2D investigation game. Image 1 is the exact original Ari-room environment. Preserve the room layout, perspective, desk/window/chair/plant/shelf positions, all recognizable architecture, charcoal ink/gouache rendering, grain and restrained palette. Change only time and small scene dressing: early evening after sunset, cool teal/slate sky through the same neighborhood window, a warm desk lamp now on, and a phone lying on the desk near the blank laptop. The phone face must be blank and too distant to read. No person. The warm lamp should feel ordinary and inviting while the room grows quiet; not horror or cyberpunk. Compose the same 16:9 stage so existing portrait and HTML interface placements remain usable. No readable text, letters, numbers, messages, logos, UI, evidence or annotations. This environment adds atmosphere, no gameplay clue. Keep broad clear silhouettes and original painterly 2D style.",
+      "referenceRole": "Only original project-generated illustration; no commercial reference image used"
+    },
+    {
+      "name": "room-night",
+      "source": "exec-9e5b38f5-f380-44d0-bf80-bae596409411.png",
+      "prompt": "Use case: lighting-weather. Asset type: Chapter 3 night environment for TrustTrail's original 2D narrative game. Image 1 is the project's own Ari room. Preserve EXACT architecture, composition, perspective, desk/window/chair/shelf/plant positions and hand-inked gouache style, so it is recognizably the same room. Change only time and lighting: a deep slate night sky and a few soft anonymous neighborhood window lights outside; warm amber desk lamp on, subdued cool light from the entirely blank laptop screen. Add no person or new important object. Quiet focus and a moment to pause, not horror, neon or a hacking fantasy. Strong broad shapes and legible silhouette, original paper grain, restrained midnight/slate/teal/ivory/amber palette. Wide 16:9 composition with clear left foreground for an independent character sprite and right reading space for an HTML portal artifact. No words, numbers, code, UI, logos, dialogue, evidence labels, controls or rendered messages. Maintain the project's own original scene identity.",
+      "referenceRole": "Only original project-generated illustration; no commercial reference image used"
+    },
+    {
+      "name": "recruitment-lounge",
+      "source": "exec-f88ce935-dedd-4a74-96f4-8f65e23a39f6.png",
+      "prompt": "Use case: illustration-story. Asset type: original 2D narrative-game environment concept for TrustTrail, fictional recruitment setting / Chapter 2 asset study. Image 1 is the project's own Ari room art; keep its hand-inked gouache shapes, restrained paper grain, angular perspective, palette and quiet mood. Create a wide 16:9 view of a completely fictional modest recruitment lounge: a small waiting bench, closed interview-room door without markings, potted tropical plant, broad windows looking onto anonymous Indonesian mid-rise roofs, and a small plain reception desk with an unmarked folder. No people, no corporate logos, no notices or text anywhere. Desaturated slate/teal architecture, ivory walls and warm amber late-afternoon window light; carefully layered foreground and middle distance, clear silhouettes and no busy tiny details. The image is a proposed fictional story atmosphere, NOT evidence of the company or a real location. Leave a calm darker area at lower left for a separate portrait, and broad mid-right wall shapes for HTML artifacts. No UI, dialogue, letters, numbers, branding, readable documents, 3D or photorealism. Compose an original room, without recreating any commercial game's imagery.",
+      "referenceRole": "Only original project-generated illustration; no commercial reference image used"
+    },
+    {
+      "name": "stationery",
+      "source": "exec-717f24db-503f-4f8d-af05-2893306df23d.png",
+      "prompt": "Use case: illustration-story. Asset type: reusable small transparent stationery still-life for the original TrustTrail game, case-file journal and chapter handoff. Image 1 is the project's own Ari room; use the same original hand-inked/gouache style, slate shadows, amber light, restrained paper grain and colors. A simple cluster of a closed amber manila folder with a dark binder clip, an ivory envelope, a short teal pencil and one unmarked square paper slip, seen at a three-quarter angle. Strong clear silhouettes, generous empty margins and genuine transparent background. Warm light from upper left. These are ordinary atmosphere objects, not evidence. No writing, letters, numbers, stamps, photos, strings, logos, map pins, UI controls, clue icons, labels, arrows or watermark. No person, no surrounding room, no shadow/glow outside the object's short natural contact shadow. Cohesive with the supplied original art, not a commercial game's objects.",
+      "referenceRole": "Only original project-generated illustration; no commercial reference image used"
+    }
+  ]
+}

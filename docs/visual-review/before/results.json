@@ -1,0 +1,170 @@
+{
+  "browser": "156.0.8078.73",
+  "results": [
+    {
+      "width": 1440,
+      "state": "home",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "state": "briefing",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "state": "narrative",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "state": "email",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "state": "discovery",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "state": "journal",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "state": "source",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "state": "decision",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "state": "outcome",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "state": "debrief",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "state": "chapter-complete",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "state": "home",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "state": "briefing",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "state": "narrative",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "state": "email",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "state": "discovery",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "state": "journal",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "state": "source",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "state": "decision",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "state": "outcome",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "state": "debrief",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "state": "chapter-complete",
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "state": "home",
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "state": "briefing",
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "state": "narrative",
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "state": "email",
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "state": "discovery",
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "state": "journal",
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "state": "source",
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "state": "decision",
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "state": "outcome",
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "state": "debrief",
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "state": "chapter-complete",
+      "overflow": false
+    }
+  ]
+}

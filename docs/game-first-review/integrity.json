@@ -1,0 +1,305 @@
+{
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "file": "src/app/App.tsx",
+      "sha256": "0fc51536fef7747f176bd6196f83d87aafe3198b5cebfc4402eeab8e3542437f",
+      "unchanged": true
+    },
+    {
+      "file": "src/app/game-context.ts",
+      "sha256": "3908b1c76e4be420491083cdbf9d66d25c9e2a4895eb02dd0badfea10e2392b0",
+      "unchanged": true
+    },
+    {
+      "file": "src/app/GameProvider.tsx",
+      "sha256": "29942fd0e9f7b3ffc1197e367a797771ac5b737d6a4a2897bd03a5480a715318",
+      "unchanged": true
+    },
+    {
+      "file": "src/components/AriScene.tsx",
+      "sha256": "bde5e57c6aab0c3d0e6332871ca2e25a092b97885ffd47513e31a9bc9d877391",
+      "unchanged": true
+    },
+    {
+      "file": "src/components/CasePreview.tsx",
+      "sha256": "d13d8aa8610a437f5863d3a24fa1f4bfc07696d71c8b0b2fff05836b31b54095",
+      "unchanged": true
+    },
+    {
+      "file": "src/components/StoryArtwork.tsx",
+      "sha256": "7fa4dec1de2a0c0eba029d171b8ce76329b017c2ea5c9a9644456a3ed336a6fe",
+      "unchanged": true
+    },
+    {
+      "file": "src/components/TrailMark.tsx",
+      "sha256": "bdc3a36303512db28959b64de3587f6b854afee7b04fd5f2eba87f8faadf58cb",
+      "unchanged": true
+    },
+    {
+      "file": "src/components/ui/Button.tsx",
+      "sha256": "987ff2c6f12104d9a0da45fcaf2b53389d19a0262c67e2ffff490a46a9e1095e",
+      "unchanged": true
+    },
+    {
+      "file": "src/components/ui/Drawer.tsx",
+      "sha256": "6a7f4fee3146478610b77137b1505124b77d06044d6ab1f8832922c4b57c2380",
+      "unchanged": true
+    },
+    {
+      "file": "src/components/ui/Notice.tsx",
+      "sha256": "225c84f14ad4e6a44812b9d6ef9745e73a32003bc7577475a94f6f1b466db3dc",
+      "unchanged": true
+    },
+    {
+      "file": "src/components/ui/Tabs.tsx",
+      "sha256": "b652328b753773270988d0179a8acd32cafa9d245c25737945a1a9c91f78f3be",
+      "unchanged": true
+    },
+    {
+      "file": "src/content/chapters/c1.ts",
+      "sha256": "eca1dd2c58dbf932c87e6306a7e9584406063444d479243e60d7ea832cdcd1e3",
+      "unchanged": true
+    },
+    {
+      "file": "src/content/scenario.ts",
+      "sha256": "fac2d7821ceb758faa7ff3598db03614a305c12cb64add1ea938b0dc9b2e026c",
+      "unchanged": true
+    },
+    {
+      "file": "src/engine/reducer.ts",
+      "sha256": "dc5cbc72e6c95b8ededc3ed53e7a2aa10ab6c4847e99019a3f4d00f521dc58a3",
+      "unchanged": true
+    },
+    {
+      "file": "src/engine/types.ts",
+      "sha256": "e374976c1108c50aff6189ed29288e1433ce31cdbf4b06d15664244e717e4dbb",
+      "unchanged": true
+    },
+    {
+      "file": "src/engine/validate.ts",
+      "sha256": "cc27227d44809402650c66f0053ae4a962fa2db3bbbeb2f73c2c7137af67f003",
+      "unchanged": true
+    },
+    {
+      "file": "src/features/gameplay/ChapterViews.tsx",
+      "sha256": "0df586726b93b75f46fbfe22ae3086ba2889415d2d4216f5f361aa31d671b5a2",
+      "unchanged": true
+    },
+    {
+      "file": "src/features/gameplay/EvidenceJournal.tsx",
+      "sha256": "40b0dc7a5be43902cb160baac310408cd0c0ec9bf8c061c2c81a08db14bc9ceb",
+      "unchanged": true
+    },
+    {
+      "file": "src/features/gameplay/Investigation.tsx",
+      "sha256": "373deb67b64abb675758aa9b619bba227c2025b77725ff233e1a3b3416db994d",
+      "unchanged": true
+    },
+    {
+      "file": "src/features/gameplay/ProgressControls.tsx",
+      "sha256": "b700452f424547d537c92130a9b69b56f2c4436cc9fc763a377c3decfa821b82",
+      "unchanged": true
+    },
+    {
+      "file": "src/features/gameplay/SourcePanel.tsx",
+      "sha256": "476bf90c644c2383c02e9ee414c0f71952e23f0585459f83ac168e92238e31ab",
+      "unchanged": true
+    },
+    {
+      "file": "src/lib/persistence.ts",
+      "sha256": "71e39e54d8c9fd3ae927dc0c8ff397561fe23cf4ebdb25c28779b062d74cede2",
+      "unchanged": true
+    },
+    {
+      "file": "src/main.tsx",
+      "sha256": "673339fbe01ad81283bd77841ff73743b2aa28644a3555a6eab0a8a09e69b7d9",
+      "unchanged": true
+    },
+    {
+      "file": "src/pages/GuidePage.tsx",
+      "sha256": "a273b6634d7b0238e3de0338c321662e9aa1b30e92f4355ae6e9e9db8d7f8c35",
+      "unchanged": true
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "sha256": "d8bdc270368f52607a1a7f485e1a424c6c2fa62d7119c7330f388586da2020e0",
+      "unchanged": true
+    },
+    {
+      "file": "src/pages/NotFoundPage.tsx",
+      "sha256": "1a78670e0621e1b112b32c4f9a062b0913b0c74500de682dea128791eddba472",
+      "unchanged": true
+    },
+    {
+      "file": "src/pages/PlayPage.tsx",
+      "sha256": "32616ad7f9d247551bf7da2592d07502762ec9d214775c2ae61b34319f87d1bf",
+      "unchanged": true
+    },
+    {
+      "file": "src/pages/ReportPage.tsx",
+      "sha256": "b6695def73ba50a67f6625e462dcc4b1cbb77474cf18b26e9b41bddf3d03c771",
+      "unchanged": true
+    },
+    {
+      "file": "src/styles/dossier.css",
+      "sha256": "a55bc0e10ed431b6dbd367dc08e18319c1126bb24c8f458fba31737274a4f126",
+      "unchanged": true
+    },
+    {
+      "file": "src/styles/index.css",
+      "sha256": "621f7852c909a04c4cbdb878f682f9f0c60e7aba99bf4449dc588a719ebafdb4",
+      "unchanged": true
+    },
+    {
+      "file": "tests/integration/chapter-one.test.tsx",
+      "sha256": "f82d630e3ddc2e7093ea24a44d192ea738394095bab2a68927225978e6de5399",
+      "unchanged": true
+    },
+    {
+      "file": "tests/setup.ts",
+      "sha256": "8c5560bcd02f7f12f82917cc6ac1ae220621469e6068d83cf2cbbfcdca546c68",
+      "unchanged": true
+    },
+    {
+      "file": "tests/smoke/chapter-one.spec.ts",
+      "sha256": "fff4836a52751bf9211790eb8deefd228691007c4f1e7eb1c5939d301e24a226",
+      "unchanged": true
+    },
+    {
+      "file": "tests/smoke/foundation.spec.ts",
+      "sha256": "4d9676b62849bb3dd7a98081105a7776e2ccbb69b8949eac5021e8700aa8f43e",
+      "unchanged": true
+    },
+    {
+      "file": "tests/smoke/helpers.ts",
+      "sha256": "430844edddbf70163e7ac59135978786ebf595560e0a4e74f57c043acb8365dc",
+      "unchanged": true
+    },
+    {
+      "file": "tests/smoke/visual-dossier.spec.ts",
+      "sha256": "63138d3eba9083b70cc21f6f5bdb254bf8370488e2073cf5ddc4dab7b1a193b4",
+      "unchanged": true
+    },
+    {
+      "file": "tests/unit/controls.test.tsx",
+      "sha256": "46eaecaf48914ecf319dcd4874b4d84ad265174fee14210421c0ee82549e8b40",
+      "unchanged": true
+    },
+    {
+      "file": "tests/unit/game.test.ts",
+      "sha256": "0ebedbe8ba1ca6073573287a76dd53b353428e22fc233b0979ea83d95b95b7eb",
+      "unchanged": true
+    },
+    {
+      "file": "tests/unit/persistence.test.ts",
+      "sha256": "01ffbc235ed21524190dbf538142877b8a34f936f2763290a5db6e05135de4b2",
+      "unchanged": true
+    },
+    {
+      "file": "public/artwork/ari-workspace-1200.webp",
+      "sha256": "ef4904f6b592a0eec582f8a544ff3f7ad4b06f2476b97e31d8251d6be7a60ebd",
+      "unchanged": true
+    },
+    {
+      "file": "public/artwork/ari-workspace-600.webp",
+      "sha256": "c23ec4c7ee735fce0f105b966e4547a461437df2bab303bd4b4f84132b231324",
+      "unchanged": true
+    },
+    {
+      "file": "public/artwork/case-dossier-480.webp",
+      "sha256": "9bc35589be74a404c3311ad8f8a3ef1390f0d7ba5ba6bc15ac202a2e4ae3aaf2",
+      "unchanged": true
+    },
+    {
+      "file": "public/artwork/case-dossier-960.webp",
+      "sha256": "46766d41d2911114bd986d60c77245ba17cdb1f4b6ab946f14949195e46c28d9",
+      "unchanged": true
+    },
+    {
+      "file": "public/artwork/desk-vignette-480.webp",
+      "sha256": "8b443c488575276cb813f432d63cc0bf9d1b63607645e903448dc7f968c4f0a2",
+      "unchanged": true
+    },
+    {
+      "file": "public/artwork/desk-vignette-960.webp",
+      "sha256": "89d174737622111d0696db6ef759e8899596149e6db0b0ce6146bcd5275bfd1b",
+      "unchanged": true
+    },
+    {
+      "file": "public/favicon.svg",
+      "sha256": "4b9f3fc097687636cf52f692c59eee6f97c65bb754ad6515c567afd87ac83ee4",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/inter-latin.woff2",
+      "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/Inter-OFL.txt",
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/space-grotesk-600.woff2",
+      "sha256": "685bbbf69fa616df1ef81847c85fc76be097ddfb3468ff2257be54511ab3130f",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/SpaceGrotesk-OFL.txt",
+      "sha256": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72",
+      "unchanged": true
+    },
+    {
+      "file": "GDD.md",
+      "sha256": "30dbef06c9f384d1308eb3d27effeabdcfe6080f6db71ffe4cc2f296fe8b042d",
+      "unchanged": true
+    },
+    {
+      "file": "TrustTrail_Production_Blueprint_v1.1.md",
+      "sha256": "eb660e6e730e8255c365f023757c34c92c7a20d4c597cee77d4dd468cc8fe26f",
+      "unchanged": true
+    },
+    {
+      "file": "docs/ux-architecture.md",
+      "sha256": "73f0daa6e51debc27006ef80deaf39647c468e89adba6e8d821ce4a0818209dc",
+      "unchanged": true
+    },
+    {
+      "file": "package.json",
+      "sha256": "573a318653514652473a4067f32d1d43ee8573c526aa50de70ce2dc9e4324af1",
+      "unchanged": true
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "0b4a2afc770758dd7732b8948ce437f1076c20102bca6d9385678abbe2043f3d",
+      "unchanged": true
+    },
+    {
+      "file": ".nvmrc",
+      "sha256": "6e775beae185bb3f5837d2f6d3fbe910e6f60e18fa507e661e312e84d707a92f",
+      "unchanged": true
+    },
+    {
+      "file": ".npmrc",
+      "sha256": "cde76ca04e048c3eba070a2c0dfcf5b723cf6014eab177157096b924f24ec4ca",
+      "unchanged": true
+    },
+    {
+      "file": "index.html",
+      "sha256": "ed8a5e8e81d1a78e299f47179df95b30f13a098e0475286530af510fa132e02a",
+      "unchanged": true
+    },
+    {
+      "file": "vite.config.ts",
+      "sha256": "0b3a37f89ff2638ac8c45f1bb3e6613594b3011556b9d04c424a0f51e944c615",
+      "unchanged": true
+    },
+    {
+      "file": "playwright.config.ts",
+      "sha256": "4a576deb2ae3e83d3bf5926c6c57c5f510808c852bab0c93ad0ff05696ce837c",
+      "unchanged": true
+    }
+  ]
+}

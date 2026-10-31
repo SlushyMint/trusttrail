@@ -1,0 +1,50 @@
+[
+  {
+    "name": "case-dossier",
+    "width": 480,
+    "file": "public/artwork/case-dossier-480.webp",
+    "bytes": 39370,
+    "source": "exec-651b3edd-c2cd-48a9-8a5b-624f242ec5e0.png",
+    "sourceSha256": "51D1F70C2B7DF34AEAEB4C91964715D8EF1B1D820F78766CDA011673F616B4ED"
+  },
+  {
+    "name": "case-dossier",
+    "width": 960,
+    "file": "public/artwork/case-dossier-960.webp",
+    "bytes": 132648,
+    "source": "exec-651b3edd-c2cd-48a9-8a5b-624f242ec5e0.png",
+    "sourceSha256": "51D1F70C2B7DF34AEAEB4C91964715D8EF1B1D820F78766CDA011673F616B4ED"
+  },
+  {
+    "name": "ari-workspace",
+    "width": 600,
+    "file": "public/artwork/ari-workspace-600.webp",
+    "bytes": 22602,
+    "source": "exec-17e4788a-9800-4265-9ca2-4a1db529e16d.png",
+    "sourceSha256": "B58906A6EC3F641E2CB783C12C3C807731512C9E74DF1A055889A5EC816FE619"
+  },
+  {
+    "name": "ari-workspace",
+    "width": 1200,
+    "file": "public/artwork/ari-workspace-1200.webp",
+    "bytes": 69792,
+    "source": "exec-17e4788a-9800-4265-9ca2-4a1db529e16d.png",
+    "sourceSha256": "B58906A6EC3F641E2CB783C12C3C807731512C9E74DF1A055889A5EC816FE619"
+  },
+  {
+    "name": "desk-vignette",
+    "width": 480,
+    "file": "public/artwork/desk-vignette-480.webp",
+    "bytes": 12406,
+    "source": "exec-e3551fed-5a41-4d64-a30e-b9d36c34a77a.png",
+    "sourceSha256": "26557ACC2F2E04AEFC4A5B0041BA379142431002710FD2B50B3DCA91B7D2B8A8"
+  },
+  {
+    "name": "desk-vignette",
+    "width": 960,
+    "file": "public/artwork/desk-vignette-960.webp",
+    "bytes": 45358,
+    "source": "exec-e3551fed-5a41-4d64-a30e-b9d36c34a77a.png",
+    "sourceSha256": "26557ACC2F2E04AEFC4A5B0041BA379142431002710FD2B50B3DCA91B7D2B8A8"
+  }
+]

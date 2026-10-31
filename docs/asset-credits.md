@@ -1,0 +1,18 @@
+# Asset and font provenance
+
+**Current production assets:** the approved dual-OS game uses the original coastal pixel wallpaper (`public/pixel/relay-coast.png`), original pixel icons in `src/features/os/PixelIcon.tsx`, the matching stepped-signal SVG favicon, Inter and Silkscreen. [Exact wallpaper prompt/provenance](pixel-desktop-review/assets.json), [Silkscreen OFL](../public/fonts/Silkscreen-OFL.txt), [production validation](dual-os-integration/validation.md). Earlier illustrated assets listed below are historical and are not rendered by the production entry.
+
+
+29 October 2026. All assets are local. No third-party image, font or script request is needed while playing.
+
+| Asset | Author/source | License/use |
+|---|---|---|
+| TrustTrail mark, case-folder illustration and favicon | Original project SVG/CSS, retained/derived from Phase 1 | Project-authored; no copied commercial UI branding |
+| Ari at the desk | Original SVG in `src/components/AriScene.tsx`, authored for TrustTrail during M1 | Code-native editorial scene; fictional person; no real recruiter photo or external reference image |
+| Case dossier, Ari's workspace and desk vignette | AI-generated for TrustTrail with the available built-in image-generation tool on 29 October 2026; optimized local WebP variants in `public/artwork/` | Fictional editorial illustrations; no reference photograph, real person, embedded interface text or evidence. See [generation brief and provenance](visual-artwork-prompts.md). The original SVG remains the workspace fallback. |
+| Inter Latin WOFF2, variable weight | The Inter Project Authors; [Google Fonts source](https://github.com/google/fonts/tree/main/ofl/inter), [upstream project](https://github.com/rsms/inter) | SIL Open Font License 1.1; full copyright/license redistributed in [Inter-OFL.txt](../public/fonts/Inter-OFL.txt) |
+| Space Grotesk Latin WOFF2, weight 600 | The Space Grotesk Project Authors; [Google Fonts source](https://github.com/google/fonts/tree/main/ofl/spacegrotesk), [upstream project](https://github.com/floriankarsten/space-grotesk) | SIL Open Font License 1.1; full copyright/license in [SpaceGrotesk-OFL.txt](../public/fonts/SpaceGrotesk-OFL.txt) |
+
+Font binaries were downloaded on this date from the official `fonts.gstatic.com` URLs provided by Google Fonts CSS for Inter 400/600/700 and Space Grotesk 600. The three Inter weight requests returned identical variable-font bytes, so one local file is retained (48,256 bytes), alongside Space Grotesk 600 (13,284 bytes). No font software was modified. CSS preloads these two files with `font-display: swap` and usable system fallbacks. Latin coverage includes Indonesian copy and punctuation; unsupported scripts fall back to the system font.
+
+Source WOFF2 URLs are retained in ignored `.cache/m1-font-sources.json` for reproduction. All message text, names, domains and numerical counts remain real DOM text. The fictional NovaTech identity is not a claim of real-world name uniqueness. AI-assisted authored code/copy/art should be disclosed if the final verified competition rules require it. The initial M1 illustrations were code-native SVG; the subsequent bounded visual pass added the three generated raster illustrations listed above. No third-party stock-art license is asserted for generated artwork.

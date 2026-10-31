@@ -1,0 +1,30 @@
+.os-desktop .px-case-heading { margin-top: 16px; }
+.os-layout-controls { position: absolute; top: 84px; right: 36px; display: flex; align-items: center; gap: 12px; }
+.os-layout-controls button { min-height: 36px; padding: 6px 12px; border: 1px solid var(--px-highlight); background: var(--px-reading); color: var(--px-text); font-size: 12px; }
+.os-layout-controls button:hover { background: var(--px-raised); color: var(--px-teal); }
+.os-desktop .os-draggable-titlebar { min-height: 44px; cursor: grab; touch-action: none; user-select: none; }
+.os-desktop [data-dragging='true'] { will-change: transform; }
+.os-desktop [data-dragging='true'] .os-draggable-titlebar { cursor: grabbing; }
+.os-desktop .px-titlebar h2 { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.os-desktop .px-window-controls { margin-left: 0; }
+.os-window-position { position: relative; margin-left: auto; flex: none; }
+.os-window-position summary { display: flex; align-items: center; justify-content: center; width: 38px; min-height: 40px; list-style: none; font-size: 22px; cursor: pointer; color: var(--px-muted); }
+.os-window-position summary::-webkit-details-marker { display: none; }
+.os-window-position summary:hover, .os-window-position[open] summary { color: var(--px-teal); background: var(--px-reading); }
+.os-window-position-panel { position: absolute; right: -114px; top: 100%; width: 248px; z-index: 2; padding: 12px; background: var(--px-surface); border: 1px solid var(--px-highlight); box-shadow: 4px 4px var(--px-edge); cursor: default; }
+.os-window-position-panel p { margin-bottom: 10px; font-size: 13px; line-height: 1.6; color: var(--px-muted); }
+.os-window-position-panel { overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
+.os-window-position-panel[data-side='above'] { top: auto; bottom: 100%; }
+.os-window-nudge { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-bottom: 8px; }
+.os-window-position-panel button { display: block; width: 100%; min-height: 44px; padding: 10px; border: 0; background: var(--px-reading); text-align: left; margin-top: 4px; }
+.os-window-position-panel button:hover { background: var(--px-raised); color: var(--px-teal); }
+.os-desktop .px-window[data-slot] { position: absolute; grid-column: 1 / -1; grid-row: 1 / -1; top: 0; margin: 0; height: 100%; max-height: none; }
+.os-desktop .px-window[data-slot='left'] { left: 0; width: calc(56% - 8px); }
+.os-desktop .px-window[data-slot='right'] { left: calc(56% + 8px); width: calc(44% - 8px); }
+.os-desktop .px-window.is-maximized { left: 0; top: 0; width: 100%; height: 100%; margin: 0; max-height: none; }
+.os-desktop .px-window[data-slot] .px-mail-panes { grid-template-columns: 140px minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); }
+.os-desktop .px-window[data-slot] .px-mail-list { min-height: 0; overflow-y: auto; }
+.os-desktop .px-window[data-slot] .px-letter { padding-inline: 20px; }
+.os-desktop .px-window[data-slot] .px-mail-actions { flex: none; gap: 12px; flex-wrap: wrap; }
+@media (max-width: 1250px) and (min-width: 1120px) { .os-layout-controls { right: 22px; } }
+@media (prefers-reduced-motion: reduce) { .os-layout-controls *, .os-window-position * { transition: none !important; animation: none !important; } }

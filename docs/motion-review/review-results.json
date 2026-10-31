@@ -1,0 +1,47 @@
+{
+  "errors": [],
+  "storageUnchanged": true,
+  "windows": [
+    {
+      "name": "Mail",
+      "x": 144,
+      "y": 172,
+      "width": 697.59375,
+      "height": 728,
+      "layer": "6"
+    },
+    {
+      "name": "Browser",
+      "x": 857.59375,
+      "y": 172,
+      "width": 546.390625,
+      "height": 728,
+      "layer": "30"
+    },
+    {
+      "name": "Case Files",
+      "x": 1054,
+      "y": 216,
+      "width": 350,
+      "height": 580.5,
+      "layer": "5"
+    }
+  ],
+  "responsive": [
+    {
+      "width": 360,
+      "noOverflow": true,
+      "noWindowHandles": true
+    },
+    {
+      "width": 390,
+      "noOverflow": true,
+      "noWindowHandles": true
+    },
+    {
+      "width": 768,
+      "noOverflow": true,
+      "noWindowHandles": true
+    }
+  ]
+}

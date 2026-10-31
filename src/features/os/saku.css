@@ -1,0 +1,169 @@
+/* Review-only Saku proposal. Approved desktop tokens/art are retained. */
+.dual-review { position: relative; }
+.dual-desktop { min-height: 700px; }
+.dual-desktop .dual-case-context { display: none; }
+.dual-desktop .px-window-journal { max-height: calc(100% - 118px); }
+.dual-review .px-titlebar h2 { white-space: nowrap; }
+.dual-review .px-case-flow { max-width: 780px; }
+.dual-case-context { display: flex; align-items: flex-start; gap: 14px; padding: 24px 20px; border-bottom: 1px solid var(--px-rule); background: var(--px-reading); }
+.dual-case-stamp { font: 22px var(--px-pixel); color: var(--px-teal); padding: 10px; border: 1px solid var(--px-teal); flex: none; }
+.dual-case-context h3 { font-size: 19px; font-weight: 600; margin: 5px 0; line-height: 1.4; }
+.dual-case-context > div > span { color: var(--px-muted); font-size: 12px; }
+.saku-os { display: flex; flex-direction: column; height: 100dvh; min-height: 500px; background: var(--px-ground); }
+.saku-status-bar { display: flex; align-items: center; justify-content: space-between; flex: none; gap: 16px; padding: max(10px, env(safe-area-inset-top)) 20px 9px; min-height: 40px; background: var(--px-ground); font: 11px/1.5 var(--px-pixel); }
+.saku-status-bar > span { display: inline-flex; align-items: center; gap: 8px; }
+.saku-status-bar .px-icon { width: 15px; height: 15px; }
+.saku-status-bar > span:last-child { color: var(--px-muted); }
+.saku-status-signal { color: var(--px-teal); font: 13px/1 var(--px-body); letter-spacing: 2px; }
+.saku-review-note { flex: none; text-align: center; min-height: 24px; padding: 3px 16px; font-size: 11px; color: var(--px-muted); background: var(--px-reading); border-block: 1px solid var(--px-rule); }
+.saku-review-note > span { color: var(--px-teal); margin: 0 6px; }
+.saku-main { position: relative; display: flex; flex-direction: column; flex: 1; min-height: 0; overflow: auto; scrollbar-width: thin; }
+.saku-app-header { display: flex; align-items: center; gap: 12px; padding: 8px 16px; min-height: 76px; flex: none; border-bottom: 1px solid var(--px-rule); background: var(--px-surface); }
+.saku-back { width: 44px; height: 44px; flex: none; padding: 0; display: grid; place-items: center; background: var(--px-raised); border: 1px solid var(--px-highlight); color: var(--px-text); font: 26px/1 var(--px-body); }
+.saku-back:hover { border-color: var(--px-teal); color: var(--px-teal); }
+.saku-app-header > div { flex: 1; min-width: 0; }
+.saku-app-header p { font: 11px/1.5 var(--px-pixel); color: var(--px-muted); }
+.saku-app-header h1 { font: 22px/1.4 var(--px-pixel); margin-top: 2px; }
+.saku-header-icon .px-icon { width: 34px; height: 34px; }
+.saku-notification { flex: none; background: var(--px-ground); }
+.saku-notification:empty { display: none; }
+.saku-notification .px-notification { margin: 10px 16px; box-shadow: none; border: 1px solid var(--px-highlight); padding: 9px 10px 9px 12px; align-items: center; gap: 10px; }
+.saku-notification .px-notification strong { font-size: 13px; }
+.saku-notification .px-notification p { font-size: 12px; margin-top: 1px; }
+.saku-notification .px-notification > .px-icon { width: 27px; height: 27px; margin: 0; }
+.saku-notification .px-notification > button { width: 44px; height: 44px; margin: 0; flex: none; }
+.saku-home { position: relative; flex: 1; min-height: 600px; padding: 30px 24px 24px; background: var(--px-ground) url('/pixel/relay-coast.png') 78% bottom / auto 100% no-repeat; display: flex; flex-direction: column; }
+.saku-home-title h1 { font: 28px/1.15 var(--px-pixel); color: var(--px-text); margin: 18px 0 16px; letter-spacing: -1px; }
+.saku-home-title h1 span { display: block; color: var(--px-teal); }
+.saku-home-title > p:last-child { font-size: 14px; line-height: 1.6; color: var(--px-muted); }
+.saku-case-link { display: flex; align-items: flex-start; gap: 12px; width: 100%; margin: 30px 0 26px; padding: 15px 0; color: var(--px-text); background: #0b1423e8; border: 0; border-block: 1px solid var(--px-highlight); text-align: left; }
+.saku-case-link:hover { border-color: var(--px-teal); }
+.saku-case-number { color: var(--px-teal); font: 22px/1.4 var(--px-pixel); flex: none; }
+.saku-case-link > span:nth-child(2) { flex: 1; min-width: 0; }
+.saku-case-link > span:nth-child(2) > span { display: block; font-size: 12px; color: var(--px-muted); }
+.saku-case-link > span:nth-child(2) > span:first-child { font: 11px/1.7 var(--px-pixel); }
+.saku-case-link strong { display: block; font-size: 15px; font-weight: 500; margin: 2px 0 6px; }
+.saku-case-link > span:last-child { color: var(--px-teal); }
+.saku-home-apps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px 12px; align-items: start; }
+.saku-app-icon { display: flex; align-items: center; flex-direction: column; gap: 9px; min-height: 90px; min-width: 0; padding: 6px 0; border: 1px solid transparent; background: transparent; color: var(--px-text); font: 12px/1.5 var(--px-pixel); }
+.saku-app-icon:hover { border-color: var(--px-highlight); background: #142231aa; }
+.saku-icon-art { position: relative; display: block; width: 48px; height: 48px; }
+.saku-icon-art > .px-icon { width: 48px; height: 48px; filter: drop-shadow(2px 3px var(--px-edge)); }
+.saku-badge { position: absolute; right: -6px; top: -6px; min-width: 21px; height: 22px; border: 2px solid var(--px-ground); background: var(--px-amber); color: var(--px-ground); font: 12px/18px var(--px-body); text-align: center; padding-inline: 3px; }
+.saku-home-footer { display: flex; align-items: center; gap: 10px; margin-top: auto; padding-top: 26px; color: var(--px-muted); font: 11px/1.6 var(--px-pixel); }
+.saku-home-footer .px-icon { width: 24px; height: 24px; }
+.saku-system-navigation { display: flex; justify-content: space-around; flex: none; padding: 5px 16px max(7px, env(safe-area-inset-bottom)); border-top: 1px solid var(--px-highlight); background: var(--px-reading); min-height: 66px; gap: 12px; z-index: 10; }
+.saku-system-navigation > button { display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 3px; min-width: 72px; min-height: 48px; padding: 4px 8px; border: 0; background: transparent; color: var(--px-muted); font-size: 11px; }
+.saku-system-navigation > button:hover, .saku-system-navigation > button.is-current { color: var(--px-teal); }
+.saku-system-navigation > button > span:first-child { font-size: 23px; line-height: 22px; }
+.saku-system-navigation .px-icon { width: 23px; height: 23px; }
+.saku-switch-symbol { font-size: 23px; }
+.saku-app { min-height: 0; flex: 1; display: flex; flex-direction: column; background: var(--px-reading); }
+.saku-app .px-mail { min-height: 0; flex: 1; }
+.saku-app .px-mail-toolbar { min-height: 44px; padding-inline: 20px; }
+.saku-app .px-mail-address { display: none; }
+.saku-app .px-inbox-toggle { display: inline-flex; }
+.saku-app .px-toolbar-status { margin-left: auto; }
+.saku-app .px-mail-panes { display: block; }
+.saku-app .px-mail-list { display: none; height: 100%; overflow: auto; }
+.saku-app .px-mail-reader { height: 100%; }
+.saku-app .show-inbox .px-mail-reader { display: none; }
+.saku-app .show-inbox .px-mail-list { display: flex; border: 0; }
+.saku-app .px-inbox-heading { padding: 24px 20px 18px; font-size: 12px; }
+.saku-app .px-message-row { padding: 22px 20px; font-size: 13px; gap: 6px; }
+.saku-app .px-message-meta { font-size: 13px; }
+.saku-app .px-message-row > strong { font-size: 17px; font-weight: 500; }
+.saku-app .px-message-excerpt { font-size: 13px; }
+.saku-app .px-mail-list-footer { padding: 20px; font-size: 12px; }
+.saku-app .px-message-document { padding: 22px 20px; }
+.saku-app .px-document-heading h3 { font-size: 22px; }
+.saku-app .px-document-heading h3 > span { font-size: 14px; }
+.saku-app .px-state-label { font-size: 12px; }
+.saku-app .px-sender { flex-wrap: wrap; gap: 12px; padding: 18px 0; }
+.saku-app .px-sender strong { font-size: 14px; }
+.saku-app .px-sender p { font-size: 12px; }
+.saku-app .px-inspect-button { width: 100%; min-height: 48px; justify-content: center; font-size: 14px; margin: 2px 0 0; }
+.saku-app .px-inspect-button > .px-icon { width: 16px; height: 16px; }
+.saku-app .px-inline-detail { padding: 14px; }
+.saku-app .px-inline-detail > span { font-size: 12px; }
+.saku-app .px-inline-detail code { font-size: 13px; margin-top: 4px; }
+.saku-app .px-inline-detail p { font-size: 14px; line-height: 1.6; }
+.saku-app .px-letter { font-size: 15px; line-height: 1.7; }
+.saku-app .px-inline-inspect { font-size: 13px; min-height: 48px; }
+.saku-app .px-destination-button { min-height: 48px; font-size: 13px; }
+.saku-app .px-mail-actions { padding: 12px 16px; gap: 12px; }
+.saku-app .px-mail-actions > .px-text-button { font-size: 12px; max-width: 150px; }
+.saku-app .px-mail-actions > .px-button { font-size: 12px; padding-inline: 12px; min-height: 48px; }
+.saku-app .px-window-status { padding: 6px 16px; font-size: 11px; }
+.saku-app .px-button, .saku-app .px-text-button { min-height: 48px; }
+.saku-app .px-case-flow { overflow: auto; padding: 24px 20px; }
+.saku-app .px-journal { max-width: none; }
+.saku-app-journal { overflow: auto; background: var(--px-surface); }
+.saku-app .px-journal-header { padding: 22px 20px; }
+.saku-app .px-journal-header h3 { font-size: 19px; }
+.saku-app .px-evidence-count p { font-size: 14px; }
+.saku-app .px-evidence-count p > span, .saku-app .px-journal-hint { font-size: 13px; }
+.saku-app .px-evidence-record summary { padding-block: 20px; min-height: 64px; }
+.saku-app .px-evidence-record summary :is(strong, h4) { font-size: 15px; }
+.saku-app .px-record-id { font-size: 11px; }
+.saku-app .px-evidence-record > div { font-size: 14px; }
+.saku-app .px-verification-state p { font-size: 14px; }
+.saku-app .px-verification-state strong { font-size: 14px; }
+.saku-app .px-journal-footer { padding-block: 16px; font-size: 12px; }
+.saku-app-browser .px-browser { flex: 1; min-height: 0; }
+.saku-app .px-browser-document { padding: 24px 20px; font-size: 15px; }
+.saku-app .px-browser-document h3 { font-size: 20px; }
+.saku-app .px-browser-document h4 { font-size: 15px; }
+.saku-app .px-browser-document > .px-button { width: 100%; min-height: 48px; font-size: 14px; }
+.saku-app .px-source-provenance, .saku-app .px-source-next, .saku-app .px-source-result { font-size: 14px; }
+.saku-app .px-source-path { font-size: 12px; }
+.saku-app .px-browser-address { padding: 12px 20px; min-height: 48px; }
+.saku-app .px-browser-address > span:nth-child(2) { font-size: 13px; }
+.saku-app .px-browser-address > span:last-child { display: none; }
+.saku-app-files { overflow: auto; }
+.saku-app .px-files { min-height: 100%; height: auto; }
+.dual-switcher { position: fixed; z-index: 40; inset: auto 20px 84px; width: min(480px, calc(100% - 40px)); max-height: calc(100dvh - 120px); overflow: auto; background: var(--px-surface); color: var(--px-text); border: 2px solid var(--px-highlight); padding: 16px; margin: 0 auto; box-shadow: 4px 4px var(--px-edge); }
+.dual-switcher::backdrop { background: #050c16b3; }
+.dual-switcher > header { display: flex; align-items: center; justify-content: space-between; padding: 0 0 10px; border-bottom: 1px solid var(--px-rule); }
+.dual-switcher h2 { font: 16px var(--px-pixel); }
+.dual-switcher > header > button { width: 44px; height: 44px; font-size: 26px; border: 0; background: transparent; }
+.dual-switcher nav > button { display: flex; align-items: center; gap: 16px; min-height: 72px; padding: 12px; border: 0; width: 100%; background: transparent; text-align: left; }
+.dual-switcher nav > button:hover, .dual-switcher nav > button[aria-current] { background: var(--px-raised); }
+.dual-switcher nav > button > .px-icon { width: 32px; height: 32px; }
+.dual-switcher nav > button > span:nth-child(2) { flex: 1; }
+.dual-switcher strong, .dual-switcher nav > button > span:nth-child(2) > span { display: block; }
+.dual-switcher strong { font-size: 15px; font-weight: 500; }
+.dual-switcher nav > button > span:nth-child(2) > span { color: var(--px-muted); font-size: 12px; }
+@media (min-width: 640px) {
+  .saku-home { padding: 44px 48px; background-size: cover; }
+  .saku-home-title h1 { font-size: 32px; }
+  .saku-home-title h1 span { display: inline; margin-left: 12px; }
+  .saku-case-link { max-width: 640px; }
+  .saku-home-apps { grid-template-columns: repeat(5, minmax(0, 1fr)); max-width: 700px; margin-top: 16px; }
+  .saku-app-header { padding-inline: 24px; }
+  .saku-notification .px-notification { margin-inline: 24px; }
+  .saku-status-bar { padding-inline: 24px; }
+  .saku-app .px-message-document { padding-inline: 32px; }
+  .saku-app .px-sender { flex-wrap: nowrap; }
+  .saku-app .px-inspect-button { width: auto; margin-left: auto; padding-inline: 16px; }
+  .saku-app .px-journal { max-width: 760px; margin: auto; }
+  .dual-case-context { padding: 28px; }
+  .saku-app .px-browser-document { padding-inline: 32px; }
+  .saku-app .px-browser-document > p { max-width: 76ch; }
+  .saku-app .px-browser-document > .px-button { width: auto; min-width: 230px; }
+}
+@media (min-width: 720px) {
+  .saku-app .px-mail-panes { display: grid; grid-template-columns: 220px minmax(0, 1fr); }
+  .saku-app .px-mail-list, .saku-app .show-inbox .px-mail-list { display: flex; }
+  .saku-app .show-inbox .px-mail-reader { display: flex; }
+  .saku-app .px-inbox-toggle { display: none; }
+  .saku-app .px-mail-address { display: inline; }
+}
+@media (max-height: 740px) {
+  .saku-home { min-height: 510px; padding-top: 24px; }
+  .saku-home-title h1 { margin-block: 12px; }
+  .saku-case-link { margin-block: 18px; }
+  .saku-home-apps { gap: 12px; }
+  .saku-app-header { min-height: 66px; }
+}
+@media (prefers-reduced-motion: reduce) { .dual-review *, .dual-review *::before, .dual-review *::after { scroll-behavior: auto !important; } }

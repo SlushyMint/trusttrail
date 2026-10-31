@@ -1,0 +1,40 @@
+{
+  "url": "http://127.0.0.1:4384/dual-os.html",
+  "date": "2026-10-29T14:39:34.475Z",
+  "passed": 13,
+  "checks": [
+    "Desktop uses pixel windows, taskbar and Case Files",
+    "Paired desktop screenshot records only canonical sender clue",
+    "Live resize to mobile keeps sender clue and switches to fullscreen OS",
+    "Browser Back, Forward and in-game Back preserve game evidence",
+    "Saku app switcher supports Escape and returns keyboard focus",
+    "360px: all four clues, ordered verification, outcomes and no overflow",
+    "390px: all four clues, ordered verification, outcomes and no overflow",
+    "768px: all four clues, ordered verification, outcomes and no overflow",
+    "1440px: all four clues, ordered verification, outcomes and no overflow",
+    "Verification survives 1440→360→768→1440 without reset or retroactive awareness",
+    "Deliberate breakpoint boundaries and short landscape select useful shells",
+    "Shared assets fail gracefully; readable UI, no external requests or runtime errors",
+    "Real touch emulation reaches sender clue, notifications and Case Files"
+  ],
+  "representativeStateEquivalence": [
+    {
+      "screen": "desktop-mail",
+      "chapter": "C1",
+      "evidence": [
+        "C1-E01"
+      ],
+      "committedChoice": false,
+      "sourceInspected": false
+    },
+    {
+      "screen": "mobile-mail",
+      "chapter": "C1",
+      "evidence": [
+        "C1-E01"
+      ],
+      "committedChoice": false,
+      "sourceInspected": false
+    }
+  ]
+}

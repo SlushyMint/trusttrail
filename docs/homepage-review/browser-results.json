@@ -1,0 +1,334 @@
+[
+  {
+    "width": 1440,
+    "pageHeight": 3537,
+    "horizontalOverflow": false,
+    "headings": [
+      {
+        "text": "Undangan kerja.Atau perangkap?",
+        "lines": 2
+      },
+      {
+        "text": "Kasusnya fiksi.Risikonya nyata.",
+        "lines": 2
+      },
+      {
+        "text": "Terlihat resmi.Coba periksa.",
+        "lines": 2
+      },
+      {
+        "text": "Satu jejak.Tiga bab.",
+        "lines": 2
+      },
+      {
+        "text": "Bukti dulu.Percaya kemudian.",
+        "lines": 2
+      }
+    ],
+    "missingNames": 0,
+    "contrastRatios": [
+      {
+        "label": "Main text",
+        "ratio": 15.51
+      },
+      {
+        "label": "Reading text",
+        "ratio": 13.56
+      },
+      {
+        "label": "Secondary text",
+        "ratio": 7.34
+      },
+      {
+        "label": "Window title",
+        "ratio": 8.75
+      },
+      {
+        "label": "Primary action",
+        "ratio": 10.9
+      },
+      {
+        "label": "Inspection control",
+        "ratio": 6.86
+      }
+    ],
+    "images": [
+      {
+        "src": "/preview/chapter-one.jpg",
+        "loaded": true,
+        "alt": "Antarmuka Bab 1: desktop Lacak OS dengan undangan rekrutmen di Mail dan jurnal Case Files di sampingnya."
+      },
+      {
+        "src": "/preview/mail.png",
+        "loaded": true,
+        "alt": "Cuplikan aplikasi Mail dari Bab 1"
+      },
+      {
+        "src": "/preview/browser.png",
+        "loaded": true,
+        "alt": "Cuplikan aplikasi Browser dari Bab 1"
+      },
+      {
+        "src": "/preview/journal.png",
+        "loaded": true,
+        "alt": "Cuplikan aplikasi Case Files dari Bab 1"
+      }
+    ],
+    "fonts": true,
+    "smallTargets": [],
+    "previewWorks": true,
+    "storageUnchanged": true,
+    "reducedMotion": true,
+    "errors": [],
+    "outbound": []
+  },
+  {
+    "width": 768,
+    "pageHeight": 4407,
+    "horizontalOverflow": false,
+    "headings": [
+      {
+        "text": "Undangan kerja.Atau perangkap?",
+        "lines": 2
+      },
+      {
+        "text": "Kasusnya fiksi.Risikonya nyata.",
+        "lines": 2
+      },
+      {
+        "text": "Terlihat resmi.Coba periksa.",
+        "lines": 2
+      },
+      {
+        "text": "Satu jejak.Tiga bab.",
+        "lines": 2
+      },
+      {
+        "text": "Bukti dulu.Percaya kemudian.",
+        "lines": 2
+      }
+    ],
+    "missingNames": 0,
+    "contrastRatios": [
+      {
+        "label": "Main text",
+        "ratio": 15.51
+      },
+      {
+        "label": "Reading text",
+        "ratio": 13.56
+      },
+      {
+        "label": "Secondary text",
+        "ratio": 7.34
+      },
+      {
+        "label": "Window title",
+        "ratio": 8.75
+      },
+      {
+        "label": "Primary action",
+        "ratio": 10.9
+      },
+      {
+        "label": "Inspection control",
+        "ratio": 6.86
+      }
+    ],
+    "images": [
+      {
+        "src": "/preview/chapter-one.jpg",
+        "loaded": true,
+        "alt": "Antarmuka Bab 1: desktop Lacak OS dengan undangan rekrutmen di Mail dan jurnal Case Files di sampingnya."
+      },
+      {
+        "src": "/preview/mail.png",
+        "loaded": true,
+        "alt": "Cuplikan aplikasi Mail dari Bab 1"
+      },
+      {
+        "src": "/preview/browser.png",
+        "loaded": true,
+        "alt": "Cuplikan aplikasi Browser dari Bab 1"
+      },
+      {
+        "src": "/preview/journal.png",
+        "loaded": true,
+        "alt": "Cuplikan aplikasi Case Files dari Bab 1"
+      }
+    ],
+    "fonts": true,
+    "smallTargets": [],
+    "previewWorks": true,
+    "storageUnchanged": true,
+    "reducedMotion": true,
+    "errors": [],
+    "outbound": []
+  },
+  {
+    "width": 390,
+    "pageHeight": 5246,
+    "horizontalOverflow": false,
+    "headings": [
+      {
+        "text": "Undangan kerja.Atau perangkap?",
+        "lines": 2
+      },
+      {
+        "text": "Kasusnya fiksi.Risikonya nyata.",
+        "lines": 2
+      },
+      {
+        "text": "Terlihat resmi.Coba periksa.",
+        "lines": 2
+      },
+      {
+        "text": "Satu jejak.Tiga bab.",
+        "lines": 2
+      },
+      {
+        "text": "Bukti dulu.Percaya kemudian.",
+        "lines": 2
+      }
+    ],
+    "missingNames": 0,
+    "contrastRatios": [
+      {
+        "label": "Main text",
+        "ratio": 15.51
+      },
+      {
+        "label": "Reading text",
+        "ratio": 13.56
+      },
+      {
+        "label": "Secondary text",
+        "ratio": 7.34
+      },
+      {
+        "label": "Window title",
+        "ratio": 8.75
+      },
+      {
+        "label": "Primary action",
+        "ratio": 10.9
+      },
+      {
+        "label": "Inspection control",
+        "ratio": 6.86
+      }
+    ],
+    "images": [
+      {
+        "src": "/preview/chapter-one.jpg",
+        "loaded": true,
+        "alt": "Antarmuka Bab 1: desktop Lacak OS dengan undangan rekrutmen di Mail dan jurnal Case Files di sampingnya."
+      },
+      {
+        "src": "/preview/mail.png",
+        "loaded": true,
+        "alt": "Cuplikan aplikasi Mail dari Bab 1"
+      },
+      {
+        "src": "/preview/browser.png",
+        "loaded": true,
+        "alt": "Cuplikan aplikasi Browser dari Bab 1"
+      },
+      {
+        "src": "/preview/journal.png",
+        "loaded": true,
+        "alt": "Cuplikan aplikasi Case Files dari Bab 1"
+      }
+    ],
+    "fonts": true,
+    "smallTargets": [],
+    "previewWorks": true,
+    "storageUnchanged": true,
+    "reducedMotion": true,
+    "errors": [],
+    "outbound": []
+  },
+  {
+    "width": 360,
+    "pageHeight": 5291,
+    "horizontalOverflow": false,
+    "headings": [
+      {
+        "text": "Undangan kerja.Atau perangkap?",
+        "lines": 2
+      },
+      {
+        "text": "Kasusnya fiksi.Risikonya nyata.",
+        "lines": 2
+      },
+      {
+        "text": "Terlihat resmi.Coba periksa.",
+        "lines": 2
+      },
+      {
+        "text": "Satu jejak.Tiga bab.",
+        "lines": 2
+      },
+      {
+        "text": "Bukti dulu.Percaya kemudian.",
+        "lines": 2
+      }
+    ],
+    "missingNames": 0,
+    "contrastRatios": [
+      {
+        "label": "Main text",
+        "ratio": 15.51
+      },
+      {
+        "label": "Reading text",
+        "ratio": 13.56
+      },
+      {
+        "label": "Secondary text",
+        "ratio": 7.34
+      },
+      {
+        "label": "Window title",
+        "ratio": 8.75
+      },
+      {
+        "label": "Primary action",
+        "ratio": 10.9
+      },
+      {
+        "label": "Inspection control",
+        "ratio": 6.86
+      }
+    ],
+    "images": [
+      {
+        "src": "/preview/chapter-one.jpg",
+        "loaded": true,
+        "alt": "Antarmuka Bab 1: desktop Lacak OS dengan undangan rekrutmen di Mail dan jurnal Case Files di sampingnya."
+      },
+      {
+        "src": "/preview/mail.png",
+        "loaded": true,
+        "alt": "Cuplikan aplikasi Mail dari Bab 1"
+      },
+      {
+        "src": "/preview/browser.png",
+        "loaded": true,
+        "alt": "Cuplikan aplikasi Browser dari Bab 1"
+      },
+      {
+        "src": "/preview/journal.png",
+        "loaded": true,
+        "alt": "Cuplikan aplikasi Case Files dari Bab 1"
+      }
+    ],
+    "fonts": true,
+    "smallTargets": [],
+    "previewWorks": true,
+    "storageUnchanged": true,
+    "reducedMotion": true,
+    "errors": [],
+    "outbound": []
+  }
+]

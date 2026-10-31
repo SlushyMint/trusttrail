@@ -1,0 +1,20 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "date": "2026-10-29",
+  "output": "public/pixel/relay-coast.png",
+  "prompt": "Create an original pixel-art desktop wallpaper ONLY, landscape 16:9, for a fictional retro cybersecurity investigation game. No text, no letters, no logos, no user interface, no frames, no icons, no people. Art direction: a quiet Indonesian coastal city and signal relay towers at night, viewed from a distance, with stepped dark mountain silhouettes, a small geometric moon in the top right, restrained sparse stars, blocky buildings and antenna silhouettes along the bottom quarter, a few tiny teal and warm amber illuminated windows, layered steel-blue hills. The left two thirds and center should be almost empty deep navy night sky for app windows to sit over, with subtly dithered transitions, not smooth gradients. Strict consistent pixel grid, nearest-neighbor crisp square pixels, limited 12-color palette, deep navy #0b1423 and dark steel #17283a dominate, desaturated blue #294456, teal #65cbb9 and amber #e8b46e only tiny accents. Refined, atmospheric, understated, handcrafted 1990s adventure-game environment. Native pixel-art look, no neon glow, no neon city, no Matrix code, no blurry painting, no anti-aliased contours. Original environment, never copy any existing game's wallpaper. Render high quality widescreen image.",
+  "purpose": "Decorative wallpaper only. All UI and evidence are accessible React/DOM.",
+  "originalIcons": "src/pixel-desktop/PixelIcon.tsx",
+  "fonts": [
+    {
+      "name": "Silkscreen Regular",
+      "source": "https://github.com/google/fonts/tree/main/ofl/silkscreen",
+      "license": "public/fonts/Silkscreen-OFL.txt"
+    },
+    {
+      "name": "Inter",
+      "source": "Existing self-hosted project font",
+      "license": "public/fonts/Inter-OFL.txt"
+    }
+  ]
+}

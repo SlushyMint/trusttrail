@@ -1,0 +1,95 @@
+{
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "file": "package.json",
+      "sha256": "573a318653514652473a4067f32d1d43ee8573c526aa50de70ce2dc9e4324af1",
+      "unchanged": true
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "0b4a2afc770758dd7732b8948ce437f1076c20102bca6d9385678abbe2043f3d",
+      "unchanged": true
+    },
+    {
+      "file": "src/app/GameProvider.tsx",
+      "sha256": "29942fd0e9f7b3ffc1197e367a797771ac5b737d6a4a2897bd03a5480a715318",
+      "unchanged": true
+    },
+    {
+      "file": "src/app/game-context.ts",
+      "sha256": "3908b1c76e4be420491083cdbf9d66d25c9e2a4895eb02dd0badfea10e2392b0",
+      "unchanged": true
+    },
+    {
+      "file": "src/engine/reducer.ts",
+      "sha256": "dc5cbc72e6c95b8ededc3ed53e7a2aa10ab6c4847e99019a3f4d00f521dc58a3",
+      "unchanged": true
+    },
+    {
+      "file": "src/engine/types.ts",
+      "sha256": "e374976c1108c50aff6189ed29288e1433ce31cdbf4b06d15664244e717e4dbb",
+      "unchanged": true
+    },
+    {
+      "file": "src/engine/validate.ts",
+      "sha256": "cc27227d44809402650c66f0053ae4a962fa2db3bbbeb2f73c2c7137af67f003",
+      "unchanged": true
+    },
+    {
+      "file": "src/content/scenario.ts",
+      "sha256": "fac2d7821ceb758faa7ff3598db03614a305c12cb64add1ea938b0dc9b2e026c",
+      "unchanged": true
+    },
+    {
+      "file": "src/content/chapters/c1.ts",
+      "sha256": "eca1dd2c58dbf932c87e6306a7e9584406063444d479243e60d7ea832cdcd1e3",
+      "unchanged": true
+    },
+    {
+      "file": "src/lib/persistence.ts",
+      "sha256": "71e39e54d8c9fd3ae927dc0c8ff397561fe23cf4ebdb25c28779b062d74cede2",
+      "unchanged": true
+    },
+    {
+      "file": "tests/setup.ts",
+      "sha256": "8c5560bcd02f7f12f82917cc6ac1ae220621469e6068d83cf2cbbfcdca546c68",
+      "unchanged": true
+    },
+    {
+      "file": "tests/integration/chapter-one.test.tsx",
+      "sha256": "f82d630e3ddc2e7093ea24a44d192ea738394095bab2a68927225978e6de5399",
+      "unchanged": true
+    },
+    {
+      "file": "tests/smoke/chapter-one.spec.ts",
+      "sha256": "fff4836a52751bf9211790eb8deefd228691007c4f1e7eb1c5939d301e24a226",
+      "unchanged": true
+    },
+    {
+      "file": "tests/smoke/foundation.spec.ts",
+      "sha256": "4d9676b62849bb3dd7a98081105a7776e2ccbb69b8949eac5021e8700aa8f43e",
+      "unchanged": true
+    },
+    {
+      "file": "tests/smoke/helpers.ts",
+      "sha256": "430844edddbf70163e7ac59135978786ebf595560e0a4e74f57c043acb8365dc",
+      "unchanged": true
+    },
+    {
+      "file": "tests/unit/controls.test.tsx",
+      "sha256": "46eaecaf48914ecf319dcd4874b4d84ad265174fee14210421c0ee82549e8b40",
+      "unchanged": true
+    },
+    {
+      "file": "tests/unit/game.test.ts",
+      "sha256": "0ebedbe8ba1ca6073573287a76dd53b353428e22fc233b0979ea83d95b95b7eb",
+      "unchanged": true
+    },
+    {
+      "file": "tests/unit/persistence.test.ts",
+      "sha256": "01ffbc235ed21524190dbf538142877b8a34f936f2763290a5db6e05135de4b2",
+      "unchanged": true
+    }
+  ]
+}

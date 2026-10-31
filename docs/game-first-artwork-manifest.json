@@ -1,0 +1,130 @@
+[
+  {
+    "bytes": 43516,
+    "name": "ari-curious",
+    "source": "exec-78acfef2-f13e-4c35-be12-6998d410b0cf.png",
+    "sourceSha256": "C0DF596DF8E28F065FF7C7692F03628ADC310AADBAF0748D5F325FD138F3F664",
+    "file": "src/art-direction/assets/ari-curious-480.webp",
+    "dimensions": "480x720"
+  },
+  {
+    "bytes": 97956,
+    "name": "ari-curious",
+    "source": "exec-78acfef2-f13e-4c35-be12-6998d410b0cf.png",
+    "sourceSha256": "C0DF596DF8E28F065FF7C7692F03628ADC310AADBAF0748D5F325FD138F3F664",
+    "file": "src/art-direction/assets/ari-curious-800.webp",
+    "dimensions": "800x1200"
+  },
+  {
+    "bytes": 43706,
+    "name": "ari-uncertain",
+    "source": "exec-57a55922-c269-461b-a2e8-d2101b6a8976.png",
+    "sourceSha256": "C033DF10C31AE7018CFC7E8A0ABFAB85EBE1D0FCBF83EEA95AC71029F5732352",
+    "file": "src/art-direction/assets/ari-uncertain-480.webp",
+    "dimensions": "480x720"
+  },
+  {
+    "bytes": 92332,
+    "name": "ari-uncertain",
+    "source": "exec-57a55922-c269-461b-a2e8-d2101b6a8976.png",
+    "sourceSha256": "C033DF10C31AE7018CFC7E8A0ABFAB85EBE1D0FCBF83EEA95AC71029F5732352",
+    "file": "src/art-direction/assets/ari-uncertain-800.webp",
+    "dimensions": "800x1200"
+  },
+  {
+    "bytes": 43774,
+    "name": "ari-composed",
+    "source": "exec-8c785d90-539d-4c72-a16a-15bf79280897.png",
+    "sourceSha256": "B1BAE596076B759E436B026431AA8C8ED417A22F353B96D6A58CE58A65E8CC5C",
+    "file": "src/art-direction/assets/ari-composed-480.webp",
+    "dimensions": "480x720"
+  },
+  {
+    "bytes": 93492,
+    "name": "ari-composed",
+    "source": "exec-8c785d90-539d-4c72-a16a-15bf79280897.png",
+    "sourceSha256": "B1BAE596076B759E436B026431AA8C8ED417A22F353B96D6A58CE58A65E8CC5C",
+    "file": "src/art-direction/assets/ari-composed-800.webp",
+    "dimensions": "800x1200"
+  },
+  {
+    "bytes": 56034,
+    "name": "room-afternoon",
+    "source": "exec-76b4dc23-3155-4b01-a8a7-a58b93ace066.png",
+    "sourceSha256": "B57B95AEF0FD1B2B92E39F82BE8AB2E6534FAFB1A2B56E50650181BB4A64435F",
+    "file": "src/art-direction/assets/room-afternoon-800.webp",
+    "dimensions": "800x450"
+  },
+  {
+    "bytes": 169160,
+    "name": "room-afternoon",
+    "source": "exec-76b4dc23-3155-4b01-a8a7-a58b93ace066.png",
+    "sourceSha256": "B57B95AEF0FD1B2B92E39F82BE8AB2E6534FAFB1A2B56E50650181BB4A64435F",
+    "file": "src/art-direction/assets/room-afternoon-1600.webp",
+    "dimensions": "1600x900"
+  },
+  {
+    "bytes": 45160,
+    "name": "room-evening",
+    "source": "exec-ef904acb-8f2d-430d-a079-e75f2e722e5c.png",
+    "sourceSha256": "B3700EA139CBB0FA80CCAC4D98EB3776193BEFAC417DB86492EFD9E8F4C79324",
+    "file": "src/art-direction/assets/room-evening-800.webp",
+    "dimensions": "800x450"
+  },
+  {
+    "bytes": 127474,
+    "name": "room-evening",
+    "source": "exec-ef904acb-8f2d-430d-a079-e75f2e722e5c.png",
+    "sourceSha256": "B3700EA139CBB0FA80CCAC4D98EB3776193BEFAC417DB86492EFD9E8F4C79324",
+    "file": "src/art-direction/assets/room-evening-1600.webp",
+    "dimensions": "1600x900"
+  },
+  {
+    "bytes": 41568,
+    "name": "room-night",
+    "source": "exec-9e5b38f5-f380-44d0-bf80-bae596409411.png",
+    "sourceSha256": "B1BB392BA955464BECE78974E2E3BE22D352C868AFEA439DD220563CEB223A0C",
+    "file": "src/art-direction/assets/room-night-800.webp",
+    "dimensions": "800x450"
+  },
+  {
+    "bytes": 118460,
+    "name": "room-night",
+    "source": "exec-9e5b38f5-f380-44d0-bf80-bae596409411.png",
+    "sourceSha256": "B1BB392BA955464BECE78974E2E3BE22D352C868AFEA439DD220563CEB223A0C",
+    "file": "src/art-direction/assets/room-night-1600.webp",
+    "dimensions": "1600x900"
+  },
+  {
+    "bytes": 50800,
+    "name": "recruitment-lounge",
+    "source": "exec-f88ce935-dedd-4a74-96f4-8f65e23a39f6.png",
+    "sourceSha256": "25E7FACCA39912CF1335DA9CE3F428DB6DE061729C9D837A0F065F0F31C377DC",
+    "file": "src/art-direction/assets/recruitment-lounge-800.webp",
+    "dimensions": "800x450"
+  },
+  {
+    "bytes": 157106,
+    "name": "recruitment-lounge",
+    "source": "exec-f88ce935-dedd-4a74-96f4-8f65e23a39f6.png",
+    "sourceSha256": "25E7FACCA39912CF1335DA9CE3F428DB6DE061729C9D837A0F065F0F31C377DC",
+    "file": "src/art-direction/assets/recruitment-lounge-1600.webp",
+    "dimensions": "1600x900"
+  },
+  {
+    "bytes": 18200,
+    "name": "stationery",
+    "source": "exec-717f24db-503f-4f8d-af05-2893306df23d.png",
+    "sourceSha256": "3B8227FD1EAA74A2179C10F3A74FB6D02692562F914F07BE3CC40A85300403B1",
+    "file": "src/art-direction/assets/stationery-480.webp",
+    "dimensions": "480x320"
+  },
+  {
+    "bytes": 40600,
+    "name": "stationery",
+    "source": "exec-717f24db-503f-4f8d-af05-2893306df23d.png",
+    "sourceSha256": "3B8227FD1EAA74A2179C10F3A74FB6D02692562F914F07BE3CC40A85300403B1",
+    "file": "src/art-direction/assets/stationery-800.webp",
+    "dimensions": "800x534"
+  }
+]

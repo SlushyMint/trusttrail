@@ -1,0 +1,18 @@
+node_modules/
+dist/
+coverage/
+test-results/
+playwright-report/
+.cache/
+.taste-skill/
+*.tsbuildinfo
+*.local
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+
+# Product documents and AGENTS.md are intentionally not ignored.

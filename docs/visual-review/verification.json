@@ -1,0 +1,55 @@
+{
+  "protectedFilesUnchanged": 18,
+  "screenshotFiles": 66,
+  "viewerSelections": 33,
+  "contrastPairs": [
+    {
+      "name": "Ink / Paper",
+      "foreground": "#111827",
+      "background": "#f5f3ee",
+      "contrast": 16
+    },
+    {
+      "name": "Paper / Slate",
+      "foreground": "#f5f3ee",
+      "background": "#1f3544",
+      "contrast": 11.47
+    },
+    {
+      "name": "Amber speaker / Slate",
+      "foreground": "#f0b35a",
+      "background": "#1f3544",
+      "contrast": 6.84
+    },
+    {
+      "name": "Narrative caption / Slate",
+      "foreground": "#d1dedc",
+      "background": "#1f3544",
+      "contrast": 9.2
+    },
+    {
+      "name": "Muted / dossier note",
+      "foreground": "#4a5860",
+      "background": "#eee9dc",
+      "contrast": 6.07
+    },
+    {
+      "name": "Receipt text / receipt surface",
+      "foreground": "#173e35",
+      "background": "#e7efea",
+      "contrast": 10.09
+    },
+    {
+      "name": "Inspect text / inspect surface",
+      "foreground": "#111827",
+      "background": "#faf3e2",
+      "contrast": 16.04
+    },
+    {
+      "name": "Hover preview text / Paper",
+      "foreground": "#2d6258",
+      "background": "#f5f3ee",
+      "contrast": 6.31
+    }
+  ]
+}

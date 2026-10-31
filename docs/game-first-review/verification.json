@@ -1,0 +1,57 @@
+{
+  "existingFilesUnchanged": 60,
+  "optimizedAssets": 16,
+  "totalAssetBytes": 1239338,
+  "contrastPairs": [
+    {
+      "name": "Main artifact",
+      "foreground": "#111827",
+      "background": "#f5f3ee",
+      "contrast": 16
+    },
+    {
+      "name": "HUD text",
+      "foreground": "#f5f3ee",
+      "background": "#182b37",
+      "contrast": 13.15
+    },
+    {
+      "name": "HUD metadata",
+      "foreground": "#d1dedc",
+      "background": "#182b37",
+      "contrast": 10.55
+    },
+    {
+      "name": "Inspection control",
+      "foreground": "#111827",
+      "background": "#f5e5c9",
+      "contrast": 14.3
+    },
+    {
+      "name": "Expanded caution",
+      "foreground": "#3b5049",
+      "background": "#e7ebe1",
+      "contrast": 7.15
+    },
+    {
+      "name": "Discovery label",
+      "foreground": "#28b5a4",
+      "background": "#182b37",
+      "contrast": 5.72
+    },
+    {
+      "name": "Footer metadata",
+      "foreground": "#43534f",
+      "background": "#f5f3ee",
+      "contrast": 7.31
+    },
+    {
+      "name": "Decision action",
+      "foreground": "#111827",
+      "background": "#f0b35a",
+      "contrast": 9.55
+    }
+  ],
+  "screenshotViewerSelections": 18,
+  "localMarkdownLinks": 31
+}
