@@ -1,0 +1,54 @@
+[
+  {
+    "width": 1440,
+    "reducedMotion": "no-preference",
+    "url": "https://www.accenture.com/en",
+    "status": 200,
+    "title": "Reinvented with Accenture",
+    "text": "Skip to main content\nSkip to footer\nServices\nProducts\nInsights\nAbout Us\nCareers\nSearch\nIndonesia\nTogether We Reinvented\n\nTOGETHER WE\nREIN\nENTED\n\nShaping tomorrow, today\n\nIn a world of constant change, reinvention is a continuous strategy. That’s why we work with organizations to rewrite the rules of growth, innovation and resilience.\n\nSee what we do\nRESEARCH REPORT\nFuture of work: Explore five trends shaping work that matters\n\nDiscover how AI is reshaping work, talent, employee experience, decision-making and leadership, and what organizations can do to create lasting value.\n\nExpand\nRESEARCH REPORT\nHoliday Shopping 2026\n\nHoliday shoppers are ready to delegate more to AI—from choosing meaningful gifts to deciding where to buy—while seeking value, trusted brands and purposeful store experiences.\n\nExpand\nRESEARCH REPORT\nPulse of Change: What’s top of mind for today’s leaders\n\nGlobal executives see AI's potential more clearly than ever, and workforce AI adoption continues to mature. But the optimism has met the reality of the enterprise as organizations are seeking faster returns.\n\nExpand\nRESEARCH REPORT\nThe CIO’s guide to AI tokenomics\n\nHow to see, control and account for AI token spend at scale.\n\nExpand\nPERSPECTIVE\nThe AI-enabled capital project\n\nAI can help save around $290M per $1B project, but it’ll take more than just tools.\n\nExpand\nPERSPECTIVE\nFive shifts behind an effective operating model in the age of AI\n\nDiscover five shifts in decisions, work, workforce, economics and learning that can turn AI into sustained performance and reshape how companies operate.\n\nExpand\nPER",
+    "headings": [
+      "Together We Reinvented",
+      "Shaping tomorrow, today",
+      "Client spotlight",
+      "Global recognition and awards"
+    ],
+    "sticky": []
+  },
+  {
+    "width": 1440,
+    "reducedMotion": "no-preference",
+    "error": "locator.hover: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Future of work: Explore five trends shaping work that matters', { exact: true }).first()\u001b[22m\n\u001b[2m    - locator resolved to <div class=\"rad-content-grid-card__title\">↵         Future of work: Explore five trends sha…</div>\u001b[22m\n\u001b[2m  - attempting hover action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <button aria-expanded=\"false\" aria-controls=\"research-report-b153dd4a1f\" class=\"rad-content-grid-card__front-toggle\" aria-label=\"Research Report: Future of work: Explore five trends shaping work that matters\"></button> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible and stable\u001b[22m\n\u001b[2m    - element is visible and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <button aria-expanded=\"false\" aria-controls=\"research-report-b153dd4a1f\" class=\"rad-content-grid-card__front-toggle\" aria-label=\"Research Report: Future of work: Explore five trends shaping work that matters\"></button> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action\u001b[22m\n\u001b[2m    - waiting 100ms\u001b[22m\n\u001b[2m    - waiting for element to be visible and stable\u001b[22m\n\u001b[2m    - element is visible and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <nav aria-label=\"global\" class=\"rad-global-nav__container\">…</nav> from <div class=\"cmp-container\" id=\"container-1309251dc9\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action\u001b[22m\n\u001b[2m    - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m       - element is visible and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <button aria-expanded=\"false\" aria-controls=\"research-report-b153dd4a1f\" class=\"rad-content-grid-card__front-toggle\" aria-label=\"Research Report: Future of work: Explore five trends shaping work that matters\"></button> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying hover action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+  },
+  {
+    "width": 390,
+    "reducedMotion": "no-preference",
+    "url": "https://www.accenture.com/en",
+    "status": 200,
+    "title": "Reinvented with Accenture",
+    "text": "Skip to main content\nSkip to footer\nMenu\nClose Menu\nServices\nProducts\nInsights\nAbout Us\nCareers\nSearch\nTogether We Reinvented\n\nTOGETHER WE\nREIN\nENTED\n\nShaping tomorrow, today\n\nIn a world of constant change, reinvention is a continuous strategy. That’s why we work with organizations to rewrite the rules of growth, innovation and resilience.\n\nSee what we do\nClose\nRESEARCH REPORT\nFuture of work: Explore five trends shaping work that matters\n\nDiscover how AI is reshaping work, talent, employee experience, decision-making and leadership, and what organizations can do to create lasting value.\n\nExpand\nClose\nRESEARCH REPORT\nHoliday Shopping 2026\n\nHoliday shoppers are ready to delegate more to AI—from choosing meaningful gifts to deciding where to buy—while seeking value, trusted brands and purposeful store experiences.\n\nExpand\nClose\nRESEARCH REPORT\nPulse of Change: What’s top of mind for today’s leaders\n\nGlobal executives see AI's potential more clearly than ever, and workforce AI adoption continues to mature. But the optimism has met the reality of the enterprise as organizations are seeking faster returns.\n\nExpand\nClose\nRESEARCH REPORT\nThe CIO’s guide to AI tokenomics\n\nHow to see, control and account for AI token spend at scale.\n\nExpand\nClose\nPERSPECTIVE\nThe AI-enabled capital project\n\nAI can help save around $290M per $1B project, but it’ll take more than just tools.\n\nExpand\nClose\nPERSPECTIVE\nFive shifts behind an effective operating model in the age of AI\n\nDiscover five shifts in decisions, work, workforce, economics and learning that can turn AI into sustained performance and ",
+    "headings": [
+      "Together We Reinvented",
+      "Shaping tomorrow, today",
+      "Client spotlight",
+      "Global recognition and awards",
+      "Privacy Preference Center"
+    ],
+    "sticky": []
+  },
+  {
+    "width": 390,
+    "reducedMotion": "reduce",
+    "url": "https://www.accenture.com/en",
+    "status": 200,
+    "title": "Reinvented with Accenture",
+    "text": "Skip to main content\nSkip to footer\nMenu\nClose Menu\nServices\nProducts\nInsights\nAbout Us\nCareers\nSearch\nTogether We Reinvented\n\nTOGETHER WE\nREIN\nENTED\n\nShaping tomorrow, today\n\nIn a world of constant change, reinvention is a continuous strategy. That’s why we work with organizations to rewrite the rules of growth, innovation and resilience.\n\nSee what we do\nClose\nRESEARCH REPORT\nFuture of work: Explore five trends shaping work that matters\n\nDiscover how AI is reshaping work, talent, employee experience, decision-making and leadership, and what organizations can do to create lasting value.\n\nExpand\nClose\nRESEARCH REPORT\nHoliday Shopping 2026\n\nHoliday shoppers are ready to delegate more to AI—from choosing meaningful gifts to deciding where to buy—while seeking value, trusted brands and purposeful store experiences.\n\nExpand\nClose\nRESEARCH REPORT\nPulse of Change: What’s top of mind for today’s leaders\n\nGlobal executives see AI's potential more clearly than ever, and workforce AI adoption continues to mature. But the optimism has met the reality of the enterprise as organizations are seeking faster returns.\n\nExpand\nClose\nRESEARCH REPORT\nThe CIO’s guide to AI tokenomics\n\nHow to see, control and account for AI token spend at scale.\n\nExpand\nClose\nPERSPECTIVE\nThe AI-enabled capital project\n\nAI can help save around $290M per $1B project, but it’ll take more than just tools.\n\nExpand\nClose\nPERSPECTIVE\nFive shifts behind an effective operating model in the age of AI\n\nDiscover five shifts in decisions, work, workforce, economics and learning that can turn AI into sustained performance and ",
+    "headings": [
+      "Together We Reinvented",
+      "Shaping tomorrow, today",
+      "Client spotlight",
+      "Global recognition and awards",
+      "Privacy Preference Center"
+    ],
+    "sticky": []
+  }
+]

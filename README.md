@@ -2,6 +2,8 @@
 
 **Think Before You Trust.** An Indonesian narrative investigation game about digital recruitment deception.
 
+**Homepage Phase B.1:** the city now spans the hero and equipment dock. Mail, Browser and Case Files share an interactive preview, and three sourced intelligence files lead into the existing email exercise. See the [before/after review gallery](docs/phase-b1-review/index.html) and [implementation, assets, measured performance and validation](docs/living-city-phase-b1.md). Final checks pass **86 unit/integration tests and 98 browser cases**. Earlier [Phase B artwork](docs/living-city-phase-b.md) and [Phase A foundation](docs/living-city-phase-a.md) remain documented. Phase B.1 awaits Product Owner review; no further phase has begun.
+
 ## Current status
 
 **Chapters 1–3 and the recovery mission are fully playable.** Investigate the recruitment email, Mira's conversation, and a fictional verification portal. Compare the portal's domain and account-code requirement with established company information, make a consequential decision, and complete recovery actions appropriate to Ari's actual exposure. All three final choices lead through recovery and reflection to an event-backed Trust Report. See [Chapter 3 implementation and validation](docs/chapter-three-validation.md).

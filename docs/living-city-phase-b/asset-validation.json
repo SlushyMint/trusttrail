@@ -1,0 +1,117 @@
+{
+  "stats": [
+    {
+      "id": "sky-far",
+      "width": 1672,
+      "height": 941,
+      "upperQuarterNonTransparent": 392920,
+      "upperQuarterVisiblePixels": 392920,
+      "upperQuarterMaxAlpha": 255,
+      "histogram": {
+        "zero": 0,
+        "low": 0,
+        "mid": 0,
+        "high": 0,
+        "nearOpaque": 0,
+        "opaque": 1573352
+      }
+    },
+    {
+      "id": "city-back",
+      "width": 1672,
+      "height": 941,
+      "upperQuarterNonTransparent": 28,
+      "upperQuarterVisiblePixels": 0,
+      "upperQuarterMaxAlpha": 1,
+      "histogram": {
+        "zero": 1119900,
+        "low": 27799,
+        "mid": 6976,
+        "high": 8600,
+        "nearOpaque": 409793,
+        "opaque": 284
+      }
+    },
+    {
+      "id": "city-mid",
+      "width": 1672,
+      "height": 941,
+      "upperQuarterNonTransparent": 289,
+      "upperQuarterVisiblePixels": 0,
+      "upperQuarterMaxAlpha": 1,
+      "histogram": {
+        "zero": 975489,
+        "low": 36434,
+        "mid": 9262,
+        "high": 15494,
+        "nearOpaque": 536470,
+        "opaque": 203
+      }
+    },
+    {
+      "id": "city-mid-lights",
+      "width": 1672,
+      "height": 941,
+      "upperQuarterNonTransparent": 0,
+      "upperQuarterVisiblePixels": 0,
+      "upperQuarterMaxAlpha": 0,
+      "histogram": {
+        "zero": 1544460,
+        "low": 0,
+        "mid": 0,
+        "high": 0,
+        "nearOpaque": 28892,
+        "opaque": 0
+      }
+    },
+    {
+      "id": "city-front",
+      "width": 1672,
+      "height": 941,
+      "upperQuarterNonTransparent": 7,
+      "upperQuarterVisiblePixels": 0,
+      "upperQuarterMaxAlpha": 1,
+      "histogram": {
+        "zero": 1210320,
+        "low": 29458,
+        "mid": 11429,
+        "high": 19410,
+        "nearOpaque": 302296,
+        "opaque": 439
+      }
+    },
+    {
+      "id": "office-props",
+      "width": 1672,
+      "height": 941,
+      "upperQuarterNonTransparent": 2,
+      "upperQuarterVisiblePixels": 0,
+      "upperQuarterMaxAlpha": 1,
+      "histogram": {
+        "zero": 1369661,
+        "low": 19758,
+        "mid": 6215,
+        "high": 8888,
+        "nearOpaque": 168589,
+        "opaque": 241
+      }
+    },
+    {
+      "id": "city-static",
+      "width": 1672,
+      "height": 941,
+      "upperQuarterNonTransparent": 392920,
+      "upperQuarterVisiblePixels": 392920,
+      "upperQuarterMaxAlpha": 255,
+      "histogram": {
+        "zero": 0,
+        "low": 0,
+        "mid": 0,
+        "high": 0,
+        "nearOpaque": 0,
+        "opaque": 1573352
+      }
+    }
+  ],
+  "lightsOutsideBuildings": 0
+}

@@ -16,17 +16,18 @@ test('OS application browsing is keyboard accessible and never creates gameplay 
   await expect(page.getByRole('button', { name: /Buka berkas pertama/ })).toBeVisible();
 });
 
-test('homepage game preview reserves layout before delayed artwork finishes loading', async ({ page }) => {
-  await page.route('**/preview/chapter-one.jpg', async route => {
-    await new Promise(resolve => setTimeout(resolve, 350));
-    await route.continue();
-  });
-  const wallpaper = page.waitForResponse(response => response.url().endsWith('/preview/chapter-one.jpg'));
+test('interactive homepage preview reserves layout while city artwork is delayed', async ({ page }) => {
+  let release!: () => void;
+  const gate = new Promise<void>(resolve => { release = resolve; });
+  await page.route(/\/city-mid(-compact)?\.webp$/, async route => { await gate; await route.continue(); });
   await page.goto('/', { waitUntil: 'domcontentloaded' });
   await page.evaluate(() => document.fonts.ready);
   const frame = page.locator('.portal-game-preview');
   const before = await frame.evaluate(element => ({ width: (element as HTMLElement).offsetWidth, height: (element as HTMLElement).offsetHeight }));
-  await wallpaper;
+  await expect(page.locator('#os-preview-content')).toContainText('Undangan tahap akhir');
+  await expect(page.getByRole('button', { name: /Mulai investigasi/ }).first()).toBeVisible();
+  release();
+  await expect(page.locator('.living-city')).toHaveAttribute('data-city-status', 'ready');
   const after = await frame.evaluate(element => ({ width: (element as HTMLElement).offsetWidth, height: (element as HTMLElement).offsetHeight }));
   expect(before).not.toBeNull(); expect(after).not.toBeNull();
   expect(after!.width).toBeCloseTo(before!.width, 1);

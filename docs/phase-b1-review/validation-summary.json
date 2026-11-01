@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-01",
+  "productionChecks": {
+    "typecheck": "PASS",
+    "eslint": "PASS",
+    "unitIntegration": {
+      "status": "PASS",
+      "passed": 86
+    },
+    "build": "PASS",
+    "browser": {
+      "status": "PASS",
+      "passed": 98
+    }
+  },
+  "responsiveWidths": [
+    360,
+    390,
+    768,
+    1440,
+    1920
+  ],
+  "renderingWidths": [
+    360,
+    390,
+    768,
+    1440
+  ],
+  "sourceLint": "0 FAIL / 0 WARN",
+  "skillCDPInspector": "UNAVAILABLE: Page.enable timeout",
+  "limitations": [
+    "Existing Vite main-chunk warning",
+    "Retained JS heap growth under navigation soak",
+    "Headless Chrome screenshots; no physical-device or screen-reader software validation"
+  ]
+}

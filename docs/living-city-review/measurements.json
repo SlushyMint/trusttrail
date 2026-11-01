@@ -1,0 +1,146 @@
+{
+  "browser": "156.0.8078.76",
+  "environment": "Local headless browser; mobile emulation, no CPU/network throttle; not physical-device or GPU-memory measurements.",
+  "viewports": [
+    {
+      "width": 360,
+      "overflow": false,
+      "ctaAboveFold": true,
+      "quality": "compact",
+      "resolution": 1.25,
+      "canvasPixels": {
+        "width": 450,
+        "height": 1058
+      },
+      "sampledFrames": 89,
+      "measuredFPS": 29.5,
+      "frameIntervalMedianMS": 36.200000047683716,
+      "frameIntervalP95MS": 36.60000002384186,
+      "totalLayoutShiftValue": 0,
+      "longTasksDuringSample": [],
+      "heroBoundsStable": true,
+      "offscreenDraws": 0,
+      "simulatedHiddenDocumentDraws": 0,
+      "storageUnchanged": true,
+      "maxCanvasCount": 1,
+      "drawsAfterUnmount": 0,
+      "heapBeforeBytes": 6832064,
+      "heapCheckpoints": [
+        {
+          "cycles": 6,
+          "bytes": 7880680
+        }
+      ],
+      "heapFinalBytes": 7880680,
+      "heapDeltaBytes": 1048616,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "ctaAboveFold": true,
+      "quality": "compact",
+      "resolution": 1.25,
+      "canvasPixels": {
+        "width": 488,
+        "height": 1089
+      },
+      "sampledFrames": 89,
+      "measuredFPS": 29.5,
+      "frameIntervalMedianMS": 36.200000047683716,
+      "frameIntervalP95MS": 36.59999990463257,
+      "totalLayoutShiftValue": 0,
+      "longTasksDuringSample": [],
+      "heroBoundsStable": true,
+      "offscreenDraws": 0,
+      "simulatedHiddenDocumentDraws": 0,
+      "storageUnchanged": true,
+      "maxCanvasCount": 1,
+      "drawsAfterUnmount": 0,
+      "heapBeforeBytes": 6830952,
+      "heapCheckpoints": [
+        {
+          "cycles": 6,
+          "bytes": 7876480
+        }
+      ],
+      "heapFinalBytes": 7876480,
+      "heapDeltaBytes": 1045528,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "ctaAboveFold": true,
+      "quality": "desktop",
+      "resolution": 1.5,
+      "canvasPixels": {
+        "width": 1152,
+        "height": 1632
+      },
+      "sampledFrames": 131,
+      "measuredFPS": 43.8,
+      "frameIntervalMedianMS": 24.200000047683716,
+      "frameIntervalP95MS": 24.40000009536743,
+      "totalLayoutShiftValue": 0,
+      "longTasksDuringSample": [],
+      "heroBoundsStable": true,
+      "offscreenDraws": 0,
+      "simulatedHiddenDocumentDraws": 0,
+      "storageUnchanged": true,
+      "maxCanvasCount": 1,
+      "drawsAfterUnmount": 0,
+      "heapBeforeBytes": 6734944,
+      "heapCheckpoints": [
+        {
+          "cycles": 6,
+          "bytes": 7795728
+        }
+      ],
+      "heapFinalBytes": 7795728,
+      "heapDeltaBytes": 1060784,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "ctaAboveFold": true,
+      "quality": "desktop",
+      "resolution": 1.5,
+      "canvasPixels": {
+        "width": 2160,
+        "height": 1052
+      },
+      "sampledFrames": 132,
+      "measuredFPS": 43.8,
+      "frameIntervalMedianMS": 24.200000047683716,
+      "frameIntervalP95MS": 24.40000009536743,
+      "totalLayoutShiftValue": 0,
+      "longTasksDuringSample": [],
+      "heroBoundsStable": true,
+      "offscreenDraws": 0,
+      "simulatedHiddenDocumentDraws": 0,
+      "storageUnchanged": true,
+      "maxCanvasCount": 1,
+      "drawsAfterUnmount": 0,
+      "heapBeforeBytes": 7022668,
+      "heapCheckpoints": [
+        {
+          "cycles": 6,
+          "bytes": 8107504
+        },
+        {
+          "cycles": 12,
+          "bytes": 8737840
+        },
+        {
+          "cycles": 18,
+          "bytes": 8934676
+        }
+      ],
+      "heapFinalBytes": 8934676,
+      "heapDeltaBytes": 1912008,
+      "errors": []
+    }
+  ]
+}

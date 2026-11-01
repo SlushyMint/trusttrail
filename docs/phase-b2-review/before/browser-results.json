@@ -1,0 +1,258 @@
+{
+  "browser": "156.0.8078.76",
+  "conditions": "Production Vite preview, local headless Chrome, no network or CPU throttling; emulated touch below 768px. rAF cadence is not GPU presentation FPS.",
+  "viewports": [
+    {
+      "width": 1440,
+      "ctaAboveFold": true,
+      "noOverflow": true,
+      "stableStorage": true,
+      "previewHeights": [
+        536,
+        536,
+        536
+      ],
+      "intelHeights": [
+        594,
+        594,
+        594
+      ],
+      "cadence": {
+        "sampledFrames": 364,
+        "rafFPS": 165.0450122760753,
+        "p95IntervalMS": 6.199999999999818,
+        "longTasks": []
+      },
+      "layoutShift": 0,
+      "reducedTransforms": [
+        {
+          "text": "Undangan kerja.Atau perangka",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Pesan masuk untuk AriNovaTec",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Undangan tahap akhir",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "TrustTrail /Threat Intellige",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Terlihat resmi.Coba periksa.",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Satu jejak.Tiga bab.",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Bukti dulu.Percaya kemudian.",
+          "transform": "none",
+          "opacity": "1"
+        }
+      ],
+      "errors": [],
+      "consoleErrors": [],
+      "broken": []
+    },
+    {
+      "width": 768,
+      "ctaAboveFold": true,
+      "noOverflow": true,
+      "stableStorage": true,
+      "previewHeights": [
+        536,
+        536,
+        536
+      ],
+      "intelHeights": [
+        644,
+        644,
+        644
+      ],
+      "cadence": {
+        "sampledFrames": 363,
+        "rafFPS": 164.5978265811849,
+        "p95IntervalMS": 6.200000000000273,
+        "longTasks": []
+      },
+      "layoutShift": 0,
+      "reducedTransforms": [
+        {
+          "text": "Undangan kerja.Atau perangka",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Pesan masuk untuk AriNovaTec",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Undangan tahap akhir",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "TrustTrail /Threat Intellige",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Terlihat resmi.Coba periksa.",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Satu jejak.Tiga bab.",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Bukti dulu.Percaya kemudian.",
+          "transform": "none",
+          "opacity": "1"
+        }
+      ],
+      "errors": [],
+      "consoleErrors": [],
+      "broken": []
+    },
+    {
+      "width": 390,
+      "ctaAboveFold": true,
+      "noOverflow": true,
+      "stableStorage": true,
+      "previewHeights": [
+        617.4375,
+        617.4375,
+        617.4375
+      ],
+      "intelHeights": [
+        868.625,
+        868.625,
+        868.625
+      ],
+      "cadence": {
+        "sampledFrames": 364,
+        "rafFPS": 165.0375085246647,
+        "p95IntervalMS": 6.2000000000000455,
+        "longTasks": []
+      },
+      "layoutShift": 0,
+      "reducedTransforms": [
+        {
+          "text": "Undangan kerja.Atau perangka",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Pesan masuk untuk AriNovaTec",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Undangan tahap akhir",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "TrustTrail /Threat Intellige",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Terlihat resmi.Coba periksa.",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Satu jejak.Tiga bab.",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Bukti dulu.Percaya kemudian.",
+          "transform": "none",
+          "opacity": "1"
+        }
+      ],
+      "errors": [],
+      "consoleErrors": [],
+      "broken": []
+    },
+    {
+      "width": 360,
+      "ctaAboveFold": true,
+      "noOverflow": true,
+      "stableStorage": true,
+      "previewHeights": [
+        617.4375,
+        617.4375,
+        617.4375
+      ],
+      "intelHeights": [
+        868.625,
+        868.625,
+        868.625
+      ],
+      "cadence": {
+        "sampledFrames": 364,
+        "rafFPS": 165.04501227607528,
+        "p95IntervalMS": 6.2000000000000455,
+        "longTasks": []
+      },
+      "layoutShift": 0,
+      "reducedTransforms": [
+        {
+          "text": "Undangan kerja.Atau perangka",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Pesan masuk untuk AriNovaTec",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Undangan tahap akhir",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "TrustTrail /Threat Intellige",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Terlihat resmi.Coba periksa.",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Satu jejak.Tiga bab.",
+          "transform": "none",
+          "opacity": "1"
+        },
+        {
+          "text": "Bukti dulu.Percaya kemudian.",
+          "transform": "none",
+          "opacity": "1"
+        }
+      ],
+      "errors": [],
+      "consoleErrors": [],
+      "broken": []
+    }
+  ]
+}

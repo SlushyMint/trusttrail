@@ -27,13 +27,11 @@ test('fresh homepage starts the real game and attributes all three statistics', 
   const before = await page.evaluate(() => JSON.stringify(localStorage));
   await page.getByRole('button', { name: 'Periksa alamat pengirim', exact: true }).click();
   expect(await page.evaluate(() => JSON.stringify(localStorage))).toBe(before);
-  for (const summary of await page.locator('.portal-statistics summary').all()) {
-    await summary.focus();
+  for (const selector of await page.locator('.portal-intel-files button').all()) {
+    await selector.focus();
     await page.keyboard.press('Enter');
-  }
-  const citations = page.locator('.portal-statistics details a');
-  await expect(citations).toHaveCount(3);
-  for (const link of await citations.all()) {
+    await expect(selector).toHaveAttribute('aria-pressed', 'true');
+    const link = page.locator('.portal-source-link');
     await expect(link).toBeVisible();
     expect(new URL((await link.getAttribute('href'))!).hostname).toMatch(/(^|\.)(ojk|komdigi)\.go\.id$/);
   }

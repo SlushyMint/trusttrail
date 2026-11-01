@@ -1,0 +1,471 @@
+{
+  "browser": "156.0.8078.76",
+  "viewports": [
+    {
+      "width": 360,
+      "overflow": false,
+      "ctaTop": 378.09375,
+      "ctaBottom": 430.484375,
+      "viewportHeight": 844,
+      "cityWidth": 360,
+      "headingLines": [
+        {
+          "text": "Undangan kerja.Atau perangkap?",
+          "lines": 2
+        },
+        {
+          "text": "Undangan tahap akhir",
+          "lines": 1
+        },
+        {
+          "text": "TrustTrail /Threat Intelligence",
+          "lines": 2
+        },
+        {
+          "text": "laporan diterima IASC",
+          "lines": 1
+        },
+        {
+          "text": "Terlihat resmi.Coba periksa.",
+          "lines": 2
+        },
+        {
+          "text": "Catatan pemeriksaan",
+          "lines": 1
+        },
+        {
+          "text": "Satu jejak.Tiga bab.",
+          "lines": 2
+        },
+        {
+          "text": "Undangan tanpa lamaran",
+          "lines": 1
+        },
+        {
+          "text": "Perekrut yang ramah",
+          "lines": 1
+        },
+        {
+          "text": "Verifikasi terakhir",
+          "lines": 1
+        },
+        {
+          "text": "Bukti dulu.Percaya kemudian.",
+          "lines": 2
+        }
+      ],
+      "smallTargets": [],
+      "missingNames": 0,
+      "images": [
+        {
+          "path": "http://127.0.0.1:4173/assets/living-city/city-static-compact.webp",
+          "loaded": true
+        }
+      ],
+      "previewHeights": [
+        617.4375,
+        617.4375,
+        617.4375
+      ],
+      "intelHeights": [
+        868.625,
+        868.625,
+        868.625
+      ],
+      "storageUnchanged": true,
+      "focus": {
+        "outline": "solid",
+        "width": "3px",
+        "transition": "0s"
+      },
+      "errors": [],
+      "consoleErrors": [],
+      "broken": [],
+      "cityRequests": [
+        "http://127.0.0.1:4173/assets/living-city/city-front-compact.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-static-compact.webp",
+        "http://127.0.0.1:4173/assets/living-city/sky-far-compact.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-back-compact.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-mid-compact.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-front-compact.webp",
+        "http://127.0.0.1:4173/assets/living-city/office-props-compact.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-mid-lights-compact.webp"
+      ],
+      "outbound": []
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "ctaTop": 383.28125,
+      "ctaBottom": 435.671875,
+      "viewportHeight": 844,
+      "cityWidth": 390,
+      "headingLines": [
+        {
+          "text": "Undangan kerja.Atau perangkap?",
+          "lines": 2
+        },
+        {
+          "text": "Undangan tahap akhir",
+          "lines": 1
+        },
+        {
+          "text": "TrustTrail /Threat Intelligence",
+          "lines": 2
+        },
+        {
+          "text": "laporan diterima IASC",
+          "lines": 1
+        },
+        {
+          "text": "Terlihat resmi.Coba periksa.",
+          "lines": 2
+        },
+        {
+          "text": "Catatan pemeriksaan",
+          "lines": 1
+        },
+        {
+          "text": "Satu jejak.Tiga bab.",
+          "lines": 2
+        },
+        {
+          "text": "Undangan tanpa lamaran",
+          "lines": 1
+        },
+        {
+          "text": "Perekrut yang ramah",
+          "lines": 1
+        },
+        {
+          "text": "Verifikasi terakhir",
+          "lines": 1
+        },
+        {
+          "text": "Bukti dulu.Percaya kemudian.",
+          "lines": 2
+        }
+      ],
+      "smallTargets": [],
+      "missingNames": 0,
+      "images": [
+        {
+          "path": "http://127.0.0.1:4173/assets/living-city/city-static-compact.webp",
+          "loaded": true
+        }
+      ],
+      "previewHeights": [
+        617.4375,
+        617.4375,
+        617.4375
+      ],
+      "intelHeights": [
+        868.625,
+        868.625,
+        868.625
+      ],
+      "storageUnchanged": true,
+      "focus": {
+        "outline": "solid",
+        "width": "3px",
+        "transition": "0s"
+      },
+      "errors": [],
+      "consoleErrors": [],
+      "broken": [],
+      "cityRequests": [
+        "http://127.0.0.1:4173/assets/living-city/city-front-compact.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-static-compact.webp",
+        "http://127.0.0.1:4173/assets/living-city/sky-far-compact.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-back-compact.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-mid-compact.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-front-compact.webp",
+        "http://127.0.0.1:4173/assets/living-city/office-props-compact.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-mid-lights-compact.webp"
+      ],
+      "outbound": []
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "ctaTop": 397.046875,
+      "ctaBottom": 451.046875,
+      "viewportHeight": 1000,
+      "cityWidth": 768,
+      "headingLines": [
+        {
+          "text": "Undangan kerja.Atau perangkap?",
+          "lines": 2
+        },
+        {
+          "text": "Undangan tahap akhir",
+          "lines": 1
+        },
+        {
+          "text": "TrustTrail /Threat Intelligence",
+          "lines": 2
+        },
+        {
+          "text": "laporan diterima IASC",
+          "lines": 1
+        },
+        {
+          "text": "Terlihat resmi.Coba periksa.",
+          "lines": 2
+        },
+        {
+          "text": "Catatan pemeriksaan",
+          "lines": 1
+        },
+        {
+          "text": "Satu jejak.Tiga bab.",
+          "lines": 2
+        },
+        {
+          "text": "Undangan tanpa lamaran",
+          "lines": 1
+        },
+        {
+          "text": "Perekrut yang ramah",
+          "lines": 1
+        },
+        {
+          "text": "Verifikasi terakhir",
+          "lines": 1
+        },
+        {
+          "text": "Bukti dulu.Percaya kemudian.",
+          "lines": 2
+        }
+      ],
+      "smallTargets": [],
+      "missingNames": 0,
+      "images": [
+        {
+          "path": "http://127.0.0.1:4173/assets/living-city/city-static.webp",
+          "loaded": true
+        }
+      ],
+      "previewHeights": [
+        536,
+        536,
+        536
+      ],
+      "intelHeights": [
+        644,
+        644,
+        644
+      ],
+      "storageUnchanged": true,
+      "focus": {
+        "outline": "solid",
+        "width": "3px",
+        "transition": "0s"
+      },
+      "errors": [],
+      "consoleErrors": [],
+      "broken": [],
+      "cityRequests": [
+        "http://127.0.0.1:4173/assets/living-city/city-front.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-static.webp",
+        "http://127.0.0.1:4173/assets/living-city/sky-far.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-back.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-mid.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-front.webp",
+        "http://127.0.0.1:4173/assets/living-city/office-props.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-mid-lights.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-front-compact.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-front.webp"
+      ],
+      "outbound": []
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "ctaTop": 507.59375,
+      "ctaBottom": 561.59375,
+      "viewportHeight": 1000,
+      "cityWidth": 1440,
+      "headingLines": [
+        {
+          "text": "Undangan kerja.Atau perangkap?",
+          "lines": 2
+        },
+        {
+          "text": "Undangan tahap akhir",
+          "lines": 1
+        },
+        {
+          "text": "TrustTrail /Threat Intelligence",
+          "lines": 2
+        },
+        {
+          "text": "laporan diterima IASC",
+          "lines": 1
+        },
+        {
+          "text": "Terlihat resmi.Coba periksa.",
+          "lines": 2
+        },
+        {
+          "text": "Catatan pemeriksaan",
+          "lines": 1
+        },
+        {
+          "text": "Satu jejak.Tiga bab.",
+          "lines": 2
+        },
+        {
+          "text": "Undangan tanpa lamaran",
+          "lines": 1
+        },
+        {
+          "text": "Perekrut yang ramah",
+          "lines": 1
+        },
+        {
+          "text": "Verifikasi terakhir",
+          "lines": 1
+        },
+        {
+          "text": "Bukti dulu.Percaya kemudian.",
+          "lines": 2
+        }
+      ],
+      "smallTargets": [],
+      "missingNames": 0,
+      "images": [
+        {
+          "path": "http://127.0.0.1:4173/assets/living-city/city-static.webp",
+          "loaded": true
+        }
+      ],
+      "previewHeights": [
+        536,
+        536,
+        536
+      ],
+      "intelHeights": [
+        594,
+        594,
+        594
+      ],
+      "storageUnchanged": true,
+      "focus": {
+        "outline": "solid",
+        "width": "3px",
+        "transition": "0s"
+      },
+      "errors": [],
+      "consoleErrors": [],
+      "broken": [],
+      "cityRequests": [
+        "http://127.0.0.1:4173/assets/living-city/city-front.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-static.webp",
+        "http://127.0.0.1:4173/assets/living-city/sky-far.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-back.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-mid.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-front.webp",
+        "http://127.0.0.1:4173/assets/living-city/office-props.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-mid-lights.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-front-compact.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-front.webp"
+      ],
+      "outbound": []
+    },
+    {
+      "width": 1920,
+      "overflow": false,
+      "ctaTop": 507.59375,
+      "ctaBottom": 561.59375,
+      "viewportHeight": 1000,
+      "cityWidth": 1920,
+      "headingLines": [
+        {
+          "text": "Undangan kerja.Atau perangkap?",
+          "lines": 2
+        },
+        {
+          "text": "Undangan tahap akhir",
+          "lines": 1
+        },
+        {
+          "text": "TrustTrail /Threat Intelligence",
+          "lines": 2
+        },
+        {
+          "text": "laporan diterima IASC",
+          "lines": 1
+        },
+        {
+          "text": "Terlihat resmi.Coba periksa.",
+          "lines": 2
+        },
+        {
+          "text": "Catatan pemeriksaan",
+          "lines": 1
+        },
+        {
+          "text": "Satu jejak.Tiga bab.",
+          "lines": 2
+        },
+        {
+          "text": "Undangan tanpa lamaran",
+          "lines": 1
+        },
+        {
+          "text": "Perekrut yang ramah",
+          "lines": 1
+        },
+        {
+          "text": "Verifikasi terakhir",
+          "lines": 1
+        },
+        {
+          "text": "Bukti dulu.Percaya kemudian.",
+          "lines": 2
+        }
+      ],
+      "smallTargets": [],
+      "missingNames": 0,
+      "images": [
+        {
+          "path": "http://127.0.0.1:4173/assets/living-city/city-static.webp",
+          "loaded": true
+        }
+      ],
+      "previewHeights": [
+        536,
+        536,
+        536
+      ],
+      "intelHeights": [
+        594,
+        594,
+        594
+      ],
+      "storageUnchanged": true,
+      "focus": {
+        "outline": "solid",
+        "width": "3px",
+        "transition": "0s"
+      },
+      "errors": [],
+      "consoleErrors": [],
+      "broken": [],
+      "cityRequests": [
+        "http://127.0.0.1:4173/assets/living-city/city-front.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-static.webp",
+        "http://127.0.0.1:4173/assets/living-city/sky-far.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-back.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-mid.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-front.webp",
+        "http://127.0.0.1:4173/assets/living-city/office-props.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-mid-lights.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-front-compact.webp",
+        "http://127.0.0.1:4173/assets/living-city/city-front.webp"
+      ],
+      "outbound": []
+    }
+  ]
+}

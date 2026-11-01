@@ -1,0 +1,333 @@
+{
+  "browser": "156.0.8078.76",
+  "environment": "Local headless browser; mobile emulation, no CPU/network throttle; not physical-device or GPU-memory measurements.",
+  "viewports": [
+    {
+      "width": 360,
+      "initializationMS": 346.7,
+      "initializationLongTasks": [
+        135,
+        128
+      ],
+      "overflow": false,
+      "ctaAboveFold": true,
+      "quality": "compact",
+      "resolution": 1.25,
+      "canvasPixels": {
+        "width": 450,
+        "height": 1966
+      },
+      "sampledFrames": 89,
+      "measuredFPS": 29.5,
+      "frameIntervalMedianMS": 36.200000047683716,
+      "frameIntervalP95MS": 37,
+      "totalLayoutShiftValue": 0,
+      "longTasksDuringSample": [],
+      "cityAssetRequests": [
+        {
+          "file": "city-front-compact.webp",
+          "transferBytes": 32704,
+          "encodedBodyBytes": 32404
+        },
+        {
+          "file": "city-static-compact.webp",
+          "transferBytes": 48192,
+          "encodedBodyBytes": 47892
+        },
+        {
+          "file": "sky-far-compact.webp",
+          "transferBytes": 42372,
+          "encodedBodyBytes": 42072
+        },
+        {
+          "file": "city-back-compact.webp",
+          "transferBytes": 60568,
+          "encodedBodyBytes": 60268
+        },
+        {
+          "file": "city-mid-compact.webp",
+          "transferBytes": 64960,
+          "encodedBodyBytes": 64660
+        },
+        {
+          "file": "city-front-compact.webp",
+          "transferBytes": 32704,
+          "encodedBodyBytes": 32404
+        },
+        {
+          "file": "office-props-compact.webp",
+          "transferBytes": 27186,
+          "encodedBodyBytes": 26886
+        },
+        {
+          "file": "city-mid-lights-compact.webp",
+          "transferBytes": 13452,
+          "encodedBodyBytes": 13152
+        }
+      ],
+      "heroBoundsStable": true,
+      "offscreenDraws": 0,
+      "simulatedHiddenDocumentDraws": 0,
+      "storageUnchanged": true,
+      "maxCanvasCount": 1,
+      "drawsAfterUnmount": 0,
+      "heapBeforeBytes": 6804548,
+      "heapCheckpoints": [
+        {
+          "cycles": 6,
+          "bytes": 7882548
+        }
+      ],
+      "heapFinalBytes": 7882548,
+      "heapDeltaBytes": 1078000,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "initializationMS": 378.6,
+      "initializationLongTasks": [
+        127
+      ],
+      "overflow": false,
+      "ctaAboveFold": true,
+      "quality": "compact",
+      "resolution": 1.25,
+      "canvasPixels": {
+        "width": 488,
+        "height": 1973
+      },
+      "sampledFrames": 89,
+      "measuredFPS": 29.5,
+      "frameIntervalMedianMS": 35.90000009536743,
+      "frameIntervalP95MS": 36.800000071525574,
+      "totalLayoutShiftValue": 0,
+      "longTasksDuringSample": [],
+      "cityAssetRequests": [
+        {
+          "file": "city-front-compact.webp",
+          "transferBytes": 32704,
+          "encodedBodyBytes": 32404
+        },
+        {
+          "file": "city-static-compact.webp",
+          "transferBytes": 48192,
+          "encodedBodyBytes": 47892
+        },
+        {
+          "file": "sky-far-compact.webp",
+          "transferBytes": 42372,
+          "encodedBodyBytes": 42072
+        },
+        {
+          "file": "city-back-compact.webp",
+          "transferBytes": 60568,
+          "encodedBodyBytes": 60268
+        },
+        {
+          "file": "city-mid-compact.webp",
+          "transferBytes": 64960,
+          "encodedBodyBytes": 64660
+        },
+        {
+          "file": "city-front-compact.webp",
+          "transferBytes": 32704,
+          "encodedBodyBytes": 32404
+        },
+        {
+          "file": "office-props-compact.webp",
+          "transferBytes": 27186,
+          "encodedBodyBytes": 26886
+        },
+        {
+          "file": "city-mid-lights-compact.webp",
+          "transferBytes": 13452,
+          "encodedBodyBytes": 13152
+        }
+      ],
+      "heroBoundsStable": true,
+      "offscreenDraws": 0,
+      "simulatedHiddenDocumentDraws": 0,
+      "storageUnchanged": true,
+      "maxCanvasCount": 1,
+      "drawsAfterUnmount": 0,
+      "heapBeforeBytes": 6813628,
+      "heapCheckpoints": [
+        {
+          "cycles": 6,
+          "bytes": 7944508
+        }
+      ],
+      "heapFinalBytes": 7944508,
+      "heapDeltaBytes": 1130880,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "initializationMS": 404.8,
+      "initializationLongTasks": [
+        58,
+        157
+      ],
+      "overflow": false,
+      "ctaAboveFold": true,
+      "quality": "desktop",
+      "resolution": 1.5,
+      "canvasPixels": {
+        "width": 1152,
+        "height": 2138
+      },
+      "sampledFrames": 132,
+      "measuredFPS": 43.7,
+      "frameIntervalMedianMS": 24.199999928474426,
+      "frameIntervalP95MS": 24.40000009536743,
+      "totalLayoutShiftValue": 0,
+      "longTasksDuringSample": [],
+      "cityAssetRequests": [
+        {
+          "file": "city-front.webp",
+          "transferBytes": 102834,
+          "encodedBodyBytes": 102534
+        },
+        {
+          "file": "city-static.webp",
+          "transferBytes": 126486,
+          "encodedBodyBytes": 126186
+        },
+        {
+          "file": "sky-far.webp",
+          "transferBytes": 121490,
+          "encodedBodyBytes": 121190
+        },
+        {
+          "file": "city-back.webp",
+          "transferBytes": 191130,
+          "encodedBodyBytes": 190830
+        },
+        {
+          "file": "city-mid.webp",
+          "transferBytes": 221598,
+          "encodedBodyBytes": 221298
+        },
+        {
+          "file": "city-front.webp",
+          "transferBytes": 102834,
+          "encodedBodyBytes": 102534
+        },
+        {
+          "file": "office-props.webp",
+          "transferBytes": 87258,
+          "encodedBodyBytes": 86958
+        },
+        {
+          "file": "city-mid-lights.webp",
+          "transferBytes": 46136,
+          "encodedBodyBytes": 45836
+        }
+      ],
+      "heroBoundsStable": true,
+      "offscreenDraws": 0,
+      "simulatedHiddenDocumentDraws": 0,
+      "storageUnchanged": true,
+      "maxCanvasCount": 1,
+      "drawsAfterUnmount": 0,
+      "heapBeforeBytes": 6788428,
+      "heapCheckpoints": [
+        {
+          "cycles": 6,
+          "bytes": 7869832
+        }
+      ],
+      "heapFinalBytes": 7869832,
+      "heapDeltaBytes": 1081404,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "initializationMS": 387.1,
+      "initializationLongTasks": [
+        66,
+        115
+      ],
+      "overflow": false,
+      "ctaAboveFold": true,
+      "quality": "desktop",
+      "resolution": 1.5,
+      "canvasPixels": {
+        "width": 2160,
+        "height": 1473
+      },
+      "sampledFrames": 131,
+      "measuredFPS": 43.7,
+      "frameIntervalMedianMS": 24.199999928474426,
+      "frameIntervalP95MS": 24.40000009536743,
+      "totalLayoutShiftValue": 0,
+      "longTasksDuringSample": [],
+      "cityAssetRequests": [
+        {
+          "file": "city-front.webp",
+          "transferBytes": 102834,
+          "encodedBodyBytes": 102534
+        },
+        {
+          "file": "city-static.webp",
+          "transferBytes": 126486,
+          "encodedBodyBytes": 126186
+        },
+        {
+          "file": "sky-far.webp",
+          "transferBytes": 121490,
+          "encodedBodyBytes": 121190
+        },
+        {
+          "file": "city-back.webp",
+          "transferBytes": 191130,
+          "encodedBodyBytes": 190830
+        },
+        {
+          "file": "city-mid.webp",
+          "transferBytes": 221598,
+          "encodedBodyBytes": 221298
+        },
+        {
+          "file": "city-front.webp",
+          "transferBytes": 102834,
+          "encodedBodyBytes": 102534
+        },
+        {
+          "file": "office-props.webp",
+          "transferBytes": 87258,
+          "encodedBodyBytes": 86958
+        },
+        {
+          "file": "city-mid-lights.webp",
+          "transferBytes": 46136,
+          "encodedBodyBytes": 45836
+        }
+      ],
+      "heroBoundsStable": true,
+      "offscreenDraws": 0,
+      "simulatedHiddenDocumentDraws": 0,
+      "storageUnchanged": true,
+      "maxCanvasCount": 1,
+      "drawsAfterUnmount": 0,
+      "heapBeforeBytes": 7088640,
+      "heapCheckpoints": [
+        {
+          "cycles": 6,
+          "bytes": 8180796
+        },
+        {
+          "cycles": 12,
+          "bytes": 8824152
+        },
+        {
+          "cycles": 18,
+          "bytes": 9027540
+        }
+      ],
+      "heapFinalBytes": 9027540,
+      "heapDeltaBytes": 1938900,
+      "errors": []
+    }
+  ]
+}

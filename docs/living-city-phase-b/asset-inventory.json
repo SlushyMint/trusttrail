@@ -1,0 +1,70 @@
+{
+  "encoder": "Chrome Canvas WebP, quality 0.90 layers / 0.95 emission mask / 0.88 static composite; no resampling, no reference-panel crops, generated alpha preserved.",
+  "assets": [
+    {
+      "id": "sky-far",
+      "width": 1672,
+      "height": 941,
+      "transparent": 0,
+      "translucent": 0,
+      "opaque": 1573352,
+      "bytes": 121190,
+      "src": "/assets/living-city/sky-far.webp"
+    },
+    {
+      "id": "city-back",
+      "width": 1672,
+      "height": 941,
+      "transparent": 1119900,
+      "translucent": 453168,
+      "opaque": 284,
+      "bytes": 190830,
+      "src": "/assets/living-city/city-back.webp"
+    },
+    {
+      "id": "city-mid",
+      "width": 1672,
+      "height": 941,
+      "transparent": 975489,
+      "translucent": 597660,
+      "opaque": 203,
+      "bytes": 221298,
+      "src": "/assets/living-city/city-mid.webp"
+    },
+    {
+      "id": "city-mid-lights",
+      "width": 1672,
+      "height": 941,
+      "lightPixels": 28892,
+      "bytes": 45836,
+      "src": "/assets/living-city/city-mid-lights.webp"
+    },
+    {
+      "id": "city-front",
+      "width": 1672,
+      "height": 941,
+      "transparent": 1210320,
+      "translucent": 362593,
+      "opaque": 439,
+      "bytes": 102534,
+      "src": "/assets/living-city/city-front.webp"
+    },
+    {
+      "id": "office-props",
+      "width": 1672,
+      "height": 941,
+      "transparent": 1369661,
+      "translucent": 203450,
+      "opaque": 241,
+      "bytes": 86958,
+      "src": "/assets/living-city/office-props.webp"
+    },
+    {
+      "id": "city-static",
+      "width": 1672,
+      "height": 941,
+      "bytes": 126186,
+      "src": "/assets/living-city/city-static.webp"
+    }
+  ]
+}

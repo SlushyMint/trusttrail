@@ -1,0 +1,58 @@
+[
+  {
+    "path": "public/assets/living-city/sky-far-compact.webp",
+    "width": 836,
+    "height": 471,
+    "bytes": 42072,
+    "source": "sky-far.webp",
+    "scale": 0.5
+  },
+  {
+    "path": "public/assets/living-city/city-back-compact.webp",
+    "width": 836,
+    "height": 471,
+    "bytes": 60268,
+    "source": "city-back.webp",
+    "scale": 0.5
+  },
+  {
+    "path": "public/assets/living-city/city-mid-compact.webp",
+    "width": 836,
+    "height": 471,
+    "bytes": 64660,
+    "source": "city-mid.webp",
+    "scale": 0.5
+  },
+  {
+    "path": "public/assets/living-city/city-front-compact.webp",
+    "width": 836,
+    "height": 471,
+    "bytes": 32404,
+    "source": "city-front.webp",
+    "scale": 0.5
+  },
+  {
+    "path": "public/assets/living-city/office-props-compact.webp",
+    "width": 836,
+    "height": 471,
+    "bytes": 26886,
+    "source": "office-props.webp",
+    "scale": 0.5
+  },
+  {
+    "path": "public/assets/living-city/city-mid-lights-compact.webp",
+    "width": 836,
+    "height": 471,
+    "bytes": 13152,
+    "source": "city-mid-lights.webp",
+    "scale": 0.5
+  },
+  {
+    "path": "public/assets/living-city/city-static-compact.webp",
+    "width": 836,
+    "height": 471,
+    "bytes": 47892,
+    "source": "city-static.webp",
+    "scale": 0.5
+  }
+]

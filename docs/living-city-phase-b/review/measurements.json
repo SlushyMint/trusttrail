@@ -1,0 +1,311 @@
+{
+  "browser": "156.0.8078.76",
+  "environment": "Local headless browser; mobile emulation, no CPU/network throttle; not physical-device or GPU-memory measurements.",
+  "viewports": [
+    {
+      "width": 360,
+      "initializationMS": 494,
+      "initializationLongTasks": [
+        246,
+        122
+      ],
+      "overflow": false,
+      "ctaAboveFold": true,
+      "quality": "compact",
+      "resolution": 1.25,
+      "canvasPixels": {
+        "width": 450,
+        "height": 1058
+      },
+      "sampledFrames": 89,
+      "measuredFPS": 29.5,
+      "frameIntervalMedianMS": 36.199999928474426,
+      "frameIntervalP95MS": 36.60000002384186,
+      "totalLayoutShiftValue": 0,
+      "longTasksDuringSample": [],
+      "cityAssetRequests": [
+        {
+          "file": "city-static.webp",
+          "transferBytes": 126486,
+          "encodedBodyBytes": 126186
+        },
+        {
+          "file": "sky-far.webp",
+          "transferBytes": 121490,
+          "encodedBodyBytes": 121190
+        },
+        {
+          "file": "city-back.webp",
+          "transferBytes": 191130,
+          "encodedBodyBytes": 190830
+        },
+        {
+          "file": "city-mid.webp",
+          "transferBytes": 221598,
+          "encodedBodyBytes": 221298
+        },
+        {
+          "file": "city-front.webp",
+          "transferBytes": 102834,
+          "encodedBodyBytes": 102534
+        },
+        {
+          "file": "office-props.webp",
+          "transferBytes": 87258,
+          "encodedBodyBytes": 86958
+        },
+        {
+          "file": "city-mid-lights.webp",
+          "transferBytes": 46136,
+          "encodedBodyBytes": 45836
+        }
+      ],
+      "heroBoundsStable": true,
+      "offscreenDraws": 0,
+      "simulatedHiddenDocumentDraws": 0,
+      "storageUnchanged": true,
+      "maxCanvasCount": 1,
+      "drawsAfterUnmount": 0,
+      "heapBeforeBytes": 6783132,
+      "heapCheckpoints": [
+        {
+          "cycles": 6,
+          "bytes": 7793436
+        }
+      ],
+      "heapFinalBytes": 7793436,
+      "heapDeltaBytes": 1010304,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "initializationMS": 229.3,
+      "initializationLongTasks": [
+        63
+      ],
+      "overflow": false,
+      "ctaAboveFold": true,
+      "quality": "compact",
+      "resolution": 1.25,
+      "canvasPixels": {
+        "width": 488,
+        "height": 1089
+      },
+      "sampledFrames": 89,
+      "measuredFPS": 29.5,
+      "frameIntervalMedianMS": 36.200000047683716,
+      "frameIntervalP95MS": 36.60000002384186,
+      "totalLayoutShiftValue": 0,
+      "longTasksDuringSample": [],
+      "cityAssetRequests": [
+        {
+          "file": "city-static.webp",
+          "transferBytes": 126486,
+          "encodedBodyBytes": 126186
+        },
+        {
+          "file": "sky-far.webp",
+          "transferBytes": 121490,
+          "encodedBodyBytes": 121190
+        },
+        {
+          "file": "city-back.webp",
+          "transferBytes": 191130,
+          "encodedBodyBytes": 190830
+        },
+        {
+          "file": "city-mid.webp",
+          "transferBytes": 221598,
+          "encodedBodyBytes": 221298
+        },
+        {
+          "file": "office-props.webp",
+          "transferBytes": 87258,
+          "encodedBodyBytes": 86958
+        },
+        {
+          "file": "city-front.webp",
+          "transferBytes": 102834,
+          "encodedBodyBytes": 102534
+        },
+        {
+          "file": "city-mid-lights.webp",
+          "transferBytes": 46136,
+          "encodedBodyBytes": 45836
+        }
+      ],
+      "heroBoundsStable": true,
+      "offscreenDraws": 0,
+      "simulatedHiddenDocumentDraws": 0,
+      "storageUnchanged": true,
+      "maxCanvasCount": 1,
+      "drawsAfterUnmount": 0,
+      "heapBeforeBytes": 6773156,
+      "heapCheckpoints": [
+        {
+          "cycles": 6,
+          "bytes": 7781236
+        }
+      ],
+      "heapFinalBytes": 7781236,
+      "heapDeltaBytes": 1008080,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "initializationMS": 194.1,
+      "initializationLongTasks": [
+        65
+      ],
+      "overflow": false,
+      "ctaAboveFold": true,
+      "quality": "desktop",
+      "resolution": 1.5,
+      "canvasPixels": {
+        "width": 1152,
+        "height": 1632
+      },
+      "sampledFrames": 132,
+      "measuredFPS": 43.9,
+      "frameIntervalMedianMS": 24.199999928474426,
+      "frameIntervalP95MS": 25.5,
+      "totalLayoutShiftValue": 0,
+      "longTasksDuringSample": [],
+      "cityAssetRequests": [
+        {
+          "file": "city-static.webp",
+          "transferBytes": 126486,
+          "encodedBodyBytes": 126186
+        },
+        {
+          "file": "sky-far.webp",
+          "transferBytes": 121490,
+          "encodedBodyBytes": 121190
+        },
+        {
+          "file": "city-back.webp",
+          "transferBytes": 191130,
+          "encodedBodyBytes": 190830
+        },
+        {
+          "file": "city-mid.webp",
+          "transferBytes": 221598,
+          "encodedBodyBytes": 221298
+        },
+        {
+          "file": "office-props.webp",
+          "transferBytes": 87258,
+          "encodedBodyBytes": 86958
+        },
+        {
+          "file": "city-front.webp",
+          "transferBytes": 102834,
+          "encodedBodyBytes": 102534
+        },
+        {
+          "file": "city-mid-lights.webp",
+          "transferBytes": 46136,
+          "encodedBodyBytes": 45836
+        }
+      ],
+      "heroBoundsStable": true,
+      "offscreenDraws": 0,
+      "simulatedHiddenDocumentDraws": 0,
+      "storageUnchanged": true,
+      "maxCanvasCount": 1,
+      "drawsAfterUnmount": 0,
+      "heapBeforeBytes": 6674756,
+      "heapCheckpoints": [
+        {
+          "cycles": 6,
+          "bytes": 7704564
+        }
+      ],
+      "heapFinalBytes": 7704564,
+      "heapDeltaBytes": 1029808,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "initializationMS": 249.8,
+      "initializationLongTasks": [
+        66
+      ],
+      "overflow": false,
+      "ctaAboveFold": true,
+      "quality": "desktop",
+      "resolution": 1.5,
+      "canvasPixels": {
+        "width": 2160,
+        "height": 1052
+      },
+      "sampledFrames": 131,
+      "measuredFPS": 43.9,
+      "frameIntervalMedianMS": 24.199999928474426,
+      "frameIntervalP95MS": 24.399999976158142,
+      "totalLayoutShiftValue": 0,
+      "longTasksDuringSample": [],
+      "cityAssetRequests": [
+        {
+          "file": "city-static.webp",
+          "transferBytes": 126486,
+          "encodedBodyBytes": 126186
+        },
+        {
+          "file": "sky-far.webp",
+          "transferBytes": 121490,
+          "encodedBodyBytes": 121190
+        },
+        {
+          "file": "city-back.webp",
+          "transferBytes": 191130,
+          "encodedBodyBytes": 190830
+        },
+        {
+          "file": "city-mid.webp",
+          "transferBytes": 221598,
+          "encodedBodyBytes": 221298
+        },
+        {
+          "file": "city-front.webp",
+          "transferBytes": 102834,
+          "encodedBodyBytes": 102534
+        },
+        {
+          "file": "office-props.webp",
+          "transferBytes": 87258,
+          "encodedBodyBytes": 86958
+        },
+        {
+          "file": "city-mid-lights.webp",
+          "transferBytes": 46136,
+          "encodedBodyBytes": 45836
+        }
+      ],
+      "heroBoundsStable": true,
+      "offscreenDraws": 0,
+      "simulatedHiddenDocumentDraws": 0,
+      "storageUnchanged": true,
+      "maxCanvasCount": 1,
+      "drawsAfterUnmount": 0,
+      "heapBeforeBytes": 6992780,
+      "heapCheckpoints": [
+        {
+          "cycles": 6,
+          "bytes": 8021860
+        },
+        {
+          "cycles": 12,
+          "bytes": 8660344
+        },
+        {
+          "cycles": 18,
+          "bytes": 8857640
+        }
+      ],
+      "heapFinalBytes": 8857640,
+      "heapDeltaBytes": 1864860,
+      "errors": []
+    }
+  ]
+}

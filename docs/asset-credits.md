@@ -1,5 +1,9 @@
 # Asset and font provenance
 
+**Homepage Phase B.1 — 1 November 2026:** seven compact WebP exports are technical derivatives of the approved Phase B city art, uniformly reduced with nearest sampling. No new creative imagery was generated. Original PixelIcon SVGs are reused for Mail, Browser, Case Files and archive files; the footer reuses the existing foreground. [Compact inventory](phase-b1-review/compact-assets.json), [reproducible exporter](../scripts/prepare-city-compact.mjs), [implementation and validation](living-city-phase-b1.md).
+
+**Living city homepage, Phase B — 31 October 2026:** five original layers generated with the built-in `image_gen.imagegen` tool using the user-provided `public/assets/city-layer-concept.png` solely as art direction. Final layers, a technical emission mask, and a deterministic static composite are encoded as WebP in `public/assets/living-city/`. No reference panels were cropped or used as runtime backgrounds. [Exact prompts/source outputs](living-city-phase-b/generation-prompts.json), [inventory and dimensions](living-city-phase-b/asset-inventory.json), and [integration/validation](living-city-phase-b.md) record the work. The fictional city contains no real brand claims, interface text, or gameplay evidence.
+
 **Current production assets:** the approved dual-OS game uses the original coastal pixel wallpaper (`public/pixel/relay-coast.png`), original pixel icons in `src/features/os/PixelIcon.tsx`, the matching stepped-signal SVG favicon, Inter and Silkscreen. [Exact wallpaper prompt/provenance](pixel-desktop-review/assets.json), [Silkscreen OFL](../public/fonts/Silkscreen-OFL.txt), [production validation](dual-os-integration/validation.md). Earlier illustrated assets listed below are historical and are not rendered by the production entry.
 
 

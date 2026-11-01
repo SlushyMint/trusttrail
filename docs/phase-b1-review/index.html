@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TrustTrail — Phase B.1 review</title>
+<style>
+  :root{color-scheme:dark;font:16px/1.6 system-ui,sans-serif;background:#0b1423;color:#e3edf2}body{max-width:1440px;margin:auto;padding:32px}h1{font-size:clamp(28px,4vw,48px);line-height:1.15}h2{margin-top:64px}a{color:#78d8c3;text-underline-offset:4px}a:focus-visible,summary:focus-visible{outline:3px solid #78d8c3;outline-offset:5px}nav{display:flex;gap:24px;flex-wrap:wrap}nav a{padding:12px 0}p{max-width:80ch}.pair{display:grid;grid-template-columns:1fr 1fr;gap:24px}figure{margin:0;background:#142231;padding:16px}figcaption{margin-bottom:16px;font-weight:600}img{display:block;width:100%;height:auto;max-height:1100px;object-fit:contain;object-position:top}summary{cursor:pointer;padding:14px 0}li{padding:5px 0}.mobile{max-width:390px;margin:auto}@media(max-width:700px){body{padding:20px}.pair{grid-template-columns:1fr}}
+</style>
+<header><p>Product Owner review · 1 November 2026</p><h1>TrustTrail / Phase B.1</h1><p>The recruitment invitation now opens an interactive OS preview, followed by a sourced intelligence archive. This is a local review gallery; nothing has been deployed.</p><nav><a href="#desktop">Desktop comparison</a><a href="#mobile">Mobile comparison</a><a href="#states">Interaction states</a><a href="../living-city-phase-b1.md">Implementation & validation report</a></nav></header>
+<main>
+<section id="desktop"><h2>Desktop · 1440px</h2><p>Select an image for its original capture. The before image is the untouched Phase B page. The after image uses the final production build.</p><div class="pair"><figure><figcaption>Before · Phase B</figcaption><a href="before/1440.png"><img src="before/1440.png" alt="Phase B desktop homepage before the overhaul"></a></figure><figure><figcaption>After · Phase B.1</figcaption><a href="after/1440-full.png"><img src="after/1440-full.png" alt="Phase B.1 desktop homepage with a continuous city, selectable applications and intelligence archive"></a></figure></div></section>
+<section id="mobile"><h2>Mobile · 390px</h2><div class="pair"><figure><figcaption>Before · Phase B</figcaption><a href="before/390.png"><img class="mobile" src="before/390.png" alt="Phase B mobile homepage before the overhaul"></a></figure><figure><figcaption>After · Phase B.1</figcaption><a href="after/390-full.png"><img class="mobile" src="after/390-full.png" alt="Phase B.1 mobile homepage with readable app previews and touch-friendly file selection"></a></figure></div></section>
+<section id="states"><h2>Interaction & responsive captures</h2><p>Application and intelligence state captures use reduced motion and a 1100px-tall viewport for deterministic stills of the selected interface. First-screen captures use normal motion at 844px mobile / 1000px tablet and desktop heights; separate reduced-motion views are linked below.</p>
+<details open><summary>All five viewport sizes</summary><ul>
+<li>360px: <a href="after/360-fold.png">First screen</a> · <a href="after/360-full.png">Full page</a> · <a href="after/360-reduced.png">Reduced motion</a></li>
+<li>390px: <a href="after/390-fold.png">First screen</a> · <a href="after/390-full.png">Full page</a> · <a href="after/390-reduced.png">Reduced motion</a></li>
+<li>768px: <a href="after/768-fold.png">First screen</a> · <a href="after/768-full.png">Full page</a> · <a href="after/768-reduced.png">Reduced motion</a></li>
+<li>1440px: <a href="after/1440-fold.png">First screen</a> · <a href="after/1440-full.png">Full page</a> · <a href="after/1440-reduced.png">Reduced motion</a></li>
+<li>1920px: <a href="after/1920-fold.png">First screen</a> · <a href="after/1920-full.png">Full page</a> · <a href="after/1920-reduced.png">Reduced motion</a></li>
+</ul></details>
+<details><summary>OS preview & isolated practice</summary><ul>
+<li>Desktop: <a href="after/1440-os-mail.png">Mail</a> · <a href="after/1440-os-browser.png">Browser</a> · <a href="after/1440-os-case-files.png">Case Files</a> · <a href="after/1440-practice.png">Sender inspection</a></li>
+<li>Mobile: <a href="after/390-os-mail.png">Mail</a> · <a href="after/390-os-browser.png">Browser</a> · <a href="after/390-os-case-files.png">Case Files</a> · <a href="after/390-practice.png">Sender inspection</a></li>
+</ul></details>
+<details><summary>All intelligence files</summary><ul>
+<li>Desktop: <a href="after/1440-intel-1.png">IASC</a> · <a href="after/1440-intel-2.png">Fictitious overseas job advertisements</a> · <a href="after/1440-intel-3.png">IMDI phishing awareness</a></li>
+<li>Mobile: <a href="after/390-intel-1.png">IASC</a> · <a href="after/390-intel-2.png">Fictitious overseas job advertisements</a> · <a href="after/390-intel-3.png">IMDI phishing awareness</a></li>
+</ul></details></section>
+<section><h2>Evidence</h2><ul><li><a href="browser-results.json">Responsive, interaction, storage, console and asset checks</a></li><li><a href="performance/measurements.json">Actual rendering, resource, initialization and heap samples</a></li><li><a href="compact-assets.json">Compact asset inventory</a></li><li><a href="smoke.log">98 browser test results</a></li><li><a href="design-lint.log">Design skill source check</a></li><li><a href="critique.md">Final visual critique</a></li></ul></section>
+</main><footer><p>Stopped at Phase B.1 for Product Owner review. No Git version changes or deployment.</p></footer></html>

@@ -1,0 +1,53 @@
+{
+  "browser": "156.0.8078.76",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "checkpoints": [
+    {
+      "cycles": 0,
+      "Documents": 1,
+      "JSEventListeners": 354,
+      "Nodes": 1288,
+      "JSHeapUsedSize": 6574192
+    },
+    {
+      "cycles": 6,
+      "Documents": 1,
+      "JSEventListeners": 504,
+      "Nodes": 4090,
+      "JSHeapUsedSize": 9216664
+    },
+    {
+      "cycles": 12,
+      "Documents": 1,
+      "JSEventListeners": 654,
+      "Nodes": 6892,
+      "JSHeapUsedSize": 11170972
+    },
+    {
+      "cycles": 18,
+      "Documents": 1,
+      "JSEventListeners": 804,
+      "Nodes": 9694,
+      "JSHeapUsedSize": 12616456
+    },
+    {
+      "cycles": 30,
+      "Documents": 1,
+      "JSEventListeners": 1104,
+      "Nodes": 15298,
+      "JSHeapUsedSize": 15367180
+    },
+    {
+      "cycles": 42,
+      "Documents": 1,
+      "JSEventListeners": 1404,
+      "Nodes": 20902,
+      "JSHeapUsedSize": 18000496
+    }
+  ],
+  "errors": [],
+  "notes": "Forced-GC checkpoints on /guide after SPA city mount/unmount; retained JS/DOM counts, not GPU or native memory."
+}
