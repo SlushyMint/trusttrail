@@ -6,6 +6,10 @@ import tseslint from 'typescript-eslint';
 export default tseslint.config(
   { ignores: ['dist/**', 'node_modules/**', '.cache/**', '.taste-skill/**', 'test-results/**', 'playwright-report/**'] },
   js.configs.recommended,
+  {
+    files: ['docs/phase-5a-evidence/*.mjs'],
+    languageOptions: { globals: { ...globals.browser, ...globals.node } },
+  },
   ...tseslint.configs.recommended,
   {
     files: ['**/*.{ts,tsx}'],

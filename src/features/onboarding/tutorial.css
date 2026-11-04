@@ -1,0 +1,17 @@
+.tt-tutorial { flex: none; position: relative; z-index: 40; background: #142d3b; color: #f5f3ee; border-left: 4px solid #f0b35a; padding: 12px 18px; margin: 8px 16px; max-width: 720px; }
+.tt-tutorial h2 { font-size: 18px; line-height: 1.3; margin: 3px 0 6px; color: #f5f3ee; }
+.tt-tutorial p { font-size: 14px; line-height: 1.5; margin: 0; }
+.tt-tutorial .tt-tutorial-progress { color: #a8e1d7; font-size: 12px; }
+.tt-tutorial .tt-tutorial-cue { margin-top: 6px; color: #f0cf9d; }
+.tt-tutorial-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.tt-tutorial button { min-height: 44px; font: inherit; font-size: 14px; color: #f5f3ee; }
+.tt-tutorial :focus-visible { outline: 3px solid #f0b35a; outline-offset: 3px; }
+[data-tutorial-target=true] { outline: 3px solid #f0b35a !important; outline-offset: -3px; }
+@media (max-width: 1119px), (max-height: 699px) { .tt-tutorial { margin: 8px; padding: 10px 12px; } }
+@media (prefers-reduced-motion: reduce) { .tt-tutorial { animation: none; transition: none; } }
+/* Keep Mail's action footer inside its grid when guidance and a save notice share the shell. */
+.os-desktop:has(.tt-tutorial) .px-mail-panes { grid-template-rows: minmax(0, 1fr); }
+.os-desktop:has(.tt-tutorial) .px-mail-list { min-height: 0; overflow-y: auto; }
+.os-desktop > .tt-tutorial { display: flex; align-items: center; gap: 24px; max-width: none; }
+.os-desktop > .tt-tutorial > [role=status] { max-width: 760px; }
+.os-desktop > .tt-tutorial .tt-tutorial-actions { flex: none; margin: 0; }

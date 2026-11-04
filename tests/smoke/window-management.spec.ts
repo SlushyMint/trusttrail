@@ -97,6 +97,8 @@ test('click and keyboard placement support comparison, reset and mobile reflow',
   await expect.poll(() => source.evaluate(el => getComputedStyle(el).transform)).toBe('none');
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.setViewportSize({ width: 1440, height: 1000 });
+  // Viewport updates precede React's shell commit; measure one settled shell.
+  await expect(page.locator('.trusttrail-os')).toHaveAttribute('data-os', 'desktop');
   await insideWorkspace(page, source);
   expect(await readRun(page)).toEqual(saved);
 });

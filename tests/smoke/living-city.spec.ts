@@ -87,12 +87,20 @@ test('one scene resizes at all four requested widths without overflowing or bloc
   await expect(city).toHaveAttribute('data-city-status', 'ready');
   for (const width of [1440, 768, 390, 360]) {
     await page.setViewportSize({ width, height: width < 768 ? 844 : 1000 });
-    await expect(city.locator('canvas')).toHaveCount(1);
-    await expect.poll(() => city.locator('canvas').evaluate(el => Math.abs(el.getBoundingClientRect().width - el.parentElement!.clientWidth))).toBeLessThanOrEqual(1);
-    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    // Measure one settled frame per width; separate renderer round trips can consume
+    // the whole test budget on software WebGL even when every assertion passes.
+    await expect.poll(() => page.evaluate(() => {
+      const canvases = document.querySelectorAll('.living-city canvas');
+      const canvas = canvases[0];
+      const button = document.querySelector('.portal-start button');
+      return {
+        canvasCount: canvases.length,
+        canvasFits: !!canvas && Math.abs(canvas.getBoundingClientRect().width - canvas.parentElement!.clientWidth) <= 1,
+        documentFits: document.documentElement.scrollWidth <= innerWidth,
+        buttonAboveFold: !!button && button.getBoundingClientRect().bottom < innerHeight,
+      };
+    })).toEqual({ canvasCount: 1, canvasFits: true, documentFits: true, buttonAboveFold: true });
     const button = page.getByRole('button', { name: /Mulai investigasi/ }).first();
-    const bounds = await button.boundingBox();
-    expect(bounds!.y + bounds!.height).toBeLessThan(await page.evaluate(() => innerHeight));
     await button.focus();
     await expect(button).toBeFocused();
   }

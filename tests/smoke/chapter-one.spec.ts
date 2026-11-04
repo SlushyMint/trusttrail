@@ -151,6 +151,8 @@ test('Chapter 1 can be completed using keyboard traversal and activation only', 
   await activate(page.locator('#os-menu-trigger'));
   await activate(page.getByRole('dialog', { name: 'Menu TrustTrail' }).getByRole('button', { name: 'Mail Kotak masuk Ari', exact: true }));
   const invitation = page.getByRole('button', { name: /NovaTech.*Undangan tahap akhir/ });
+  // Wait for the route's inbox/reader before deciding which keyboard control to use.
+  await expect(invitation.or(page.getByRole('button', { name: /Tentukan langkah/ })).first()).toBeVisible();
   if (await invitation.isVisible()) await activate(invitation);
   await activate(page.getByRole('button', { name: /Tentukan langkah/ }));
   await tabTo(page.getByRole('radio', { name: /Buka tautan undangan/ }));
@@ -173,8 +175,11 @@ test('active email and source comparison reflow at 320, 360, 768 and 1440 pixels
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     await openGameApp(page, 'Browser');
     const inspectSource = page.getByRole('button', { name: 'Periksa catatan lowongan', exact: true });
+    const comparison = page.getByRole('button', { name: 'Bandingkan dengan undangan' });
+    // Browser navigation must commit before sampling its optional inspection control.
+    await expect(inspectSource.or(comparison).first()).toBeVisible();
     if (await inspectSource.isVisible()) await inspectSource.click();
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-    await expect(page.getByRole('button', { name: 'Bandingkan dengan undangan' })).toBeVisible();
+    await expect(comparison).toBeVisible();
   }
 });

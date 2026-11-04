@@ -1,6 +1,6 @@
 # Node 26 compatibility audit
 
-Date: 29 October 2026. Scope: adapt the existing Phase 1 foundation to the Product Owner's Node **26.13.0 / npm 11.6.3** target. This supersedes the earlier Node 22 Option A selection. React + TypeScript + Vite, all application behavior and existing source/tests are retained. Phase 2 is not authorized; the Product Owner handles all Git operations.
+Historical audit date: 29 October 2026. Current dependency and validation correction: [Phase 5B](phase-5b-remediation-report.md), 3 November 2026. ESLint 9.39.5 / TypeScript-ESLint 8.72.1 are restored after the incompatible 4.0.0 / 8.14.0 pins found in Phase 5A. The table below matches those restored lint pins; earlier installation results are historical. Scope: adapt the existing Phase 1 foundation to the Product Owner's Node **26.13.0 / npm 11.6.3** target. This supersedes the earlier Node 22 Option A selection. React + TypeScript + Vite, all application behavior and existing source/tests are retained. Phase 2 is not authorized; the Product Owner handles all Git operations.
 
 ## Evidence and proposed changes
 
@@ -38,7 +38,7 @@ Final outcome: clean installation, aggregate typecheck/lint/unit/build, six brow
 | vite | 8.3.5 | `^20.19.0 \|\| >=22.12.0` | Accepted; no Vite major upgrade needed |
 | vitest | 5.0.5 | `^22.12.0 \|\| ^24.0.0 \|\| >=26.0.0` | Explicitly accepts Node 26; Vite 8 and jsdom peers satisfied |
 
-There are **23 direct dependencies** (3 runtime, 20 development). The selected package manager **npm 11.6.3** separately declares Node `^20.17.0 || >=22.9.0`, which accepts Node 26.13.0.
+The current manifest has **25 direct dependencies** (5 runtime, 20 development), including the later Motion/Pixi additions. The table above covers the original foundation packages; it is not a complete current dependency inventory. The selected package manager **npm 11.6.3** separately declares Node `^20.17.0 || >=22.9.0`, which accepts Node 26.13.0.
 
 `@types/node` describes APIs available to TypeScript; its major does not need to match the executing runtime. Keeping 22.20.5 avoids a gratuitous major upgrade and retains a conservative API surface for the existing configuration. It satisfies both Vite's `^20.19.0 || >=22.12.0` and Vitest's `^22.0.0 || >=24.0.0` types peers. Revisit only if the project later uses Node 26-specific APIs.
 

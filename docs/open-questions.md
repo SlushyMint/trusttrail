@@ -1,5 +1,7 @@
 # Open decisions, source conflicts and approval record
 
+Phase 5B update, 3 November 2026: the original eight-page guide is now supplied and read; see [page-specific rules](mit-week-requirements.md). Q04 is closed for guide/rubric/deadline verification, but remains open for the separate official briefing case. Public artifacts and submission remain owner actions. Earlier records below are historical.
+
 Updated: 29 October 2026. Full production development through M1–M4 is authorized. The separate phase/vertical-slice approval workflow is superseded by [production milestones](production-milestones.md). Approximately six focused hours/day; no Git operations. Public deployment/submission still require explicit approval. Older per-phase approval requirements below are historical.
 
 ## Sources and confirmed facts
@@ -9,7 +11,7 @@ Updated: 29 October 2026. Full production development through M1–M4 is authori
 - Master prompt: Phase 0 docs only; no dependencies, global changes, app implementation or deployment resources.
 - Subsequent review amendments retain the architecture direction and adopt scoring baseline v1, meaningful verification, authored safe-path continuity, shared recovery, neutral Indonesian feedback and minimal accessible editorial visuals. They explicitly withhold Phase 1 authorization and require separate publication/deployment approval.
 - User confirmed **one person, maximum 6 focused hours/day through 9 November**. Prior human focused-hour usage today and public repository ownership remain unknown.
-- The original official eight-page MIT-WEEK technical guide and original official case source are **not present**. GDD notes prior receipt by the Product Owner; that does not make those files available to engineering. A public search located a candidate guide shortlink in a third-party directory, but the tool could not open it; official rules remain unverified.
+- At the historical Phase 0/5A review, the original official eight-page MIT-WEEK technical guide and original official case source were **not present**. The guide is now available (Phase 5B); the case source remains missing. GDD notes prior receipt by the Product Owner; that does not make those files available to engineering. A public search located a candidate guide shortlink in a third-party directory, but the tool could not open it; official rules remain unverified.
 - Phase 1 now includes source/configuration and a local Git repository. The [capability audit](capability-audit.md) is the historical Phase 0 snapshot; current installation/check results belong in the Phase 1 validation record.
 
 Use explicit user steering first; the review supersedes older proposals where listed below. Other unapproved details in GDD/blueprint remain proposals. Source GDD/blueprint are preserved; this approval record and linked planning amendments carry the changes.

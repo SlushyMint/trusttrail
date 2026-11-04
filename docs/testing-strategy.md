@@ -1,5 +1,8 @@
 # Testing and release strategy
 
+**Phase 5C current validation, 3 November 2026:** actual scripts are `npm run check` (TypeScript, ESLint, Vitest unit/integration and production build) and `npm run test:smoke` (Playwright against production preview). Current results: 94 unit/integration tests and 106 managed-Chromium desktop/mobile cases pass. Two test-only route/readiness waits and one scoped 60-second repeated-GC diagnostic budget were needed; original assertions and normal test/expectation deadlines remain. System-Chromium timing failures and absent Firefox/WebKit tooling are documented in [release evidence and limits](phase-5c-release-readiness.md). Earlier proposed scripts, four-competency reporting, axe coverage and milestone claims below are historical planning, not claims of current implementation or completed checks. Actual reporting is per-chapter fractions plus derived practice recommendations; no accessibility or learning-effect certification is implied.
+
+
 Status: production testing strategy authorized through M1–M4. Existing control tests are retained; M1 adds engine, content, persistence, integration and browser journey checks. Later full-game/report/second-engine cases below remain release work. Current authority/schedule: [production milestones](production-milestones.md); actual M1 execution: [M1 validation](m1-validation.md).
 
 ## Strategy and automation boundaries

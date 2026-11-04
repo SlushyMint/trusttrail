@@ -19,6 +19,8 @@ import { DesktopSystemBar, DesktopTaskbar, MobileStatusBar, MobileSystemNavigati
 import { useDesktopLayout } from './useDesktopLayout';
 import { AppFrame, type WindowSlot } from './AppFrame';
 import './window-management.css';
+import { Tutorial } from '../onboarding/Tutorial';
+import { advanceTutorial, readTutorial, storeTutorial, tutorialEligible, stages, type TutorialState, type Stage } from '../onboarding/tutorial';
 
 type Surface = AppId | 'home' | 'guide' | 'report' | 'missing';
 const surfaces: { id: Surface; title: string; icon: PixelKind }[] = [
@@ -73,12 +75,32 @@ export function OperatingSystem() {
     setHiddenApps(items => items.includes(app) ? items.filter(id => id !== app) : items);
   }
 
+  const [tutorial, setTutorial] = useState<TutorialState>(readTutorial);
+  const [replaying, setReplaying] = useState(false);
+  const tutorialVisible = playing && (replaying ? canInvestigate : tutorialEligible(chapter.id, game.position.kind, playing)) && stages.includes(tutorial as Stage);
+  const tutorialTarget = tutorialVisible && ['mail', 'browser', 'journal'].includes(tutorial) ? tutorial : null;
+  function updateTutorial(next: TutorialState) { setTutorial(next); storeTutorial(next); }
+  function dismissTutorial(complete: boolean) {
+    updateTutorial(complete ? 'completed' : 'skipped');
+    setReplaying(false);
+    requestAnimationFrame(() => (document.querySelector<HTMLElement>('.drawer[open] button') ?? document.getElementById(desktop ? `task-${selected}` : 'os-menu-trigger') ?? document.getElementById('os-main'))?.focus());
+  }
+  useEffect(() => {
+    if (!tutorialVisible) return;
+    storeTutorial(tutorial);
+    const escape = (event: KeyboardEvent) => { if (event.key === 'Escape') { setTutorial('skipped'); storeTutorial('skipped'); setReplaying(false); requestAnimationFrame(() => (document.querySelector<HTMLElement>('.drawer[open] button') ?? document.getElementById(desktop ? `task-${selected}` : 'os-menu-trigger') ?? document.getElementById('os-main'))?.focus()); } };
+    document.addEventListener('keydown', escape);
+    return () => document.removeEventListener('keydown', escape);
+  }, [tutorialVisible, tutorial, desktop, selected]);
+  const tutorialPanel = tutorialVisible ? <Tutorial stage={tutorial as Stage} mobileMenu={!desktop && menu} onStart={() => updateTutorial('mail')} onDismiss={dismissTutorial} /> : null;
+
   function pathFor(id: AppId, inbox = false) { return `/play?app=${id === 'journal' ? 'cases' : id}${id === 'mail' ? `&view=${inbox ? 'inbox' : 'read'}` : ''}`; }
   function go(to: string, replace = false) {
     if (`${location.pathname}${location.search}` !== to) navigate(to, { replace, state: { osDepth: (Number(location.state?.osDepth) || 0) + (replace ? 0 : 1) } });
     setMenu(false);
   }
   function openApp(id: AppId) {
+    if (tutorialVisible) setTutorial(current => advanceTutorial(current, id));
     raise(id);
     setOpened(items => items.includes(id) ? items : [...items, id]);
     setHiddenApps(items => items.filter(item => item !== id));
@@ -124,10 +146,12 @@ export function OperatingSystem() {
     document.title = location.pathname === '/' ? 'TrustTrail — Game investigasi keamanan digital' : `${playing ? chapter.title : label} — TrustTrail`;
     if (firstFocus.current) { firstFocus.current = false; return; }
     if (preserveFocus.current) { preserveFocus.current = false; return; }
+    // Informational tutorial stages own their heading focus after app navigation.
+    if (tutorialVisible && (tutorial === 'welcome' || tutorial === 'ready')) return;
     const frame = foreground.current?.querySelector<HTMLElement>('[data-active="true"]');
     const element = location.pathname === '/' ? document.querySelector<HTMLElement>('.portal h1') : frame?.querySelector<HTMLElement>('[data-scene-focus]') ?? frame?.querySelector<HTMLElement>('[data-os-focus], h1') ?? frame?.querySelector<HTMLElement>('[data-window-heading]') ?? document.querySelector<HTMLElement>('.os-route-title');
     if (element) element.focus();
-  }, [location.key, location.pathname, phaseKey, playing, chapter.title, label, desktop]);
+  }, [location.key, location.pathname, phaseKey, playing, chapter.title, label, desktop, tutorialVisible, tutorial]);
 
   const last = game.history.at(-1);
   const found = last?.type === 'evidence.inspected' ? chapter.evidence.find(clue => clue.id === last.evidenceId) : last?.type === 'source.compared' ? chapter.evidence.find(clue => clue.id === chapter.source.evidenceId) : undefined;
@@ -140,7 +164,7 @@ export function OperatingSystem() {
     // selected one so inactive page headings/controls do not remain in the DOM.
     if (['home', 'guide', 'report', 'missing'].includes(id) && id !== selected) return null;
     if (id === 'home') return null;
-    if (id === 'guide') return <GuidePage />;
+    if (id === 'guide') return <GuidePage onReplay={() => { updateTutorial('welcome'); setReplaying(true); go(pathFor(storyApp)); }} canReplay={canInvestigate} />;
     if (id === 'report') return <ReportPage />;
     if (id === 'missing') return <NotFoundPage />;
     if (chapter.portal && id === 'mail') return canInvestigate ? <FinalRequest chapter={chapter} game={game} send={send} openApp={openApp} /> : <p className="tt-final-request">Instruksi terakhir tersedia setelah cerita pengantar.</p>;
@@ -164,8 +188,9 @@ export function OperatingSystem() {
     <div className="os-save-area"><SaveNotice /></div>
     {!desktop && selected !== 'home' ? <header className="saku-app-header"><button className="saku-back" aria-label="Kembali" onClick={back}><span aria-hidden="true">←</span></button><div><p>{selected === 'mail' ? 'KOTAK SURAT ARI' : selected === 'journal' ? 'BERKAS INVESTIGASI' : 'LACAK SAKU'}</p>{playing ? <h1 className="os-route-title" tabIndex={-1}>{label}</h1> : <h2>{label}</h2>}</div><span className="saku-header-icon"><PixelIcon kind={surfaces.find(item => item.id === selected)!.icon} /></span></header> : null}
     {!desktop ? <aside className="saku-notification" aria-label="Notifikasi Saku">{notice}</aside> : null}
+    {!menu ? tutorialPanel : null}
     <main ref={workspace} className={desktop ? 'px-workspace' : 'saku-main'} id="os-main" tabIndex={-1}>
-      {desktop ? <><nav className="px-shortcuts" aria-label="Aplikasi desktop">{applications.map(app => <button key={app.id} id={`shortcut-${app.id}`} className="px-shortcut" onClick={() => openApp(app.id)} aria-label={`Buka ${app.label}`}><PixelIcon kind={app.id} /><span>{app.label}</span></button>)}</nav><div className="px-case-heading"><div><p className="px-eyebrow">TRUSTTRAIL <span>/</span> {playing ? chapter.subtitle : 'PERSONAL DESKTOP'}</p>{playing ? <h1 className="os-route-title" tabIndex={-1}>{title}</h1> : <p className="os-desktop-title">{title}</p>}<p>Simulasi fiktif · Tanpa data pribadi</p></div><button className="px-text-button" onClick={() => setProgress(true)}>Kelola progres</button></div></> : null}
+      {desktop ? <><nav className="px-shortcuts" aria-label="Aplikasi desktop">{applications.map(app => <button key={app.id} data-tutorial-target={tutorialTarget === app.id} id={`shortcut-${app.id}`} className="px-shortcut" onClick={() => openApp(app.id)} aria-label={`Buka ${app.label}`}><PixelIcon kind={app.id} /><span>{app.label}</span></button>)}</nav><div className="px-case-heading"><div><p className="px-eyebrow">TRUSTTRAIL <span>/</span> {playing ? chapter.subtitle : 'PERSONAL DESKTOP'}</p>{playing ? <h1 className="os-route-title" tabIndex={-1}>{title}</h1> : <p className="os-desktop-title">{title}</p>}<p>Simulasi fiktif · Tanpa data pribadi</p></div><button className="px-text-button" onClick={() => setProgress(true)}>Kelola progres</button></div></> : null}
       {desktop ? <nav className="os-layout-controls" aria-label="Tata letak jendela">{playing && canInvestigate ? <button type="button" onClick={compareWindows}>{chapter.conversation ? 'Messages' : 'Mail'} & sumber berdampingan</button> : null}<button type="button" onClick={resetLayout}>Rapikan jendela</button></nav> : null}
       <div className={desktop ? 'px-window-layout os-app-hosts' : 'os-app-hosts'} ref={foreground}>{surfaces.map(surface => {
         const isApp = applications.some(app => app.id === surface.id);
@@ -175,8 +200,8 @@ export function OperatingSystem() {
       })}</div>
       {desktop ? <><aside className="px-notification-area" aria-label="Notifikasi desktop">{notice}</aside><div className="px-wallpaper-credit" aria-hidden="true"><PixelIcon kind="signal" /><span>LACAK<br />PERSONAL DESKTOP</span></div></> : null}
     </main>
-    {desktop ? <DesktopTaskbar active={selected} opened={opened} openApp={openApp} menu={() => setMenu(true)} /> : <MobileSystemNavigation back={back} menu={() => setMenu(true)} count={count} />}
-    {menu ? <Drawer open={menu} title="Menu TrustTrail" onClose={() => setMenu(false)}><nav className="os-app-menu" aria-label="Aplikasi dan navigasi">{applications.map(app => <button className="px-text-button" key={app.id} onClick={() => openApp(app.id)}><PixelIcon kind={app.id} /><span>{app.label}</span><span>{app.subtitle}</span></button>)}<Link to="/" onClick={() => setMenu(false)}>Beranda</Link><Link to="/play" onClick={() => setMenu(false)}>Ruang misi</Link><Link to="/guide" onClick={() => setMenu(false)}>Panduan</Link><Link to="/report" onClick={() => setMenu(false)}>Catatan refleksi</Link>{desktop ? <>{playing && canInvestigate ? <button className="px-text-button" onClick={compareWindows}>{chapter.conversation ? 'Messages' : 'Mail'} & sumber berdampingan</button> : null}<button className="px-text-button" onClick={() => { resetLayout(); setMenu(false); }}>Rapikan jendela</button></> : null}<button className="px-text-button" onClick={() => { setMenu(false); setProgress(true); }}>Kelola progres</button></nav></Drawer> : null}
+    {desktop ? <DesktopTaskbar active={selected} opened={opened} openApp={openApp} menu={() => setMenu(true)} /> : <MobileSystemNavigation back={back} menu={() => setMenu(true)} count={count} tutorialActive={!!tutorialTarget} />}
+    {menu ? <Drawer open={menu} title="Menu TrustTrail" onClose={() => setMenu(false)}>{tutorialPanel}<nav className="os-app-menu" aria-label="Aplikasi dan navigasi">{applications.map(app => <button data-tutorial-target={tutorialTarget === app.id} className="px-text-button" key={app.id} onClick={() => openApp(app.id)}><PixelIcon kind={app.id} /><span>{app.label}</span><span>{app.subtitle}</span></button>)}<Link to="/" onClick={() => setMenu(false)}>Beranda</Link><Link to="/play" onClick={() => setMenu(false)}>Ruang misi</Link><Link to="/guide" onClick={() => setMenu(false)}>Panduan</Link><Link to="/report" onClick={() => setMenu(false)}>Catatan refleksi</Link>{desktop ? <>{playing && canInvestigate ? <button className="px-text-button" onClick={compareWindows}>{chapter.conversation ? 'Messages' : 'Mail'} & sumber berdampingan</button> : null}<button className="px-text-button" onClick={() => { resetLayout(); setMenu(false); }}>Rapikan jendela</button></> : null}<button className="px-text-button" onClick={() => { setMenu(false); setProgress(true); }}>Kelola progres</button></nav></Drawer> : null}
     {progress ? <Drawer open={progress} title="Progres lokal" onClose={() => setProgress(false)}><p>{save.message}</p><ProgressControls onComplete={() => setProgress(false)} /></Drawer> : null}
   </div></OsContext>;
 }

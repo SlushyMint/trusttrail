@@ -24,7 +24,7 @@ test('native scroll choreography reverses and reduced motion settles every prese
   await expect(page).toHaveURL(/\/play/);
 });
 
-test('rapid OS and archive selections keep final content, focus and geometry stable', async ({ page }) => {
+test('rapid OS selections keep final content, focus, save and geometry stable', async ({ page }) => {
   await page.goto('/');
   await page.evaluate(() => document.fonts.ready);
   const stored = await page.evaluate(() => JSON.stringify(localStorage));
@@ -40,6 +40,18 @@ test('rapid OS and archive selections keep final content, focus and geometry sta
   await expect(page.locator('#os-preview-content')).toContainText('Jejak yang kamu temukan.');
   await expect(tabs.locator('[aria-pressed=true]')).toHaveCount(1);
   expect((await page.locator('.portal-game-preview').boundingBox())!.height).toBeCloseTo(previewHeight, 1);
+  expect(await page.evaluate(() => JSON.stringify(localStorage))).toBe(stored);
+});
+
+test('rapid archive selections keep content, focus, save, geometry and return navigation stable', async ({ page }) => {
+  await page.goto('/');
+  await page.evaluate(() => document.fonts.ready);
+  const stored = await page.evaluate(() => JSON.stringify(localStorage));
+  // Recreate the preceding preview state while keeping archive failures independent.
+  const cases = page.getByRole('group', { name: 'Aplikasi pratinjau' }).getByRole('button', { name: 'Case Files', exact: true });
+  await cases.focus();
+  await page.keyboard.press('Space');
+  await expect(cases).toHaveAttribute('aria-pressed', 'true');
   const files = page.locator('.portal-intel-files button');
   const terminalHeight = (await page.locator('.portal-intelligence').boundingBox())!.height;
   for (const index of [1, 2, 0, 2]) {
@@ -51,13 +63,19 @@ test('rapid OS and archive selections keep final content, focus and geometry sta
   await expect(page.locator('#intel-detail')).toContainText('Survei IMDI 2025');
   expect((await page.locator('.portal-intelligence').boundingBox())!.height).toBeCloseTo(terminalHeight, 1);
   expect(await page.evaluate(() => JSON.stringify(localStorage))).toBe(stored);
-  await page.keyboard.press('End');
-  await page.getByRole('link', { name: 'Kembali ke awal' }).click();
+  // Continue the keyboard journey without racing End scrolling against click auto-scroll.
+  const returnToTop = page.getByRole('link', { name: 'Kembali ke awal' });
+  await returnToTop.focus();
+  await expect(returnToTop).toBeFocused();
+  await page.keyboard.press('Enter');
   await expect(page).toHaveURL(/#portal-title$/);
   await expect(page.locator('#portal-title')).toBeInViewport();
 });
 
 test('repeated homepage visits release detached DOM and event listeners', async ({ page }) => {
+  // Six full renderer lifecycles plus forced GC measure retention, not one UI response.
+  // Keep the normal assertion deadlines; allow this diagnostic to finish under software WebGL.
+  test.setTimeout(60_000);
   const cdp = await page.context().newCDPSession(page);
   await cdp.send('Performance.enable');
   async function readMetrics() {

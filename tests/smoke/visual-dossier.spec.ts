@@ -12,7 +12,9 @@ test('OS application browsing is keyboard accessible and never creates gameplay 
   await expect(page.getByRole('region', { name: 'Case Files', exact: true })).toBeVisible();
   expect(await page.evaluate(key => localStorage.getItem(key), saveKey)).toBe(before);
   await page.getByRole('link', { name: 'TrustTrail, beranda' }).click();
-  await page.getByRole('button', { name: /Mulai investigasi/ }).first().click();
+  await expect(page).toHaveURL('http://127.0.0.1:4173/');
+  // The retained OS also owns a start button; target the arriving homepage explicitly.
+  await page.locator('.portal').getByRole('button', { name: /Mulai investigasi/ }).first().click();
   await expect(page.getByRole('button', { name: /Buka berkas pertama/ })).toBeVisible();
 });
 

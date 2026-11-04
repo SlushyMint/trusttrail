@@ -14,5 +14,4 @@ playwright-report/
 Thumbs.db
 .vscode/*
 !.vscode/extensions.json
-
 # Product documents and AGENTS.md are intentionally not ignored.

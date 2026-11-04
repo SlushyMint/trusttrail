@@ -58,6 +58,11 @@ async function recovery(page: Page, account = false, identity = false) {
   await page.getByRole('button', { name: 'Minta Mira memulihkan akun' }).click();
   await expect(page.getByRole('status').filter({ hasText: 'Pihak yang meminta kode' })).toBeVisible();
   await expect(page.getByLabel('Progres pemulihan')).toHaveText(`0 / ${4 + Number(account) + Number(identity)} tindakan pemulihan selesai`);
+  const beforeRetry = await readRun(page);
+  await page.reload();
+  expect(await readRun(page)).toEqual(beforeRetry);
+  await expect(page.locator('.tt-recovery-feedback')).toBeEmpty();
+  await expect(page.getByText(/Pilihan yang belum tepat tidak disimpan/)).toBeVisible();
   await page.getByRole('button', { name: 'Hentikan balasan dan permintaan baru' }).click();
   const saved = await readRun(page); await page.reload(); expect(await readRun(page)).toEqual(saved);
   await expect(page.getByRole('heading', { name: 'Simpan jejak yang relevan' })).toBeVisible();
@@ -71,6 +76,12 @@ async function recovery(page: Page, account = false, identity = false) {
   await expect(page.getByRole('heading', { name: 'Bab 3 selesai', exact: true })).toBeVisible();
   await page.getByRole('link', { name: /Buka Trust Report/ }).click();
   await expect(page.getByText('Trust Report · Perjalanan Ari lengkap', { exact: true })).toBeVisible();
+  const advice = page.getByRole('region', { name: 'Rekomendasi latihan' });
+  await expect(advice.getByRole('listitem')).toHaveCount(account ? 3 : 2);
+  await expect(advice).toContainText('Mengapa penting:');
+  await expect(advice).toContainText(account ? 'aplikasi resmi layanan email' : 'Periksa batas waktu');
+  await expect(page.getByText(/Penyelesaian tidak berarti semua jawaban tepat/)).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 }
 
 test('finishes C1–C3 safely with meaningful comparisons, archived evidence and reloads', async ({ page }, info) => {
@@ -119,6 +130,8 @@ test('unsafe code and earlier identity disclosure lead to six recovery actions w
   await expect(page.getByText(/6 \/ 6 tindakan latihan selesai/)).toBeVisible();
   await expect(page.getByRole('region', { name: 'Laporan Bab 3' })).toContainText('0 / 2');
   await page.screenshot({ path: info.outputPath('recovery-report.png') });
+  await page.getByRole('heading', { name: 'Langkah latihan berikutnya' }).scrollIntoViewIfNeeded();
+  await page.screenshot({ path: info.outputPath('recommendations.png'), animations: 'disabled' });
 });
 
 test('portal comparison handles mistakes, keyboard input, reduced motion and narrow screens', async ({ page }, info) => {
