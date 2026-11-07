@@ -1,0 +1,64 @@
+{
+  "method": "Same production page, desktop Chromium, 1.5-second idle windows. CDP TaskDuration measures renderer main-thread work, not native audio DSP or physical-phone CPU.",
+  "initial": {
+    "audioContexts": 0,
+    "soundtrackRequests": 0,
+    "navigation": [
+      {
+        "domContentLoaded": 81.40000000037253,
+        "load": 81.5,
+        "transferSize": 941
+      }
+    ]
+  },
+  "activationMs": 60.458582000000206,
+  "offMainThreadMs": 0.7120000000000009,
+  "musicMainThreadMs": 2.712000000000006,
+  "beforeHeap": 7099712,
+  "afterHeap": 7958380,
+  "switched": {
+    "contexts": 1,
+    "liveSources": 8,
+    "musicBreathsCreated": 4
+  },
+  "cleanup": {
+    "contexts": 1,
+    "liveSources": 0,
+    "state": "suspended"
+  },
+  "suspendedAdvance": 0,
+  "sameSave": true,
+  "waveform": {
+    "sampleRate": 44100,
+    "duration": 34,
+    "peak": 0.040002331137657166,
+    "rms": 0.011049470021088062,
+    "maxAdjacentDelta": 0.0013823132467223331,
+    "boundaryAt32Seconds": 0.0007108196296030656,
+    "clipped": false
+  },
+  "outbound": [],
+  "pageErrors": [],
+  "csp": [
+    {
+      "directive": "script-src",
+      "blocked": "eval",
+      "disposition": "report"
+    },
+    {
+      "directive": "script-src",
+      "blocked": "eval",
+      "disposition": "report"
+    },
+    {
+      "directive": "script-src",
+      "blocked": "eval",
+      "disposition": "report"
+    },
+    {
+      "directive": "script-src",
+      "blocked": "eval",
+      "disposition": "report"
+    }
+  ]
+}

@@ -1,5 +1,15 @@
 # Asset and font provenance
 
+## Phase 6 original audio
+
+6 November 2026, final SFX-only revision. All seven UI motifs in `src/features/audio/score.ts` are original, AI-assisted compositions authored specifically for TrustTrail. Native Web Audio sine oscillators generate the short effects locally. No recording, sample pack, external composition, commercial soundtrack, streaming service, or audio-generation model output is used.
+
+| Audio | Origin and distribution | Attribution |
+|---|---|---|
+| OS startup, application opening, incoming message, evidence discovery, verification, chapter completion, final investigation | Original numerical note/envelope definitions in project source, synthesized on explicit actions | No third-party license or upstream attribution applies |
+
+These original effects follow the project's distribution terms; this phase does not assign a new license to the repository. The Product Owner controls the final project license and publication. No external audio rights are asserted. Preferences use `trusttrail:audio:v2`, with safe legacy preference decoding; gameplay saves retain their existing schema. See [the Phase 6 report](phase-6-audio-security-report.md) for triggers, architecture, measurements and validation limits. Earlier audio evidence is historical and does not describe the final candidate.
+
 ## Phase 5C third-party software inventory
 
 3 November 2026. Significant production libraries: React 19.3.1, React DOM 19.3.1, React Router 8.5.1, Motion 14.8.0 and PixiJS 8.22.0 each declare **MIT** in their installed, locked package manifests. Build tooling includes Vite 8.3.5 and Tailwind CSS 4.3.3 (MIT) and TypeScript 6.0.3 (Apache-2.0). Testing uses Vitest 5.0.5 (MIT) and Playwright 1.64.1 (Apache-2.0). [All 25 direct package license declarations](phase-5c-evidence/direct-dependency-licenses.json) are retained as release evidence; preserve relevant upstream notices/license files when redistributing. This inventory is not a legal clearance of every transitive resource.

@@ -1,0 +1,57 @@
+
+> trusttrail@0.1.0 check
+> npm run typecheck && npm run lint && npm run test:unit && npm run build
+
+
+> trusttrail@0.1.0 typecheck
+> tsc --noEmit
+
+
+> trusttrail@0.1.0 lint
+> eslint . --max-warnings=0
+
+
+> trusttrail@0.1.0 test:unit
+> vitest run
+
+
+ RUN  v5.0.5 /home/muhammadshumin/Projects/trusttrail
+
+ ❯ tests/unit/audio.test.ts (22 tests | 1 failed) 104ms
+   ❯ single browser audio owner (8)
+     × keeps music activation independent when SFX is changed while its module is loading 16ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/unit/audio.test.ts > single browser audio owner > keeps music activation independent when SFX is changed while its module is loading
+AssertionError: expected { …(4) } to match object { musicPlaying: true, …(1) }
+(2 matching properties omitted from actual)
+
+- Expected
++ Received
+
+  {
+-   "musicPlaying": true,
++   "musicPlaying": false,
+    "preferences": {
+      "music": true,
+      "sfx": false,
+    },
+  }
+
+ ❯ tests/unit/audio.test.ts:56:33
+     54|   it('keeps music activation independent when SFX is changed while its…
+     55|     const { audio, context } = setup(); audio.setMusic(true); audio.se…
+     56|     expect(audio.getSnapshot()).toMatchObject({ musicPlaying: true, pr…
+       |                                 ^
+     57|     expect(context.oscillators).toHaveLength(8); audio.dispose(); vi.u…
+     58|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 13 passed (14)
+      Tests  1 failed | 131 passed (132)
+   Start at  23:48:46
+   Duration  3.52s (environment 65%, tests 20%, setup 7%, import 5%, transform 3%)
+

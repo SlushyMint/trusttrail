@@ -1,0 +1,196 @@
+
+Running 25 tests using 2 workers
+
+(node:51207) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:51206) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   2 [desktop] › tests/smoke/chapter-one.spec.ts:167:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels (30.2s)
+  ✘   1 [desktop] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation (30.3s)
+(node:51652) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:51660) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   4 [desktop] › tests/smoke/living-city.spec.ts:22:1 › repeated client navigation owns one canvas and handles lost rendering (26.8s)
+(node:52075) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   5 [mobile] › tests/smoke/chapter-one.spec.ts:129:1 › Chapter 1 can be completed using keyboard traversal and activation only (3.0s)
+  ✘   3 [desktop] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable (32.5s)
+(node:52319) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   7 [desktop] › tests/smoke/homepage-b2.spec.ts:60:1 › repeated homepage visits release detached DOM and event listeners (17.6s)
+(node:52532) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   6 [mobile] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation (31.1s)
+(node:52727) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   8 [mobile] › tests/smoke/homepage-b2.spec.ts:60:1 › repeated homepage visits release detached DOM and event listeners (14.1s)
+  ✓  10 [mobile] › tests/smoke/visual-dossier.spec.ts:4:1 › OS application browsing is keyboard accessible and never creates gameplay progress (1.2s)
+  ✓  11 [mobile] › tests/smoke/visual-dossier.spec.ts:19:1 › interactive homepage preview reserves layout while city artwork is delayed (5.8s)
+  ✓   9 [mobile] › tests/smoke/living-city.spec.ts:3:1 › city canvas remains behind HTML and pauses outside the hero (9.5s)
+  ✓  12 [mobile] › tests/smoke/visual-dossier.spec.ts:38:1 › failed wallpaper leaves the OS, narrative and game actions usable (2.9s)
+  ✓  14 [mobile] › tests/smoke/visual-dossier.spec.ts:48:1 › touch and keyboard discovery feedback respects reduced motion and records only one clue (1.4s)
+  ✓  15 [mobile] › tests/smoke/window-management.spec.ts:21:1 › desktop dragging, bounds, cancellation and window controls never write game state (3.6s)
+  ✓  16 [mobile] › tests/smoke/window-management.spec.ts:60:1 › click and keyboard placement support comparison, reset and mobile reflow (3.6s)
+  ✓  13 [mobile] › tests/smoke/living-city.spec.ts:22:1 › repeated client navigation owns one canvas and handles lost rendering (12.5s)
+  ✓  18 [mobile] › tests/smoke/living-city.spec.ts:43:1 › homepage works when the lazy renderer cannot be downloaded (476ms)
+  ✓  17 [mobile] › tests/smoke/window-management.spec.ts:104:1 › Motion respects reduced motion while desktop drag remains direct and homepage content stays visible (2.4s)
+  ✓  19 [mobile] › tests/smoke/living-city.spec.ts:53:1 › reduced motion avoids renderer downloads and supports a live preference change (1.4s)
+  ✓  20 [mobile] › tests/smoke/living-city.spec.ts:68:1 › init can finish after client navigation without appending a stale canvas (2.4s)
+  ✓  21 [mobile] › tests/smoke/living-city.spec.ts:84:1 › one scene resizes at all four requested widths without overflowing or blocking controls (27.1s)
+  ✓  22 [mobile] › tests/smoke/living-city.spec.ts:101:1 › unsupported WebGL keeps the static city and start control available (463ms)
+  ✓  23 [mobile] › tests/smoke/living-city.spec.ts:118:1 › a missing city layer selects the static composite and leaves navigation usable (478ms)
+  ✓  24 [mobile] › tests/smoke/living-city.spec.ts:128:1 › navigation during texture loading cancels the old scene without damaging its replacement (2.5s)
+  ✓  25 [mobile] › tests/smoke/living-city.spec.ts:147:1 › reduced motion downloads the static artwork without loading animated layer textures (383ms)
+
+
+  1) [desktop] › tests/smoke/chapter-one.spec.ts:167:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: /Periksa pengirim/ })
+
+
+      170 |     await page.setViewportSize({ width, height: 900 });
+      171 |     await openMail(page);
+    > 172 |     await page.getByRole('button', { name: /Periksa pengirim/ }).click();
+          |                                                                  ^
+      173 |     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+      174 |     await openGameApp(page, 'Browser');
+      175 |     const inspectSource = page.getByRole('button', { name: 'Periksa catatan lowongan', exact: true });
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/chapter-one.spec.ts:172:66
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/chapter-one-active-email-a-72cb9-320-360-768-and-1440-pixels-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5a-evidence/browser-results/chapter-one-active-email-a-72cb9-320-360-768-and-1440-pixels-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/chapter-one-active-email-a-72cb9-320-360-768-and-1440-pixels-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/chapter-one-active-email-a-72cb9-320-360-768-and-1440-pixels-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Ganti aplikasi', exact: true })
+        - locator resolved to <button id="os-menu-trigger" aria-haspopup="dialog" aria-label="Ganti aplikasi">…</button>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+      - element was detached from the DOM, retrying
+
+
+       at helpers.ts:24
+
+      22 |   if (await page.locator('.trusttrail-os').getAttribute('data-os') === 'desktop') await page.getByRole('button', { name: `Tampilkan ${name}`, exact: true }).click();
+      23 |   else {
+    > 24 |     await page.getByRole('button', { name: 'Ganti aplikasi', exact: true }).click();
+         |                                                                             ^
+      25 |     await page.getByRole('dialog', { name: 'Menu TrustTrail' }).getByRole('button', { name: new RegExp(`^${name}`) }).click();
+      26 |   }
+      27 | }
+        at openGameApp (/home/muhammadshumin/Projects/trusttrail/tests/smoke/helpers.ts:24:77)
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/chapter-two.spec.ts:126:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/chapter-two-reflows-profil-5102f-without-losing-conversation-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5a-evidence/browser-results/chapter-two-reflows-profil-5102f-without-losing-conversation-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/chapter-two-reflows-profil-5102f-without-losing-conversation-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/chapter-two-reflows-profil-5102f-without-losing-conversation-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [desktop] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('link', { name: 'Kembali ke awal' })
+        - locator resolved to <a href="#portal-title">Kembali ke awal</a>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+
+
+      53 |   expect(await page.evaluate(() => JSON.stringify(localStorage))).toBe(stored);
+      54 |   await page.keyboard.press('End');
+    > 55 |   await page.getByRole('link', { name: 'Kembali ke awal' }).click();
+         |                                                             ^
+      56 |   await expect(page).toHaveURL(/#portal-title$/);
+      57 |   await expect(page.locator('#portal-title')).toBeInViewport();
+      58 | });
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/homepage-b2.spec.ts:55:61
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5a-evidence/browser-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [mobile] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Ganti aplikasi', exact: true })
+
+
+       at helpers.ts:24
+
+      22 |   if (await page.locator('.trusttrail-os').getAttribute('data-os') === 'desktop') await page.getByRole('button', { name: `Tampilkan ${name}`, exact: true }).click();
+      23 |   else {
+    > 24 |     await page.getByRole('button', { name: 'Ganti aplikasi', exact: true }).click();
+         |                                                                             ^
+      25 |     await page.getByRole('dialog', { name: 'Menu TrustTrail' }).getByRole('button', { name: new RegExp(`^${name}`) }).click();
+      26 |   }
+      27 | }
+        at openGameApp (/home/muhammadshumin/Projects/trusttrail/tests/smoke/helpers.ts:24:77)
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/chapter-two.spec.ts:126:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/chapter-two-reflows-profil-5102f-without-losing-conversation-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5a-evidence/browser-results/chapter-two-reflows-profil-5102f-without-losing-conversation-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/chapter-two-reflows-profil-5102f-without-losing-conversation-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/chapter-two-reflows-profil-5102f-without-losing-conversation-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4 failed
+    [desktop] › tests/smoke/chapter-one.spec.ts:167:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels 
+    [desktop] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation 
+    [desktop] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable 
+    [mobile] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation 
+  21 passed (2.5m)

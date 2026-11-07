@@ -1,0 +1,51 @@
+{
+  "phase": "5D",
+  "date": "2026-11-04",
+  "typecheck": "passed",
+  "eslint": {
+    "result": "passed",
+    "warnings": 0
+  },
+  "unitIntegration": {
+    "passed": 107,
+    "failed": 0,
+    "files": 11
+  },
+  "build": {
+    "result": "passed",
+    "advisory": "Existing large-chunk warning"
+  },
+  "focusedOnboarding": {
+    "passed": 18,
+    "failed": 0
+  },
+  "windowRegression": {
+    "passed": 6,
+    "failed": 0
+  },
+  "completeBrowser": {
+    "passed": 124,
+    "failed": 0,
+    "duration": "10.0m",
+    "projects": [
+      "desktop",
+      "mobile"
+    ],
+    "executable": "/usr/bin/chromium-browser"
+  },
+  "visualWidths": [
+    320,
+    360,
+    390,
+    768,
+    1440
+  ],
+  "intermediateFailures": [
+    "Constrained desktop Mail grid with blocked-storage notice: fixed and verified",
+    "Responsive test sampled bounds across shell commit: explicit shell wait added; original assertions retained",
+    "Saku informational tutorial focus competed with route focus: fixed and verified"
+  ],
+  "status": "Awaiting Product Owner review",
+  "deployed": false,
+  "gitOperations": false
+}

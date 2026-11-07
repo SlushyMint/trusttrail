@@ -1,0 +1,25 @@
+
+> trusttrail@0.1.0 test:smoke
+> playwright test --grep finishes C1|unsafe code|portal comparison handles|Chapter 1 can be completed|one scene resizes --output=docs/phase-5b-evidence/focused-results
+
+[WebServer] (node:71713) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 10 tests using 1 worker
+
+(node:71757) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/smoke/chapter-one.spec.ts:129:1 › Chapter 1 can be completed using keyboard traversal and activation only (2.2s)
+  ✓   2 [desktop] › tests/smoke/chapter-three.spec.ts:87:1 › finishes C1–C3 safely with meaningful comparisons, archived evidence and reloads (4.1s)
+  ✓   3 [desktop] › tests/smoke/chapter-three.spec.ts:123:1 › unsafe code and earlier identity disclosure lead to six recovery actions without a game over (4.0s)
+  ✓   4 [desktop] › tests/smoke/chapter-three.spec.ts:137:1 › portal comparison handles mistakes, keyboard input, reduced motion and narrow screens (4.2s)
+  ✓   5 [desktop] › tests/smoke/living-city.spec.ts:84:1 › one scene resizes at all four requested widths without overflowing or blocking controls (16.6s)
+(node:72277) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   6 [mobile] › tests/smoke/chapter-one.spec.ts:129:1 › Chapter 1 can be completed using keyboard traversal and activation only (1.4s)
+  ✓   7 [mobile] › tests/smoke/chapter-three.spec.ts:87:1 › finishes C1–C3 safely with meaningful comparisons, archived evidence and reloads (4.1s)
+  ✓   8 [mobile] › tests/smoke/chapter-three.spec.ts:123:1 › unsafe code and earlier identity disclosure lead to six recovery actions without a game over (3.5s)
+  ✓   9 [mobile] › tests/smoke/chapter-three.spec.ts:137:1 › portal comparison handles mistakes, keyboard input, reduced motion and narrow screens (4.8s)
+  ✓  10 [mobile] › tests/smoke/living-city.spec.ts:84:1 › one scene resizes at all four requested widths without overflowing or blocking controls (24.7s)
+
+  10 passed (1.2m)

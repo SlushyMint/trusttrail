@@ -1,0 +1,23 @@
+
+> trusttrail@0.1.0 check
+> npm run typecheck && npm run lint && npm run test:unit && npm run build
+
+
+> trusttrail@0.1.0 typecheck
+> tsc --noEmit
+
+
+> trusttrail@0.1.0 lint
+> eslint . --max-warnings=0
+
+
+Oops! Something went wrong! :(
+
+ESLint couldn't find a configuration file. To set up a configuration file for this project, please run:
+
+    eslint --init
+
+ESLint looked for configuration files in /home/muhammadshumin/Projects/trusttrail/dist/assets and its ancestors.
+
+If you think you already have a configuration file or if you need more help, please stop by the ESLint chat room: https://gitter.im/eslint/eslint
+

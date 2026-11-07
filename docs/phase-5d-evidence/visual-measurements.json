@@ -1,0 +1,98 @@
+[
+  {
+    "width": 390,
+    "overflow": false,
+    "target": [
+      {
+        "text": "▤Aplikasi",
+        "rect": {
+          "x": 282.328125,
+          "y": 840,
+          "width": 72,
+          "height": 53,
+          "top": 840,
+          "right": 354.328125,
+          "bottom": 893,
+          "left": 282.328125
+        }
+      },
+      {
+        "text": "MailKotak masuk Ari",
+        "rect": {
+          "x": 54,
+          "y": 370.390625,
+          "width": 314,
+          "height": 60,
+          "top": 370.390625,
+          "right": 368,
+          "bottom": 430.390625,
+          "left": 54
+        }
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "overflow": false,
+    "target": [
+      {
+        "text": "▤Aplikasi",
+        "rect": {
+          "x": 282.328125,
+          "y": 840,
+          "width": 72,
+          "height": 53,
+          "top": 840,
+          "right": 354.328125,
+          "bottom": 893,
+          "left": 282.328125
+        }
+      },
+      {
+        "text": "BrowserSumber terpisah",
+        "rect": {
+          "x": 54,
+          "y": 453.78125,
+          "width": 314,
+          "height": 60,
+          "top": 453.78125,
+          "right": 368,
+          "bottom": 513.78125,
+          "left": 54
+        }
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "overflow": false,
+    "target": [
+      {
+        "text": "▤Aplikasi",
+        "rect": {
+          "x": 282.328125,
+          "y": 840,
+          "width": 72,
+          "height": 53,
+          "top": 840,
+          "right": 354.328125,
+          "bottom": 893,
+          "left": 282.328125
+        }
+      },
+      {
+        "text": "Case FilesCatatan bukti",
+        "rect": {
+          "x": 54,
+          "y": 612.78125,
+          "width": 314,
+          "height": 60,
+          "top": 612.78125,
+          "right": 368,
+          "bottom": 672.78125,
+          "left": 54
+        }
+      }
+    ]
+  }
+]

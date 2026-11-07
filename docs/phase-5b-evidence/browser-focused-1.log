@@ -1,0 +1,426 @@
+
+> trusttrail@0.1.0 test:smoke
+> playwright test --grep reflow|rapid OS|repeated homepage|operable by keyboard
+
+
+Running 12 tests using 2 workers
+
+(node:56842) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:56841) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   2 [desktop] › tests/smoke/chapter-one.spec.ts:167:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels (269ms)
+  ✘   1 [desktop] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation (327ms)
+(node:57223) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:57230) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   3 [desktop] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable (286ms)
+  ✘   4 [desktop] › tests/smoke/chapter-two.spec.ts:138:1 › Chapter 2 conversation and decision are operable by keyboard (273ms)
+(node:57580) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:57587) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   5 [desktop] › tests/smoke/homepage-b2.spec.ts:60:1 › repeated homepage visits release detached DOM and event listeners (309ms)
+  ✘   6 [desktop] › tests/smoke/window-management.spec.ts:60:1 › click and keyboard placement support comparison, reset and mobile reflow (305ms)
+(node:57941) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:57947) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   8 [mobile] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation (319ms)
+  ✘   7 [mobile] › tests/smoke/chapter-one.spec.ts:167:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels (348ms)
+(node:58326) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:58354) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  10 [mobile] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable (252ms)
+  ✘   9 [mobile] › tests/smoke/chapter-two.spec.ts:138:1 › Chapter 2 conversation and decision are operable by keyboard (345ms)
+(node:58729) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:58738) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  11 [mobile] › tests/smoke/homepage-b2.spec.ts:60:1 › repeated homepage visits release detached DOM and event listeners (268ms)
+  ✘  12 [mobile] › tests/smoke/window-management.spec.ts:60:1 › click and keyboard placement support comparison, reset and mobile reflow (414ms)
+
+
+  1) [desktop] › tests/smoke/chapter-one.spec.ts:167:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/play
+    Call log:
+      - navigating to "http://127.0.0.1:4173/play", waiting until "load"
+
+
+       at helpers.ts:5
+
+      3 | export const saveKey = 'trusttrail:save:v1';
+      4 | export async function enterChapterOne(page: Page) {
+    > 5 |   await page.goto('/play');
+        |              ^
+      6 |   await page.getByRole('button', { name: /Mulai investigasi/ }).click();
+      7 |   await page.getByRole('button', { name: /Buka berkas pertama/ }).click();
+      8 |   for (let i = 0; i < 3; i++) await page.getByRole('button', { name: /Lanjut cerita/ }).click();
+        at enterChapterOne (/home/muhammadshumin/Projects/trusttrail/tests/smoke/helpers.ts:5:14)
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/chapter-one.spec.ts:168:9
+
+    Error Context: test-results/chapter-one-active-email-a-72cb9-320-360-768-and-1440-pixels-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/chapter-one-active-email-a-72cb9-320-360-768-and-1440-pixels-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/chapter-one-active-email-a-72cb9-320-360-768-and-1440-pixels-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/play
+    Call log:
+      - navigating to "http://127.0.0.1:4173/play", waiting until "load"
+
+
+       at helpers.ts:5
+
+      3 | export const saveKey = 'trusttrail:save:v1';
+      4 | export async function enterChapterOne(page: Page) {
+    > 5 |   await page.goto('/play');
+        |              ^
+      6 |   await page.getByRole('button', { name: /Mulai investigasi/ }).click();
+      7 |   await page.getByRole('button', { name: /Buka berkas pertama/ }).click();
+      8 |   for (let i = 0; i < 3; i++) await page.getByRole('button', { name: /Lanjut cerita/ }).click();
+        at enterChapterOne (/home/muhammadshumin/Projects/trusttrail/tests/smoke/helpers.ts:5:14)
+        at enterChapterTwo (/home/muhammadshumin/Projects/trusttrail/tests/smoke/chapter-two.spec.ts:5:9)
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/chapter-two.spec.ts:121:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/chapter-two-reflows-profil-5102f-without-losing-conversation-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/chapter-two-reflows-profil-5102f-without-losing-conversation-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/chapter-two-reflows-profil-5102f-without-losing-conversation-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/chapter-two-reflows-profil-5102f-without-losing-conversation-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [desktop] › tests/smoke/chapter-two.spec.ts:138:1 › Chapter 2 conversation and decision are operable by keyboard 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/play
+    Call log:
+      - navigating to "http://127.0.0.1:4173/play", waiting until "load"
+
+
+       at helpers.ts:5
+
+      3 | export const saveKey = 'trusttrail:save:v1';
+      4 | export async function enterChapterOne(page: Page) {
+    > 5 |   await page.goto('/play');
+        |              ^
+      6 |   await page.getByRole('button', { name: /Mulai investigasi/ }).click();
+      7 |   await page.getByRole('button', { name: /Buka berkas pertama/ }).click();
+      8 |   for (let i = 0; i < 3; i++) await page.getByRole('button', { name: /Lanjut cerita/ }).click();
+        at enterChapterOne (/home/muhammadshumin/Projects/trusttrail/tests/smoke/helpers.ts:5:14)
+        at enterChapterTwo (/home/muhammadshumin/Projects/trusttrail/tests/smoke/chapter-two.spec.ts:5:9)
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/chapter-two.spec.ts:139:9
+
+    Error Context: test-results/chapter-two-Chapter-2-conv-96ceb-on-are-operable-by-keyboard-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/chapter-two-Chapter-2-conv-96ceb-on-are-operable-by-keyboard-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/chapter-two-Chapter-2-conv-96ceb-on-are-operable-by-keyboard-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [desktop] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/
+    Call log:
+      - navigating to "http://127.0.0.1:4173/", waiting until "load"
+
+
+      26 |
+      27 | test('rapid OS and archive selections keep final content, focus and geometry stable', async ({ page }) => {
+    > 28 |   await page.goto('/');
+         |              ^
+      29 |   await page.evaluate(() => document.fonts.ready);
+      30 |   const stored = await page.evaluate(() => JSON.stringify(localStorage));
+      31 |   const tabs = page.getByRole('group', { name: 'Aplikasi pratinjau' });
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/homepage-b2.spec.ts:28:14
+
+    Error Context: test-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [desktop] › tests/smoke/homepage-b2.spec.ts:60:1 › repeated homepage visits release detached DOM and event listeners 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/
+    Call log:
+      - navigating to "http://127.0.0.1:4173/", waiting until "load"
+
+
+      66 |     return Object.fromEntries(metrics.filter(metric => ['Nodes', 'JSEventListeners'].includes(metric.name)).map(metric => [metric.name, metric.value]));
+      67 |   }
+    > 68 |   await page.goto('/');
+         |              ^
+      69 |   await expect(page.locator('.living-city')).toHaveAttribute('data-city-status', 'ready');
+      70 |   await page.getByRole('link', { name: 'Panduan & privasi' }).click();
+      71 |   const baseline = await readMetrics();
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/homepage-b2.spec.ts:68:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [desktop] › tests/smoke/window-management.spec.ts:60:1 › click and keyboard placement support comparison, reset and mobile reflow 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/play
+    Call log:
+      - navigating to "http://127.0.0.1:4173/play", waiting until "load"
+
+
+       at helpers.ts:5
+
+      3 | export const saveKey = 'trusttrail:save:v1';
+      4 | export async function enterChapterOne(page: Page) {
+    > 5 |   await page.goto('/play');
+        |              ^
+      6 |   await page.getByRole('button', { name: /Mulai investigasi/ }).click();
+      7 |   await page.getByRole('button', { name: /Buka berkas pertama/ }).click();
+      8 |   for (let i = 0; i < 3; i++) await page.getByRole('button', { name: /Lanjut cerita/ }).click();
+        at enterChapterOne (/home/muhammadshumin/Projects/trusttrail/tests/smoke/helpers.ts:5:14)
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/window-management.spec.ts:62:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/window-management-click-an-cc4e0-son-reset-and-mobile-reflow-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/window-management-click-an-cc4e0-son-reset-and-mobile-reflow-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/window-management-click-an-cc4e0-son-reset-and-mobile-reflow-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/window-management-click-an-cc4e0-son-reset-and-mobile-reflow-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [mobile] › tests/smoke/chapter-one.spec.ts:167:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/play
+    Call log:
+      - navigating to "http://127.0.0.1:4173/play", waiting until "load"
+
+
+       at helpers.ts:5
+
+      3 | export const saveKey = 'trusttrail:save:v1';
+      4 | export async function enterChapterOne(page: Page) {
+    > 5 |   await page.goto('/play');
+        |              ^
+      6 |   await page.getByRole('button', { name: /Mulai investigasi/ }).click();
+      7 |   await page.getByRole('button', { name: /Buka berkas pertama/ }).click();
+      8 |   for (let i = 0; i < 3; i++) await page.getByRole('button', { name: /Lanjut cerita/ }).click();
+        at enterChapterOne (/home/muhammadshumin/Projects/trusttrail/tests/smoke/helpers.ts:5:14)
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/chapter-one.spec.ts:168:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/chapter-one-active-email-a-72cb9-320-360-768-and-1440-pixels-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/chapter-one-active-email-a-72cb9-320-360-768-and-1440-pixels-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/chapter-one-active-email-a-72cb9-320-360-768-and-1440-pixels-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/chapter-one-active-email-a-72cb9-320-360-768-and-1440-pixels-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) [mobile] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/play
+    Call log:
+      - navigating to "http://127.0.0.1:4173/play", waiting until "load"
+
+
+       at helpers.ts:5
+
+      3 | export const saveKey = 'trusttrail:save:v1';
+      4 | export async function enterChapterOne(page: Page) {
+    > 5 |   await page.goto('/play');
+        |              ^
+      6 |   await page.getByRole('button', { name: /Mulai investigasi/ }).click();
+      7 |   await page.getByRole('button', { name: /Buka berkas pertama/ }).click();
+      8 |   for (let i = 0; i < 3; i++) await page.getByRole('button', { name: /Lanjut cerita/ }).click();
+        at enterChapterOne (/home/muhammadshumin/Projects/trusttrail/tests/smoke/helpers.ts:5:14)
+        at enterChapterTwo (/home/muhammadshumin/Projects/trusttrail/tests/smoke/chapter-two.spec.ts:5:9)
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/chapter-two.spec.ts:121:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/chapter-two-reflows-profil-5102f-without-losing-conversation-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/chapter-two-reflows-profil-5102f-without-losing-conversation-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/chapter-two-reflows-profil-5102f-without-losing-conversation-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/chapter-two-reflows-profil-5102f-without-losing-conversation-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  9) [mobile] › tests/smoke/chapter-two.spec.ts:138:1 › Chapter 2 conversation and decision are operable by keyboard 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/play
+    Call log:
+      - navigating to "http://127.0.0.1:4173/play", waiting until "load"
+
+
+       at helpers.ts:5
+
+      3 | export const saveKey = 'trusttrail:save:v1';
+      4 | export async function enterChapterOne(page: Page) {
+    > 5 |   await page.goto('/play');
+        |              ^
+      6 |   await page.getByRole('button', { name: /Mulai investigasi/ }).click();
+      7 |   await page.getByRole('button', { name: /Buka berkas pertama/ }).click();
+      8 |   for (let i = 0; i < 3; i++) await page.getByRole('button', { name: /Lanjut cerita/ }).click();
+        at enterChapterOne (/home/muhammadshumin/Projects/trusttrail/tests/smoke/helpers.ts:5:14)
+        at enterChapterTwo (/home/muhammadshumin/Projects/trusttrail/tests/smoke/chapter-two.spec.ts:5:9)
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/chapter-two.spec.ts:139:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/chapter-two-Chapter-2-conv-96ceb-on-are-operable-by-keyboard-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/chapter-two-Chapter-2-conv-96ceb-on-are-operable-by-keyboard-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/chapter-two-Chapter-2-conv-96ceb-on-are-operable-by-keyboard-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/chapter-two-Chapter-2-conv-96ceb-on-are-operable-by-keyboard-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10) [mobile] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/
+    Call log:
+      - navigating to "http://127.0.0.1:4173/", waiting until "load"
+
+
+      26 |
+      27 | test('rapid OS and archive selections keep final content, focus and geometry stable', async ({ page }) => {
+    > 28 |   await page.goto('/');
+         |              ^
+      29 |   await page.evaluate(() => document.fonts.ready);
+      30 |   const stored = await page.evaluate(() => JSON.stringify(localStorage));
+      31 |   const tabs = page.getByRole('group', { name: 'Aplikasi pratinjau' });
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/homepage-b2.spec.ts:28:14
+
+    Error Context: test-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  11) [mobile] › tests/smoke/homepage-b2.spec.ts:60:1 › repeated homepage visits release detached DOM and event listeners 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/
+    Call log:
+      - navigating to "http://127.0.0.1:4173/", waiting until "load"
+
+
+      66 |     return Object.fromEntries(metrics.filter(metric => ['Nodes', 'JSEventListeners'].includes(metric.name)).map(metric => [metric.name, metric.value]));
+      67 |   }
+    > 68 |   await page.goto('/');
+         |              ^
+      69 |   await expect(page.locator('.living-city')).toHaveAttribute('data-city-status', 'ready');
+      70 |   await page.getByRole('link', { name: 'Panduan & privasi' }).click();
+      71 |   const baseline = await readMetrics();
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/homepage-b2.spec.ts:68:14
+
+    Error Context: test-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  12) [mobile] › tests/smoke/window-management.spec.ts:60:1 › click and keyboard placement support comparison, reset and mobile reflow 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/play
+    Call log:
+      - navigating to "http://127.0.0.1:4173/play", waiting until "load"
+
+
+       at helpers.ts:5
+
+      3 | export const saveKey = 'trusttrail:save:v1';
+      4 | export async function enterChapterOne(page: Page) {
+    > 5 |   await page.goto('/play');
+        |              ^
+      6 |   await page.getByRole('button', { name: /Mulai investigasi/ }).click();
+      7 |   await page.getByRole('button', { name: /Buka berkas pertama/ }).click();
+      8 |   for (let i = 0; i < 3; i++) await page.getByRole('button', { name: /Lanjut cerita/ }).click();
+        at enterChapterOne (/home/muhammadshumin/Projects/trusttrail/tests/smoke/helpers.ts:5:14)
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/window-management.spec.ts:62:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/window-management-click-an-cc4e0-son-reset-and-mobile-reflow-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/window-management-click-an-cc4e0-son-reset-and-mobile-reflow-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/window-management-click-an-cc4e0-son-reset-and-mobile-reflow-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/window-management-click-an-cc4e0-son-reset-and-mobile-reflow-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  12 failed
+    [desktop] › tests/smoke/chapter-one.spec.ts:167:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels 
+    [desktop] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation 
+    [desktop] › tests/smoke/chapter-two.spec.ts:138:1 › Chapter 2 conversation and decision are operable by keyboard 
+    [desktop] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable 
+    [desktop] › tests/smoke/homepage-b2.spec.ts:60:1 › repeated homepage visits release detached DOM and event listeners 
+    [desktop] › tests/smoke/window-management.spec.ts:60:1 › click and keyboard placement support comparison, reset and mobile reflow 
+    [mobile] › tests/smoke/chapter-one.spec.ts:167:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels 
+    [mobile] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation 
+    [mobile] › tests/smoke/chapter-two.spec.ts:138:1 › Chapter 2 conversation and decision are operable by keyboard 
+    [mobile] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable 
+    [mobile] › tests/smoke/homepage-b2.spec.ts:60:1 › repeated homepage visits release detached DOM and event listeners 
+    [mobile] › tests/smoke/window-management.spec.ts:60:1 › click and keyboard placement support comparison, reset and mobile reflow 

@@ -2,7 +2,9 @@
 
 **Think Before You Trust.** An Indonesian narrative investigation game about digital recruitment deception.
 
-**Phase 5C release preparation (3 November 2026):** application package **0.1.0** is locally validated for Product Owner review. [Release readiness, Vercel instructions and submission checklist](docs/phase-5c-release-readiness.md), [4:40 demo storyboard/script](docs/mit-week-demo-video-plan.md), and [official guide requirements](docs/mit-week-requirements.md) are prepared. **No public deployment, Git operation, video production or submission was performed; external links remain unverified.** Phase 5B's [remediation report](docs/phase-5b-remediation-report.md) remains historical evidence. Content/rubric/save versions are separate contracts.
+**Phase 6 SFX-only candidate (6 November 2026):** application package **0.1.0** includes seven original short sound effects, accessible master mute and SFX volume, and the existing staged security headers. [Audio/security report and current verification](docs/phase-6-audio-security-report.md). Audio preferences migrate safely from the earlier version without changing gameplay saves or scoring. **No Git operation, deployment or submission is authorized. Stop for Product Owner review.**
+
+[Phase 5C release instructions and submission checklist](docs/phase-5c-release-readiness.md), [4:40 demo storyboard/script](docs/mit-week-demo-video-plan.md), and [official guide requirements](docs/mit-week-requirements.md) remain the owner release references. Public links are unverified. Earlier phase reports are historical evidence; content/rubric/save versions remain separate contracts.
 
 The approved homepage Phase B.1 remains in place. Its [review gallery](docs/phase-b1-review/index.html), [implementation record](docs/living-city-phase-b1.md), [Phase B artwork](docs/living-city-phase-b.md), and [Phase A foundation](docs/living-city-phase-a.md) are historical milestone evidence.
 
@@ -22,7 +24,7 @@ Run `npm run dev` at `http://127.0.0.1:5173/`, or build and preview at `http://1
 
 - Target **Node 26.13.0 / npm 11.6.3**. `.nvmrc` records the target; `engines.node` permits `>=26.13.0 <27.0.0`. `packageManager` is `npm@11.6.3`; it does not switch the installed npm executable. Keep `engine-strict=true`.
 - Access to the official registry `https://registry.npmjs.org/`, or a complete approved cache.
-- Chrome by default for Playwright; use `PLAYWRIGHT_CHANNEL=msedge` for installed Edge, or `PLAYWRIGHT_EXECUTABLE_PATH=/absolute/path/to/chromium` for an installed compatible Chromium. Phase 5C’s final run used installed Playwright-managed Chrome for Testing 156.0.8078.4 (Chromium engine); system Chromium 156.0.8078.73 showed timing failures, retained in the release report. The suite owns its preview server on port 4173 and runs one worker; stop other servers on that port first.
+- Chrome by default for Playwright; use `PLAYWRIGHT_CHANNEL=msedge` for installed Edge, or `PLAYWRIGHT_EXECUTABLE_PATH=/absolute/path/to/chromium` for an installed compatible Chromium. This phase uses Fedora Chromium 156.0.8078.73 at `/usr/bin/chromium-browser`; current results are in the dated table below. Older engine/timing evidence remains historical. The suite owns its preview server on port 4173 and runs one worker; stop other servers on that port first.
 
 From the project directory in a trusted terminal with ordinary registry access:
 
@@ -44,23 +46,23 @@ npm run test:smoke
 npm run preview
 ```
 
-Preview is local only. Root [vercel.json](vercel.json) prepares Vite build/output settings and SPA fallback while excluding static file paths. The owner must authorize deployment and verify actual public routing, HTTPS and caching using the [release checklist](docs/phase-5c-release-readiness.md). No hosting resource was created. Public website/repository/video links and the official submission-form URL have not been supplied or verified.
+Preview is local only. Root [vercel.json](vercel.json) prepares Vite build/output, filtered SPA fallback and staged response security headers. Preview mirrors the headers and missing-static-file exclusions for local regression. Strict script CSP remains report-only because of verified Pixi shader compatibility. The owner must authorize deployment and verify actual public headers, routing, HTTPS and caching using the [release checklist](docs/phase-5c-release-readiness.md). No hosting resource was created. Public website/repository/video links and the official submission-form URL have not been supplied or verified.
 
-## Current validation — 3 November 2026
+## Current validation: 6 November 2026
 
-Node 26.13.0; npm 11.20.0 for validation, npm 11.6.3 for clean installation. Browser results use local production preview and installed Chromium with desktop/Pixel 7 emulation. Final browser verification uses installed Playwright-managed Chrome for Testing 156.0.8078.4. See [Phase 5C evidence and timing limits](docs/phase-5c-release-readiness.md#verification-results-and-retained-evidence).
+Node 26.13.0; npm 11.20.0 against the existing installed tree. Fedora Chromium with desktop/Pixel 7 emulation uses the local production preview. Clean installation evidence remains historical. The SFX cleanup's fresh pre-change engineering check passed 132 tests/build; the earlier candidate's 150 browser passes are historical. Current results and [limits](docs/phase-6-audio-security-report.md) follow.
 
 | Script | Purpose | Current result |
 |---|---|---|
 | `npm run typecheck` | Strict TypeScript validation, including configs/tests | Passed on Node 26.13.0 |
 | `npm run lint` | ESLint, zero warnings | Passed on authored source/config/tests |
-| `npm run test:unit` | Engine/content/save tests and rendered control/gameplay integration | 94 passed, 0 failed in 9 files; includes decision combinations and 7 new recommendation cases |
+| `npm run test:unit` | Engine/content/save/SFX tests and rendered control/gameplay integration | 137 passed, 0 failed in 14 files |
 | `npm run test:watch` | Interactive component test runner | Configured, not separately exercised |
 | `npm run build` | Typecheck then Vite production build | Passed on Node 26.13.0 |
-| `npm run test:smoke` | C1–C3 branches, recovery/report, continuity, saves/conflicts, routes, keyboard, responsive and visual resilience checks | 106 passed, 0 failed in one complete managed-Chromium run (53 desktop / 53 mobile); no skips or retries |
-| `npm run check` | Typecheck, lint, unit and build gates | Passed: typecheck, lint, 94 tests and build |
+| `npm run test:smoke` | C1–C3, recovery/report, tutorial, SFX, storage/security, routes, keyboard, responsive and visual resilience | 152 passed, 0 failed, 76 desktop + 76 mobile, 6.7 minutes; no skips or retries |
+| `npm run check` | Typecheck, lint, unit and build gates | Passed: typecheck, lint, 137 tests and build |
 
-Release-only test repairs wait for arriving app/route controls before sampling them. The six-cycle renderer/forced-GC diagnostic alone has a 60-second budget; default test and expectation deadlines remain unchanged. No app behavior, scoring, persistence or animation changed.
+Existing route/readiness waits and the scoped 60-second repeated-GC diagnostic remain; default test and expectation deadlines are unchanged. Phase 6 retains all original assertions and gameplay/scoring/save contracts. Registry audits report zero production findings and seven moderate development-only entries sharing one minimatch advisory; the report assesses exposure and the retained dependency pins.
 
 Test expectations are behavior-based: keyboard activation, disabled controls, tab selection/relationships, hidden panel controls, drawer focus restoration and intentional live announcements. jsdom's dialog shim is limited to unit tests; native focus containment/Escape still require the browser suite.
 
@@ -72,6 +74,7 @@ src/engine/          pure reducer, typed contracts, content validation and deriv
 src/content/         scenario registry and authored Chapters 1–3
 src/lib/             bounded save decoder, replay and storage operations
 src/features/gameplay/ email/source investigation, journal, choices, consequences/reflection
+src/features/audio/  one native-audio owner, original synthesis, isolated preferences and controls
 src/components/ui/   Button, Tabs, native-dialog Drawer, Notice
 src/pages/           menu, mission, report guard, instructions/privacy and not-found
 src/styles/          semantic tokens, Tailwind import, responsive/reduced-motion styles

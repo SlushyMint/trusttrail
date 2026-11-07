@@ -1,0 +1,71 @@
+
+> trusttrail@0.1.0 test:smoke
+> playwright test tests/smoke/onboarding.spec.ts --grep keyboard app activation --repeat-each=10
+
+[WebServer] (node:139089) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 20 tests using 1 worker
+
+(node:139134) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.7s)
+(node:139323) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 [desktop] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.7s)
+(node:139510) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 [desktop] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.7s)
+(node:139697) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   4 [desktop] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.7s)
+(node:139885) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   5 [desktop] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.5s)
+(node:140073) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   6 [desktop] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.6s)
+(node:140262) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   7 [desktop] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.5s)
+(node:140446) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   8 [desktop] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.6s)
+(node:140632) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   9 [desktop] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.6s)
+(node:140820) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  10 [desktop] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.6s)
+(node:141006) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  11 [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.5s)
+(node:141189) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  12 [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.6s)
+(node:141372) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  13 [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.6s)
+(node:141558) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  14 [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.6s)
+(node:141747) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  15 [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.5s)
+(node:141935) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  16 [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.5s)
+(node:142121) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  17 [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.6s)
+(node:142305) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  18 [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.5s)
+(node:142488) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  19 [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.5s)
+(node:142671) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  20 [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.6s)
+
+  20 passed (41.0s)

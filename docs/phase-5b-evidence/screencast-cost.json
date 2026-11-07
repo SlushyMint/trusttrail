@@ -1,0 +1,457 @@
+{
+  "source": "docs/phase-5b-evidence/browser-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-desktop/trace.zip",
+  "trace_recording": {
+    "test.trace": 0,
+    "1-trace.trace": 327,
+    "0-trace.trace": 0
+  },
+  "calls": [
+    {
+      "method": "pw:api",
+      "params": {},
+      "duration_ms": 9.84,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {},
+      "duration_ms": 56.98,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "url": "/"
+      },
+      "duration_ms": 169.8,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {},
+      "duration_ms": 69.66,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {},
+      "duration_ms": 31.94,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "locator": "locator('.portal-game-preview')",
+        "state": "attached"
+      },
+      "duration_ms": 1634.5,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "locator": "getByRole('group', { name: 'Aplikasi pratinjau' }).getByRole('button', { name: 'Browser', exact: true })"
+      },
+      "duration_ms": 1110.77,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "key": "Space"
+      },
+      "duration_ms": 416.72,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "getByRole('group', { name: 'Aplikasi pratinjau' }).getByRole('button', { name: 'Browser', exact: true })"
+      },
+      "duration_ms": 607.2,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "getByRole('group', { name: 'Aplikasi pratinjau' }).getByRole('button', { name: 'Browser', exact: true })",
+        "expected": "aria-pressed"
+      },
+      "duration_ms": 384.54,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "locator": "getByRole('group', { name: 'Aplikasi pratinjau' }).getByRole('button', { name: 'Case Files', exact: true })"
+      },
+      "duration_ms": 1180.5,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "key": "Space"
+      },
+      "duration_ms": 241.27,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "getByRole('group', { name: 'Aplikasi pratinjau' }).getByRole('button', { name: 'Case Files', exact: true })"
+      },
+      "duration_ms": 524.94,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "getByRole('group', { name: 'Aplikasi pratinjau' }).getByRole('button', { name: 'Case Files', exact: true })",
+        "expected": "aria-pressed"
+      },
+      "duration_ms": 681.47,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "locator": "getByRole('group', { name: 'Aplikasi pratinjau' }).getByRole('button', { name: 'Browser', exact: true })"
+      },
+      "duration_ms": 1404.01,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "key": "Space"
+      },
+      "duration_ms": 545.39,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "getByRole('group', { name: 'Aplikasi pratinjau' }).getByRole('button', { name: 'Browser', exact: true })"
+      },
+      "duration_ms": 502.28,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "getByRole('group', { name: 'Aplikasi pratinjau' }).getByRole('button', { name: 'Browser', exact: true })",
+        "expected": "aria-pressed"
+      },
+      "duration_ms": 232.88,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "locator": "getByRole('group', { name: 'Aplikasi pratinjau' }).getByRole('button', { name: 'Mail', exact: true })"
+      },
+      "duration_ms": 1415.95,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "key": "Space"
+      },
+      "duration_ms": 544.77,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "getByRole('group', { name: 'Aplikasi pratinjau' }).getByRole('button', { name: 'Mail', exact: true })"
+      },
+      "duration_ms": 436.1,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "getByRole('group', { name: 'Aplikasi pratinjau' }).getByRole('button', { name: 'Mail', exact: true })",
+        "expected": "aria-pressed"
+      },
+      "duration_ms": 564.12,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "locator": "getByRole('group', { name: 'Aplikasi pratinjau' }).getByRole('button', { name: 'Case Files', exact: true })"
+      },
+      "duration_ms": 1177.24,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "key": "Space"
+      },
+      "duration_ms": 244.12,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "getByRole('group', { name: 'Aplikasi pratinjau' }).getByRole('button', { name: 'Case Files', exact: true })"
+      },
+      "duration_ms": 210.16,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "getByRole('group', { name: 'Aplikasi pratinjau' }).getByRole('button', { name: 'Case Files', exact: true })",
+        "expected": "aria-pressed"
+      },
+      "duration_ms": 193.85,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "locator('#os-preview-content')",
+        "expected": "Jejak yang kamu temukan."
+      },
+      "duration_ms": 229.52,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "getByRole('group', { name: 'Aplikasi pratinjau' }).locator('[aria-pressed=true]')",
+        "expected": "1"
+      },
+      "duration_ms": 193.34,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "locator": "locator('.portal-game-preview')",
+        "state": "attached"
+      },
+      "duration_ms": 1520.83,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "expected": "536"
+      },
+      "duration_ms": 0.31,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "locator": "locator('.portal-intelligence')",
+        "state": "attached"
+      },
+      "duration_ms": 1492.22,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "locator": "locator('.portal-intel-files button').nth(1)"
+      },
+      "duration_ms": 1163.85,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "key": "Enter"
+      },
+      "duration_ms": 644.88,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "locator('.portal-intel-files button').nth(1)"
+      },
+      "duration_ms": 407.32,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "locator": "locator('.portal-intel-files button').nth(2)"
+      },
+      "duration_ms": 1178.43,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "key": "Enter"
+      },
+      "duration_ms": 666.83,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "locator('.portal-intel-files button').nth(2)"
+      },
+      "duration_ms": 430.11,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "locator": "locator('.portal-intel-files button').first()"
+      },
+      "duration_ms": 991.93,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "key": "Enter"
+      },
+      "duration_ms": 244.33,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "locator('.portal-intel-files button').first()"
+      },
+      "duration_ms": 444.24,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "locator": "locator('.portal-intel-files button').nth(2)"
+      },
+      "duration_ms": 799.34,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "key": "Enter"
+      },
+      "duration_ms": 607.25,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "locator('.portal-intel-files button').nth(2)"
+      },
+      "duration_ms": 211.93,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "locator('.portal-stat-number')",
+        "expected": "36,3%"
+      },
+      "duration_ms": 200.01,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "locator('#intel-detail')",
+        "expected": "Survei IMDI 2025"
+      },
+      "duration_ms": 551.77,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "locator": "locator('.portal-intelligence')",
+        "state": "attached"
+      },
+      "duration_ms": 1495.79,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "expected": "594"
+      },
+      "duration_ms": 0.07,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {},
+      "duration_ms": 522.57,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "expected": "{}"
+      },
+      "duration_ms": 0.04,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "locator": "getByRole('link', { name: 'Kembali ke awal' })"
+      },
+      "duration_ms": 1121.28,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "getByRole('link', { name: 'Kembali ke awal' })"
+      },
+      "duration_ms": 23.98,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {
+        "key": "Enter"
+      },
+      "duration_ms": 22.3,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "expected": "Object"
+      },
+      "duration_ms": 10.91,
+      "error": null
+    },
+    {
+      "method": "expect",
+      "params": {
+        "locator": "locator('#portal-title')"
+      },
+      "duration_ms": 420.92,
+      "error": null
+    },
+    {
+      "method": "pw:api",
+      "params": {},
+      "duration_ms": 224.24,
+      "error": null
+    },
+    {
+      "method": "test.attach",
+      "params": {},
+      "duration_ms": 0.01,
+      "error": null
+    }
+  ]
+}

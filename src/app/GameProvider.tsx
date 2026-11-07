@@ -3,6 +3,8 @@ import { initialGame, reduceGame } from '../engine/reducer';
 import type { GameEvent, GameState } from '../engine/types';
 import { encodeSave, readSave, removeSave, SAVE_KEY, writeSave, type LoadResult } from '../lib/persistence';
 import { GameActionsContext, GameStateContext, type GameActions, type SaveStatus } from './game-context';
+import { useAudioService } from '../features/audio/audio-context';
+import { cueForAction } from '../features/audio/score';
 
 type ViewAction = GameEvent | { type: 'session.restored'; game: GameState };
 function viewReducer(game: GameState, action: ViewAction) {
@@ -23,6 +25,7 @@ function loadedStatus(load: LoadResult): SaveStatus {
 }
 
 export function GameProvider({ children }: { children: ReactNode }) {
+  const audio = useAudioService();
   const [loaded] = useState(() => readSave());
   const [game, dispatch] = useReducer(viewReducer, loaded.game);
   const [save, setSave] = useState(() => loadedStatus(loaded));
@@ -56,12 +59,15 @@ export function GameProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const send = useCallback((event: GameEvent) => {
-    const next = reduceGame(latest.current, event);
+    const previous = latest.current;
+    const next = reduceGame(previous, event);
     if (next === latest.current) return;
     latest.current = next;
     persist(next); // Save accepted actions now, rather than depending on unload or a debounce.
     dispatch(event);
-  }, [persist]);
+    const cue = cueForAction(previous, next, event);
+    if (cue) audio?.cue(cue);
+  }, [persist, audio]);
 
   const startNew = useCallback((replaceStored = false) => {
     if (replaceStored) {
@@ -71,7 +77,8 @@ export function GameProvider({ children }: { children: ReactNode }) {
     const next = reduceGame(initialGame(), { type: 'run.started' });
     restore(next);
     persist(next);
-  }, [persist, restore, status]);
+    audio?.cue('startup');
+  }, [persist, restore, status, audio]);
 
   const reloadLatest = useCallback(() => {
     const load = readSave();

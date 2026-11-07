@@ -1,0 +1,233 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: living-city.spec.ts >> one scene resizes at all four requested widths without overflowing or blocking controls
+- Location: tests/smoke/living-city.spec.ts:84:1
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - link "Lewati ke konten" [ref=e4] [cursor=pointer]:
+      - /url: "#portal-main"
+    - banner [ref=e5]:
+      - link "TrustTrail, beranda" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - text: TrustTrail
+      - navigation "Navigasi beranda" [ref=e9]:
+        - link "Intelijen" [ref=e10] [cursor=pointer]:
+          - /url: "#intel"
+        - link "Coba periksa" [ref=e11] [cursor=pointer]:
+          - /url: "#latihan"
+        - link "Berkas kasus" [ref=e12] [cursor=pointer]:
+          - /url: "#berkas"
+      - link "Panduan & privasi" [ref=e13] [cursor=pointer]:
+        - /url: /guide
+    - main [ref=e14]:
+      - generic [ref=e15]:
+        - region [ref=e16]:
+          - generic [ref=e17]:
+            - heading "Undangan kerja. Atau perangkap?" [level=1] [ref=e18]:
+              - generic [ref=e19]: Undangan kerja.
+              - generic [ref=e21]: Atau perangkap?
+            - paragraph [ref=e23]:
+              - strong [ref=e24]: Game investigasi keamanan digital.
+              - text: Ari mendapat undangan rekrutmen yang tak ia ingat pernah lamar. Bantu ia memeriksa jejaknya sebelum percaya.
+            - button "Mulai investigasi" [active] [ref=e26] [cursor=pointer]:
+              - text: Mulai investigasi
+              - generic [aria-hidden] [ref=e27]: ↗
+            - paragraph [ref=e28]: Main langsung di browser. Tanpa akun.Tiga bab dan misi pemulihan siap dimainkan · Progres tersimpan lokal.
+            - link "Coba satu pemeriksaan dulu" [ref=e29] [cursor=pointer]:
+              - /url: "#latihan"
+          - generic [ref=e30]:
+            - generic [ref=e31]:
+              - generic [ref=e38]:
+                - strong [ref=e39]: Pesan masuk untuk Ari
+                - generic [ref=e40]: NovaTech Recruitment · cuplikan cerita fiktif
+              - generic [aria-hidden] [ref=e41]: ↙
+            - region "Pratinjau interaktif TrustTrail OS" [ref=e42]:
+              - generic [ref=e43]:
+                - generic [ref=e46]: TrustTrail OS
+                - generic [ref=e47]: CASE 01
+              - group "Aplikasi pratinjau" [ref=e48]:
+                - button "Mail" [pressed] [ref=e49] [cursor=pointer]
+                - button "Browser" [ref=e56] [cursor=pointer]
+                - button "Case Files" [ref=e62] [cursor=pointer]
+              - generic [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e78]: Mail
+                  - generic [ref=e79]: Pratinjau
+                - paragraph [ref=e80]: Kotak masuk Ari / NovaTech Recruitment
+                - heading "Undangan tahap akhir" [level=2] [ref=e81]
+                - paragraph [ref=e82]: NovaTech Internship Program
+                - generic [ref=e83]:
+                  - paragraph [ref=e84]: Halo Ari,
+                  - paragraph [ref=e85]: Selamat! Profilmu terpilih untuk mengikuti tahap akhir NovaTech Internship Program. Kami menawarkan pengalaman kerja bersama tim produk dan kesempatan bergabung setelah program berakhir.
+                - paragraph [ref=e86]: “Tapi… aku bahkan nggak ingat kapan daftar ke sini.” — Ari
+              - generic [ref=e87]:
+                - generic [ref=e88]: Cuplikan fiktif · progres & skor terpisah
+                - button "Mulai investigasi" [ref=e89] [cursor=pointer]:
+                  - text: Mulai investigasi
+                  - generic [aria-hidden] [ref=e90]: ↗
+        - generic [ref=e91]:
+          - generic [ref=e92]:
+            - generic [ref=e93]: Peralatan investigasimu
+            - button "Jeda gerak kota" [ref=e94] [cursor=pointer]: Jeda gerak kota Ⅱ
+          - group "Pilih alat investigasi" [ref=e95]:
+            - button "Mail Baca di antara baris. Terbuka" [pressed] [ref=e96] [cursor=pointer]:
+              - generic [ref=e103]:
+                - strong [ref=e104]: Mail
+                - generic [ref=e105]: Baca di antara baris.
+              - generic [ref=e106]:
+                - text: Terbuka
+                - generic [aria-hidden] [ref=e107]: ↗
+            - button "Browser Cari sumber pembanding. Buka" [ref=e108] [cursor=pointer]:
+              - generic [ref=e114]:
+                - strong [ref=e115]: Browser
+                - generic [ref=e116]: Cari sumber pembanding.
+              - generic [ref=e117]:
+                - text: Buka
+                - generic [aria-hidden] [ref=e118]: ↗
+            - button "Case Files Simpan jejak yang kamu temukan. Buka" [ref=e119] [cursor=pointer]:
+              - generic [ref=e126]:
+                - strong [ref=e127]: Case Files
+                - generic [ref=e128]: Simpan jejak yang kamu temukan.
+              - generic [ref=e129]:
+                - text: Buka
+                - generic [aria-hidden] [ref=e130]: ↗
+      - region [ref=e131]:
+        - generic [ref=e132]:
+          - heading "TrustTrail / Threat Intelligence" [level=2] [ref=e139]: TrustTrail /Threat Intelligence
+          - generic [ref=e140]:
+            - paragraph [ref=e141]: Kasusnya fiksi.Risikonya nyata.
+            - paragraph [ref=e142]: Pesan yang meyakinkan bisa menjadi awal penipuan. Buka catatan dari sumber resmi Indonesia untuk memahami mengapa kebiasaan memeriksa itu penting.
+          - generic [ref=e143]:
+            - group "Pilih berkas intelijen" [ref=e144]:
+              - button "Data File 01 IASC" [pressed] [ref=e145] [cursor=pointer]:
+                - generic [ref=e146]:
+                  - generic [ref=e147]: Data File 01
+                  - strong [ref=e148]: IASC
+              - button "Data File 02 Loker fiktif" [ref=e149] [cursor=pointer]:
+                - generic [ref=e150]:
+                  - generic [ref=e151]: Data File 02
+                  - strong [ref=e152]: Loker fiktif
+              - button "Data File 03 Tanda phishing" [ref=e153] [cursor=pointer]:
+                - generic [ref=e154]:
+                  - generic [ref=e155]: Data File 03
+                  - strong [ref=e156]: Tanda phishing
+            - 'article "Data File 01: IASC" [ref=e157]':
+              - generic [ref=e158]:
+                - paragraph [ref=e159]: Data File 01 / OJK / Satgas PASTI
+                - paragraph [ref=e160]: "74.243"
+                - heading "laporan diterima IASC" [level=3] [ref=e161]
+                - generic [ref=e162]:
+                  - generic [ref=e163]:
+                    - term [ref=e164]: Periode
+                    - definition [ref=e165]: 22 November 2024–23 Maret 2025
+                  - generic [ref=e166]:
+                    - term [ref=e167]: Sumber
+                    - definition [ref=e168]: OJK / Satgas PASTI
+                - paragraph [ref=e169]: Laporan penipuan transaksi keuangan yang diterima Indonesia Anti-Scam Centre sejak awal beroperasi hingga 23 Maret 2025. Jumlah laporan, bukan korban unik atau seluruh penipuan di Indonesia.
+                - paragraph [ref=e170]:
+                  - strong [ref=e171]: Kenapa ini penting?
+                  - text: Sebuah permintaan transaksi layak diperiksa sebelum ditindaklanjuti. Luangkan waktu untuk mengecek identitas dan kanal yang digunakan.
+                - group [ref=e172]:
+                  - generic "Dokumen sumber & konteks" [ref=e173] [cursor=pointer]
+                - link "Baca siaran pers OJK" [ref=e174] [cursor=pointer]:
+                  - /url: https://ojk.go.id/id/berita-dan-kegiatan/info-terkini/Pages/Waspada-Penipuan-Website-Mengatasnamakan-Indonesia-Anti-Scam-Centre-IASC.aspx
+                  - text: Baca siaran pers OJK
+                  - generic [aria-hidden] [ref=e175]: ↗
+          - paragraph [ref=e176]: Cuplikan historis dengan periode dan cakupan berbeda. Ketiga angka ini tidak dijumlahkan, tidak dibandingkan sebagai populasi setara, dan bukan data waktu nyata.
+          - generic [ref=e177]:
+            - paragraph [ref=e178]: Ribuan laporan. Ribuan tawaran mencurigakan. Tetapi sebuah penipuan sering dimulai dari satu keputusan kecil.
+            - link "Periksa sebuah pesan" [ref=e179] [cursor=pointer]:
+              - /url: "#latihan"
+              - text: Periksa sebuah pesan
+              - generic [aria-hidden] [ref=e180]: →
+      - region [ref=e181]:
+        - generic [ref=e182]:
+          - heading "Terlihat resmi. Coba periksa." [level=2] [ref=e183]: Terlihat resmi.Coba periksa.
+          - paragraph [ref=e184]: Rasakan cara bermain lewat email fiktif ini. Temukan satu detail di balik pengirimnya, tanpa membocorkan kasus Ari.
+        - generic [ref=e185]:
+          - article "Email latihan fiktif" [ref=e186]:
+            - generic [ref=e187]:
+              - generic [ref=e194]: Mail / latihan terpisah
+              - generic [aria-hidden] [ref=e195]: □
+            - generic [ref=e196]:
+              - paragraph [ref=e197]: Undangan diskusi portofolio
+              - paragraph [ref=e198]:
+                - strong [ref=e199]: Tim Karier Lentera
+                - generic [ref=e200]: "kepada: peserta latihan"
+              - button "Periksa alamat pengirim" [ref=e201] [cursor=pointer]
+              - paragraph [ref=e208]: Halo,
+              - paragraph [ref=e209]: Kami mengundangmu ke diskusi portofolio Lentera. Detail acara tersedia di kanal resmi kami.
+              - paragraph [ref=e210]: Salam,Tim Karier Lentera
+              - generic [ref=e211]: Simulasi fiktif. Semua alamat menggunakan .example.
+          - complementary "Catatan latihan" [ref=e212]:
+            - heading "Catatan pemeriksaan" [level=3] [ref=e219]
+            - status [ref=e220]:
+              - paragraph [ref=e221]: Apa yang ada di balik nama pengirim?
+              - paragraph [ref=e222]: Buka detail alamat pada email. Satu pemeriksaan kecil bisa mengubah cara kamu membaca sebuah pesan.
+            - generic [ref=e223]: Belum ada detail diperiksa. Latihan ini tidak menyimpan progres atau skor.
+      - region [ref=e224]:
+        - generic [ref=e225]:
+          - heading "Satu jejak. Tiga bab." [level=2] [ref=e226]: Satu jejak.Tiga bab.
+          - paragraph [ref=e227]: Ikuti perjalanan rekrutmen Ari. Setiap pesan membawa pertanyaan baru tentang siapa yang layak dipercaya.
+        - list [ref=e228]:
+          - listitem [ref=e229]:
+            - generic [ref=e230]:
+              - paragraph [ref=e231]: Bab 1 · Tersedia
+              - heading "Undangan tanpa lamaran" [level=3] [ref=e232]
+            - paragraph [ref=e233]: Sebuah tawaran tiba di kotak masuk. Periksa undangannya sebelum menentukan langkah Ari.
+            - 'link "Buka Bab 1: Undangan tanpa lamaran" [ref=e234] [cursor=pointer]':
+              - /url: /play
+              - text: Buka berkas
+              - generic [aria-hidden] [ref=e235]: ↗
+          - listitem [ref=e236]:
+            - generic [ref=e237]:
+              - paragraph [ref=e238]: Bab 2 · Tersedia
+              - heading "Perekrut yang ramah" [level=3] [ref=e239]
+            - paragraph [ref=e240]: Percakapan menjadi semakin personal. Seberapa jauh sebuah perkenalan bisa dipercaya?
+            - 'link "Lanjut perjalanan menuju Bab 2: Perekrut yang ramah" [ref=e241] [cursor=pointer]':
+              - /url: /play
+              - text: Lanjut perjalanan
+              - generic [aria-hidden] [ref=e242]: ↗
+          - listitem [ref=e243]:
+            - generic [ref=e244]:
+              - paragraph [ref=e245]: Bab 3 · Portal kandidat
+              - heading "Verifikasi terakhir" [level=3] [ref=e246]
+            - paragraph [ref=e247]: Perjalanan mendekati akhir. Sebuah portal membuka pertanyaan baru tentang batas kepercayaan.
+            - generic [ref=e248]: Siap dimainkan
+      - region [ref=e249]:
+        - generic [ref=e250]:
+          - generic [ref=e251]:
+            - paragraph [ref=e254]: Ruang latihan yang aman
+            - heading "Bukti dulu. Percaya kemudian." [level=2] [ref=e255]: Bukti dulu.Percaya kemudian.
+          - generic [ref=e256]:
+            - paragraph [ref=e257]: Semua tokoh, perusahaan, pesan, dan alamat dalam game adalah fiktif. TrustTrail tidak meminta kata sandi asli, OTP, atau dokumen identitas.
+            - paragraph [ref=e258]: Tanpa akun. Progres permainan disimpan di browser ini. Kamu bisa mengelolanya dari menu di dalam game.
+            - button "Mulai investigasi" [ref=e260] [cursor=pointer]:
+              - text: Mulai investigasi
+              - generic [aria-hidden] [ref=e261]: ↗
+            - link "Cara bermain & privasi" [ref=e262] [cursor=pointer]:
+              - /url: /guide
+    - contentinfo [ref=e263]:
+      - link "TrustTrail" [ref=e264] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=e267]: Game investigasi digital · MIT-WEEK 2026
+      - link "Kembali ke awal" [ref=e268] [cursor=pointer]:
+        - /url: "#portal-title"
+  - button "select to enable accessibility for this content" [ref=e269] [cursor=pointer]
+```

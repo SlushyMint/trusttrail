@@ -1,0 +1,83 @@
+
+> trusttrail@0.1.0 test:smoke
+> playwright test tests/smoke/onboarding.spec.ts --grep keyboard app activation --repeat-each=5
+
+[WebServer] (node:123572) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 10 tests using 1 worker
+
+(node:123616) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.5s)
+(node:123804) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 [desktop] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.5s)
+(node:123990) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 [desktop] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.5s)
+(node:124172) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   4 [desktop] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.6s)
+(node:124362) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   5 [desktop] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.6s)
+(node:124546) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   6 [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.5s)
+(node:124736) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   7 [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.5s)
+(node:124922) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   8 [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.5s)
+(node:125108) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   9 [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.4s)
+(node:125299) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  10 [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (6.0s)
+
+
+  1) [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player 
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator:  locator('#os-menu-trigger')
+    Expected: focused
+    Received: inactive
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeFocused" locator('#os-menu-trigger') with timeout 5000ms
+      - waiting for locator('#os-menu-trigger')
+        14 × locator resolved to <button id="os-menu-trigger" aria-haspopup="dialog" aria-label="Ganti aplikasi" data-tutorial-target="false">…</button>
+           - unexpected value "inactive"
+
+
+      78 |   await page.keyboard.press('Space');
+      79 |   await expect(tutorial(page)).toHaveCount(0);
+    > 80 |   await expect(page.locator(await page.locator('.trusttrail-os').getAttribute('data-os') === 'desktop' ? '#task-journal' : '#os-menu-trigger')).toBeFocused();
+         |                                                                                                                                                 ^
+      81 |   await page.goto('/guide');
+      82 |   await page.getByRole('button', { name: 'Ulangi tutorial' }).click();
+      83 |   await page.getByRole('button', { name: 'Mulai Tutorial', exact: true }).click();
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/onboarding.spec.ts:80:145
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/onboarding-keyboard-app-ac-8c5b2-arget-never-trap-the-player-mobile-repeat4/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/onboarding-keyboard-app-ac-8c5b2-arget-never-trap-the-player-mobile-repeat4/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/onboarding-keyboard-app-ac-8c5b2-arget-never-trap-the-player-mobile-repeat4/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/onboarding-keyboard-app-ac-8c5b2-arget-never-trap-the-player-mobile-repeat4/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player 
+  9 passed (24.2s)

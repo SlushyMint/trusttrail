@@ -1,0 +1,13 @@
+
+> trusttrail@0.1.0 test:unit
+> vitest run
+
+
+ RUN  v5.0.5 /home/muhammadshumin/Projects/trusttrail
+
+
+ Test Files  8 passed (8)
+      Tests  87 passed (87)
+   Start at  17:12:10
+   Duration  2.12s (environment 50%, tests 26%, transform 11%, setup 7%, import 6%)
+

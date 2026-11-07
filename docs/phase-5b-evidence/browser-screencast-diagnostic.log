@@ -1,0 +1,76 @@
+
+> trusttrail@0.1.0 test:smoke
+> playwright test --output=docs/phase-5b-evidence/browser-results
+
+[WebServer] (node:73005) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 104 tests using 1 worker
+
+(node:73049) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓    1 [desktop] › tests/smoke/chapter-one.spec.ts:4:1 › fully investigated Chapter 1 verifies independently and preserves its completed record (1.7s)
+  ✓    2 [desktop] › tests/smoke/chapter-one.spec.ts:35:1 › risky choice remains playable, never opens a real destination and invents no compromise (1.0s)
+  ✓    3 [desktop] › tests/smoke/chapter-one.spec.ts:48:1 › unfinished verification survives refresh; later evidence never earns retroactive awareness (1.4s)
+  ✓    4 [desktop] › tests/smoke/chapter-one.spec.ts:68:1 › ignore protects Ari without requiring clues and restart/reset require confirmation (7.3s)
+  ✓    5 [desktop] › tests/smoke/chapter-one.spec.ts:92:1 › corrupt save is not silently overwritten (581ms)
+  ✓    6 [desktop] › tests/smoke/chapter-one.spec.ts:102:1 › blocked storage allows a memory-only Chapter 1 playthrough (1.0s)
+  ✓    7 [desktop] › tests/smoke/chapter-one.spec.ts:112:1 › another tab pauses writes until the player reloads the latest progress (1.2s)
+  ✓    8 [desktop] › tests/smoke/chapter-one.spec.ts:129:1 › Chapter 1 can be completed using keyboard traversal and activation only (2.2s)
+  ✓    9 [desktop] › tests/smoke/chapter-one.spec.ts:169:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels (2.2s)
+  ✓   10 [desktop] › tests/smoke/chapter-three.spec.ts:87:1 › finishes C1–C3 safely with meaningful comparisons, archived evidence and reloads (4.2s)
+  ✓   11 [desktop] › tests/smoke/chapter-three.spec.ts:123:1 › unsafe code and earlier identity disclosure lead to six recovery actions without a game over (4.0s)
+  ✓   12 [desktop] › tests/smoke/chapter-three.spec.ts:137:1 › portal comparison handles mistakes, keyboard input, reduced motion and narrow screens (4.2s)
+  ✓   13 [desktop] › tests/smoke/chapter-two.spec.ts:29:1 › investigates the recruiter across apps and preserves Chapter 1 records through completion (2.6s)
+  ✓   14 [desktop] › tests/smoke/chapter-two.spec.ts:81:4 › branch: Bantuan berubah menjadi paparan. remains playable without collecting evidence (1.7s)
+  ✓   15 [desktop] › tests/smoke/chapter-two.spec.ts:81:4 › branch: Batas yang tetap terjaga. remains playable without collecting evidence (1.8s)
+  ✓   16 [desktop] › tests/smoke/chapter-two.spec.ts:97:1 › resumes conversation and partial verification without duplicate credit or retroactive awareness (2.0s)
+  ✓   17 [desktop] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation (2.5s)
+  ✓   18 [desktop] › tests/smoke/chapter-two.spec.ts:138:1 › Chapter 2 conversation and decision are operable by keyboard (2.3s)
+  ✓   19 [desktop] › tests/smoke/chapter-two.spec.ts:165:1 › restarts Chapter 2 without retaining old conversation or journal state (1.8s)
+  ✓   20 [desktop] › tests/smoke/dual-os.spec.ts:4:1 › one persisted session keeps expanded clues and an uncommitted decision across shells (951ms)
+  ✓   21 [desktop] › tests/smoke/dual-os.spec.ts:24:1 › pending source verification persists through resize, reload and later source comparison (1.2s)
+  ✓   22 [desktop] › tests/smoke/dual-os.spec.ts:45:1 › browser back, forward, inbox and home navigation never roll back gameplay (1.7s)
+  ✓   23 [desktop] › tests/smoke/dual-os.spec.ts:66:1 › desktop window controls and Saku fullscreen navigation are deliberate at boundaries (1.3s)
+  ✓   24 [desktop] › tests/smoke/foundation.spec.ts:4:1 › routes, fresh-run states and direct refresh work without external requests (2.0s)
+  ✓   25 [desktop] › tests/smoke/foundation.spec.ts:21:1 › native app menu traps focus, closes with Escape and returns focus (571ms)
+  ✓   26 [desktop] › tests/smoke/foundation.spec.ts:39:1 › keyboard app navigation and reduced motion remain usable (950ms)
+  ✓   27 [desktop] › tests/smoke/homepage-b1.spec.ts:4:1 › OS selectors share preview state without writing to a saved investigation (12.1s)
+  ✓   28 [desktop] › tests/smoke/homepage-b1.spec.ts:29:1 › intelligence files retain scope, period, source and link through keyboard switching (18.1s)
+  ✓   29 [desktop] › tests/smoke/homepage-b1.spec.ts:58:1 › city pause control stops rendering and respects reduced motion (3.8s)
+  ✓   30 [desktop] › tests/smoke/homepage-b2.spec.ts:3:1 › native scroll choreography reverses and reduced motion settles every presentation layer (8.0s)
+  ✘   31 [desktop] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable (33.8s)
+(node:75300) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   32 [desktop] › tests/smoke/homepage-b2.spec.ts:63:1 › repeated homepage visits release detached DOM and event listeners (23.8s)
+  ✓   33 [desktop] › tests/smoke/homepage.spec.ts:4:1 › homepage preview is keyboard accessible and cannot change a saved investigation (1.7s)
+  ✓   34 [desktop] › tests/smoke/homepage.spec.ts:25:1 › fresh homepage starts the real game and attributes all three statistics (12.4s)
+  ✓   35 [desktop] › tests/smoke/homepage.spec.ts:45:1 › homepage fits requested widths, keeps CTA above fold and respects reduced motion (1.4s)
+  ✓   36 [desktop] › tests/smoke/living-city.spec.ts:3:1 › city canvas remains behind HTML and pauses outside the hero (9.8s)
+  ✘   37 [desktop] › tests/smoke/living-city.spec.ts:22:1 › repeated client navigation owns one canvas and handles lost rendering (20.6s)
+
+
+  1) [desktop] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5b-evidence/browser-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5b-evidence/browser-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5b-evidence/browser-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5b-evidence/browser-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [desktop] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable 
+  1 interrupted
+    [desktop] › tests/smoke/living-city.spec.ts:22:1 › repeated client navigation owns one canvas and handles lost rendering 
+  67 did not run
+  35 passed (3.4m)

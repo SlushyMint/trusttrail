@@ -53,6 +53,7 @@ for (const width of [320, 360, 390, 768, 1440]) test(`tutorial fits ${width}px w
 });
 test('keyboard app activation and missing launch target never trap the player', async ({ page }) => {
   await enterChapterOne(page);
+  await expect(tutorial(page).getByRole('heading', { name: 'Selamat datang di TrustTrail OS.' })).toBeFocused();
   await page.getByRole('button', { name: 'Mulai Tutorial', exact: true }).focus();
   await page.keyboard.press('Enter');
   for (const name of ['Mail', 'Browser', 'Case Files'] as const) {
@@ -62,10 +63,29 @@ test('keyboard app activation and missing launch target never trap the player', 
     } else {
       await page.getByRole('button', { name: 'Ganti aplikasi', exact: true }).focus();
       await page.keyboard.press('Enter');
-      await page.getByRole('dialog').getByRole('button', { name: new RegExp(`^${name}`) }).focus();
+      await page.getByRole('dialog', { name: 'Menu TrustTrail' }).getByRole('button', { name: new RegExp(`^${name}`) }).focus();
     }
     await page.keyboard.press('Enter');
+    const id = name === 'Case Files' ? 'journal' : name.toLowerCase();
+    await expect(page).toHaveURL(new RegExp(`app=${id === 'journal' ? 'cases' : id}`));
+    await expect(page.locator(`#os-app-${id}`)).toHaveAttribute('data-active', 'true');
+    // Let the new route finish its documented heading-focus restoration before
+    // focusing the next launcher; otherwise that effect can steal the next Enter.
+    if (name !== 'Case Files') {
+      if (desktop) await expect(page.locator(`#os-app-${id} [data-window-heading]`)).toBeFocused();
+      else {
+        await expect(page.locator('.saku-app-header h1')).toHaveText(name);
+        await expect(page.locator('.saku-app-header h1')).toBeFocused();
+      }
+    }
   }
+  // Ready can appear before the concurrent Case Files route commits. Complete
+  // only after that actual app selection has settled, as a player would observe.
+  await expect(page).toHaveURL(/app=cases/);
+  if (await page.locator('.trusttrail-os').getAttribute('data-os') === 'saku') {
+    await expect(page.locator('.saku-app-header h1')).toHaveText('Case Files');
+  }
+  await expect(tutorial(page).getByRole('heading', { name: 'Peralatanmu sudah siap.' })).toBeFocused();
   await page.getByRole('button', { name: 'Mulai Investigasi', exact: true }).focus();
   await page.keyboard.press('Space');
   await expect(tutorial(page)).toHaveCount(0);

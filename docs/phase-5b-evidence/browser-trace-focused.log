@@ -1,0 +1,19 @@
+
+> trusttrail@0.1.0 test:smoke
+> playwright test --grep rapid OS|one scene resizes --output=docs/phase-5b-evidence/trace-focused-results
+
+[WebServer] (node:76142) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:76187) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [desktop] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable (27.4s)
+  ✓  2 [desktop] › tests/smoke/living-city.spec.ts:84:1 › one scene resizes at all four requested widths without overflowing or blocking controls (20.4s)
+(node:76847) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 [mobile] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable (16.5s)
+  ✓  4 [mobile] › tests/smoke/living-city.spec.ts:84:1 › one scene resizes at all four requested widths without overflowing or blocking controls (27.2s)
+
+  4 passed (1.6m)

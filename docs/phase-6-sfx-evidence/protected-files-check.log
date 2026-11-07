@@ -1,0 +1,16 @@
+src/engine/recommendations.ts: OK
+src/engine/recovery.ts: OK
+src/engine/reducer.ts: OK
+src/engine/types.ts: OK
+src/engine/validate.ts: OK
+src/lib/persistence.ts: OK
+src/features/audio/score.ts: OK
+vercel.json: OK
+vite.config.ts: OK
+src/pages/ThreatIntelligence.tsx: OK
+tests/smoke/security.spec.ts: OK
+src/app/GameProvider.tsx: OK
+src/features/os/OperatingSystem.tsx: OK
+src/main.tsx: OK
+package.json: OK
+package-lock.json: OK

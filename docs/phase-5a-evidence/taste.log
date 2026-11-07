@@ -1,0 +1,45 @@
+TASTESKILL · INSPECT   http://127.0.0.1:4173
+
+MEASURED (first viewport listed)
+  hero headline   "Undangan kerja. Atau perangkap?"  4 words · 2 line(s) · 46px (3.2vw) · Silkscreen 400 · tracking -0.04em · leading 1.22
+  @768px          2 line(s) · 38.4px
+  @390px          2 line(s) · 27.7px
+  @360px          2 line(s) · 25.6px
+  typefaces       Inter 95%, Silkscreen 5%
+  sizes in use    14 / 16 / 18 / 20 / 24 / 34 / 37 / 46 px   body 16px / 1.65
+  colour          page #0b1423 · sections #0b1423 #142231 #1a2a3a · button #78d8c3
+  page            4.5 screens · 573 words · 1 images · hero media 89% canvas
+  headings        6 · longest 2 line(s) · median 4 words
+
+FAIL — fix every one of these
+  [icon-cards] @1440px (+768)  1 row(s) of identical cards each topped with a small icon (3 cards).
+      → Replace with one composed section from the direction: a narrative split, a list set in large type, or real imagery per item.
+  [ui-wrapper] @360px  A data-ui element wraps a heading or more than a screen and a half of the page.
+      → data-ui marks a cropped interface fragment only. Remove it from page-level wrappers.
+  [blank-gap] @360px  2 stretch(es) of the page hold nothing at all: 108px at 5368px; 116px at 5996px (the screen is 225px tall).
+      → Close the gap: a section gap is 120–240px on desktop and 72–112px on a phone. Look for a min-height: 100vh on a short section, an empty grid row, a hidden element still holding its space, or a reveal that never fired. A deliberate rest is a placed picture or colour field, not nothing.
+
+WARN — fix, or be able to defend
+  [no-real-pictures] @1440px  Only 1 real photograph(s) or clip(s); the rest are interface fragments.
+      → Add two or more real pictures of the customer's world from scripts/assets.mjs, not stock of people at laptops.
+  [no-footage] @1440px  No video anywhere on the page.
+      → Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject.
+  [measure] @1440px (+768)  Longest paragraph runs about 95 characters per line.
+      → Cap paragraphs at 45–75 characters (max-width: 60ch).
+  [size-count] @390px  10 different font sizes (13, 14, 16, 17, 18, 20, 22, 24, 25, 28).
+      → A page needs about five: display, heading, lead, body, small.
+
+LOOK AT THE RENDER — open these with your image viewer / Read tool before saying anything about quality:
+  desktop 1440px  docs/phase-5a-evidence/taste/desktop-fold.jpg
+                  docs/phase-5a-evidence/taste/desktop-page-01.jpg
+                  docs/phase-5a-evidence/taste/desktop-page-02.jpg
+  tablet 768px    docs/phase-5a-evidence/taste/tablet-fold.jpg
+                  docs/phase-5a-evidence/taste/tablet-page-01.jpg
+  mobile 390px    docs/phase-5a-evidence/taste/mobile-390-fold.jpg
+                  docs/phase-5a-evidence/taste/mobile-390-page-01.jpg
+  mobile 360px    docs/phase-5a-evidence/taste/mobile-360-fold.jpg
+                  docs/phase-5a-evidence/taste/mobile-360-page-01.jpg
+                  docs/phase-5a-evidence/taste/mobile-360-page-02.jpg
+
+report: docs/phase-5a-evidence/taste/report.json
+RESULT: 3 FAIL, 4 WARN — not done.

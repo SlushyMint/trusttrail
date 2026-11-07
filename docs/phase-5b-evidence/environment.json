@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-03",
+  "guide": {
+    "path": "Juknis Web Development MIT-WEEK 2026.pdf",
+    "pages": 8,
+    "sha256": "bfd73734e7167d0f740b05b2cb2ae4c9b539bed3bf824c47b8c9552e93bd9fe0"
+  },
+  "runtime": {
+    "node": "v26.13.0",
+    "npm": "11.20.0",
+    "clean_install_npm": "11.6.3",
+    "browser": "Chromium 156.0.8078.73 Built from source for Fedora release 44 (Forty Four)"
+  },
+  "lock_consistency": {
+    "root_version": true,
+    "direct_pins": true,
+    "direct_count": 25
+  }
+}

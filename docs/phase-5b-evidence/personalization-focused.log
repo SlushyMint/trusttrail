@@ -1,0 +1,35 @@
+
+> trusttrail@0.1.0 test:unit
+> vitest run tests/unit/recommendations.test.ts
+
+
+ RUN  v5.0.5 /home/muhammadshumin/Projects/trusttrail
+
+ ❯ tests/unit/recommendations.test.ts (7 tests | 1 failed) 27ms
+   ❯ personalized report practice (7)
+     × prioritizes code, identity and unverified link decisions with reasons 17ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/unit/recommendations.test.ts > personalized report practice > prioritizes code, identity and unverified link decisions with reasons
+AssertionError: expected 'Gunakan aplikasi resmi layanan email …' to contain 'kode'
+
+Expected: "kode"
+Received: "Gunakan aplikasi resmi layanan email untuk memulihkan akses, mencabut sesi asing, dan memperbarui keamanan akun."
+
+ ❯ tests/unit/recommendations.test.ts:41:30
+     39|     const items = reportRecommendations(journey({ unsafe: true }));
+     40|     expect(items.map(item => item.id)).toEqual(['C3', 'C2', 'C1']);
+     41|     expect(items[0]!.action).toContain('kode');
+       |                              ^
+     42|     expect(items[1]!.context).toContain('Riwayat profil');
+     43|     expect(items.every(item => item.action && item.why)).toBe(true);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 6 passed (7)
+   Start at  17:43:09
+   Duration  1.17s (environment 77%, setup 12%, transform 6%, tests 3%, import 1%, worker 1%)
+

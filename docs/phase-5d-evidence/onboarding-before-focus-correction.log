@@ -1,0 +1,77 @@
+
+> trusttrail@0.1.0 test:smoke
+> playwright test tests/smoke/onboarding.spec.ts
+
+[WebServer] (node:63469) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 18 tests using 1 worker
+
+(node:63513) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/smoke/onboarding.spec.ts:4:1 › real tutorial journey preserves save and resumes interrupted steps (2.2s)
+  ✓   2 [desktop] › tests/smoke/onboarding.spec.ts:24:1 › skip, collect evidence, replay and keyboard dismissal preserve progress (1.6s)
+  ✓   3 [desktop] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 320px with reduced motion (1.1s)
+  ✓   4 [desktop] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 360px with reduced motion (1.0s)
+  ✓   5 [desktop] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 390px with reduced motion (1.0s)
+  ✓   6 [desktop] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 768px with reduced motion (1.1s)
+  ✓   7 [desktop] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 1440px with reduced motion (1.1s)
+  ✓   8 [desktop] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.5s)
+  ✓   9 [desktop] › tests/smoke/onboarding.spec.ts:82:1 › skip inside the modal menu restores reachable focus (1.5s)
+(node:64256) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  10 [mobile] › tests/smoke/onboarding.spec.ts:4:1 › real tutorial journey preserves save and resumes interrupted steps (2.3s)
+  ✓  11 [mobile] › tests/smoke/onboarding.spec.ts:24:1 › skip, collect evidence, replay and keyboard dismissal preserve progress (1.7s)
+  ✓  12 [mobile] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 320px with reduced motion (1.2s)
+  ✓  13 [mobile] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 360px with reduced motion (1.3s)
+  ✓  14 [mobile] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 390px with reduced motion (1.3s)
+  ✓  15 [mobile] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 768px with reduced motion (1.3s)
+  ✓  16 [mobile] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 1440px with reduced motion (1.6s)
+  ✘  17 [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (6.1s)
+(node:64967) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  18 [mobile] › tests/smoke/onboarding.spec.ts:82:1 › skip inside the modal menu restores reachable focus (1.4s)
+
+
+  1) [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByRole('complementary', { name: 'Tutorial investigasi' })
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" getByRole('complementary', { name: 'Tutorial investigasi' }) with timeout 5000ms
+      - waiting for getByRole('complementary', { name: 'Tutorial investigasi' })
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      69 |   await page.getByRole('button', { name: 'Mulai Investigasi', exact: true }).focus();
+      70 |   await page.keyboard.press('Space');
+    > 71 |   await expect(tutorial(page)).toHaveCount(0);
+         |                                ^
+      72 |   await expect(page.locator(await page.locator('.trusttrail-os').getAttribute('data-os') === 'desktop' ? '#task-journal' : '#os-menu-trigger')).toBeFocused();
+      73 |   await page.goto('/guide');
+      74 |   await page.getByRole('button', { name: 'Ulangi tutorial' }).click();
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/onboarding.spec.ts:71:32
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/onboarding-keyboard-app-ac-8c5b2-arget-never-trap-the-player-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/onboarding-keyboard-app-ac-8c5b2-arget-never-trap-the-player-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/onboarding-keyboard-app-ac-8c5b2-arget-never-trap-the-player-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/onboarding-keyboard-app-ac-8c5b2-arget-never-trap-the-player-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player 
+  17 passed (32.9s)

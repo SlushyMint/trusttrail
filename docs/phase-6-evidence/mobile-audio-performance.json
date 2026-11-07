@@ -1,0 +1,10 @@
+{
+  "method": "Chromium 390x844 touch emulation, DPR 2, 4x renderer CPU throttling, reduced motion, idle OS settings. Not physical-phone/native DSP or battery measurement.",
+  "activationMs": 208.38200000000006,
+  "offMainThreadMs": 4.4920000000000515,
+  "musicMainThreadMs": 1.3579999999999703,
+  "beforeHeap": 3479824,
+  "afterHeap": 4299780,
+  "contextsAfterTenCycles": 1,
+  "finalState": "suspended"
+}

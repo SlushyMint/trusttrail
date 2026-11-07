@@ -1,0 +1,21 @@
+/* Keep the established Lacak/Saku tokens; these controls occupy existing system chrome. */
+.audio-controls { display: flex; align-items: center; gap: 4px; flex: none; }
+.audio-controls > button { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 4px 8px; border: 1px solid transparent; background: transparent; color: var(--px-text); font: 500 12px/1.4 var(--px-body); }
+.audio-controls > button:hover { background: var(--px-raised); border-color: var(--px-highlight); }
+.audio-controls > button:active { background: var(--px-reading); }
+.audio-controls > button[aria-pressed='true'] { color: var(--px-amber); }
+.audio-controls > button:focus-visible, .audio-settings input:focus-visible { outline: 2px solid var(--px-teal); outline-offset: 2px; }
+.audio-settings { display: grid; gap: 16px; font: 14px/1.6 var(--px-body); color: var(--px-text); }
+.audio-settings > label { display: flex; align-items: center; gap: 12px; min-height: 44px; cursor: pointer; }
+.audio-settings input[type='checkbox'] { width: 20px; height: 20px; accent-color: var(--px-teal); flex: none; }
+.audio-settings input[type='range'] { width: 100%; min-height: 44px; accent-color: var(--px-teal); cursor: pointer; }
+.audio-settings output { margin-left: auto; font-variant-numeric: tabular-nums; }
+.saku-status-bar:has(.audio-controls) { padding-block: max(4px, env(safe-area-inset-top)) 4px; gap: 8px; }
+.saku-status-bar:has(.audio-controls) > span { display: none; }
+.px-system-bar:has(.audio-controls) { gap: 16px; }
+.px-system-bar:has(.audio-controls) .px-system-version { display: none; }
+.portal-utilities { display: flex; align-items: center; gap: 12px; }
+@media (max-width: 700px) {
+  .portal-header .portal-utilities { width: 100%; justify-content: space-between; }
+  .portal-utilities .portal-guide { margin-left: 0; }
+}

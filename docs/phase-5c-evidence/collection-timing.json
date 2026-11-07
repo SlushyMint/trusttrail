@@ -1,0 +1,273 @@
+[
+  {
+    "method": "pw:api",
+    "params": {},
+    "durationMs": 19.89,
+    "error": null
+  },
+  {
+    "method": "pw:api",
+    "params": {},
+    "durationMs": 83.11,
+    "error": null
+  },
+  {
+    "method": "pw:api",
+    "params": {},
+    "durationMs": 2.77,
+    "error": null
+  },
+  {
+    "method": "pw:api",
+    "params": {},
+    "durationMs": 1.65,
+    "error": null
+  },
+  {
+    "method": "pw:api",
+    "params": {
+      "url": "/"
+    },
+    "durationMs": 210.47,
+    "error": null
+  },
+  {
+    "method": "expect",
+    "params": {
+      "locator": "locator('.living-city')",
+      "expected": "data-city-status"
+    },
+    "durationMs": 1099.46,
+    "error": null
+  },
+  {
+    "method": "pw:api",
+    "params": {
+      "locator": "getByRole('link', { name: 'Panduan & privasi' })"
+    },
+    "durationMs": 3553.41,
+    "error": null
+  },
+  {
+    "method": "pw:api",
+    "params": {},
+    "durationMs": 27.15,
+    "error": null
+  },
+  {
+    "method": "pw:api",
+    "params": {},
+    "durationMs": 0.96,
+    "error": null
+  },
+  {
+    "method": "pw:api",
+    "params": {},
+    "durationMs": 43.65,
+    "error": null
+  },
+  {
+    "method": "expect",
+    "params": {
+      "locator": "locator('.living-city')",
+      "expected": "data-city-status"
+    },
+    "durationMs": 734.1,
+    "error": null
+  },
+  {
+    "method": "pw:api",
+    "params": {
+      "locator": "getByRole('link', { name: 'Panduan & privasi' })"
+    },
+    "durationMs": 2969.44,
+    "error": null
+  },
+  {
+    "method": "expect",
+    "params": {
+      "locator": "locator('.living-city canvas')"
+    },
+    "durationMs": 9.95,
+    "error": null
+  },
+  {
+    "method": "pw:api",
+    "params": {},
+    "durationMs": 45.77,
+    "error": null
+  },
+  {
+    "method": "expect",
+    "params": {
+      "locator": "locator('.living-city')",
+      "expected": "data-city-status"
+    },
+    "durationMs": 966.3,
+    "error": null
+  },
+  {
+    "method": "pw:api",
+    "params": {
+      "locator": "getByRole('link', { name: 'Panduan & privasi' })"
+    },
+    "durationMs": 3210.22,
+    "error": null
+  },
+  {
+    "method": "expect",
+    "params": {
+      "locator": "locator('.living-city canvas')"
+    },
+    "durationMs": 9.37,
+    "error": null
+  },
+  {
+    "method": "pw:api",
+    "params": {},
+    "durationMs": 39.79,
+    "error": null
+  },
+  {
+    "method": "expect",
+    "params": {
+      "locator": "locator('.living-city')",
+      "expected": "data-city-status"
+    },
+    "durationMs": 728.85,
+    "error": null
+  },
+  {
+    "method": "pw:api",
+    "params": {
+      "locator": "getByRole('link', { name: 'Panduan & privasi' })"
+    },
+    "durationMs": 3247.54,
+    "error": null
+  },
+  {
+    "method": "expect",
+    "params": {
+      "locator": "locator('.living-city canvas')"
+    },
+    "durationMs": 13.78,
+    "error": null
+  },
+  {
+    "method": "pw:api",
+    "params": {},
+    "durationMs": 35.82,
+    "error": null
+  },
+  {
+    "method": "expect",
+    "params": {
+      "locator": "locator('.living-city')",
+      "expected": "data-city-status"
+    },
+    "durationMs": 967.0,
+    "error": null
+  },
+  {
+    "method": "pw:api",
+    "params": {
+      "locator": "getByRole('link', { name: 'Panduan & privasi' })"
+    },
+    "durationMs": 3184.53,
+    "error": null
+  },
+  {
+    "method": "expect",
+    "params": {
+      "locator": "locator('.living-city canvas')"
+    },
+    "durationMs": 12.13,
+    "error": null
+  },
+  {
+    "method": "pw:api",
+    "params": {},
+    "durationMs": 38.17,
+    "error": null
+  },
+  {
+    "method": "expect",
+    "params": {
+      "locator": "locator('.living-city')",
+      "expected": "data-city-status"
+    },
+    "durationMs": 959.51,
+    "error": null
+  },
+  {
+    "method": "pw:api",
+    "params": {
+      "locator": "getByRole('link', { name: 'Panduan & privasi' })"
+    },
+    "durationMs": 3264.06,
+    "error": null
+  },
+  {
+    "method": "expect",
+    "params": {
+      "locator": "locator('.living-city canvas')"
+    },
+    "durationMs": 10.37,
+    "error": null
+  },
+  {
+    "method": "pw:api",
+    "params": {},
+    "durationMs": 31.14,
+    "error": null
+  },
+  {
+    "method": "expect",
+    "params": {
+      "locator": "locator('.living-city')",
+      "expected": "data-city-status"
+    },
+    "durationMs": 828.92,
+    "error": null
+  },
+  {
+    "method": "pw:api",
+    "params": {
+      "locator": "getByRole('link', { name: 'Panduan & privasi' })"
+    },
+    "durationMs": 3582.39,
+    "error": null
+  },
+  {
+    "method": "expect",
+    "params": {
+      "locator": "locator('.living-city canvas')"
+    },
+    "durationMs": 8.4,
+    "error": null
+  },
+  {
+    "method": "expect",
+    "params": {
+      "expected": "1754"
+    },
+    "durationMs": 0.58,
+    "error": {
+      "name": "",
+      "message": "Error: Test timeout of 30000ms exceeded",
+      "stack": "Error: Test timeout of 30000ms exceeded\n    at /home/muhammadshumin/Projects/trusttrail/tests/smoke/homepage-b2.spec.ts:94:63"
+    }
+  },
+  {
+    "method": "pw:api",
+    "params": {},
+    "durationMs": 5.72,
+    "error": null
+  },
+  {
+    "method": "test.attach",
+    "params": {},
+    "durationMs": 0.01,
+    "error": null
+  }
+]

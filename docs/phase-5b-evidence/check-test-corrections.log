@@ -1,0 +1,8 @@
+
+> trusttrail@0.1.0 typecheck
+> tsc --noEmit
+
+
+> trusttrail@0.1.0 lint
+> eslint . --max-warnings=0
+

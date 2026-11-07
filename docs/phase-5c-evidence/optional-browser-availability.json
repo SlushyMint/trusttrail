@@ -1,0 +1,17 @@
+{
+  "firefox": {
+    "systemBinary": "/usr/bin/firefox",
+    "systemVersion": "159.0",
+    "playwrightBinary": "/home/muhammadshumin/.cache/ms-playwright/firefox-1555/firefox/firefox",
+    "playwrightBinaryPresent": false,
+    "launchAttempt": "Installed Firefox exited without a Playwright connection; representative journey not executed."
+  },
+  "webkit": {
+    "playwrightBinary": "/home/muhammadshumin/.cache/ms-playwright/webkit-2370/pw_run.sh",
+    "playwrightBinaryPresent": false,
+    "journey": "not executed"
+  },
+  "physicalDevices": "not available",
+  "screenReaderJourney": "not performed",
+  "browserDownloads": "none"
+}

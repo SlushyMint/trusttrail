@@ -1,0 +1,33 @@
+
+> trusttrail@0.1.0 test:smoke
+> playwright test tests/smoke/onboarding.spec.ts
+
+[WebServer] (node:66368) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 18 tests using 1 worker
+
+(node:66412) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/smoke/onboarding.spec.ts:4:1 › real tutorial journey preserves save and resumes interrupted steps (2.8s)
+  ✓   2 [desktop] › tests/smoke/onboarding.spec.ts:24:1 › skip, collect evidence, replay and keyboard dismissal preserve progress (1.9s)
+  ✓   3 [desktop] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 320px with reduced motion (1.2s)
+  ✓   4 [desktop] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 360px with reduced motion (1.2s)
+  ✓   5 [desktop] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 390px with reduced motion (1.2s)
+  ✓   6 [desktop] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 768px with reduced motion (1.2s)
+  ✓   7 [desktop] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 1440px with reduced motion (1.3s)
+  ✓   8 [desktop] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.8s)
+  ✓   9 [desktop] › tests/smoke/onboarding.spec.ts:82:1 › skip inside the modal menu restores reachable focus (1.6s)
+(node:67163) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  10 [mobile] › tests/smoke/onboarding.spec.ts:4:1 › real tutorial journey preserves save and resumes interrupted steps (2.4s)
+  ✓  11 [mobile] › tests/smoke/onboarding.spec.ts:24:1 › skip, collect evidence, replay and keyboard dismissal preserve progress (1.7s)
+  ✓  12 [mobile] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 320px with reduced motion (1.2s)
+  ✓  13 [mobile] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 360px with reduced motion (1.2s)
+  ✓  14 [mobile] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 390px with reduced motion (1.2s)
+  ✓  15 [mobile] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 768px with reduced motion (1.2s)
+  ✓  16 [mobile] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 1440px with reduced motion (1.6s)
+  ✓  17 [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.6s)
+  ✓  18 [mobile] › tests/smoke/onboarding.spec.ts:82:1 › skip inside the modal menu restores reachable focus (1.4s)
+
+  18 passed (29.9s)

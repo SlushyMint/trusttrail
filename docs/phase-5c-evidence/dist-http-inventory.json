@@ -1,0 +1,392 @@
+{
+  "baseUrl": "http://127.0.0.1:4173",
+  "checks": [
+    {
+      "path": "/artwork/ari-workspace-1200.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 69792,
+      "sha256": "ef4904f6b592a0eec582f8a544ff3f7ad4b06f2476b97e31d8251d6be7a60ebd",
+      "matchesDisk": true
+    },
+    {
+      "path": "/artwork/ari-workspace-600.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 22602,
+      "sha256": "c23ec4c7ee735fce0f105b966e4547a461437df2bab303bd4b4f84132b231324",
+      "matchesDisk": true
+    },
+    {
+      "path": "/artwork/case-dossier-480.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 39370,
+      "sha256": "9bc35589be74a404c3311ad8f8a3ef1390f0d7ba5ba6bc15ac202a2e4ae3aaf2",
+      "matchesDisk": true
+    },
+    {
+      "path": "/artwork/case-dossier-960.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 132648,
+      "sha256": "46766d41d2911114bd986d60c77245ba17cdb1f4b6ab946f14949195e46c28d9",
+      "matchesDisk": true
+    },
+    {
+      "path": "/artwork/desk-vignette-480.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 12406,
+      "sha256": "8b443c488575276cb813f432d63cc0bf9d1b63607645e903448dc7f968c4f0a2",
+      "matchesDisk": true
+    },
+    {
+      "path": "/artwork/desk-vignette-960.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 45358,
+      "sha256": "89d174737622111d0696db6ef759e8899596149e6db0b0ce6146bcd5275bfd1b",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/CanvasRenderer-G9X52XVN.js",
+      "status": 200,
+      "contentType": "text/javascript",
+      "bytes": 63,
+      "sha256": "397d1c6e0631b2d1bd9f3d0608102e6b59043b1cf6314a0b4ba26048912dac0b",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/Geometry-viLZr0Wq.js",
+      "status": 200,
+      "contentType": "text/javascript",
+      "bytes": 112308,
+      "sha256": "2e100f3c79a402eb865cb5974d5559c036ef0b33718d6bfe841b87c422439f20",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/RenderTargetSystem-BQdiOh0v.js",
+      "status": 200,
+      "contentType": "text/javascript",
+      "bytes": 78067,
+      "sha256": "492df572df286b3eee82615ec18d58709ab516954150b70262e2a1c0fa2a7331",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/WebGLRenderer-CZaMeraM.js",
+      "status": 200,
+      "contentType": "text/javascript",
+      "bytes": 62,
+      "sha256": "c0562932bf644965d60bb614af658c25da33f52a8d9b07004fda55389b4f18de",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/WebGPURenderer-Ci0uSGxO.js",
+      "status": 200,
+      "contentType": "text/javascript",
+      "bytes": 63,
+      "sha256": "ad4cf22825330f24b9618d26f86c7292737a6bceae3b3776e894e3397b88c0ea",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/browserAll-DfSxqOUl.js",
+      "status": 200,
+      "contentType": "text/javascript",
+      "bytes": 43488,
+      "sha256": "b3de9c70ff5f80066bfbb1cf9a816dcbd0e3ae7398d3c782d6e512f5d29500ae",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/canvasUtils-BMxtwTFX.js",
+      "status": 200,
+      "contentType": "text/javascript",
+      "bytes": 6011,
+      "sha256": "7873facfe6d5d262ce75bea5e4faedbe9c251c69dac2ce6b4946fa10ee07b8a8",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/city-layer-concept.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 1999410,
+      "sha256": "ed213bf565da0afb5824fddcb3348a0d82cb18ccc50e27f5b9ff85e9fd1a3d80",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/createCityScene-Boq8KsDV.js",
+      "status": 200,
+      "contentType": "text/javascript",
+      "bytes": 251625,
+      "sha256": "6e8ddf8e207cb070ece92ba8518412cfd6d916375a02a883c6a2a323ea6ceb0a",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/getTexelRangeRects-0rA7iI1a.js",
+      "status": 200,
+      "contentType": "text/javascript",
+      "bytes": 11311,
+      "sha256": "a8d44404fbfb0391269bfb823a2a4060c21a43c1828bcee0e5b70c835402ecb7",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/getTextureBatchBindGroup-popw4312.js",
+      "status": 200,
+      "contentType": "text/javascript",
+      "bytes": 342,
+      "sha256": "47f11a9b932f4102cbad516bdaf698b78417c8d8b8e4d205528ecc9605535384",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/index-B9jkqZea.js",
+      "status": 200,
+      "contentType": "text/javascript",
+      "bytes": 544565,
+      "sha256": "0e826c70b6dd719bda9166bb5fbe0ec2079502ee417ba79118b952048b234afb",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/index-COVMHXR9.css",
+      "status": 200,
+      "contentType": "text/css",
+      "bytes": 112738,
+      "sha256": "91d7dc98354944842a3917463947fde408bb7c5238ae5db10eb86b8dad642225",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/init-DUX2oKrP.js",
+      "status": 200,
+      "contentType": "text/javascript",
+      "bytes": 15178,
+      "sha256": "3b4cdab1e0c12cb0647b28f2f988d7f8027216a53082d8fcf52ebd50a1229751",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/living-city/city-back-compact.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 60268,
+      "sha256": "930a777ca9862e03f55e5f6961d640410d8d3d351fda6ab8ce667817e36528e0",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/living-city/city-back.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 190830,
+      "sha256": "03a48fbe79f0a0db1450c226d6652e09911a3a33882c4ca6cf922e526ff7a9d4",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/living-city/city-front-compact.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 32404,
+      "sha256": "f569d6fe552be95fede87b21d2e6659487458be29e7394c0cb0b4c5bfb592e99",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/living-city/city-front.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 102534,
+      "sha256": "c6d222cb6d1d0120de98510b8cc92868b681d1496ea7845cfbb9dd8f82333ec5",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/living-city/city-mid-compact.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 64660,
+      "sha256": "43028768b838295667ab715fbec775e44b9d6a6f8c49dc94ee0c975c9a3c72dd",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/living-city/city-mid-lights-compact.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 13152,
+      "sha256": "01fc6148981903d57f992990c5e61f14a3e05604d8530fda6c0edcb8613e45bb",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/living-city/city-mid-lights.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 45836,
+      "sha256": "febc7e455f6d1d144148b02681b9fe861431b2ffcd5188262cc08dad49c1e34a",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/living-city/city-mid.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 221298,
+      "sha256": "a86c10f90a6f205c65ff1604c1f3cc6fa4fc9e31cce6d78ca5f390f5c07f57f2",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/living-city/city-static-compact.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 47892,
+      "sha256": "a536ae7a7532409afe75a18c509ec53d9b5cde15edd80837ccb96e88bf049abf",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/living-city/city-static.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 126186,
+      "sha256": "91f6e9c57d901e0431ac618cf3f801b4cf5c8b3302b5c6406c5e03e4d9673685",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/living-city/office-props-compact.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 26886,
+      "sha256": "b34ae4a08f320bd9cf3f947705308c38191b4218b3ca23a965162477466ac2ac",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/living-city/office-props.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 86958,
+      "sha256": "66ab47887f0d9425a085dd656e71b8787da5bc78bbc31e6aff168a4d355dd8ee",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/living-city/sky-far-compact.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 42072,
+      "sha256": "4663c0f458473c6a5dee38f8b686bdd1dcab1689d5abfc6c3e6270ae2af00d73",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/living-city/sky-far.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 121190,
+      "sha256": "e8090cd5e9a72ab8413bc36399e363492b7ba5b492ab474ba39d45a7845b5ad0",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/webworkerAll-CEDPPjQC.js",
+      "status": 200,
+      "contentType": "text/javascript",
+      "bytes": 65,
+      "sha256": "eea14ae8d1a52390370d897e49ae387e44541f298c6344d00421f77eb1659412",
+      "matchesDisk": true
+    },
+    {
+      "path": "/favicon.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bytes": 227,
+      "sha256": "65e95fee337774ec87eb412073b9daa34ca8a10003509855ab9f46282f3b2545",
+      "matchesDisk": true
+    },
+    {
+      "path": "/fonts/Inter-OFL.txt",
+      "status": 200,
+      "contentType": "text/plain",
+      "bytes": 4377,
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+      "matchesDisk": true
+    },
+    {
+      "path": "/fonts/Silkscreen-OFL.txt",
+      "status": 200,
+      "contentType": "text/plain",
+      "bytes": 4394,
+      "sha256": "86c5e9c9382cdcc5948704fdfe60f2aa164a719746931219a42736ecd9cefbd3",
+      "matchesDisk": true
+    },
+    {
+      "path": "/fonts/SpaceGrotesk-OFL.txt",
+      "status": 200,
+      "contentType": "text/plain",
+      "bytes": 4402,
+      "sha256": "c6dec685825f73b18c20926fddc65e8315642e12986f15db0699170940a09efc",
+      "matchesDisk": true
+    },
+    {
+      "path": "/fonts/inter-latin.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "bytes": 48256,
+      "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+      "matchesDisk": true
+    },
+    {
+      "path": "/fonts/silkscreen-regular.ttf",
+      "status": 200,
+      "contentType": "font/ttf",
+      "bytes": 32220,
+      "sha256": "c845473330b94c2079ce9af01c51ac8ba2d99c24f4d14c039843bbb8e642ebd8",
+      "matchesDisk": true
+    },
+    {
+      "path": "/fonts/space-grotesk-600.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "bytes": 13284,
+      "sha256": "685bbbf69fa616df1ef81847c85fc76be097ddfb3468ff2257be54511ab3130f",
+      "matchesDisk": true
+    },
+    {
+      "path": "/index.html",
+      "status": 200,
+      "contentType": "text/html;charset=utf-8",
+      "bytes": 1249,
+      "sha256": "e385f91020ba8a2503963b2f2c503e4a1b3fefd6c46f3966ca880293a92673a1",
+      "matchesDisk": true
+    },
+    {
+      "path": "/pixel/relay-coast.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 1338221,
+      "sha256": "f1ae303cca15b32415caf18fcd58be5a0053808d53fecad6171ce9a1f0937304",
+      "matchesDisk": true
+    },
+    {
+      "path": "/preview/browser.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 32544,
+      "sha256": "bec25099c4aa0af92f2f98c3e6595ac84c4d6959d0c69c6ed201b23c1d2cc6a1",
+      "matchesDisk": true
+    },
+    {
+      "path": "/preview/chapter-one.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 209340,
+      "sha256": "62760acb73ad003153b9e601f69d17e92198ba34c992ce78db179e676630a327",
+      "matchesDisk": true
+    },
+    {
+      "path": "/preview/journal.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 28226,
+      "sha256": "7d4f3ca47fc961f6369f7f2f379c24e2343294c4f9a24a7cbe00583dcfd000f6",
+      "matchesDisk": true
+    },
+    {
+      "path": "/preview/mail.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 79047,
+      "sha256": "d3f07b07818aaa5e74a7c27079fbb1ed32849a78c891c8d3854da2a2895d5119",
+      "matchesDisk": true
+    }
+  ],
+  "files": 48,
+  "failed": 0,
+  "note": "Every dist file fetched locally; Vercel CDN responses remain unverified."
+}

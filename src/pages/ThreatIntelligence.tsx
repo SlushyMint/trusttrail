@@ -57,7 +57,7 @@ export function ThreatIntelligence() {
           <p className="portal-intel-scope">{file.scope}</p>
           <p className="portal-intel-relevance"><strong>Kenapa ini penting?</strong>{file.relevance}</p>
           <details className="portal-intel-citation"><summary>Dokumen sumber & konteks</summary><p>{file.citation}</p></details>
-          <a className="portal-source-link" href={file.href}>{file.link}<span aria-hidden="true"> ↗</span></a>
+          <a className="portal-source-link" href={file.href} rel="noopener noreferrer">{file.link}<span aria-hidden="true"> ↗</span></a>
         </motion.div>
       </article>
     </motion.div>

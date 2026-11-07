@@ -1,0 +1,109 @@
+
+> trusttrail@0.1.0 test:smoke
+> playwright test --grep reflow|rapid OS|repeated homepage|operable by keyboard
+
+[WebServer] (node:59201) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 12 tests using 2 workers
+
+(node:59251) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:59252) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/smoke/chapter-one.spec.ts:167:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels (2.3s)
+  ✓   2 [desktop] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation (2.7s)
+  ✓   4 [desktop] › tests/smoke/chapter-two.spec.ts:138:1 › Chapter 2 conversation and decision are operable by keyboard (4.2s)
+  ✓   5 [desktop] › tests/smoke/window-management.spec.ts:60:1 › click and keyboard placement support comparison, reset and mobile reflow (3.4s)
+(node:59776) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   6 [mobile] › tests/smoke/chapter-one.spec.ts:167:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels (4.2s)
+  ✓   3 [desktop] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable (16.1s)
+  ✓   7 [mobile] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation (4.9s)
+  ✓   9 [mobile] › tests/smoke/chapter-two.spec.ts:138:1 › Chapter 2 conversation and decision are operable by keyboard (2.6s)
+  ✘   8 [desktop] › tests/smoke/homepage-b2.spec.ts:60:1 › repeated homepage visits release detached DOM and event listeners (34.2s)
+(node:60269) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  10 [mobile] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable (32.0s)
+(node:60447) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  11 [mobile] › tests/smoke/window-management.spec.ts:60:1 › click and keyboard placement support comparison, reset and mobile reflow (2.7s)
+  ✓  12 [mobile] › tests/smoke/homepage-b2.spec.ts:60:1 › repeated homepage visits release detached DOM and event listeners (13.8s)
+
+
+  1) [desktop] › tests/smoke/homepage-b2.spec.ts:60:1 › repeated homepage visits release detached DOM and event listeners 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: cdpSession.send: Target page, context or browser has been closed
+
+      62 |   await cdp.send('Performance.enable');
+      63 |   async function readMetrics() {
+    > 64 |     await cdp.send('HeapProfiler.collectGarbage');
+         |               ^
+      65 |     const { metrics } = await cdp.send('Performance.getMetrics');
+      66 |     return Object.fromEntries(metrics.filter(metric => ['Nodes', 'JSEventListeners'].includes(metric.name)).map(metric => [metric.name, metric.value]));
+      67 |   }
+        at readMetrics (/home/muhammadshumin/Projects/trusttrail/tests/smoke/homepage-b2.spec.ts:64:15)
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/homepage-b2.spec.ts:79:40
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/homepage-b2.spec.ts:79:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [mobile] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: expect(locator).toBeInViewport() failed
+
+    Locator:  locator('#portal-title')
+    Expected: in viewport
+    Received: viewport ratio 0
+
+    Call log:
+      - Expect "toBeInViewport" locator('#portal-title') with timeout 5000ms
+      - waiting for locator('#portal-title')
+        5 × locator resolved to <h1 tabindex="-1" id="portal-title" data-os-focus="true">…</h1>
+          - unexpected value "viewport ratio 0"
+      - Test timeout of 30000ms exceeded.
+
+
+      55 |   await page.getByRole('link', { name: 'Kembali ke awal' }).click();
+      56 |   await expect(page).toHaveURL(/#portal-title$/);
+    > 57 |   await expect(page.locator('#portal-title')).toBeInViewport();
+         |                                               ^
+      58 | });
+      59 |
+      60 | test('repeated homepage visits release detached DOM and event listeners', async ({ page }) => {
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/homepage-b2.spec.ts:57:47
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [desktop] › tests/smoke/homepage-b2.spec.ts:60:1 › repeated homepage visits release detached DOM and event listeners 
+    [mobile] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable 
+  10 passed (1.2m)

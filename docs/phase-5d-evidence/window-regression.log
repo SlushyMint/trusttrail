@@ -1,0 +1,21 @@
+
+> trusttrail@0.1.0 test:smoke
+> playwright test tests/smoke/window-management.spec.ts
+
+[WebServer] (node:55073) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:55118) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [desktop] › tests/smoke/window-management.spec.ts:21:1 › desktop dragging, bounds, cancellation and window controls never write game state (2.2s)
+  ✓  2 [desktop] › tests/smoke/window-management.spec.ts:60:1 › click and keyboard placement support comparison, reset and mobile reflow (1.8s)
+  ✓  3 [desktop] › tests/smoke/window-management.spec.ts:106:1 › Motion respects reduced motion while desktop drag remains direct and homepage content stays visible (1.3s)
+(node:55741) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  4 [mobile] › tests/smoke/window-management.spec.ts:21:1 › desktop dragging, bounds, cancellation and window controls never write game state (2.5s)
+  ✓  5 [mobile] › tests/smoke/window-management.spec.ts:60:1 › click and keyboard placement support comparison, reset and mobile reflow (2.2s)
+  ✓  6 [mobile] › tests/smoke/window-management.spec.ts:106:1 › Motion respects reduced motion while desktop drag remains direct and homepage content stays visible (1.6s)
+
+  6 passed (13.0s)

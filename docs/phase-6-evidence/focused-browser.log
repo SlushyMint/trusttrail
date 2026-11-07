@@ -1,0 +1,187 @@
+
+> trusttrail@0.1.0 test:smoke
+> playwright test tests/smoke/audio.spec.ts tests/smoke/security.spec.ts
+
+[WebServer] (node:89386) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 24 tests using 1 worker
+
+(node:89430) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/smoke/audio.spec.ts:32:1 › defaults are silent on load; explicit music uses one context and survives application switching (1.2s)
+  ✓   2 [desktop] › tests/smoke/audio.spec.ts:45:1 › discovery cues require accepted actions and never replay after refresh or duplicate inspection (1.1s)
+  ✘   3 [desktop] › tests/smoke/audio.spec.ts:56:1 › mute, keyboard volume, independent toggles and restored preferences preserve gameplay (1.4s)
+(node:89737) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   4 [desktop] › tests/smoke/audio.spec.ts:71:1 › autoplay rejection is recoverable through an explicit control without extra contexts (713ms)
+  ✓   5 [desktop] › tests/smoke/audio.spec.ts:78:1 › visibility pause resumes the same composition only while the user still requests music (559ms)
+  ✓   6 [desktop] › tests/smoke/audio.spec.ts:88:1 › unsupported audio and blocked storage leave the investigation and controls usable (1.1s)
+  ✘   7 [desktop] › tests/smoke/audio.spec.ts:97:1 › audio controls fit narrow screens, expose focus and leave the homepage free of soundtrack requests (680ms)
+(node:90073) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   8 [desktop] › tests/smoke/security.spec.ts:7:1 › malformed local saves and preferences never become markup, identity, or an unlocked report (1.3s)
+  ✓   9 [desktop] › tests/smoke/security.spec.ts:23:1 › unexpected URL values stay inert and cannot redirect or inject content (689ms)
+  ✓  10 [desktop] › tests/smoke/security.spec.ts:37:1 › simulated phishing remains internal and the source links have explicit safe navigation attributes (2.4s)
+  ✓  11 [desktop] › tests/smoke/security.spec.ts:52:1 › production preview applies staged release headers; routes and missing assets remain distinct (468ms)
+  ✓  12 [desktop] › tests/smoke/security.spec.ts:65:1 › release source and production output pass the non-secret-printing pattern scan (87ms)
+(node:90447) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  13 [mobile] › tests/smoke/audio.spec.ts:32:1 › defaults are silent on load; explicit music uses one context and survives application switching (1.4s)
+  ✓  14 [mobile] › tests/smoke/audio.spec.ts:45:1 › discovery cues require accepted actions and never replay after refresh or duplicate inspection (921ms)
+  ✘  15 [mobile] › tests/smoke/audio.spec.ts:56:1 › mute, keyboard volume, independent toggles and restored preferences preserve gameplay (1.2s)
+(node:90733) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  16 [mobile] › tests/smoke/audio.spec.ts:71:1 › autoplay rejection is recoverable through an explicit control without extra contexts (691ms)
+  ✓  17 [mobile] › tests/smoke/audio.spec.ts:78:1 › visibility pause resumes the same composition only while the user still requests music (574ms)
+  ✓  18 [mobile] › tests/smoke/audio.spec.ts:88:1 › unsupported audio and blocked storage leave the investigation and controls usable (886ms)
+  ✘  19 [mobile] › tests/smoke/audio.spec.ts:97:1 › audio controls fit narrow screens, expose focus and leave the homepage free of soundtrack requests (618ms)
+(node:91067) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  20 [mobile] › tests/smoke/security.spec.ts:7:1 › malformed local saves and preferences never become markup, identity, or an unlocked report (1.1s)
+  ✓  21 [mobile] › tests/smoke/security.spec.ts:23:1 › unexpected URL values stay inert and cannot redirect or inject content (581ms)
+  ✓  22 [mobile] › tests/smoke/security.spec.ts:37:1 › simulated phishing remains internal and the source links have explicit safe navigation attributes (2.8s)
+  ✓  23 [mobile] › tests/smoke/security.spec.ts:52:1 › production preview applies staged release headers; routes and missing assets remain distinct (385ms)
+  ✓  24 [mobile] › tests/smoke/security.spec.ts:65:1 › release source and production output pass the non-secret-printing pattern scan (62ms)
+
+
+  1) [desktop] › tests/smoke/audio.spec.ts:56:1 › mute, keyboard volume, independent toggles and restored preferences preserve gameplay 
+
+    Error: expect(locator).toBeChecked() failed
+
+    Locator: getByLabel('Bisukan semua suara', { exact: true })
+    Expected: checked
+    Error: strict mode violation: getByLabel('Bisukan semua suara', { exact: true }) resolved to 2 elements:
+        1) <button type="button" aria-pressed="true" title="Aktifkan kembali suara" aria-label="Bisukan semua suara">…</button> aka getByRole('button', { name: 'Bisukan semua suara' })
+        2) <input checked type="checkbox"/> aka getByRole('checkbox', { name: 'Bisukan semua suara' })
+
+    Call log:
+      - Expect "toBeChecked" getByLabel('Bisukan semua suara', { exact: true }) with timeout 5000ms
+      - waiting for getByLabel('Bisukan semua suara', { exact: true })
+
+
+      63 |   await settings(page); await expect(page.getByLabel('Musik ambient')).toBeChecked(); await expect(page.getByLabel('Efek suara (SFX)')).not.toBeChecked(); await expect(page.getByRole('status', { name: 'Status audio' })).toContainText('dibisukan');
+      64 |   await closeSettings(page); await page.reload(); expect(await voices(page)).toBe(0);
+    > 65 |   await settings(page); await expect(page.getByRole('slider', { name: /Volume utama/ })).toHaveValue('30'); await expect(page.getByLabel('Bisukan semua suara', { exact: true })).toBeChecked();
+         |                                                                                                                                                                                   ^
+      66 |   await page.getByLabel('Bisukan semua suara', { exact: true }).uncheck(); expect(await voices(page)).toBe(0);
+      67 |   await page.getByRole('button', { name: 'Putar musik' }).click(); await expect(page.getByRole('status', { name: 'Status audio' })).toHaveText('Night Signal sedang diputar.');
+      68 |   expect(await page.evaluate(key => localStorage.getItem(key), saveKey)).toBe(saved);
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/audio.spec.ts:65:179
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/audio-mute-keyboard-volume-a59e7-eferences-preserve-gameplay-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/audio-mute-keyboard-volume-a59e7-eferences-preserve-gameplay-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/audio-mute-keyboard-volume-a59e7-eferences-preserve-gameplay-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/audio-mute-keyboard-volume-a59e7-eferences-preserve-gameplay-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › tests/smoke/audio.spec.ts:97:1 › audio controls fit narrow screens, expose focus and leave the homepage free of soundtrack requests 
+
+    Error: expect(received).not.toBe(expected) // Object.is equality
+
+    Expected: not "none"
+
+      104 |     const dialog = await settings(page); await expect(dialog).toBeVisible();
+      105 |     const slider = dialog.getByRole('slider', { name: /Volume utama/ }); await slider.focus();
+    > 106 |     expect(await slider.evaluate(element => getComputedStyle(element).outlineStyle)).not.toBe('none');
+          |                                                                                          ^
+      107 |     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+      108 |     await page.screenshot({ path: info.outputPath(`audio-${width}.png`) });
+      109 |     await page.keyboard.press('Escape'); await expect(dialog).not.toBeVisible(); await expect(page.getByRole('button', { name: 'Suara', exact: true })).toBeFocused();
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/audio.spec.ts:106:90
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/audio-audio-controls-fit-n-74b91-free-of-soundtrack-requests-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/audio-audio-controls-fit-n-74b91-free-of-soundtrack-requests-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/audio-audio-controls-fit-n-74b91-free-of-soundtrack-requests-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/audio-audio-controls-fit-n-74b91-free-of-soundtrack-requests-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [mobile] › tests/smoke/audio.spec.ts:56:1 › mute, keyboard volume, independent toggles and restored preferences preserve gameplay 
+
+    Error: expect(locator).toBeChecked() failed
+
+    Locator: getByLabel('Bisukan semua suara', { exact: true })
+    Expected: checked
+    Error: strict mode violation: getByLabel('Bisukan semua suara', { exact: true }) resolved to 2 elements:
+        1) <button type="button" aria-pressed="true" title="Aktifkan kembali suara" aria-label="Bisukan semua suara">…</button> aka getByRole('button', { name: 'Bisukan semua suara' })
+        2) <input checked type="checkbox"/> aka getByRole('checkbox', { name: 'Bisukan semua suara' })
+
+    Call log:
+      - Expect "toBeChecked" getByLabel('Bisukan semua suara', { exact: true }) with timeout 5000ms
+      - waiting for getByLabel('Bisukan semua suara', { exact: true })
+
+
+      63 |   await settings(page); await expect(page.getByLabel('Musik ambient')).toBeChecked(); await expect(page.getByLabel('Efek suara (SFX)')).not.toBeChecked(); await expect(page.getByRole('status', { name: 'Status audio' })).toContainText('dibisukan');
+      64 |   await closeSettings(page); await page.reload(); expect(await voices(page)).toBe(0);
+    > 65 |   await settings(page); await expect(page.getByRole('slider', { name: /Volume utama/ })).toHaveValue('30'); await expect(page.getByLabel('Bisukan semua suara', { exact: true })).toBeChecked();
+         |                                                                                                                                                                                   ^
+      66 |   await page.getByLabel('Bisukan semua suara', { exact: true }).uncheck(); expect(await voices(page)).toBe(0);
+      67 |   await page.getByRole('button', { name: 'Putar musik' }).click(); await expect(page.getByRole('status', { name: 'Status audio' })).toHaveText('Night Signal sedang diputar.');
+      68 |   expect(await page.evaluate(key => localStorage.getItem(key), saveKey)).toBe(saved);
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/audio.spec.ts:65:179
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/audio-mute-keyboard-volume-a59e7-eferences-preserve-gameplay-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/audio-mute-keyboard-volume-a59e7-eferences-preserve-gameplay-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/audio-mute-keyboard-volume-a59e7-eferences-preserve-gameplay-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/audio-mute-keyboard-volume-a59e7-eferences-preserve-gameplay-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [mobile] › tests/smoke/audio.spec.ts:97:1 › audio controls fit narrow screens, expose focus and leave the homepage free of soundtrack requests 
+
+    Error: expect(received).not.toBe(expected) // Object.is equality
+
+    Expected: not "none"
+
+      104 |     const dialog = await settings(page); await expect(dialog).toBeVisible();
+      105 |     const slider = dialog.getByRole('slider', { name: /Volume utama/ }); await slider.focus();
+    > 106 |     expect(await slider.evaluate(element => getComputedStyle(element).outlineStyle)).not.toBe('none');
+          |                                                                                          ^
+      107 |     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+      108 |     await page.screenshot({ path: info.outputPath(`audio-${width}.png`) });
+      109 |     await page.keyboard.press('Escape'); await expect(dialog).not.toBeVisible(); await expect(page.getByRole('button', { name: 'Suara', exact: true })).toBeFocused();
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/audio.spec.ts:106:90
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/audio-audio-controls-fit-n-74b91-free-of-soundtrack-requests-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/audio-audio-controls-fit-n-74b91-free-of-soundtrack-requests-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/audio-audio-controls-fit-n-74b91-free-of-soundtrack-requests-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/audio-audio-controls-fit-n-74b91-free-of-soundtrack-requests-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4 failed
+    [desktop] › tests/smoke/audio.spec.ts:56:1 › mute, keyboard volume, independent toggles and restored preferences preserve gameplay 
+    [desktop] › tests/smoke/audio.spec.ts:97:1 › audio controls fit narrow screens, expose focus and leave the homepage free of soundtrack requests 
+    [mobile] › tests/smoke/audio.spec.ts:56:1 › mute, keyboard volume, independent toggles and restored preferences preserve gameplay 
+    [mobile] › tests/smoke/audio.spec.ts:97:1 › audio controls fit narrow screens, expose focus and leave the homepage free of soundtrack requests 
+  20 passed (27.1s)

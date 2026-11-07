@@ -1,0 +1,21 @@
+
+> trusttrail@0.1.0 test:smoke
+> playwright test --grep rapid archive|repeated homepage|fresh homepage starts --output=docs/phase-5c-evidence/bundled-focused-results
+
+[WebServer] (node:109943) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:109987) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [desktop] › tests/smoke/homepage-b2.spec.ts:46:1 › rapid archive selections keep content, focus, save, geometry and return navigation stable (20.2s)
+  ✓  2 [desktop] › tests/smoke/homepage-b2.spec.ts:75:1 › repeated homepage visits release detached DOM and event listeners (25.2s)
+  ✓  3 [desktop] › tests/smoke/homepage.spec.ts:25:1 › fresh homepage starts the real game and attributes all three statistics (12.9s)
+(node:111508) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  4 [mobile] › tests/smoke/homepage-b2.spec.ts:46:1 › rapid archive selections keep content, focus, save, geometry and return navigation stable (9.9s)
+  ✓  5 [mobile] › tests/smoke/homepage-b2.spec.ts:75:1 › repeated homepage visits release detached DOM and event listeners (16.4s)
+  ✓  6 [mobile] › tests/smoke/homepage.spec.ts:25:1 › fresh homepage starts the real game and attributes all three statistics (5.9s)
+
+  6 passed (1.5m)

@@ -1,0 +1,352 @@
+
+> trusttrail@0.1.0 test:smoke
+> playwright test --output=docs/phase-5c-evidence/browser-results
+
+[WebServer] (node:103582) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 106 tests using 1 worker
+
+(node:103627) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓    1 [desktop] › tests/smoke/chapter-one.spec.ts:4:1 › fully investigated Chapter 1 verifies independently and preserves its completed record (4.6s)
+  ✓    2 [desktop] › tests/smoke/chapter-one.spec.ts:35:1 › risky choice remains playable, never opens a real destination and invents no compromise (1.8s)
+  ✓    3 [desktop] › tests/smoke/chapter-one.spec.ts:48:1 › unfinished verification survives refresh; later evidence never earns retroactive awareness (2.4s)
+  ✓    4 [desktop] › tests/smoke/chapter-one.spec.ts:68:1 › ignore protects Ari without requiring clues and restart/reset require confirmation (21.8s)
+  ✓    5 [desktop] › tests/smoke/chapter-one.spec.ts:92:1 › corrupt save is not silently overwritten (1.3s)
+  ✓    6 [desktop] › tests/smoke/chapter-one.spec.ts:102:1 › blocked storage allows a memory-only Chapter 1 playthrough (2.8s)
+  ✓    7 [desktop] › tests/smoke/chapter-one.spec.ts:112:1 › another tab pauses writes until the player reloads the latest progress (2.7s)
+  ✓    8 [desktop] › tests/smoke/chapter-one.spec.ts:129:1 › Chapter 1 can be completed using keyboard traversal and activation only (4.7s)
+  ✓    9 [desktop] › tests/smoke/chapter-one.spec.ts:169:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels (4.0s)
+  ✓   10 [desktop] › tests/smoke/chapter-three.spec.ts:87:1 › finishes C1–C3 safely with meaningful comparisons, archived evidence and reloads (8.1s)
+  ✓   11 [desktop] › tests/smoke/chapter-three.spec.ts:123:1 › unsafe code and earlier identity disclosure lead to six recovery actions without a game over (9.1s)
+  ✓   12 [desktop] › tests/smoke/chapter-three.spec.ts:137:1 › portal comparison handles mistakes, keyboard input, reduced motion and narrow screens (7.5s)
+  ✓   13 [desktop] › tests/smoke/chapter-two.spec.ts:29:1 › investigates the recruiter across apps and preserves Chapter 1 records through completion (3.8s)
+  ✓   14 [desktop] › tests/smoke/chapter-two.spec.ts:81:4 › branch: Bantuan berubah menjadi paparan. remains playable without collecting evidence (3.5s)
+  ✓   15 [desktop] › tests/smoke/chapter-two.spec.ts:81:4 › branch: Batas yang tetap terjaga. remains playable without collecting evidence (2.8s)
+  ✓   16 [desktop] › tests/smoke/chapter-two.spec.ts:97:1 › resumes conversation and partial verification without duplicate credit or retroactive awareness (2.7s)
+  ✓   17 [desktop] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation (4.2s)
+  ✓   18 [desktop] › tests/smoke/chapter-two.spec.ts:138:1 › Chapter 2 conversation and decision are operable by keyboard (5.4s)
+  ✓   19 [desktop] › tests/smoke/chapter-two.spec.ts:165:1 › restarts Chapter 2 without retaining old conversation or journal state (2.8s)
+  ✓   20 [desktop] › tests/smoke/dual-os.spec.ts:4:1 › one persisted session keeps expanded clues and an uncommitted decision across shells (1.6s)
+  ✓   21 [desktop] › tests/smoke/dual-os.spec.ts:24:1 › pending source verification persists through resize, reload and later source comparison (3.0s)
+  ✓   22 [desktop] › tests/smoke/dual-os.spec.ts:45:1 › browser back, forward, inbox and home navigation never roll back gameplay (3.5s)
+  ✓   23 [desktop] › tests/smoke/dual-os.spec.ts:66:1 › desktop window controls and Saku fullscreen navigation are deliberate at boundaries (2.8s)
+  ✓   24 [desktop] › tests/smoke/foundation.spec.ts:4:1 › routes, fresh-run states and direct refresh work without external requests (3.7s)
+  ✓   25 [desktop] › tests/smoke/foundation.spec.ts:21:1 › native app menu traps focus, closes with Escape and returns focus (1.1s)
+  ✓   26 [desktop] › tests/smoke/foundation.spec.ts:39:1 › keyboard app navigation and reduced motion remain usable (2.1s)
+  ✓   27 [desktop] › tests/smoke/homepage-b1.spec.ts:4:1 › OS selectors share preview state without writing to a saved investigation (30.0s)
+  ✘   28 [desktop] › tests/smoke/homepage-b1.spec.ts:29:1 › intelligence files retain scope, period, source and link through keyboard switching (33.4s)
+(node:106020) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   29 [desktop] › tests/smoke/homepage-b1.spec.ts:58:1 › city pause control stops rendering and respects reduced motion (11.9s)
+  ✘   30 [desktop] › tests/smoke/homepage-b2.spec.ts:3:1 › native scroll choreography reverses and reduced motion settles every presentation layer (13.4s)
+(node:106378) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   31 [desktop] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS selections keep final content, focus, save and geometry stable (33.8s)
+(node:106693) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   32 [desktop] › tests/smoke/homepage-b2.spec.ts:46:1 › rapid archive selections keep content, focus, save, geometry and return navigation stable (32.9s)
+(node:106972) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   33 [desktop] › tests/smoke/homepage-b2.spec.ts:75:1 › repeated homepage visits release detached DOM and event listeners (35.4s)
+(node:107388) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   34 [desktop] › tests/smoke/homepage.spec.ts:4:1 › homepage preview is keyboard accessible and cannot change a saved investigation (3.9s)
+  ✘   35 [desktop] › tests/smoke/homepage.spec.ts:25:1 › fresh homepage starts the real game and attributes all three statistics (30.9s)
+(node:107741) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   36 [desktop] › tests/smoke/homepage.spec.ts:45:1 › homepage fits requested widths, keeps CTA above fold and respects reduced motion (3.6s)
+  ✓   37 [desktop] › tests/smoke/living-city.spec.ts:3:1 › city canvas remains behind HTML and pauses outside the hero (24.8s)
+  ✘   38 [desktop] › tests/smoke/living-city.spec.ts:22:1 › repeated client navigation owns one canvas and handles lost rendering (35.4s)
+(node:109057) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   39 [desktop] › tests/smoke/living-city.spec.ts:43:1 › homepage works when the lazy renderer cannot be downloaded (5.6s)
+  ✓   40 [desktop] › tests/smoke/living-city.spec.ts:53:1 › reduced motion avoids renderer downloads and supports a live preference change (3.5s)
+  ✓   41 [desktop] › tests/smoke/living-city.spec.ts:68:1 › init can finish after client navigation without appending a stale canvas (6.8s)
+  ✘   42 [desktop] › tests/smoke/living-city.spec.ts:84:1 › one scene resizes at all four requested widths without overflowing or blocking controls (15.8s)
+
+
+  1) [desktop] › tests/smoke/homepage-b1.spec.ts:29:1 › intelligence files retain scope, period, source and link through keyboard switching 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator: getByRole('group', { name: 'Pilih berkas intelijen' }).getByRole('button').nth(2)
+    Expected: "true"
+    Error: Test timeout of 30000ms exceeded.
+
+    Call log:
+      - Expect "toHaveAttribute" getByRole('group', { name: 'Pilih berkas intelijen' }).getByRole('button').nth(2) with timeout 5000ms
+      - waiting for getByRole('group', { name: 'Pilih berkas intelijen' }).getByRole('button').nth(2)
+      - Test timeout of 30000ms exceeded.
+
+
+      45 |     await expect(detail).toContainText(scope!);
+      46 |     expect(new URL((await detail.locator('a').getAttribute('href'))!).hostname).toContain(host!);
+    > 47 |     await expect(files.nth(index)).toHaveAttribute('aria-pressed', 'true');
+         |                                    ^
+      48 |     await expect(group.locator('[aria-pressed=true]')).toHaveCount(1);
+      49 |   }
+      50 |   await expect(page.locator('#intel-detail')).toContainText('bukan hasil tes deteksi phishing atau persentase korban');
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/homepage-b1.spec.ts:47:36
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5c-evidence/browser-results/homepage-b1-intelligence-f-f4c31--through-keyboard-switching-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5c-evidence/browser-results/homepage-b1-intelligence-f-f4c31--through-keyboard-switching-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5c-evidence/browser-results/homepage-b1-intelligence-f-f4c31--through-keyboard-switching-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5c-evidence/browser-results/homepage-b1-intelligence-f-f4c31--through-keyboard-switching-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › tests/smoke/homepage-b2.spec.ts:3:1 › native scroll choreography reverses and reduced motion settles every presentation layer 
+
+    Error: Timeout 5000ms exceeded while waiting on the predicate
+
+       8 |   const showcaseY = () => page.locator('.portal-showcase').evaluate(el => new DOMMatrixReadOnly(getComputedStyle(el).transform).m42);
+       9 |   await page.evaluate(() => scrollTo(0, 0));
+    > 10 |   await expect.poll(showcaseY).toBe(0);
+         |                                ^
+      11 |   await page.evaluate(() => scrollTo(0, 320));
+      12 |   if (info.project.name === 'desktop') await expect.poll(showcaseY).toBeLessThan(-1);
+      13 |   else await expect.poll(showcaseY).toBe(0);
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/homepage-b2.spec.ts:10:32
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5c-evidence/browser-results/homepage-b2-native-scroll--badaf-es-every-presentation-layer-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5c-evidence/browser-results/homepage-b2-native-scroll--badaf-es-every-presentation-layer-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5c-evidence/browser-results/homepage-b2-native-scroll--badaf-es-every-presentation-layer-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5c-evidence/browser-results/homepage-b2-native-scroll--badaf-es-every-presentation-layer-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [desktop] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS selections keep final content, focus, save and geometry stable 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator: getByRole('group', { name: 'Aplikasi pratinjau' }).getByRole('button', { name: 'Case Files', exact: true })
+    Expected: focused
+    Error: Test timeout of 30000ms exceeded.
+
+    Call log:
+      - Expect "toBeFocused" getByRole('group', { name: 'Aplikasi pratinjau' }).getByRole('button', { name: 'Case Files', exact: true }) with timeout 5000ms
+      - waiting for getByRole('group', { name: 'Aplikasi pratinjau' }).getByRole('button', { name: 'Case Files', exact: true })
+      - Test timeout of 30000ms exceeded.
+
+
+      35 |     await tab.focus();
+      36 |     await page.keyboard.press('Space');
+    > 37 |     await expect(tab).toBeFocused();
+         |                       ^
+      38 |     await expect(tab).toHaveAttribute('aria-pressed', 'true');
+      39 |   }
+      40 |   await expect(page.locator('#os-preview-content')).toContainText('Jejak yang kamu temukan.');
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/homepage-b2.spec.ts:37:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5c-evidence/browser-results/homepage-b2-rapid-OS-selec-b84d3-us-save-and-geometry-stable-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5c-evidence/browser-results/homepage-b2-rapid-OS-selec-b84d3-us-save-and-geometry-stable-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5c-evidence/browser-results/homepage-b2-rapid-OS-selec-b84d3-us-save-and-geometry-stable-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5c-evidence/browser-results/homepage-b2-rapid-OS-selec-b84d3-us-save-and-geometry-stable-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [desktop] › tests/smoke/homepage-b2.spec.ts:46:1 › rapid archive selections keep content, focus, save, geometry and return navigation stable 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('#intel-detail')
+    Expected substring: "Survei IMDI 2025"
+    Error: Test timeout of 30000ms exceeded.
+
+    Call log:
+      - Expect "toContainText" locator('#intel-detail') with timeout 5000ms
+      - waiting for locator('#intel-detail')
+      - Test timeout of 30000ms exceeded.
+
+
+      61 |   }
+      62 |   await expect(page.locator('.portal-stat-number')).toHaveText('36,3%');
+    > 63 |   await expect(page.locator('#intel-detail')).toContainText('Survei IMDI 2025');
+         |                                               ^
+      64 |   expect((await page.locator('.portal-intelligence').boundingBox())!.height).toBeCloseTo(terminalHeight, 1);
+      65 |   expect(await page.evaluate(() => JSON.stringify(localStorage))).toBe(stored);
+      66 |   // Continue the keyboard journey without racing End scrolling against click auto-scroll.
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/homepage-b2.spec.ts:63:47
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5c-evidence/browser-results/homepage-b2-rapid-archive--14f9c-nd-return-navigation-stable-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5c-evidence/browser-results/homepage-b2-rapid-archive--14f9c-nd-return-navigation-stable-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5c-evidence/browser-results/homepage-b2-rapid-archive--14f9c-nd-return-navigation-stable-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5c-evidence/browser-results/homepage-b2-rapid-archive--14f9c-nd-return-navigation-stable-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [desktop] › tests/smoke/homepage-b2.spec.ts:75:1 › repeated homepage visits release detached DOM and event listeners 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('link', { name: 'Panduan & privasi' })
+        - locator resolved to <a href="/guide" class="portal-guide" data-discover="true">Panduan & privasi</a>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+
+
+      88 |     await page.goBack();
+      89 |     await expect(page.locator('.living-city')).toHaveAttribute('data-city-status', 'ready');
+    > 90 |     await page.getByRole('link', { name: 'Panduan & privasi' }).click();
+         |                                                                 ^
+      91 |     await expect(page.locator('.living-city canvas')).toHaveCount(0);
+      92 |   }
+      93 |   // Runtime caches may warm, but old homepage trees/listeners must be released.
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/homepage-b2.spec.ts:90:65
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5c-evidence/browser-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5c-evidence/browser-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5c-evidence/browser-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5c-evidence/browser-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [desktop] › tests/smoke/homepage.spec.ts:25:1 › fresh homepage starts the real game and attributes all three statistics 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5c-evidence/browser-results/homepage-fresh-homepage-st-6717d-ibutes-all-three-statistics-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5c-evidence/browser-results/homepage-fresh-homepage-st-6717d-ibutes-all-three-statistics-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5c-evidence/browser-results/homepage-fresh-homepage-st-6717d-ibutes-all-three-statistics-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5c-evidence/browser-results/homepage-fresh-homepage-st-6717d-ibutes-all-three-statistics-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [desktop] › tests/smoke/living-city.spec.ts:22:1 › repeated client navigation owns one canvas and handles lost rendering 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('link', { name: 'Panduan & privasi' })
+
+
+      27 |     await expect(page.locator('.living-city')).toHaveAttribute('data-city-status', 'ready');
+      28 |     await expect(page.locator('.living-city-canvas')).toHaveCount(1);
+    > 29 |     await page.getByRole('link', { name: 'Panduan & privasi' }).click();
+         |                                                                 ^
+      30 |     await expect(page.locator('.living-city-canvas')).toHaveCount(0);
+      31 |     await page.goBack();
+      32 |   }
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/living-city.spec.ts:29:65
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5c-evidence/browser-results/living-city-repeated-clien-9fc57--and-handles-lost-rendering-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5c-evidence/browser-results/living-city-repeated-clien-9fc57--and-handles-lost-rendering-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5c-evidence/browser-results/living-city-repeated-clien-9fc57--and-handles-lost-rendering-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5c-evidence/browser-results/living-city-repeated-clien-9fc57--and-handles-lost-rendering-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) [desktop] › tests/smoke/living-city.spec.ts:84:1 › one scene resizes at all four requested widths without overflowing or blocking controls 
+
+    Test was interrupted.
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator: getByRole('button', { name: /Mulai investigasi/ }).first()
+    Expected: focused
+    Error: Test ended.
+
+    Call log:
+      - Expect "toBeFocused" getByRole('button', { name: /Mulai investigasi/ }).first() with timeout 5000ms
+      - waiting for getByRole('button', { name: /Mulai investigasi/ }).first()
+      - Test ended.
+
+
+      103 |     const button = page.getByRole('button', { name: /Mulai investigasi/ }).first();
+      104 |     await button.focus();
+    > 105 |     await expect(button).toBeFocused();
+          |                          ^
+      106 |   }
+      107 | });
+      108 |
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/living-city.spec.ts:105:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5c-evidence/browser-results/living-city-one-scene-resi-be856-lowing-or-blocking-controls-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5c-evidence/browser-results/living-city-one-scene-resi-be856-lowing-or-blocking-controls-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5c-evidence/browser-results/living-city-one-scene-resi-be856-lowing-or-blocking-controls-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5c-evidence/browser-results/living-city-one-scene-resi-be856-lowing-or-blocking-controls-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7 failed
+    [desktop] › tests/smoke/homepage-b1.spec.ts:29:1 › intelligence files retain scope, period, source and link through keyboard switching 
+    [desktop] › tests/smoke/homepage-b2.spec.ts:3:1 › native scroll choreography reverses and reduced motion settles every presentation layer 
+    [desktop] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS selections keep final content, focus, save and geometry stable 
+    [desktop] › tests/smoke/homepage-b2.spec.ts:46:1 › rapid archive selections keep content, focus, save, geometry and return navigation stable 
+    [desktop] › tests/smoke/homepage-b2.spec.ts:75:1 › repeated homepage visits release detached DOM and event listeners 
+    [desktop] › tests/smoke/homepage.spec.ts:25:1 › fresh homepage starts the real game and attributes all three statistics 
+    [desktop] › tests/smoke/living-city.spec.ts:22:1 › repeated client navigation owns one canvas and handles lost rendering 
+  1 interrupted
+    [desktop] › tests/smoke/living-city.spec.ts:84:1 › one scene resizes at all four requested widths without overflowing or blocking controls 
+  64 did not run
+  34 passed (7.6m)

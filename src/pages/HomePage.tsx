@@ -7,6 +7,7 @@ import { ProgressControls, StartGameButton, SaveNotice } from '../features/gamep
 import { PixelIcon } from '../features/os/PixelIcon';
 import { InvestigationOpening } from './InvestigationOpening';
 import { ThreatIntelligence } from './ThreatIntelligence';
+import { AudioControls } from '../features/audio/AudioControls';
 import './homepage.css';
 
 export function HomePage() {
@@ -24,7 +25,7 @@ function InvestigationHomepage() {
     <header className="portal-header portal-wrap">
       <Link className="portal-brand" to="/" aria-label="TrustTrail, beranda"><PixelIcon kind="signal" />TrustTrail</Link>
       <nav aria-label="Navigasi beranda"><a href="#intel">Intelijen</a><a href="#latihan">Coba periksa</a><a href="#berkas">Berkas kasus</a></nav>
-      <Link className="portal-guide" to="/guide">Panduan & privasi</Link>
+      <div className="portal-utilities"><Link className="portal-guide" to="/guide">Panduan & privasi</Link><AudioControls /></div>
     </header>
     <main id="portal-main" tabIndex={-1}>
       <InvestigationOpening>

@@ -1,0 +1,168 @@
+{
+  "compiledFiles": 48,
+  "literalLocalAssetReferences": 9,
+  "missingReferences": [],
+  "assetHttpChecks": [
+    {
+      "path": "/assets/index-B9jkqZea.js",
+      "status": 200,
+      "contentType": "text/javascript",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/index-COVMHXR9.css",
+      "status": 200,
+      "contentType": "text/css",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/living-city/city-front-compact.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "matchesDisk": true
+    },
+    {
+      "path": "/assets/living-city/city-front.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "matchesDisk": true
+    },
+    {
+      "path": "/favicon.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "matchesDisk": true
+    },
+    {
+      "path": "/fonts/inter-latin.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "matchesDisk": true
+    },
+    {
+      "path": "/fonts/silkscreen-regular.ttf",
+      "status": 200,
+      "contentType": "font/ttf",
+      "matchesDisk": true
+    },
+    {
+      "path": "/fonts/space-grotesk-600.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "matchesDisk": true
+    },
+    {
+      "path": "/pixel/relay-coast.png",
+      "status": 200,
+      "contentType": "image/png",
+      "matchesDisk": true
+    }
+  ],
+  "previewRoutes": [
+    {
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html",
+      "sameEntryHtml": true
+    },
+    {
+      "path": "/play",
+      "status": 200,
+      "contentType": "text/html",
+      "sameEntryHtml": true
+    },
+    {
+      "path": "/play?app=browser",
+      "status": 200,
+      "contentType": "text/html",
+      "sameEntryHtml": true
+    },
+    {
+      "path": "/guide",
+      "status": 200,
+      "contentType": "text/html",
+      "sameEntryHtml": true
+    },
+    {
+      "path": "/report",
+      "status": 200,
+      "contentType": "text/html",
+      "sameEntryHtml": true
+    },
+    {
+      "path": "/missing",
+      "status": 200,
+      "contentType": "text/html",
+      "sameEntryHtml": true
+    }
+  ],
+  "bundlePatternFindings": {
+    "private_key": [],
+    "aws_access_key": [],
+    "github_token": [],
+    "openai_token": [],
+    "local_path": [
+      "dist/assets/index-B9jkqZea.js"
+    ]
+  },
+  "sourceMaps": 0,
+  "rewritePolicyCases": [
+    {
+      "path": "/",
+      "spaFallback": true
+    },
+    {
+      "path": "/play",
+      "spaFallback": true
+    },
+    {
+      "path": "/guide",
+      "spaFallback": true
+    },
+    {
+      "path": "/report",
+      "spaFallback": true
+    },
+    {
+      "path": "/missing",
+      "spaFallback": true
+    },
+    {
+      "path": "/play/deeper",
+      "spaFallback": true
+    },
+    {
+      "path": "/assets/missing.js",
+      "spaFallback": false
+    },
+    {
+      "path": "/assets/living-city/missing.webp",
+      "spaFallback": false
+    },
+    {
+      "path": "/fonts/missing.woff2",
+      "spaFallback": false
+    },
+    {
+      "path": "/pixel/missing.png",
+      "spaFallback": false
+    },
+    {
+      "path": "/artwork/missing.webp",
+      "spaFallback": false
+    },
+    {
+      "path": "/favicon.svg",
+      "spaFallback": false
+    }
+  ],
+  "note": "Regex policy and local Vite preview checks are not a Vercel edge/CDN deployment test.",
+  "localPathReview": {
+    "matches": "Two http://localhost URL-construction fallbacks in bundled React Router",
+    "applicationSourceLocalPathReferences": 0,
+    "explanation": "Framework fallback URL bases; no authored localhost asset/API destinations. Full browser tests check no outbound simulation requests.",
+    "files": [
+      "dist/assets/index-B9jkqZea.js"
+    ]
+  }
+}

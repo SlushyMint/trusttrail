@@ -1,0 +1,2585 @@
+{
+ "url": "http://127.0.0.1:4173",
+ "at": "2026-11-03T10:12:54.646Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.45,
+    0.6,
+    0.58,
+    0.38,
+    0.24
+   ],
+   "motion": {
+    "elements": 36,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 36,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 4054,
+     "screens": 4.5,
+     "words": 573,
+     "img": 1,
+     "video": 0,
+     "canvas": 1,
+     "svg": 47,
+     "sections": 15,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 4,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 4,
+     "pictureSamples": [
+      "city-static.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Undangan kerja. Atau perangkap?",
+     "words": 4,
+     "chars": 31,
+     "lines": 2,
+     "size": 46,
+     "vw": 3.2,
+     "font": "Silkscreen",
+     "weight": 400,
+     "tracking": -0.04,
+     "leading": 1.22,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.4,
+     "top": 240,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Undangan kerja. Atau perangkap?",
+     "words": 4,
+     "lines": 2,
+     "size": 46,
+     "font": "Silkscreen"
+    },
+    "headings": [
+     {
+      "text": "Undangan kerja. Atau perangkap?",
+      "words": 4,
+      "chars": 31,
+      "lines": 2,
+      "size": 46,
+      "vw": 3.2,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 1.22,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 240,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "TrustTrail / Threat Intelligence",
+      "words": 4,
+      "chars": 32,
+      "lines": 2,
+      "size": 34,
+      "vw": 2.4,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.27,
+      "top": 1079,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "74.243",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 58,
+      "vw": 4,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.055,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.67,
+      "top": 1382,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Terlihat resmi. Coba periksa.",
+      "words": 4,
+      "chars": 29,
+      "lines": 2,
+      "size": 37.4,
+      "vw": 2.6,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 2179,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Satu jejak. Tiga bab.",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 37.4,
+      "vw": 2.6,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 2948,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Bukti dulu. Percaya kemudian.",
+      "words": 4,
+      "chars": 29,
+      "lines": 2,
+      "size": 37.4,
+      "vw": 2.6,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 3690,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.95,
+       "mono": false
+      },
+      {
+       "family": "Silkscreen",
+       "share": 0.05,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      16,
+      18,
+      20,
+      24,
+      34,
+      37,
+      46
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 16,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.5
+     },
+     "measureChars": 95,
+     "max": {
+      "size": 58,
+      "vw": 4,
+      "font": "Silkscreen",
+      "text": "74.243"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.02,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0b1423",
+     "bodyBgHsl": {
+      "h": 218,
+      "s": 0.52,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#0b1423",
+       "top": 0,
+       "hsl": {
+        "h": 218,
+        "s": 0.52,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#142231",
+       "top": 1309,
+       "hsl": {
+        "h": 211,
+        "s": 0.42,
+        "l": 0.14
+       }
+      },
+      {
+       "color": "#1a2a3a",
+       "top": 2319,
+       "hsl": {
+        "h": 210,
+        "s": 0.38,
+        "l": 0.16
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#e3edf2",
+       "share": 0.65
+      },
+      {
+       "color": "#a9bac7",
+       "share": 0.27
+      },
+      {
+       "color": "#78d8c3",
+       "share": 0.06
+      },
+      {
+       "color": "#0b1423",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#78d8c3",
+      "hsl": {
+       "h": 167,
+       "s": 0.55,
+       "l": 0.66
+      },
+      "fg": "#0b1423"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 3,
+     "radius": 0,
+     "height": 54,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Lewati ke konten",
+      "Mulai investigasi ↗",
+      "Mail"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 866
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.89
+     }
+    ],
+    "nav": {
+     "links": 5,
+     "fixed": false,
+     "height": 100,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "inter",
+     "silkscreen"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 4054,
+    "margins": {
+     "left": 60,
+     "right": 60
+    },
+    "sections": [
+     {
+      "sel": "div.portal-opening",
+      "tag": "div",
+      "top": 100,
+      "height": 943,
+      "words": 159,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Undangan kerja.",
+       "size": 46,
+       "tag": "h1"
+      },
+      "left": 60,
+      "right": 60,
+      "textLeft": 60,
+      "textRight": 72,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#intel.portal-intel",
+      "tag": "section",
+      "top": 1043,
+      "height": 1046,
+      "words": 197,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "74.243",
+       "size": 58,
+       "tag": "p"
+      },
+      "left": 60,
+      "right": 60,
+      "textLeft": 60,
+      "textRight": 60,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#latihan.portal-practice.portal-wrap",
+      "tag": "section",
+      "top": 2089,
+      "height": 769,
+      "words": 100,
+      "media": 0,
+      "middle": 9,
+      "heading": {
+       "text": "Terlihat resmi.",
+       "size": 37,
+       "tag": "h2"
+      },
+      "left": 60,
+      "right": 101,
+      "textLeft": 60,
+      "textRight": 101,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#berkas.portal-cases.portal-wrap",
+      "tag": "section",
+      "top": 2858,
+      "height": 570,
+      "words": 87,
+      "media": 0,
+      "middle": 297,
+      "heading": {
+       "text": "Satu jejak.",
+       "size": 37,
+       "tag": "h2"
+      },
+      "left": 60,
+      "right": 116,
+      "textLeft": 60,
+      "textRight": 116,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.portal-safety",
+      "tag": "section",
+      "top": 3519,
+      "height": 428,
+      "words": 54,
+      "media": 0,
+      "middle": 281,
+      "heading": {
+       "text": "Bukti dulu.",
+       "size": 37,
+       "tag": "h2"
+      },
+      "left": 60,
+      "right": 63,
+      "textLeft": 60,
+      "textRight": 63,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Undangan kerja. Atau perangkap?",
+      "size": 46,
+      "top": 240,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 60,
+      "n": 12
+     },
+     {
+      "x": 760,
+      "n": 5
+     },
+     {
+      "x": 124,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 19,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.5,
+    0.56,
+    0.63,
+    0.63,
+    0.2
+   ],
+   "motion": {
+    "elements": 36,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 36,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 4982,
+     "screens": 4.9,
+     "words": 567,
+     "img": 1,
+     "video": 0,
+     "canvas": 1,
+     "svg": 27,
+     "sections": 15,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 4,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 3,
+     "pictureSamples": [
+      "city-static.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Undangan kerja. Atau perangkap?",
+     "words": 4,
+     "chars": 31,
+     "lines": 2,
+     "size": 38.4,
+     "vw": 5,
+     "font": "Silkscreen",
+     "weight": 400,
+     "tracking": -0.04,
+     "leading": 1.22,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.85,
+     "top": 168,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Undangan kerja. Atau perangkap?",
+     "words": 4,
+     "lines": 2,
+     "size": 38.4,
+     "font": "Silkscreen"
+    },
+    "headings": [
+     {
+      "text": "Undangan kerja. Atau perangkap?",
+      "words": 4,
+      "chars": 31,
+      "lines": 2,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 1.22,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 168,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "74.243",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.055,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.55,
+      "top": 1891,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Terlihat resmi. Coba periksa.",
+      "words": 4,
+      "chars": 29,
+      "lines": 2,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 2788,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Satu jejak. Tiga bab.",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 3592,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Bukti dulu. Percaya kemudian.",
+      "words": 4,
+      "chars": 29,
+      "lines": 2,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 4539,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.95,
+       "mono": false
+      },
+      {
+       "family": "Silkscreen",
+       "share": 0.05,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      38
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 16,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.5
+     },
+     "measureChars": 95,
+     "max": {
+      "size": 38.4,
+      "vw": 5,
+      "font": "Silkscreen",
+      "text": "Undangan kerja."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.02,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0b1423",
+     "bodyBgHsl": {
+      "h": 218,
+      "s": 0.52,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#0b1423",
+       "top": 0,
+       "hsl": {
+        "h": 218,
+        "s": 0.52,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#1a2a3a",
+       "top": 669,
+       "hsl": {
+        "h": 210,
+        "s": 0.38,
+        "l": 0.16
+       }
+      },
+      {
+       "color": "#142231",
+       "top": 769,
+       "hsl": {
+        "h": 211,
+        "s": 0.42,
+        "l": 0.14
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#e3edf2",
+       "share": 0.65
+      },
+      {
+       "color": "#a9bac7",
+       "share": 0.28
+      },
+      {
+       "color": "#78d8c3",
+       "share": 0.06
+      },
+      {
+       "color": "#0b1423",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#78d8c3",
+      "hsl": {
+       "h": 167,
+       "s": 0.55,
+       "l": 0.66
+      },
+      "fg": "#0b1423"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 3,
+     "radius": 0,
+     "height": 54,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Lewati ke konten",
+      "Mulai investigasi ↗",
+      "Mail"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 1321
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.87
+     }
+    ],
+    "nav": {
+     "links": 5,
+     "fixed": false,
+     "height": 134,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "inter",
+     "silkscreen"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 4982,
+    "margins": {
+     "left": 32,
+     "right": 32
+    },
+    "sections": [
+     {
+      "sel": "header.portal-header.portal-wrap",
+      "tag": "header",
+      "top": 0,
+      "height": 134,
+      "words": 9,
+      "media": 0,
+      "middle": 302,
+      "heading": null,
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.portal-opening",
+      "tag": "div",
+      "top": 134,
+      "height": 1425,
+      "words": 156,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Undangan kerja.",
+       "size": 38,
+       "tag": "h1"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 44,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#intel.portal-intel",
+      "tag": "section",
+      "top": 1559,
+      "height": 1125,
+      "words": 197,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "74.243",
+       "size": 32,
+       "tag": "p"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#latihan.portal-practice.portal-wrap",
+      "tag": "section",
+      "top": 2684,
+      "height": 804,
+      "words": 100,
+      "media": 0,
+      "middle": 6,
+      "heading": {
+       "text": "Terlihat resmi.",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 44,
+      "textLeft": 32,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#berkas.portal-cases.portal-wrap",
+      "tag": "section",
+      "top": 3488,
+      "height": 790,
+      "words": 87,
+      "media": 0,
+      "middle": 96,
+      "heading": {
+       "text": "Satu jejak.",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 36,
+      "textLeft": 32,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.portal-safety",
+      "tag": "section",
+      "top": 4368,
+      "height": 507,
+      "words": 54,
+      "media": 0,
+      "middle": 79,
+      "heading": {
+       "text": "Bukti dulu.",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 35,
+      "textLeft": 32,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Undangan kerja. Atau perangkap?",
+      "size": 38,
+      "top": 168,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 32,
+      "n": 12
+     },
+     {
+      "x": 402,
+      "n": 5
+     },
+     {
+      "x": 96,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 19,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.44,
+    0.79,
+    0.73,
+    0.74,
+    0.9,
+    0.48,
+    0.48,
+    0.33
+   ],
+   "motion": {
+    "elements": 34,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 34,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 6109,
+     "screens": 7.2,
+     "words": 564,
+     "img": 1,
+     "video": 0,
+     "canvas": 1,
+     "svg": 27,
+     "sections": 15,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 4,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 4,
+     "pictureSamples": [
+      "city-static-compact.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Undangan kerja. Atau perangkap?",
+     "words": 4,
+     "chars": 31,
+     "lines": 2,
+     "size": 27.7,
+     "vw": 7.1,
+     "font": "Silkscreen",
+     "weight": 400,
+     "tracking": -0.04,
+     "leading": 1.22,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 166,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Undangan kerja. Atau perangkap?",
+     "words": 4,
+     "lines": 2,
+     "size": 27.7,
+     "font": "Silkscreen"
+    },
+    "headings": [
+     {
+      "text": "Undangan kerja. Atau perangkap?",
+      "words": 4,
+      "chars": 31,
+      "lines": 2,
+      "size": 27.7,
+      "vw": 7.1,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 1.22,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 166,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "↙",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Inter",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.65,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.05,
+      "top": 620,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Kasusnya fiksi. Risikonya nyata.",
+      "words": 4,
+      "chars": 32,
+      "lines": 2,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Inter",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.4,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1818,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "74.243",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 42,
+      "vw": 10.8,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.055,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 2221,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Terlihat resmi. Coba periksa.",
+      "words": 4,
+      "chars": 29,
+      "lines": 2,
+      "size": 25,
+      "vw": 6.4,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3254,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Satu jejak. Tiga bab.",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 25,
+      "vw": 6.4,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4348,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Bukti dulu. Percaya kemudian.",
+      "words": 4,
+      "chars": 29,
+      "lines": 2,
+      "size": 25,
+      "vw": 6.4,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5490,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.95,
+       "mono": false
+      },
+      {
+       "family": "Silkscreen",
+       "share": 0.05,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      22,
+      24,
+      25,
+      28
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 16,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.5
+     },
+     "measureChars": 50,
+     "max": {
+      "size": 42,
+      "vw": 10.8,
+      "font": "Silkscreen",
+      "text": "74.243"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.02,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0b1423",
+     "bodyBgHsl": {
+      "h": 218,
+      "s": 0.52,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#0b1423",
+       "top": 0,
+       "hsl": {
+        "h": 218,
+        "s": 0.52,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#1a2a3a",
+       "top": 692,
+       "hsl": {
+        "h": 210,
+        "s": 0.38,
+        "l": 0.16
+       }
+      },
+      {
+       "color": "#142231",
+       "top": 792,
+       "hsl": {
+        "h": 211,
+        "s": 0.42,
+        "l": 0.14
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#e3edf2",
+       "share": 0.66
+      },
+      {
+       "color": "#a9bac7",
+       "share": 0.27
+      },
+      {
+       "color": "#78d8c3",
+       "share": 0.06
+      },
+      {
+       "color": "#0b1423",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#78d8c3",
+      "hsl": {
+       "h": 167,
+       "s": 0.55,
+       "l": 0.66
+      },
+      "fg": "#0b1423"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 3,
+     "radius": 0,
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Lewati ke konten",
+      "Mulai investigasi ↗",
+      "Mail"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.84
+     }
+    ],
+    "nav": {
+     "links": 5,
+     "fixed": false,
+     "height": 138,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "inter",
+     "silkscreen"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 6109,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "header.portal-header.portal-wrap",
+      "tag": "header",
+      "top": 0,
+      "height": 138,
+      "words": 9,
+      "media": 0,
+      "middle": 31,
+      "heading": null,
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.living-city",
+      "tag": "div",
+      "top": 138,
+      "height": 1578,
+      "words": 0,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.portal-hero.portal-wrap",
+      "tag": "section",
+      "top": 138,
+      "height": 1201,
+      "words": 135,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Undangan kerja.",
+       "size": 28,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 28,
+      "textLeft": 20,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.portal-tools-area.portal-wrap",
+      "tag": "div",
+      "top": 1340,
+      "height": 377,
+      "words": 24,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#intel.portal-intel",
+      "tag": "section",
+      "top": 1716,
+      "height": 1484,
+      "words": 191,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "74.243",
+       "size": 42,
+       "tag": "p"
+      },
+      "left": 20,
+      "right": 30,
+      "textLeft": 20,
+      "textRight": 30,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#latihan.portal-practice.portal-wrap",
+      "tag": "section",
+      "top": 3200,
+      "height": 1094,
+      "words": 100,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Terlihat resmi.",
+       "size": 25,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 48,
+      "textLeft": 20,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#berkas.portal-cases.portal-wrap",
+      "tag": "section",
+      "top": 4294,
+      "height": 995,
+      "words": 87,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Satu jejak.",
+       "size": 25,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 39,
+      "textLeft": 20,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.portal-safety",
+      "tag": "section",
+      "top": 5343,
+      "height": 643,
+      "words": 54,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Bukti dulu.",
+       "size": 25,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 26,
+      "textLeft": 20,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.portal-footer.portal-wrap",
+      "tag": "footer",
+      "top": 5986,
+      "height": 123,
+      "words": 10,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Undangan kerja. Atau perangkap?",
+      "size": 28,
+      "top": 166,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 17
+     },
+     {
+      "x": 62,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 19,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 360,
+   "height": 225,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.36,
+    0.54,
+    0.39,
+    0.76,
+    0.92,
+    0.79,
+    0.79,
+    0.58,
+    0.57,
+    0.79,
+    0.92,
+    0.92
+   ],
+   "motion": {
+    "elements": 21,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 21,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 360,
+     "h": 225
+    },
+    "page": {
+     "height": 6202,
+     "screens": 27.6,
+     "words": 564,
+     "img": 1,
+     "video": 0,
+     "canvas": 1,
+     "svg": 27,
+     "sections": 15,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 4,
+     "uiAbuse": true,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 4,
+     "pictureSamples": [
+      "city-static-compact.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Undangan kerja. Atau perangkap?",
+     "words": 4,
+     "chars": 31,
+     "lines": 2,
+     "size": 25.6,
+     "vw": 7.1,
+     "font": "Silkscreen",
+     "weight": 400,
+     "tracking": -0.04,
+     "leading": 1.22,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.89,
+     "top": 166,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Undangan kerja. Atau perangkap?",
+     "words": 4,
+     "lines": 2,
+     "size": 25.6,
+     "font": "Silkscreen"
+    },
+    "headings": [
+     {
+      "text": "Undangan kerja. Atau perangkap?",
+      "words": 4,
+      "chars": 31,
+      "lines": 2,
+      "size": 25.6,
+      "vw": 7.1,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 1.22,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 166,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "↙",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.7,
+      "font": "Inter",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.65,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.05,
+      "top": 615,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Kasusnya fiksi. Risikonya nyata.",
+      "words": 4,
+      "chars": 32,
+      "lines": 2,
+      "size": 22,
+      "vw": 6.1,
+      "font": "Inter",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.4,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 1811,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "74.243",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 42,
+      "vw": 11.7,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.055,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 2240,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Terlihat resmi. Coba periksa.",
+      "words": 4,
+      "chars": 29,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.7,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 3311,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Satu jejak. Tiga bab.",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.7,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 4456,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Bukti dulu. Percaya kemudian.",
+      "words": 4,
+      "chars": 29,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.7,
+      "font": "Silkscreen",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 5595,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.95,
+       "mono": false
+      },
+      {
+       "family": "Silkscreen",
+       "share": 0.05,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      16,
+      17,
+      18,
+      19,
+      22,
+      24,
+      26
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 16,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.5
+     },
+     "measureChars": 46,
+     "max": {
+      "size": 42,
+      "vw": 11.7,
+      "font": "Silkscreen",
+      "text": "74.243"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.02,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0b1423",
+     "bodyBgHsl": {
+      "h": 218,
+      "s": 0.52,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#0b1423",
+       "top": 0,
+       "hsl": {
+        "h": 218,
+        "s": 0.52,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#1a2a3a",
+       "top": 687,
+       "hsl": {
+        "h": 210,
+        "s": 0.38,
+        "l": 0.16
+       }
+      },
+      {
+       "color": "#142231",
+       "top": 787,
+       "hsl": {
+        "h": 211,
+        "s": 0.42,
+        "l": 0.14
+       }
+      },
+      {
+       "color": "#2c4255",
+       "top": 1390,
+       "hsl": {
+        "h": 208,
+        "s": 0.32,
+        "l": 0.25
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#e3edf2",
+       "share": 0.66
+      },
+      {
+       "color": "#a9bac7",
+       "share": 0.27
+      },
+      {
+       "color": "#78d8c3",
+       "share": 0.06
+      },
+      {
+       "color": "#0b1423",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#78d8c3",
+      "hsl": {
+       "h": 167,
+       "s": 0.55,
+       "l": 0.66
+      },
+      "fg": "#0b1423"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 1,
+     "radius": 0,
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Lewati ke konten"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.39
+     }
+    ],
+    "nav": {
+     "links": 5,
+     "fixed": false,
+     "height": 138,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "inter",
+     "silkscreen"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 360,
+     "h": 225
+    },
+    "pageH": 6202,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "header.portal-header.portal-wrap",
+      "tag": "header",
+      "top": 0,
+      "height": 138,
+      "words": 9,
+      "media": 0,
+      "middle": 16,
+      "heading": null,
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.living-city",
+      "tag": "div",
+      "top": 138,
+      "height": 1573,
+      "words": 0,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.portal-hero.portal-wrap",
+      "tag": "section",
+      "top": 138,
+      "height": 1196,
+      "words": 135,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Undangan kerja.",
+       "size": 26,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 25,
+      "textLeft": 20,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.portal-tools-area.portal-wrap",
+      "tag": "div",
+      "top": 1334,
+      "height": 377,
+      "words": 24,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#intel.portal-intel",
+      "tag": "section",
+      "top": 1711,
+      "height": 1537,
+      "words": 191,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "74.243",
+       "size": 42,
+       "tag": "p"
+      },
+      "left": 20,
+      "right": 21,
+      "textLeft": 20,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.portal-section-intro",
+      "tag": "div",
+      "top": 3302,
+      "height": 188,
+      "words": 4,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Terlihat resmi.",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 129,
+      "textLeft": 20,
+      "textRight": 129,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.portal-demo",
+      "tag": "div",
+      "top": 3522,
+      "height": 871,
+      "words": 77,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 42,
+      "right": 58,
+      "textLeft": 42,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.portal-section-intro",
+      "tag": "div",
+      "top": 4447,
+      "height": 161,
+      "words": 4,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Satu jejak.",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 174,
+      "textLeft": 20,
+      "textRight": 174,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "ol.portal-case-list",
+      "tag": "ol",
+      "top": 4640,
+      "height": 745,
+      "words": 67,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Undangan tanpa lamaran",
+       "size": 17,
+       "tag": "h3"
+      },
+      "left": 38,
+      "right": 44,
+      "textLeft": 38,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.portal-safety",
+      "tag": "section",
+      "top": 5439,
+      "height": 640,
+      "words": 54,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Bukti dulu.",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 22,
+      "textLeft": 20,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.portal-footer.portal-wrap",
+      "tag": "footer",
+      "top": 6079,
+      "height": 123,
+      "words": 10,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 3236,
+      "height": 72
+     },
+     {
+      "top": 4372,
+      "height": 80
+     },
+     {
+      "top": 5368,
+      "height": 108
+     },
+     {
+      "top": 5996,
+      "height": 116
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Undangan kerja. Atau perangkap?",
+      "size": 26,
+      "top": 166,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 17
+     },
+     {
+      "x": 62,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 19,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "icon-cards",
+   "width": 1440,
+   "message": "1 row(s) of identical cards each topped with a small icon (3 cards).",
+   "fix": "Replace with one composed section from the direction: a narrative split, a list set in large type, or real imagery per item.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-real-pictures",
+   "width": 1440,
+   "message": "Only 1 real photograph(s) or clip(s); the rest are interface fragments.",
+   "fix": "Add two or more real pictures of the customer's world from scripts/assets.mjs, not stock of people at laptops."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 1440,
+   "message": "Longest paragraph runs about 95 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch).",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 390,
+   "message": "10 different font sizes (13, 14, 16, 17, 18, 20, 22, 24, 25, 28).",
+   "fix": "A page needs about five: display, heading, lead, body, small."
+  },
+  {
+   "level": "FAIL",
+   "id": "ui-wrapper",
+   "width": 360,
+   "message": "A data-ui element wraps a heading or more than a screen and a half of the page.",
+   "fix": "data-ui marks a cropped interface fragment only. Remove it from page-level wrappers."
+  },
+  {
+   "level": "FAIL",
+   "id": "blank-gap",
+   "width": 360,
+   "message": "2 stretch(es) of the page hold nothing at all: 108px at 5368px; 116px at 5996px (the screen is 225px tall).",
+   "fix": "Close the gap: a section gap is 120–240px on desktop and 72–112px on a phone. Look for a min-height: 100vh on a short section, an empty grid row, a hidden element still holding its space, or a reveal that never fired. A deliberate rest is a placed picture or colour field, not nothing."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/home/muhammadshumin/Projects/trusttrail/docs/phase-5a-evidence/taste/desktop-fold.jpg",
+   "pages": [
+    "/home/muhammadshumin/Projects/trusttrail/docs/phase-5a-evidence/taste/desktop-page-01.jpg",
+    "/home/muhammadshumin/Projects/trusttrail/docs/phase-5a-evidence/taste/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/home/muhammadshumin/Projects/trusttrail/docs/phase-5a-evidence/taste/tablet-fold.jpg",
+   "pages": [
+    "/home/muhammadshumin/Projects/trusttrail/docs/phase-5a-evidence/taste/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/home/muhammadshumin/Projects/trusttrail/docs/phase-5a-evidence/taste/mobile-390-fold.jpg",
+   "pages": [
+    "/home/muhammadshumin/Projects/trusttrail/docs/phase-5a-evidence/taste/mobile-390-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 360,
+   "fold": "/home/muhammadshumin/Projects/trusttrail/docs/phase-5a-evidence/taste/mobile-360-fold.jpg",
+   "pages": [
+    "/home/muhammadshumin/Projects/trusttrail/docs/phase-5a-evidence/taste/mobile-360-page-01.jpg",
+    "/home/muhammadshumin/Projects/trusttrail/docs/phase-5a-evidence/taste/mobile-360-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

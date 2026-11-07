@@ -1,0 +1,161 @@
+{
+  "home": {
+    "vitals": {
+      "lcp": 260,
+      "cls": 0,
+      "longTasks": [
+        85,
+        68,
+        447,
+        178,
+        167,
+        172,
+        154,
+        160,
+        164,
+        152,
+        150
+      ]
+    },
+    "resources": [
+      {
+        "name": "/fonts/inter-latin.woff2",
+        "bytes": 48556,
+        "duration": 5.7999999998137355
+      },
+      {
+        "name": "/fonts/silkscreen-regular.ttf",
+        "bytes": 32520,
+        "duration": 5.6000000005587935
+      },
+      {
+        "name": "/assets/index-CLnq6YFM.js",
+        "bytes": 167139,
+        "duration": 20.799999999813735
+      },
+      {
+        "name": "/assets/index-Be4ejtyk.css",
+        "bytes": 22317,
+        "duration": 9.099999999627471
+      },
+      {
+        "name": "/assets/living-city/city-front.webp",
+        "bytes": 102834,
+        "duration": 1.7999999998137355
+      },
+      {
+        "name": "/assets/living-city/city-static.webp",
+        "bytes": 126486,
+        "duration": 1.7999999998137355
+      },
+      {
+        "name": "/assets/createCityScene-BFPE6Hh2.js",
+        "bytes": 74077,
+        "duration": 12.600000000558794
+      },
+      {
+        "name": "/assets/Geometry-BRIyt5Ft.js",
+        "bytes": 33885,
+        "duration": 8.5
+      },
+      {
+        "name": "/assets/canvasUtils-Bj-5wwKh.js",
+        "bytes": 2327,
+        "duration": 5.900000000372529
+      },
+      {
+        "name": "/assets/RenderTargetSystem-B_waRn98.js",
+        "bytes": 22146,
+        "duration": 8.099999999627471
+      },
+      {
+        "name": "/assets/getTextureBatchBindGroup-BbdoAZRi.js",
+        "bytes": 642,
+        "duration": 3.2999999998137355
+      },
+      {
+        "name": "/assets/getTexelRangeRects-NDp4IHb1.js",
+        "bytes": 3271,
+        "duration": 7.5
+      },
+      {
+        "name": "/favicon.svg",
+        "bytes": 527,
+        "duration": 6.1000000005587935
+      },
+      {
+        "name": "/assets/living-city/sky-far.webp",
+        "bytes": 121490,
+        "duration": 3.400000000372529
+      },
+      {
+        "name": "/assets/living-city/city-back.webp",
+        "bytes": 191130,
+        "duration": 7.7999999998137355
+      },
+      {
+        "name": "/assets/living-city/city-mid.webp",
+        "bytes": 221598,
+        "duration": 8.400000000372529
+      },
+      {
+        "name": "/assets/living-city/office-props.webp",
+        "bytes": 87258,
+        "duration": 7.099999999627471
+      },
+      {
+        "name": "/assets/living-city/city-front.webp",
+        "bytes": 300,
+        "duration": 7.2999999998137355
+      },
+      {
+        "name": "/assets/living-city/city-mid-lights.webp",
+        "bytes": 46136,
+        "duration": 6.3999999994412065
+      },
+      {
+        "name": "/assets/WebGLRenderer-M5OGNDCf.js",
+        "bytes": 362,
+        "duration": 5.400000000372529
+      },
+      {
+        "name": "/assets/browserAll-CEczqibf.js",
+        "bytes": 11485,
+        "duration": 3.900000000372529
+      },
+      {
+        "name": "/assets/init-38rotC84.js",
+        "bytes": 5032,
+        "duration": 3.2999999998137355
+      }
+    ],
+    "renderer": {
+      "cityStatus": "ready",
+      "cityQuality": "desktop",
+      "cityResolution": "1",
+      "cityRendering": "running"
+    }
+  },
+  "resize": [
+    {
+      "width": 320,
+      "immediate": "saku",
+      "settled": "saku"
+    },
+    {
+      "width": 390,
+      "immediate": "saku",
+      "settled": "saku"
+    },
+    {
+      "width": 768,
+      "immediate": "saku",
+      "settled": "saku"
+    },
+    {
+      "width": 1440,
+      "immediate": "desktop",
+      "settled": "desktop"
+    }
+  ]
+}

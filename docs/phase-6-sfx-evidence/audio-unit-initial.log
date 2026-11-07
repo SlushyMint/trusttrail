@@ -1,0 +1,94 @@
+
+ RUN  v5.0.5 /home/muhammadshumin/Projects/trusttrail
+
+ ❯ tests/unit/audio.test.ts (27 tests | 4 failed) 30ms
+   ❯ single browser audio owner (7)
+     × survives autoplay rejection and permits a new explicit retry without a second context 7ms
+     × bounds repeated feedback and releases short voices on completion 1ms
+     × silences active voices on mute/zero volume and never replays them after unmute 2ms
+     × drops hidden-tab cues and resumes only for a new explicit action after visibility returns 1ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/unit/audio.test.ts > single browser audio owner > survives autoplay rejection and permits a new explicit retry without a second context
+AssertionError: expected [] to have a length of 2 but got +0
+
+- Expected
++ Received
+
+- 2
++ 0
+
+ ❯ tests/unit/audio.test.ts:61:73
+     59|     audio.cue('application'); await flush(); expect(audio.getSnapshot(…
+     60|     expect(context.oscillators).toHaveLength(0); audio.retry(); await …
+     61|     expect(factory).toHaveBeenCalledOnce(); expect(context.oscillators…
+       |                                                                         ^
+     62|   });
+     63|   it('cancels pending activation when muted or hidden and never replay…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  tests/unit/audio.test.ts > single browser audio owner > bounds repeated feedback and releases short voices on completion
+AssertionError: expected [] to have a length of 2 but got +0
+
+- Expected
++ Received
+
+- 2
++ 0
+
+ ❯ tests/unit/audio.test.ts:71:33
+     69|   it('bounds repeated feedback and releases short voices on completion…
+     70|     const { audio, context } = setup(); audio.cue('evidence'); audio.c…
+     71|     expect(context.oscillators).toHaveLength(2); context.oscillators.f…
+       |                                 ^
+     72|     expect(context.oscillators.every(voice => voice.disconnect.mock.ca…
+     73|     expect(context.suspend).toHaveBeenCalled(); audio.dispose(); vi.un…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  tests/unit/audio.test.ts > single browser audio owner > silences active voices on mute/zero volume and never replays them after unmute
+AssertionError: expected [] to have a length of 3 but got +0
+
+- Expected
++ Received
+
+- 3
++ 0
+
+ ❯ tests/unit/audio.test.ts:76:106
+     74|   });
+     75|   it('silences active voices on mute/zero volume and never replays the…
+     76|     const { audio, context } = setup(); audio.cue('startup'); await fl…
+       |                                                                                                          ^
+     77|     audio.setMuted(true); await flush(); expect(context.state).toBe('s…
+     78|     expect(context.oscillators.every(voice => voice.disconnect.mock.ca…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+ FAIL  tests/unit/audio.test.ts > single browser audio owner > drops hidden-tab cues and resumes only for a new explicit action after visibility returns
+AssertionError: expected [] to have a length of 3 but got +0
+
+- Expected
++ Received
+
+- 3
++ 0
+
+ ❯ tests/unit/audio.test.ts:88:72
+     86|     const { audio, context } = setup(); audio.cue('startup'); await fl…
+     87|     audio.setHidden(true); audio.cue('evidence'); await flush(); expec…
+     88|     audio.setHidden(false); await flush(); expect(context.oscillators)…
+       |                                                                        ^
+     89|     audio.cue('verification'); await flush(); expect(context.oscillato…
+     90|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/4]⎯
+
+
+ Test Files  1 failed | 1 passed (2)
+      Tests  4 failed | 25 passed (29)
+   Start at  00:13:36
+   Duration  799ms (environment 65%, tests 14%, setup 9%, transform 7%, import 4%, worker 1%)
+

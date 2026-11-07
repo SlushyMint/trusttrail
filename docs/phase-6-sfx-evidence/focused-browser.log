@@ -1,0 +1,43 @@
+
+> trusttrail@0.1.0 test:smoke
+> playwright test tests/smoke/audio-sfx.spec.ts tests/smoke/security.spec.ts
+
+[WebServer] (node:110709) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 28 tests using 1 worker
+
+(node:110753) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/smoke/audio-sfx.spec.ts:33:1 › SFX initializes only on an action, shares one context across apps, and suspends when idle (1.2s)
+  ✓   2 [desktop] › tests/smoke/audio-sfx.spec.ts:48:1 › discovery cues require accepted actions and never replay after refresh or duplicate inspection (1.0s)
+  ✓   3 [desktop] › tests/smoke/audio-sfx.spec.ts:59:1 › keyboard mute and SFX volume restore without changing gameplay or replaying audio (1.2s)
+  ✓   4 [desktop] › tests/smoke/audio-sfx.spec.ts:76:1 › legacy preferences preserve disabled SFX and volume while obsolete values are discarded (544ms)
+  ✓   5 [desktop] › tests/smoke/audio-sfx.spec.ts:91:1 › autoplay rejection permits explicit SFX retry without another context or gameplay action (502ms)
+  ✓   6 [desktop] › tests/smoke/audio-sfx.spec.ts:103:1 › hidden tabs drop SFX, returning stays silent, and the next action resumes the existing context (872ms)
+  ✓   7 [desktop] › tests/smoke/audio-sfx.spec.ts:113:1 › unsupported audio and blocked storage leave SFX controls and investigation usable (966ms)
+  ✓   8 [desktop] › tests/smoke/audio-sfx.spec.ts:123:1 › SFX controls fit five widths and the release contains no dedicated soundtrack chunk or audio requests (1.2s)
+  ✓   9 [desktop] › tests/smoke/security.spec.ts:7:1 › malformed local saves and preferences never become markup, identity, or an unlocked report (1.0s)
+  ✓  10 [desktop] › tests/smoke/security.spec.ts:23:1 › unexpected URL values stay inert and cannot redirect or inject content (641ms)
+  ✓  11 [desktop] › tests/smoke/security.spec.ts:37:1 › simulated phishing remains internal and the source links have explicit safe navigation attributes (1.8s)
+  ✓  12 [desktop] › tests/smoke/security.spec.ts:52:1 › production preview applies staged release headers; routes and missing assets remain distinct (466ms)
+  ✓  13 [desktop] › tests/smoke/security.spec.ts:65:1 › release source and production output pass the non-secret-printing pattern scan (51ms)
+  ✓  14 [desktop] › tests/smoke/security.spec.ts:71:1 › an unprotected local parent cannot frame the protected game (191ms)
+(node:111552) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  15 [mobile] › tests/smoke/audio-sfx.spec.ts:33:1 › SFX initializes only on an action, shares one context across apps, and suspends when idle (1.6s)
+  ✓  16 [mobile] › tests/smoke/audio-sfx.spec.ts:48:1 › discovery cues require accepted actions and never replay after refresh or duplicate inspection (878ms)
+  ✓  17 [mobile] › tests/smoke/audio-sfx.spec.ts:59:1 › keyboard mute and SFX volume restore without changing gameplay or replaying audio (1.1s)
+  ✓  18 [mobile] › tests/smoke/audio-sfx.spec.ts:76:1 › legacy preferences preserve disabled SFX and volume while obsolete values are discarded (484ms)
+  ✓  19 [mobile] › tests/smoke/audio-sfx.spec.ts:91:1 › autoplay rejection permits explicit SFX retry without another context or gameplay action (471ms)
+  ✓  20 [mobile] › tests/smoke/audio-sfx.spec.ts:103:1 › hidden tabs drop SFX, returning stays silent, and the next action resumes the existing context (860ms)
+  ✓  21 [mobile] › tests/smoke/audio-sfx.spec.ts:113:1 › unsupported audio and blocked storage leave SFX controls and investigation usable (869ms)
+  ✓  22 [mobile] › tests/smoke/audio-sfx.spec.ts:123:1 › SFX controls fit five widths and the release contains no dedicated soundtrack chunk or audio requests (1.9s)
+  ✓  23 [mobile] › tests/smoke/security.spec.ts:7:1 › malformed local saves and preferences never become markup, identity, or an unlocked report (825ms)
+  ✓  24 [mobile] › tests/smoke/security.spec.ts:23:1 › unexpected URL values stay inert and cannot redirect or inject content (511ms)
+  ✓  25 [mobile] › tests/smoke/security.spec.ts:37:1 › simulated phishing remains internal and the source links have explicit safe navigation attributes (2.2s)
+  ✓  26 [mobile] › tests/smoke/security.spec.ts:52:1 › production preview applies staged release headers; routes and missing assets remain distinct (327ms)
+  ✓  27 [mobile] › tests/smoke/security.spec.ts:65:1 › release source and production output pass the non-secret-printing pattern scan (65ms)
+  ✓  28 [mobile] › tests/smoke/security.spec.ts:71:1 › an unprotected local parent cannot frame the protected game (191ms)
+
+  28 passed (25.7s)

@@ -1,0 +1,61 @@
+
+> trusttrail@0.1.0 check
+> npm run typecheck && npm run lint && npm run test:unit && npm run build
+
+
+> trusttrail@0.1.0 typecheck
+> tsc --noEmit
+
+
+> trusttrail@0.1.0 lint
+> eslint . --max-warnings=0
+
+
+> trusttrail@0.1.0 test:unit
+> vitest run
+
+
+ RUN  v5.0.5 /home/muhammadshumin/Projects/trusttrail
+
+
+ Test Files  14 passed (14)
+      Tests  132 passed (132)
+   Start at  23:49:32
+   Duration  3.73s (environment 66%, tests 19%, setup 8%, import 5%, transform 2%, worker 1%)
+
+
+> trusttrail@0.1.0 build
+> npm run typecheck && vite build
+
+
+> trusttrail@0.1.0 typecheck
+> tsc --noEmit
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 1287 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                     1.24 kB │ gzip:   0.64 kB
+dist/assets/index-CAEJ2aQY.css                    115.87 kB │ gzip:  22.71 kB
+dist/assets/WebGLRenderer-DSuyANKk.js               0.06 kB │ gzip:   0.08 kB
+dist/assets/CanvasRenderer-Dy8w_6Ns.js              0.06 kB │ gzip:   0.08 kB
+dist/assets/WebGPURenderer-Cvn8AAEp.js              0.06 kB │ gzip:   0.08 kB
+dist/assets/webworkerAll-BBIy0mnu.js                0.06 kB │ gzip:   0.07 kB
+dist/assets/getTextureBatchBindGroup-0Ds-pW6U.js    0.34 kB │ gzip:   0.26 kB
+dist/assets/ambience-BpFFiF7f.js                    0.63 kB │ gzip:   0.36 kB
+dist/assets/canvasUtils-CHTQF-VB.js                 6.01 kB │ gzip:   2.03 kB
+dist/assets/getTexelRangeRects-CWKsSdPx.js         11.31 kB │ gzip:   2.96 kB
+dist/assets/init-CWONObnt.js                       15.17 kB │ gzip:   4.75 kB
+dist/assets/browserAll-DkpXcctc.js                 43.48 kB │ gzip:  11.23 kB
+dist/assets/RenderTargetSystem-kOdx3XkA.js         78.06 kB │ gzip:  22.01 kB
+dist/assets/Geometry-BiZmXlDd.js                  112.30 kB │ gzip:  33.91 kB
+dist/assets/createCityScene-wBZwQzgr.js           251.62 kB │ gzip:  74.30 kB
+dist/assets/index-BOin0xcJ.js                     558.56 kB │ gzip: 173.65 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 565ms

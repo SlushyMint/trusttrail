@@ -1,0 +1,9 @@
+
+ RUN  v5.0.5 /home/muhammadshumin/Projects/trusttrail
+
+
+ Test Files  1 passed (1)
+      Tests  20 passed (20)
+   Start at  23:30:45
+   Duration  1.96s (environment 69%, transform 11%, setup 9%, tests 9%, import 2%, worker 1%)
+

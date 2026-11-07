@@ -1,0 +1,40 @@
+{
+  "method": "Real desktop Chromium, twenty app switches, five-width controls, 390px/4x renderer CPU throttling during a 1.5s idle interval. Not physical-device DSP/battery measurement.",
+  "initialContexts": 0,
+  "settled": {
+    "contexts": 1,
+    "liveSources": 0,
+    "state": "suspended",
+    "createdSources": 21
+  },
+  "idleClockAdvance": 0,
+  "idleMainThreadMs": 11.945999999999998,
+  "beforeHeap": 8122716,
+  "afterHeap": 8130412,
+  "sameSave": true,
+  "outbound": [],
+  "pageErrors": [],
+  "csp": [
+    {
+      "directive": "script-src",
+      "blocked": "eval",
+      "disposition": "report"
+    },
+    {
+      "directive": "script-src",
+      "blocked": "eval",
+      "disposition": "report"
+    },
+    {
+      "directive": "script-src",
+      "blocked": "eval",
+      "disposition": "report"
+    },
+    {
+      "directive": "script-src",
+      "blocked": "eval",
+      "disposition": "report"
+    }
+  ],
+  "releaseFiles": 16
+}

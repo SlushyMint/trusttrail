@@ -1,0 +1,204 @@
+
+> trusttrail@0.1.0 test:smoke
+> playwright test
+
+[WebServer] (node:113108) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 152 tests using 1 worker
+
+(node:113152) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓    1 [desktop] › tests/smoke/audio-sfx.spec.ts:33:1 › SFX initializes only on an action, shares one context across apps, and suspends when idle (1.2s)
+  ✓    2 [desktop] › tests/smoke/audio-sfx.spec.ts:48:1 › discovery cues require accepted actions and never replay after refresh or duplicate inspection (1.1s)
+  ✓    3 [desktop] › tests/smoke/audio-sfx.spec.ts:59:1 › keyboard mute and SFX volume restore without changing gameplay or replaying audio (1.3s)
+  ✓    4 [desktop] › tests/smoke/audio-sfx.spec.ts:76:1 › legacy preferences preserve disabled SFX and volume while obsolete values are discarded (585ms)
+  ✓    5 [desktop] › tests/smoke/audio-sfx.spec.ts:91:1 › autoplay rejection permits explicit SFX retry without another context or gameplay action (562ms)
+  ✓    6 [desktop] › tests/smoke/audio-sfx.spec.ts:103:1 › hidden tabs drop SFX, returning stays silent, and the next action resumes the existing context (966ms)
+  ✓    7 [desktop] › tests/smoke/audio-sfx.spec.ts:113:1 › unsupported audio and blocked storage leave SFX controls and investigation usable (986ms)
+  ✓    8 [desktop] › tests/smoke/audio-sfx.spec.ts:123:1 › SFX controls fit five widths and the release contains no dedicated soundtrack chunk or audio requests (1.4s)
+  ✓    9 [desktop] › tests/smoke/chapter-one.spec.ts:4:1 › fully investigated Chapter 1 verifies independently and preserves its completed record (1.7s)
+  ✓   10 [desktop] › tests/smoke/chapter-one.spec.ts:35:1 › risky choice remains playable, never opens a real destination and invents no compromise (1.1s)
+  ✓   11 [desktop] › tests/smoke/chapter-one.spec.ts:48:1 › unfinished verification survives refresh; later evidence never earns retroactive awareness (1.5s)
+  ✓   12 [desktop] › tests/smoke/chapter-one.spec.ts:68:1 › ignore protects Ari without requiring clues and restart/reset require confirmation (7.8s)
+  ✓   13 [desktop] › tests/smoke/chapter-one.spec.ts:92:1 › corrupt save is not silently overwritten (542ms)
+  ✓   14 [desktop] › tests/smoke/chapter-one.spec.ts:102:1 › blocked storage allows a memory-only Chapter 1 playthrough (1.1s)
+  ✓   15 [desktop] › tests/smoke/chapter-one.spec.ts:112:1 › another tab pauses writes until the player reloads the latest progress (7.1s)
+  ✓   16 [desktop] › tests/smoke/chapter-one.spec.ts:129:1 › Chapter 1 can be completed using keyboard traversal and activation only (2.9s)
+  ✓   17 [desktop] › tests/smoke/chapter-one.spec.ts:169:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels (2.4s)
+  ✓   18 [desktop] › tests/smoke/chapter-three.spec.ts:87:1 › finishes C1–C3 safely with meaningful comparisons, archived evidence and reloads (4.5s)
+  ✓   19 [desktop] › tests/smoke/chapter-three.spec.ts:123:1 › unsafe code and earlier identity disclosure lead to six recovery actions without a game over (4.3s)
+  ✓   20 [desktop] › tests/smoke/chapter-three.spec.ts:137:1 › portal comparison handles mistakes, keyboard input, reduced motion and narrow screens (4.4s)
+  ✓   21 [desktop] › tests/smoke/chapter-two.spec.ts:29:1 › investigates the recruiter across apps and preserves Chapter 1 records through completion (2.8s)
+  ✓   22 [desktop] › tests/smoke/chapter-two.spec.ts:81:4 › branch: Bantuan berubah menjadi paparan. remains playable without collecting evidence (1.8s)
+  ✓   23 [desktop] › tests/smoke/chapter-two.spec.ts:81:4 › branch: Batas yang tetap terjaga. remains playable without collecting evidence (1.8s)
+  ✓   24 [desktop] › tests/smoke/chapter-two.spec.ts:97:1 › resumes conversation and partial verification without duplicate credit or retroactive awareness (2.2s)
+  ✓   25 [desktop] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation (2.8s)
+  ✓   26 [desktop] › tests/smoke/chapter-two.spec.ts:138:1 › Chapter 2 conversation and decision are operable by keyboard (2.5s)
+  ✓   27 [desktop] › tests/smoke/chapter-two.spec.ts:165:1 › restarts Chapter 2 without retaining old conversation or journal state (2.0s)
+  ✓   28 [desktop] › tests/smoke/dual-os.spec.ts:4:1 › one persisted session keeps expanded clues and an uncommitted decision across shells (1.0s)
+  ✓   29 [desktop] › tests/smoke/dual-os.spec.ts:24:1 › pending source verification persists through resize, reload and later source comparison (1.4s)
+  ✓   30 [desktop] › tests/smoke/dual-os.spec.ts:45:1 › browser back, forward, inbox and home navigation never roll back gameplay (2.3s)
+  ✓   31 [desktop] › tests/smoke/dual-os.spec.ts:66:1 › desktop window controls and Saku fullscreen navigation are deliberate at boundaries (1.4s)
+  ✓   32 [desktop] › tests/smoke/foundation.spec.ts:4:1 › routes, fresh-run states and direct refresh work without external requests (1.8s)
+  ✓   33 [desktop] › tests/smoke/foundation.spec.ts:21:1 › native app menu traps focus, closes with Escape and returns focus (607ms)
+  ✓   34 [desktop] › tests/smoke/foundation.spec.ts:39:1 › keyboard app navigation and reduced motion remain usable (1.0s)
+  ✓   35 [desktop] › tests/smoke/homepage-b1.spec.ts:4:1 › OS selectors share preview state without writing to a saved investigation (12.9s)
+  ✓   36 [desktop] › tests/smoke/homepage-b1.spec.ts:29:1 › intelligence files retain scope, period, source and link through keyboard switching (17.6s)
+  ✓   37 [desktop] › tests/smoke/homepage-b1.spec.ts:58:1 › city pause control stops rendering and respects reduced motion (3.8s)
+  ✓   38 [desktop] › tests/smoke/homepage-b2.spec.ts:3:1 › native scroll choreography reverses and reduced motion settles every presentation layer (9.6s)
+  ✓   39 [desktop] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS selections keep final content, focus, save and geometry stable (22.7s)
+  ✓   40 [desktop] › tests/smoke/homepage-b2.spec.ts:46:1 › rapid archive selections keep content, focus, save, geometry and return navigation stable (22.4s)
+  ✓   41 [desktop] › tests/smoke/homepage-b2.spec.ts:75:1 › repeated homepage visits release detached DOM and event listeners (33.8s)
+  ✓   42 [desktop] › tests/smoke/homepage.spec.ts:4:1 › homepage preview is keyboard accessible and cannot change a saved investigation (2.1s)
+  ✓   43 [desktop] › tests/smoke/homepage.spec.ts:25:1 › fresh homepage starts the real game and attributes all three statistics (19.2s)
+  ✓   44 [desktop] › tests/smoke/homepage.spec.ts:45:1 › homepage fits requested widths, keeps CTA above fold and respects reduced motion (1.8s)
+  ✓   45 [desktop] › tests/smoke/living-city.spec.ts:3:1 › city canvas remains behind HTML and pauses outside the hero (11.9s)
+  ✓   46 [desktop] › tests/smoke/living-city.spec.ts:22:1 › repeated client navigation owns one canvas and handles lost rendering (23.7s)
+  ✓   47 [desktop] › tests/smoke/living-city.spec.ts:43:1 › homepage works when the lazy renderer cannot be downloaded (986ms)
+  ✓   48 [desktop] › tests/smoke/living-city.spec.ts:53:1 › reduced motion avoids renderer downloads and supports a live preference change (2.6s)
+  ✓   49 [desktop] › tests/smoke/living-city.spec.ts:68:1 › init can finish after client navigation without appending a stale canvas (4.5s)
+  ✓   50 [desktop] › tests/smoke/living-city.spec.ts:84:1 › one scene resizes at all four requested widths without overflowing or blocking controls (13.4s)
+  ✓   51 [desktop] › tests/smoke/living-city.spec.ts:109:1 › unsupported WebGL keeps the static city and start control available (1.1s)
+  ✓   52 [desktop] › tests/smoke/living-city.spec.ts:126:1 › a missing city layer selects the static composite and leaves navigation usable (1.1s)
+  ✓   53 [desktop] › tests/smoke/living-city.spec.ts:136:1 › navigation during texture loading cancels the old scene without damaging its replacement (4.6s)
+  ✓   54 [desktop] › tests/smoke/living-city.spec.ts:155:1 › reduced motion downloads the static artwork without loading animated layer textures (867ms)
+  ✓   55 [desktop] › tests/smoke/onboarding.spec.ts:4:1 › real tutorial journey preserves save and resumes interrupted steps (2.6s)
+  ✓   56 [desktop] › tests/smoke/onboarding.spec.ts:24:1 › skip, collect evidence, replay and keyboard dismissal preserve progress (1.8s)
+  ✓   57 [desktop] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 320px with reduced motion (1.2s)
+  ✓   58 [desktop] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 360px with reduced motion (1.2s)
+  ✓   59 [desktop] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 390px with reduced motion (1.2s)
+  ✓   60 [desktop] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 768px with reduced motion (1.2s)
+  ✓   61 [desktop] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 1440px with reduced motion (1.2s)
+  ✓   62 [desktop] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (1.7s)
+  ✓   63 [desktop] › tests/smoke/onboarding.spec.ts:82:1 › skip inside the modal menu restores reachable focus (1.5s)
+  ✓   64 [desktop] › tests/smoke/security.spec.ts:7:1 › malformed local saves and preferences never become markup, identity, or an unlocked report (1.6s)
+  ✓   65 [desktop] › tests/smoke/security.spec.ts:23:1 › unexpected URL values stay inert and cannot redirect or inject content (1.0s)
+  ✓   66 [desktop] › tests/smoke/security.spec.ts:37:1 › simulated phishing remains internal and the source links have explicit safe navigation attributes (2.2s)
+  ✓   67 [desktop] › tests/smoke/security.spec.ts:52:1 › production preview applies staged release headers; routes and missing assets remain distinct (684ms)
+  ✓   68 [desktop] › tests/smoke/security.spec.ts:65:1 › release source and production output pass the non-secret-printing pattern scan (87ms)
+  ✓   69 [desktop] › tests/smoke/security.spec.ts:71:1 › an unprotected local parent cannot frame the protected game (270ms)
+  ✓   70 [desktop] › tests/smoke/visual-dossier.spec.ts:4:1 › OS application browsing is keyboard accessible and never creates gameplay progress (1.7s)
+  ✓   71 [desktop] › tests/smoke/visual-dossier.spec.ts:21:1 › interactive homepage preview reserves layout while city artwork is delayed (5.5s)
+  ✓   72 [desktop] › tests/smoke/visual-dossier.spec.ts:40:1 › failed wallpaper leaves the OS, narrative and game actions usable (1.9s)
+  ✓   73 [desktop] › tests/smoke/visual-dossier.spec.ts:50:1 › touch and keyboard discovery feedback respects reduced motion and records only one clue (932ms)
+  ✓   74 [desktop] › tests/smoke/window-management.spec.ts:21:1 › desktop dragging, bounds, cancellation and window controls never write game state (2.1s)
+  ✓   75 [desktop] › tests/smoke/window-management.spec.ts:60:1 › click and keyboard placement support comparison, reset and mobile reflow (2.0s)
+  ✓   76 [desktop] › tests/smoke/window-management.spec.ts:106:1 › Motion respects reduced motion while desktop drag remains direct and homepage content stays visible (1.5s)
+(node:118233) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   77 [mobile] › tests/smoke/audio-sfx.spec.ts:33:1 › SFX initializes only on an action, shares one context across apps, and suspends when idle (1.7s)
+  ✓   78 [mobile] › tests/smoke/audio-sfx.spec.ts:48:1 › discovery cues require accepted actions and never replay after refresh or duplicate inspection (1.1s)
+  ✓   79 [mobile] › tests/smoke/audio-sfx.spec.ts:59:1 › keyboard mute and SFX volume restore without changing gameplay or replaying audio (1.5s)
+  ✓   80 [mobile] › tests/smoke/audio-sfx.spec.ts:76:1 › legacy preferences preserve disabled SFX and volume while obsolete values are discarded (702ms)
+  ✓   81 [mobile] › tests/smoke/audio-sfx.spec.ts:91:1 › autoplay rejection permits explicit SFX retry without another context or gameplay action (666ms)
+  ✓   82 [mobile] › tests/smoke/audio-sfx.spec.ts:103:1 › hidden tabs drop SFX, returning stays silent, and the next action resumes the existing context (1.1s)
+  ✓   83 [mobile] › tests/smoke/audio-sfx.spec.ts:113:1 › unsupported audio and blocked storage leave SFX controls and investigation usable (1.0s)
+  ✓   84 [mobile] › tests/smoke/audio-sfx.spec.ts:123:1 › SFX controls fit five widths and the release contains no dedicated soundtrack chunk or audio requests (2.6s)
+  ✓   85 [mobile] › tests/smoke/chapter-one.spec.ts:4:1 › fully investigated Chapter 1 verifies independently and preserves its completed record (1.9s)
+  ✓   86 [mobile] › tests/smoke/chapter-one.spec.ts:35:1 › risky choice remains playable, never opens a real destination and invents no compromise (1.2s)
+  ✓   87 [mobile] › tests/smoke/chapter-one.spec.ts:48:1 › unfinished verification survives refresh; later evidence never earns retroactive awareness (1.6s)
+  ✓   88 [mobile] › tests/smoke/chapter-one.spec.ts:68:1 › ignore protects Ari without requiring clues and restart/reset require confirmation (11.5s)
+  ✓   89 [mobile] › tests/smoke/chapter-one.spec.ts:92:1 › corrupt save is not silently overwritten (581ms)
+  ✓   90 [mobile] › tests/smoke/chapter-one.spec.ts:102:1 › blocked storage allows a memory-only Chapter 1 playthrough (1.1s)
+  ✓   91 [mobile] › tests/smoke/chapter-one.spec.ts:112:1 › another tab pauses writes until the player reloads the latest progress (9.1s)
+  ✓   92 [mobile] › tests/smoke/chapter-one.spec.ts:129:1 › Chapter 1 can be completed using keyboard traversal and activation only (1.3s)
+  ✓   93 [mobile] › tests/smoke/chapter-one.spec.ts:169:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels (2.9s)
+  ✓   94 [mobile] › tests/smoke/chapter-three.spec.ts:87:1 › finishes C1–C3 safely with meaningful comparisons, archived evidence and reloads (4.1s)
+  ✓   95 [mobile] › tests/smoke/chapter-three.spec.ts:123:1 › unsafe code and earlier identity disclosure lead to six recovery actions without a game over (3.6s)
+  ✓   96 [mobile] › tests/smoke/chapter-three.spec.ts:137:1 › portal comparison handles mistakes, keyboard input, reduced motion and narrow screens (5.0s)
+  ✓   97 [mobile] › tests/smoke/chapter-two.spec.ts:29:1 › investigates the recruiter across apps and preserves Chapter 1 records through completion (2.6s)
+  ✓   98 [mobile] › tests/smoke/chapter-two.spec.ts:81:4 › branch: Bantuan berubah menjadi paparan. remains playable without collecting evidence (1.7s)
+  ✓   99 [mobile] › tests/smoke/chapter-two.spec.ts:81:4 › branch: Batas yang tetap terjaga. remains playable without collecting evidence (1.6s)
+  ✓  100 [mobile] › tests/smoke/chapter-two.spec.ts:97:1 › resumes conversation and partial verification without duplicate credit or retroactive awareness (1.9s)
+  ✓  101 [mobile] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation (3.4s)
+  ✓  102 [mobile] › tests/smoke/chapter-two.spec.ts:138:1 › Chapter 2 conversation and decision are operable by keyboard (1.6s)
+  ✓  103 [mobile] › tests/smoke/chapter-two.spec.ts:165:1 › restarts Chapter 2 without retaining old conversation or journal state (1.8s)
+  ✓  104 [mobile] › tests/smoke/dual-os.spec.ts:4:1 › one persisted session keeps expanded clues and an uncommitted decision across shells (954ms)
+  ✓  105 [mobile] › tests/smoke/dual-os.spec.ts:24:1 › pending source verification persists through resize, reload and later source comparison (1.3s)
+  ✓  106 [mobile] › tests/smoke/dual-os.spec.ts:45:1 › browser back, forward, inbox and home navigation never roll back gameplay (2.2s)
+  ✓  107 [mobile] › tests/smoke/dual-os.spec.ts:66:1 › desktop window controls and Saku fullscreen navigation are deliberate at boundaries (1.5s)
+  ✓  108 [mobile] › tests/smoke/foundation.spec.ts:4:1 › routes, fresh-run states and direct refresh work without external requests (1.3s)
+  ✓  109 [mobile] › tests/smoke/foundation.spec.ts:21:1 › native app menu traps focus, closes with Escape and returns focus (463ms)
+  ✓  110 [mobile] › tests/smoke/foundation.spec.ts:39:1 › keyboard app navigation and reduced motion remain usable (756ms)
+  ✓  111 [mobile] › tests/smoke/homepage-b1.spec.ts:4:1 › OS selectors share preview state without writing to a saved investigation (5.2s)
+  ✓  112 [mobile] › tests/smoke/homepage-b1.spec.ts:29:1 › intelligence files retain scope, period, source and link through keyboard switching (8.5s)
+  ✓  113 [mobile] › tests/smoke/homepage-b1.spec.ts:58:1 › city pause control stops rendering and respects reduced motion (2.3s)
+  ✓  114 [mobile] › tests/smoke/homepage-b2.spec.ts:3:1 › native scroll choreography reverses and reduced motion settles every presentation layer (5.1s)
+  ✓  115 [mobile] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS selections keep final content, focus, save and geometry stable (8.2s)
+  ✓  116 [mobile] › tests/smoke/homepage-b2.spec.ts:46:1 › rapid archive selections keep content, focus, save, geometry and return navigation stable (7.4s)
+  ✓  117 [mobile] › tests/smoke/homepage-b2.spec.ts:75:1 › repeated homepage visits release detached DOM and event listeners (13.4s)
+  ✓  118 [mobile] › tests/smoke/homepage.spec.ts:4:1 › homepage preview is keyboard accessible and cannot change a saved investigation (1.4s)
+  ✓  119 [mobile] › tests/smoke/homepage.spec.ts:25:1 › fresh homepage starts the real game and attributes all three statistics (5.3s)
+  ✓  120 [mobile] › tests/smoke/homepage.spec.ts:45:1 › homepage fits requested widths, keeps CTA above fold and respects reduced motion (2.2s)
+  ✓  121 [mobile] › tests/smoke/living-city.spec.ts:3:1 › city canvas remains behind HTML and pauses outside the hero (5.5s)
+  ✓  122 [mobile] › tests/smoke/living-city.spec.ts:22:1 › repeated client navigation owns one canvas and handles lost rendering (10.2s)
+  ✓  123 [mobile] › tests/smoke/living-city.spec.ts:43:1 › homepage works when the lazy renderer cannot be downloaded (426ms)
+  ✓  124 [mobile] › tests/smoke/living-city.spec.ts:53:1 › reduced motion avoids renderer downloads and supports a live preference change (1.4s)
+  ✓  125 [mobile] › tests/smoke/living-city.spec.ts:68:1 › init can finish after client navigation without appending a stale canvas (2.6s)
+  ✓  126 [mobile] › tests/smoke/living-city.spec.ts:84:1 › one scene resizes at all four requested widths without overflowing or blocking controls (14.4s)
+  ✓  127 [mobile] › tests/smoke/living-city.spec.ts:109:1 › unsupported WebGL keeps the static city and start control available (537ms)
+  ✓  128 [mobile] › tests/smoke/living-city.spec.ts:126:1 › a missing city layer selects the static composite and leaves navigation usable (532ms)
+  ✓  129 [mobile] › tests/smoke/living-city.spec.ts:136:1 › navigation during texture loading cancels the old scene without damaging its replacement (2.6s)
+  ✓  130 [mobile] › tests/smoke/living-city.spec.ts:155:1 › reduced motion downloads the static artwork without loading animated layer textures (463ms)
+  ✓  131 [mobile] › tests/smoke/onboarding.spec.ts:4:1 › real tutorial journey preserves save and resumes interrupted steps (1.8s)
+  ✓  132 [mobile] › tests/smoke/onboarding.spec.ts:24:1 › skip, collect evidence, replay and keyboard dismissal preserve progress (1.4s)
+  ✓  133 [mobile] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 320px with reduced motion (1.1s)
+  ✓  134 [mobile] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 360px with reduced motion (933ms)
+  ✓  135 [mobile] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 390px with reduced motion (1.0s)
+  ✓  136 [mobile] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 768px with reduced motion (1.1s)
+  ✓  137 [mobile] › tests/smoke/onboarding.spec.ts:41:49 › tutorial fits 1440px with reduced motion (1.2s)
+  ✘  138 [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player (30.1s)
+(node:121926) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  139 [mobile] › tests/smoke/onboarding.spec.ts:82:1 › skip inside the modal menu restores reachable focus (1.4s)
+  ✓  140 [mobile] › tests/smoke/security.spec.ts:7:1 › malformed local saves and preferences never become markup, identity, or an unlocked report (752ms)
+  ✓  141 [mobile] › tests/smoke/security.spec.ts:23:1 › unexpected URL values stay inert and cannot redirect or inject content (453ms)
+  ✓  142 [mobile] › tests/smoke/security.spec.ts:37:1 › simulated phishing remains internal and the source links have explicit safe navigation attributes (2.0s)
+  ✓  143 [mobile] › tests/smoke/security.spec.ts:52:1 › production preview applies staged release headers; routes and missing assets remain distinct (318ms)
+  ✓  144 [mobile] › tests/smoke/security.spec.ts:65:1 › release source and production output pass the non-secret-printing pattern scan (51ms)
+  ✓  145 [mobile] › tests/smoke/security.spec.ts:71:1 › an unprotected local parent cannot frame the protected game (192ms)
+  ✓  146 [mobile] › tests/smoke/visual-dossier.spec.ts:4:1 › OS application browsing is keyboard accessible and never creates gameplay progress (1.3s)
+  ✓  147 [mobile] › tests/smoke/visual-dossier.spec.ts:21:1 › interactive homepage preview reserves layout while city artwork is delayed (3.1s)
+  ✓  148 [mobile] › tests/smoke/visual-dossier.spec.ts:40:1 › failed wallpaper leaves the OS, narrative and game actions usable (1.5s)
+  ✓  149 [mobile] › tests/smoke/visual-dossier.spec.ts:50:1 › touch and keyboard discovery feedback respects reduced motion and records only one clue (950ms)
+  ✓  150 [mobile] › tests/smoke/window-management.spec.ts:21:1 › desktop dragging, bounds, cancellation and window controls never write game state (2.4s)
+  ✓  151 [mobile] › tests/smoke/window-management.spec.ts:60:1 › click and keyboard placement support comparison, reset and mobile reflow (2.3s)
+  ✓  152 [mobile] › tests/smoke/window-management.spec.ts:106:1 › Motion respects reduced motion while desktop drag remains direct and homepage content stays visible (1.6s)
+
+
+  1) [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.focus: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('dialog').getByRole('button', { name: /^Case Files/ })
+
+
+      63 |       await page.getByRole('button', { name: 'Ganti aplikasi', exact: true }).focus();
+      64 |       await page.keyboard.press('Enter');
+    > 65 |       await page.getByRole('dialog').getByRole('button', { name: new RegExp(`^${name}`) }).focus();
+         |                                                                                            ^
+      66 |     }
+      67 |     await page.keyboard.press('Enter');
+      68 |   }
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/onboarding.spec.ts:65:92
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/onboarding-keyboard-app-ac-8c5b2-arget-never-trap-the-player-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/onboarding-keyboard-app-ac-8c5b2-arget-never-trap-the-player-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/onboarding-keyboard-app-ac-8c5b2-arget-never-trap-the-player-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/onboarding-keyboard-app-ac-8c5b2-arget-never-trap-the-player-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [mobile] › tests/smoke/onboarding.spec.ts:54:1 › keyboard app activation and missing launch target never trap the player 
+  151 passed (9.2m)

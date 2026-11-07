@@ -1,0 +1,6 @@
+{
+  "source": "https://openapi.vercel.sh/vercel.json",
+  "validationScope": "Only properties used by this static Vite configuration; unrelated vendor function definitions use mixed schema dialects.",
+  "valid": true,
+  "errors": null
+}

@@ -1,0 +1,154 @@
+
+Running 104 tests using 8 workers
+
+(node:30500) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30531) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30503) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30535) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30513) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30521) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30501) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30515) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓    5 [desktop] › tests/smoke/dual-os.spec.ts:4:1 › one persisted session keeps expanded clues and an uncommitted decision across shells (3.2s)
+  ✓    1 [desktop] › tests/smoke/chapter-one.spec.ts:4:1 › fully investigated Chapter 1 verifies independently and preserves its completed record (4.6s)
+  ✓    2 [desktop] › tests/smoke/homepage.spec.ts:4:1 › homepage preview is keyboard accessible and cannot change a saved investigation (5.6s)
+  ✓   10 [desktop] › tests/smoke/chapter-one.spec.ts:35:1 › risky choice remains playable, never opens a real destination and invents no compromise (2.9s)
+  ✓    3 [desktop] › tests/smoke/chapter-two.spec.ts:29:1 › investigates the recruiter across apps and preserves Chapter 1 records through completion (7.7s)
+  ✓    9 [desktop] › tests/smoke/dual-os.spec.ts:24:1 › pending source verification persists through resize, reload and later source comparison (5.0s)
+  ✓    6 [desktop] › tests/smoke/foundation.spec.ts:4:1 › routes, fresh-run states and direct refresh work without external requests (10.0s)
+  ✓   15 [desktop] › tests/smoke/foundation.spec.ts:21:1 › native app menu traps focus, closes with Escape and returns focus (1.9s)
+  ✓   13 [desktop] › tests/smoke/chapter-two.spec.ts:81:4 › branch: Bantuan berubah menjadi paparan. remains playable without collecting evidence (5.0s)
+  ✓   12 [desktop] › tests/smoke/chapter-one.spec.ts:48:1 › unfinished verification survives refresh; later evidence never earns retroactive awareness (5.6s)
+  ✓    8 [desktop] › tests/smoke/chapter-three.spec.ts:76:1 › finishes C1–C3 safely with meaningful comparisons, archived evidence and reloads (13.7s)
+  ✓   16 [desktop] › tests/smoke/foundation.spec.ts:39:1 › keyboard app navigation and reduced motion remain usable (2.4s)
+  ✓   14 [desktop] › tests/smoke/dual-os.spec.ts:45:1 › browser back, forward, inbox and home navigation never roll back gameplay (8.2s)
+  ✓   17 [desktop] › tests/smoke/chapter-two.spec.ts:81:4 › branch: Batas yang tetap terjaga. remains playable without collecting evidence (6.0s)
+  ✓   21 [desktop] › tests/smoke/dual-os.spec.ts:66:1 › desktop window controls and Saku fullscreen navigation are deliberate at boundaries (4.4s)
+  ✓   23 [desktop] › tests/smoke/visual-dossier.spec.ts:4:1 › OS application browsing is keyboard accessible and never creates gameplay progress (2.8s)
+  ✓   22 [desktop] › tests/smoke/chapter-two.spec.ts:97:1 › resumes conversation and partial verification without duplicate credit or retroactive awareness (7.4s)
+  ✓   19 [desktop] › tests/smoke/chapter-three.spec.ts:112:1 › unsafe code and earlier identity disclosure lead to six recovery actions without a game over (13.2s)
+  ✘    4 [desktop] › tests/smoke/homepage-b2.spec.ts:3:1 › native scroll choreography reverses and reduced motion settles every presentation layer (33.2s)
+(node:33281) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   26 [desktop] › tests/smoke/chapter-three.spec.ts:124:1 › portal comparison handles mistakes, keyboard input, reduced motion and narrow screens (12.7s)
+  ✘    7 [desktop] › tests/smoke/homepage-b1.spec.ts:4:1 › OS selectors share preview state without writing to a saved investigation (39.1s)
+(node:33547) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   11 [desktop] › tests/smoke/homepage.spec.ts:25:1 › fresh homepage starts the real game and attributes all three statistics (36.5s)
+  ✓   24 [desktop] › tests/smoke/visual-dossier.spec.ts:19:1 › interactive homepage preview reserves layout while city artwork is delayed (20.8s)
+(node:33646) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   28 [desktop] › tests/smoke/window-management.spec.ts:21:1 › desktop dragging, bounds, cancellation and window controls never write game state (6.6s)
+  ✘   20 [desktop] › tests/smoke/living-city.spec.ts:3:1 › city canvas remains behind HTML and pauses outside the hero (31.7s)
+(node:34007) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   31 [desktop] › tests/smoke/homepage.spec.ts:45:1 › homepage fits requested widths, keeps CTA above fold and respects reduced motion (5.5s)
+  ✘   18 [desktop] › tests/smoke/chapter-one.spec.ts:68:1 › ignore protects Ari without requiring clues and restart/reset require confirmation (36.2s)
+(node:34210) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:34219) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   32 [desktop] › tests/smoke/window-management.spec.ts:60:1 › click and keyboard placement support comparison, reset and mobile reflow (6.7s)
+  ✓   30 [desktop] › tests/smoke/visual-dossier.spec.ts:38:1 › failed wallpaper leaves the OS, narrative and game actions usable (9.3s)
+  ✓   35 [desktop] › tests/smoke/chapter-one.spec.ts:92:1 › corrupt save is not silently overwritten (2.1s)
+  ✓   37 [desktop] › tests/smoke/visual-dossier.spec.ts:48:1 › touch and keyboard discovery feedback respects reduced motion and records only one clue (3.6s)
+  ✓   34 [mobile] › tests/smoke/chapter-one.spec.ts:4:1 › fully investigated Chapter 1 verifies independently and preserves its completed record (5.3s)
+  ✓   36 [desktop] › tests/smoke/window-management.spec.ts:104:1 › Motion respects reduced motion while desktop drag remains direct and homepage content stays visible (5.8s)
+(node:34720) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   38 [desktop] › tests/smoke/chapter-one.spec.ts:102:1 › blocked storage allows a memory-only Chapter 1 playthrough (3.8s)
+  ✘   25 [desktop] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation (31.8s)
+(node:34792) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:34852) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   39 [mobile] › tests/smoke/chapter-one.spec.ts:35:1 › risky choice remains playable, never opens a real destination and invents no compromise (2.8s)
+  ✓   40 [desktop] › tests/smoke/chapter-one.spec.ts:112:1 › another tab pauses writes until the player reloads the latest progress (4.6s)
+  ✓   44 [mobile] › tests/smoke/chapter-one.spec.ts:48:1 › unfinished verification survives refresh; later evidence never earns retroactive awareness (5.2s)
+  ✓   42 [mobile] › tests/smoke/chapter-two.spec.ts:29:1 › investigates the recruiter across apps and preserves Chapter 1 records through completion (8.8s)
+  ✓   41 [mobile] › tests/smoke/chapter-three.spec.ts:76:1 › finishes C1–C3 safely with meaningful comparisons, archived evidence and reloads (13.5s)
+  ✓   43 [desktop] › tests/smoke/chapter-two.spec.ts:138:1 › Chapter 2 conversation and decision are operable by keyboard (11.9s)
+  ✓   47 [mobile] › tests/smoke/chapter-two.spec.ts:81:4 › branch: Bantuan berubah menjadi paparan. remains playable without collecting evidence (5.4s)
+  ✓   45 [desktop] › tests/smoke/chapter-one.spec.ts:129:1 › Chapter 1 can be completed using keyboard traversal and activation only (12.0s)
+  ✘   27 [desktop] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable (37.1s)
+(node:35928) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   29 [desktop] › tests/smoke/homepage-b1.spec.ts:29:1 › intelligence files retain scope, period, source and link through keyboard switching (36.3s)
+  ✓   50 [mobile] › tests/smoke/chapter-two.spec.ts:81:4 › branch: Batas yang tetap terjaga. remains playable without collecting evidence (6.2s)
+  ✓   49 [desktop] › tests/smoke/chapter-two.spec.ts:165:1 › restarts Chapter 2 without retaining old conversation or journal state (7.3s)
+(node:36311) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:36374) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   48 [mobile] › tests/smoke/chapter-three.spec.ts:112:1 › unsafe code and earlier identity disclosure lead to six recovery actions without a game over (12.8s)
+  ✘   33 [desktop] › tests/smoke/living-city.spec.ts:22:1 › repeated client navigation owns one canvas and handles lost rendering (36.9s)
+(node:36824) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   55 [mobile] › tests/smoke/dual-os.spec.ts:4:1 › one persisted session keeps expanded clues and an uncommitted decision across shells (4.5s)
+  ✓   53 [mobile] › tests/smoke/chapter-two.spec.ts:97:1 › resumes conversation and partial verification without duplicate credit or retroactive awareness (8.3s)
+  ✓   57 [desktop] › tests/smoke/living-city.spec.ts:43:1 › homepage works when the lazy renderer cannot be downloaded (3.5s)
+  ✓   58 [mobile] › tests/smoke/dual-os.spec.ts:24:1 › pending source verification persists through resize, reload and later source comparison (5.8s)
+  ✓   54 [desktop] › tests/smoke/homepage-b1.spec.ts:58:1 › city pause control stops rendering and respects reduced motion (16.9s)
+  ✓   46 [mobile] › tests/smoke/chapter-one.spec.ts:68:1 › ignore protects Ari without requiring clues and restart/reset require confirmation (33.8s)
+(node:37384) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   62 [mobile] › tests/smoke/chapter-one.spec.ts:92:1 › corrupt save is not silently overwritten (1.4s)
+  ✓   60 [desktop] › tests/smoke/living-city.spec.ts:53:1 › reduced motion avoids renderer downloads and supports a live preference change (10.8s)
+  ✓   64 [mobile] › tests/smoke/chapter-one.spec.ts:102:1 › blocked storage allows a memory-only Chapter 1 playthrough (2.7s)
+  ✓   56 [mobile] › tests/smoke/chapter-three.spec.ts:124:1 › portal comparison handles mistakes, keyboard input, reduced motion and narrow screens (18.5s)
+  ✓   61 [mobile] › tests/smoke/dual-os.spec.ts:45:1 › browser back, forward, inbox and home navigation never roll back gameplay (10.4s)
+  ✓   66 [mobile] › tests/smoke/chapter-one.spec.ts:112:1 › another tab pauses writes until the player reloads the latest progress (4.7s)
+  ✘   51 [desktop] › tests/smoke/chapter-one.spec.ts:167:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels (32.0s)
+  ✓   68 [mobile] › tests/smoke/dual-os.spec.ts:66:1 › desktop window controls and Saku fullscreen navigation are deliberate at boundaries (7.2s)
+(node:38005) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   65 [desktop] › tests/smoke/living-city.spec.ts:68:1 › init can finish after client navigation without appending a stale canvas (12.8s)
+  ✘   52 [desktop] › tests/smoke/homepage-b2.spec.ts:60:1 › repeated homepage visits release detached DOM and event listeners (37.3s)
+  ✓   63 [mobile] › tests/smoke/foundation.spec.ts:4:1 › routes, fresh-run states and direct refresh work without external requests (14.5s)
+(node:38297) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   70 [mobile] › tests/smoke/homepage.spec.ts:4:1 › homepage preview is keyboard accessible and cannot change a saved investigation (6.4s)
+  ✓   69 [mobile] › tests/smoke/chapter-one.spec.ts:129:1 › Chapter 1 can be completed using keyboard traversal and activation only (10.1s)
+  ✓   73 [mobile] › tests/smoke/foundation.spec.ts:21:1 › native app menu traps focus, closes with Escape and returns focus (2.9s)
+  ✓   77 [mobile] › tests/smoke/foundation.spec.ts:39:1 › keyboard app navigation and reduced motion remain usable (3.3s)
+  ✘   59 [mobile] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation (33.4s)
+(node:38799) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   76 [mobile] › tests/smoke/chapter-one.spec.ts:167:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels (10.9s)
+  ✓   78 [mobile] › tests/smoke/visual-dossier.spec.ts:4:1 › OS application browsing is keyboard accessible and never creates gameplay progress (11.2s)
+  ✘   71 [mobile] › tests/smoke/homepage-b2.spec.ts:3:1 › native scroll choreography reverses and reduced motion settles every presentation layer (20.4s)
+  ✓   79 [mobile] › tests/smoke/chapter-two.spec.ts:138:1 › Chapter 2 conversation and decision are operable by keyboard (7.3s)
+(node:39108) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   72 [desktop] › tests/smoke/living-city.spec.ts:84:1 › one scene resizes at all four requested widths without overflowing or blocking controls (21.7s)
+(node:39347) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   80 [mobile] › tests/smoke/window-management.spec.ts:21:1 › desktop dragging, bounds, cancellation and window controls never write game state (10.0s)
+  ✓   82 [mobile] › tests/smoke/chapter-two.spec.ts:165:1 › restarts Chapter 2 without retaining old conversation or journal state (6.3s)
+  ✘   67 [mobile] › tests/smoke/homepage-b1.spec.ts:4:1 › OS selectors share preview state without writing to a saved investigation (37.7s)
+  ✓   84 [desktop] › tests/smoke/living-city.spec.ts:101:1 › unsupported WebGL keeps the static city and start control available (3.9s)
+(node:39598) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   86 [desktop] › tests/smoke/living-city.spec.ts:118:1 › a missing city layer selects the static composite and leaves navigation usable (3.3s)
+  ✓   85 [mobile] › tests/smoke/window-management.spec.ts:60:1 › click and keyboard placement support comparison, reset and mobile reflow (10.2s)
+  ✓   81 [mobile] › tests/smoke/visual-dossier.spec.ts:19:1 › interactive homepage preview reserves layout while city artwork is delayed (18.1s)
+  ✘   75 [mobile] › tests/smoke/living-city.spec.ts:3:1 › city canvas remains behind HTML and pauses outside the hero (36.4s)
+  ✘   74 [mobile] › tests/smoke/homepage.spec.ts:25:1 › fresh homepage starts the real game and attributes all three statistics (37.8s)
+  ✓   89 [mobile] › tests/smoke/window-management.spec.ts:104:1 › Motion respects reduced motion while desktop drag remains direct and homepage content stays visible (8.3s)
+(node:40243) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:40251) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   90 [mobile] › tests/smoke/visual-dossier.spec.ts:38:1 › failed wallpaper leaves the OS, narrative and game actions usable (9.7s)
+  ✓   88 [desktop] › tests/smoke/living-city.spec.ts:128:1 › navigation during texture loading cancels the old scene without damaging its replacement (17.2s)
+  ✓   93 [mobile] › tests/smoke/visual-dossier.spec.ts:48:1 › touch and keyboard discovery feedback respects reduced motion and records only one clue (3.4s)
+  ✓   94 [desktop] › tests/smoke/living-city.spec.ts:147:1 › reduced motion downloads the static artwork without loading animated layer textures (2.3s)
+  ✓   92 [mobile] › tests/smoke/homepage.spec.ts:45:1 › homepage fits requested widths, keeps CTA above fold and respects reduced motion (9.5s)

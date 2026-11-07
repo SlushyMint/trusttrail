@@ -1,0 +1,917 @@
+
+Running 104 tests using 2 workers
+
+(node:40805) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:40804) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓    2 [desktop] › tests/smoke/chapter-one.spec.ts:4:1 › fully investigated Chapter 1 verifies independently and preserves its completed record (1.7s)
+  ✓    3 [desktop] › tests/smoke/chapter-one.spec.ts:35:1 › risky choice remains playable, never opens a real destination and invents no compromise (1.0s)
+  ✓    4 [desktop] › tests/smoke/chapter-one.spec.ts:48:1 › unfinished verification survives refresh; later evidence never earns retroactive awareness (1.4s)
+  ✓    1 [desktop] › tests/smoke/chapter-three.spec.ts:76:1 › finishes C1–C3 safely with meaningful comparisons, archived evidence and reloads (4.2s)
+  ✓    6 [desktop] › tests/smoke/chapter-three.spec.ts:112:1 › unsafe code and earlier identity disclosure lead to six recovery actions without a game over (5.4s)
+  ✓    5 [desktop] › tests/smoke/chapter-one.spec.ts:68:1 › ignore protects Ari without requiring clues and restart/reset require confirmation (7.6s)
+  ✓    8 [desktop] › tests/smoke/chapter-one.spec.ts:92:1 › corrupt save is not silently overwritten (517ms)
+  ✓    9 [desktop] › tests/smoke/chapter-one.spec.ts:102:1 › blocked storage allows a memory-only Chapter 1 playthrough (934ms)
+  ✓   10 [desktop] › tests/smoke/chapter-one.spec.ts:112:1 › another tab pauses writes until the player reloads the latest progress (1.2s)
+  ✓    7 [desktop] › tests/smoke/chapter-three.spec.ts:124:1 › portal comparison handles mistakes, keyboard input, reduced motion and narrow screens (4.8s)
+  ✓   11 [desktop] › tests/smoke/chapter-one.spec.ts:129:1 › Chapter 1 can be completed using keyboard traversal and activation only (2.4s)
+  ✓   12 [desktop] › tests/smoke/chapter-two.spec.ts:29:1 › investigates the recruiter across apps and preserves Chapter 1 records through completion (2.5s)
+  ✓   14 [desktop] › tests/smoke/chapter-two.spec.ts:81:4 › branch: Bantuan berubah menjadi paparan. remains playable without collecting evidence (1.8s)
+  ✓   15 [desktop] › tests/smoke/chapter-two.spec.ts:81:4 › branch: Batas yang tetap terjaga. remains playable without collecting evidence (1.7s)
+  ✓   16 [desktop] › tests/smoke/chapter-two.spec.ts:97:1 › resumes conversation and partial verification without duplicate credit or retroactive awareness (1.9s)
+  ✘   13 [desktop] › tests/smoke/chapter-one.spec.ts:167:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels (6.2s)
+(node:42006) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   18 [desktop] › tests/smoke/dual-os.spec.ts:4:1 › one persisted session keeps expanded clues and an uncommitted decision across shells (1.1s)
+  ✓   19 [desktop] › tests/smoke/dual-os.spec.ts:24:1 › pending source verification persists through resize, reload and later source comparison (1.2s)
+  ✓   20 [desktop] › tests/smoke/dual-os.spec.ts:45:1 › browser back, forward, inbox and home navigation never roll back gameplay (2.0s)
+  ✓   21 [desktop] › tests/smoke/dual-os.spec.ts:66:1 › desktop window controls and Saku fullscreen navigation are deliberate at boundaries (1.2s)
+  ✓   22 [desktop] › tests/smoke/foundation.spec.ts:4:1 › routes, fresh-run states and direct refresh work without external requests (2.4s)
+  ✓   23 [desktop] › tests/smoke/foundation.spec.ts:21:1 › native app menu traps focus, closes with Escape and returns focus (1.0s)
+  ✓   24 [desktop] › tests/smoke/foundation.spec.ts:39:1 › keyboard app navigation and reduced motion remain usable (1.6s)
+  ✓   25 [desktop] › tests/smoke/homepage-b1.spec.ts:4:1 › OS selectors share preview state without writing to a saved investigation (8.8s)
+  ✘   17 [desktop] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation (30.7s)
+(node:42848) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   27 [desktop] › tests/smoke/chapter-two.spec.ts:138:1 › Chapter 2 conversation and decision are operable by keyboard (4.0s)
+  ✓   26 [desktop] › tests/smoke/homepage-b1.spec.ts:29:1 › intelligence files retain scope, period, source and link through keyboard switching (15.8s)
+  ✓   28 [desktop] › tests/smoke/chapter-two.spec.ts:165:1 › restarts Chapter 2 without retaining old conversation or journal state (2.6s)
+  ✓   29 [desktop] › tests/smoke/homepage-b1.spec.ts:58:1 › city pause control stops rendering and respects reduced motion (3.6s)
+  ✓   31 [desktop] › tests/smoke/homepage.spec.ts:4:1 › homepage preview is keyboard accessible and cannot change a saved investigation (3.8s)
+  ✓   30 [desktop] › tests/smoke/homepage-b2.spec.ts:3:1 › native scroll choreography reverses and reduced motion settles every presentation layer (10.1s)
+  ✓   32 [desktop] › tests/smoke/homepage.spec.ts:25:1 › fresh homepage starts the real game and attributes all three statistics (23.2s)
+  ✓   34 [desktop] › tests/smoke/homepage.spec.ts:45:1 › homepage fits requested widths, keeps CTA above fold and respects reduced motion (2.6s)
+  ✘   33 [desktop] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable (33.9s)
+(node:43531) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   35 [desktop] › tests/smoke/living-city.spec.ts:3:1 › city canvas remains behind HTML and pauses outside the hero (15.7s)
+  ✘   36 [desktop] › tests/smoke/homepage-b2.spec.ts:60:1 › repeated homepage visits release detached DOM and event listeners (34.4s)
+  ✘   37 [desktop] › tests/smoke/living-city.spec.ts:22:1 › repeated client navigation owns one canvas and handles lost rendering (33.4s)
+(node:43810) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:43822) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   39 [desktop] › tests/smoke/living-city.spec.ts:43:1 › homepage works when the lazy renderer cannot be downloaded (1.1s)
+  ✓   38 [desktop] › tests/smoke/visual-dossier.spec.ts:4:1 › OS application browsing is keyboard accessible and never creates gameplay progress (2.5s)
+  ✓   40 [desktop] › tests/smoke/living-city.spec.ts:53:1 › reduced motion avoids renderer downloads and supports a live preference change (2.7s)
+  ✓   41 [desktop] › tests/smoke/visual-dossier.spec.ts:19:1 › interactive homepage preview reserves layout while city artwork is delayed (7.4s)
+  ✓   42 [desktop] › tests/smoke/living-city.spec.ts:68:1 › init can finish after client navigation without appending a stale canvas (6.5s)
+  ✓   43 [desktop] › tests/smoke/visual-dossier.spec.ts:38:1 › failed wallpaper leaves the OS, narrative and game actions usable (3.7s)
+  ✓   45 [desktop] › tests/smoke/visual-dossier.spec.ts:48:1 › touch and keyboard discovery feedback respects reduced motion and records only one clue (1.8s)
+  ✓   46 [desktop] › tests/smoke/window-management.spec.ts:21:1 › desktop dragging, bounds, cancellation and window controls never write game state (3.7s)
+  ✓   47 [desktop] › tests/smoke/window-management.spec.ts:60:1 › click and keyboard placement support comparison, reset and mobile reflow (3.7s)
+  ✓   48 [desktop] › tests/smoke/window-management.spec.ts:104:1 › Motion respects reduced motion while desktop drag remains direct and homepage content stays visible (2.7s)
+(node:44651) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   49 [mobile] › tests/smoke/chapter-one.spec.ts:4:1 › fully investigated Chapter 1 verifies independently and preserves its completed record (2.9s)
+  ✓   50 [mobile] › tests/smoke/chapter-one.spec.ts:35:1 › risky choice remains playable, never opens a real destination and invents no compromise (1.5s)
+  ✓   51 [mobile] › tests/smoke/chapter-one.spec.ts:48:1 › unfinished verification survives refresh; later evidence never earns retroactive awareness (2.2s)
+  ✓   44 [desktop] › tests/smoke/living-city.spec.ts:84:1 › one scene resizes at all four requested widths without overflowing or blocking controls (23.0s)
+  ✓   53 [desktop] › tests/smoke/living-city.spec.ts:101:1 › unsupported WebGL keeps the static city and start control available (869ms)
+  ✓   54 [desktop] › tests/smoke/living-city.spec.ts:118:1 › a missing city layer selects the static composite and leaves navigation usable (985ms)
+  ✓   55 [desktop] › tests/smoke/living-city.spec.ts:128:1 › navigation during texture loading cancels the old scene without damaging its replacement (6.6s)
+  ✓   56 [desktop] › tests/smoke/living-city.spec.ts:147:1 › reduced motion downloads the static artwork without loading animated layer textures (1.1s)
+(node:45190) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   52 [mobile] › tests/smoke/chapter-one.spec.ts:68:1 › ignore protects Ari without requiring clues and restart/reset require confirmation (10.8s)
+  ✓   58 [mobile] › tests/smoke/chapter-one.spec.ts:92:1 › corrupt save is not silently overwritten (522ms)
+  ✓   59 [mobile] › tests/smoke/chapter-one.spec.ts:102:1 › blocked storage allows a memory-only Chapter 1 playthrough (897ms)
+  ✓   60 [mobile] › tests/smoke/chapter-one.spec.ts:112:1 › another tab pauses writes until the player reloads the latest progress (1.0s)
+  ✓   57 [mobile] › tests/smoke/chapter-three.spec.ts:76:1 › finishes C1–C3 safely with meaningful comparisons, archived evidence and reloads (4.1s)
+  ✓   62 [mobile] › tests/smoke/chapter-three.spec.ts:112:1 › unsafe code and earlier identity disclosure lead to six recovery actions without a game over (3.4s)
+  ✓   63 [mobile] › tests/smoke/chapter-three.spec.ts:124:1 › portal comparison handles mistakes, keyboard input, reduced motion and narrow screens (4.8s)
+  ✓   64 [mobile] › tests/smoke/chapter-two.spec.ts:29:1 › investigates the recruiter across apps and preserves Chapter 1 records through completion (2.6s)
+  ✓   65 [mobile] › tests/smoke/chapter-two.spec.ts:81:4 › branch: Bantuan berubah menjadi paparan. remains playable without collecting evidence (1.7s)
+  ✓   66 [mobile] › tests/smoke/chapter-two.spec.ts:81:4 › branch: Batas yang tetap terjaga. remains playable without collecting evidence (1.6s)
+  ✓   67 [mobile] › tests/smoke/chapter-two.spec.ts:97:1 › resumes conversation and partial verification without duplicate credit or retroactive awareness (1.9s)
+  ✘   61 [mobile] › tests/smoke/chapter-one.spec.ts:129:1 › Chapter 1 can be completed using keyboard traversal and activation only (30.2s)
+(node:45969) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   69 [mobile] › tests/smoke/chapter-one.spec.ts:167:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels (2.6s)
+  ✓   70 [mobile] › tests/smoke/dual-os.spec.ts:4:1 › one persisted session keeps expanded clues and an uncommitted decision across shells (972ms)
+  ✓   71 [mobile] › tests/smoke/dual-os.spec.ts:24:1 › pending source verification persists through resize, reload and later source comparison (1.2s)
+  ✓   72 [mobile] › tests/smoke/dual-os.spec.ts:45:1 › browser back, forward, inbox and home navigation never roll back gameplay (1.9s)
+  ✓   73 [mobile] › tests/smoke/dual-os.spec.ts:66:1 › desktop window controls and Saku fullscreen navigation are deliberate at boundaries (1.4s)
+  ✓   74 [mobile] › tests/smoke/foundation.spec.ts:4:1 › routes, fresh-run states and direct refresh work without external requests (1.4s)
+  ✓   75 [mobile] › tests/smoke/foundation.spec.ts:21:1 › native app menu traps focus, closes with Escape and returns focus (629ms)
+  ✓   76 [mobile] › tests/smoke/foundation.spec.ts:39:1 › keyboard app navigation and reduced motion remain usable (1.3s)
+  ✓   77 [mobile] › tests/smoke/homepage-b1.spec.ts:4:1 › OS selectors share preview state without writing to a saved investigation (6.7s)
+  ✘   68 [mobile] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation (31.1s)
+(node:46820) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   79 [mobile] › tests/smoke/chapter-two.spec.ts:138:1 › Chapter 2 conversation and decision are operable by keyboard (3.2s)
+  ✓   80 [mobile] › tests/smoke/chapter-two.spec.ts:165:1 › restarts Chapter 2 without retaining old conversation or journal state (2.9s)
+  ✓   78 [mobile] › tests/smoke/homepage-b1.spec.ts:29:1 › intelligence files retain scope, period, source and link through keyboard switching (12.8s)
+  ✓   81 [mobile] › tests/smoke/homepage-b2.spec.ts:3:1 › native scroll choreography reverses and reduced motion settles every presentation layer (9.8s)
+  ✓   82 [mobile] › tests/smoke/homepage-b1.spec.ts:58:1 › city pause control stops rendering and respects reduced motion (4.5s)
+  ✓   84 [mobile] › tests/smoke/homepage.spec.ts:4:1 › homepage preview is keyboard accessible and cannot change a saved investigation (2.4s)
+  ✓   85 [mobile] › tests/smoke/homepage.spec.ts:25:1 › fresh homepage starts the real game and attributes all three statistics (16.7s)
+  ✓   86 [mobile] › tests/smoke/homepage.spec.ts:45:1 › homepage fits requested widths, keeps CTA above fold and respects reduced motion (4.8s)
+  ✘   87 [mobile] › tests/smoke/living-city.spec.ts:3:1 › city canvas remains behind HTML and pauses outside the hero (551ms)
+(node:47479) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   88 [mobile] › tests/smoke/living-city.spec.ts:22:1 › repeated client navigation owns one canvas and handles lost rendering (672ms)
+(node:47657) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   89 [mobile] › tests/smoke/living-city.spec.ts:43:1 › homepage works when the lazy renderer cannot be downloaded (687ms)
+  ✓   83 [mobile] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable (28.6s)
+  ✘   90 [mobile] › tests/smoke/homepage-b2.spec.ts:60:1 › repeated homepage visits release detached DOM and event listeners (208ms)
+(node:47835) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:47897) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   91 [mobile] › tests/smoke/living-city.spec.ts:53:1 › reduced motion avoids renderer downloads and supports a live preference change (250ms)
+  ✘   92 [mobile] › tests/smoke/visual-dossier.spec.ts:4:1 › OS application browsing is keyboard accessible and never creates gameplay progress (276ms)
+(node:48179) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:48251) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   93 [mobile] › tests/smoke/living-city.spec.ts:68:1 › init can finish after client navigation without appending a stale canvas (279ms)
+  ✘   94 [mobile] › tests/smoke/visual-dossier.spec.ts:19:1 › interactive homepage preview reserves layout while city artwork is delayed (383ms)
+(node:48562) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:48603) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   95 [mobile] › tests/smoke/living-city.spec.ts:84:1 › one scene resizes at all four requested widths without overflowing or blocking controls (250ms)
+  ✘   96 [mobile] › tests/smoke/visual-dossier.spec.ts:38:1 › failed wallpaper leaves the OS, narrative and game actions usable (270ms)
+(node:48840) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:48967) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   97 [mobile] › tests/smoke/living-city.spec.ts:101:1 › unsupported WebGL keeps the static city and start control available (242ms)
+  ✘   98 [mobile] › tests/smoke/visual-dossier.spec.ts:48:1 › touch and keyboard discovery feedback respects reduced motion and records only one clue (272ms)
+(node:49197) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:49320) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   99 [mobile] › tests/smoke/living-city.spec.ts:118:1 › a missing city layer selects the static composite and leaves navigation usable (251ms)
+  ✘  100 [mobile] › tests/smoke/window-management.spec.ts:21:1 › desktop dragging, bounds, cancellation and window controls never write game state (272ms)
+(node:49550) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:49675) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  101 [mobile] › tests/smoke/living-city.spec.ts:128:1 › navigation during texture loading cancels the old scene without damaging its replacement (260ms)
+  ✘  102 [mobile] › tests/smoke/window-management.spec.ts:60:1 › click and keyboard placement support comparison, reset and mobile reflow (278ms)
+(node:49916) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:50033) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  103 [mobile] › tests/smoke/living-city.spec.ts:147:1 › reduced motion downloads the static artwork without loading animated layer textures (257ms)
+  ✘  104 [mobile] › tests/smoke/window-management.spec.ts:104:1 › Motion respects reduced motion while desktop drag remains direct and homepage content stays visible (255ms)
+
+
+  1) [desktop] › tests/smoke/chapter-one.spec.ts:167:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('button', { name: 'Bandingkan dengan undangan' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('button', { name: 'Bandingkan dengan undangan' }) with timeout 5000ms
+      - waiting for getByRole('button', { name: 'Bandingkan dengan undangan' })
+
+
+      176 |     if (await inspectSource.isVisible()) await inspectSource.click();
+      177 |     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    > 178 |     await expect(page.getByRole('button', { name: 'Bandingkan dengan undangan' })).toBeVisible();
+          |                                                                                    ^
+      179 |   }
+      180 | });
+      181 |
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/chapter-one.spec.ts:178:84
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/chapter-one-active-email-a-72cb9-320-360-768-and-1440-pixels-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5a-evidence/browser-results/chapter-one-active-email-a-72cb9-320-360-768-and-1440-pixels-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/chapter-one-active-email-a-72cb9-320-360-768-and-1440-pixels-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/chapter-one-active-email-a-72cb9-320-360-768-and-1440-pixels-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Ganti aplikasi', exact: true })
+        - locator resolved to <button id="os-menu-trigger" aria-haspopup="dialog" aria-label="Ganti aplikasi">…</button>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+      - element was detached from the DOM, retrying
+
+
+       at helpers.ts:24
+
+      22 |   if (await page.locator('.trusttrail-os').getAttribute('data-os') === 'desktop') await page.getByRole('button', { name: `Tampilkan ${name}`, exact: true }).click();
+      23 |   else {
+    > 24 |     await page.getByRole('button', { name: 'Ganti aplikasi', exact: true }).click();
+         |                                                                             ^
+      25 |     await page.getByRole('dialog', { name: 'Menu TrustTrail' }).getByRole('button', { name: new RegExp(`^${name}`) }).click();
+      26 |   }
+      27 | }
+        at openGameApp (/home/muhammadshumin/Projects/trusttrail/tests/smoke/helpers.ts:24:77)
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/chapter-two.spec.ts:126:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/chapter-two-reflows-profil-5102f-without-losing-conversation-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5a-evidence/browser-results/chapter-two-reflows-profil-5102f-without-losing-conversation-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/chapter-two-reflows-profil-5102f-without-losing-conversation-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/chapter-two-reflows-profil-5102f-without-losing-conversation-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [desktop] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator: locator('.portal-intel-files button').nth(2)
+    Expected: focused
+    Error: Test timeout of 30000ms exceeded.
+
+    Call log:
+      - Expect "toBeFocused" locator('.portal-intel-files button').nth(2) with timeout 5000ms
+      - waiting for locator('.portal-intel-files button').nth(2)
+      - Test timeout of 30000ms exceeded.
+
+
+      46 |     await files.nth(index).focus();
+      47 |     await page.keyboard.press('Enter');
+    > 48 |     await expect(files.nth(index)).toBeFocused();
+         |                                    ^
+      49 |   }
+      50 |   await expect(page.locator('.portal-stat-number')).toHaveText('36,3%');
+      51 |   await expect(page.locator('#intel-detail')).toContainText('Survei IMDI 2025');
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/homepage-b2.spec.ts:48:36
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5a-evidence/browser-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/homepage-b2-rapid-OS-and-a-6d965-t-focus-and-geometry-stable-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [desktop] › tests/smoke/homepage-b2.spec.ts:60:1 › repeated homepage visits release detached DOM and event listeners 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('link', { name: 'Panduan & privasi' })
+
+
+      73 |     await page.goBack();
+      74 |     await expect(page.locator('.living-city')).toHaveAttribute('data-city-status', 'ready');
+    > 75 |     await page.getByRole('link', { name: 'Panduan & privasi' }).click();
+         |                                                                 ^
+      76 |     await expect(page.locator('.living-city canvas')).toHaveCount(0);
+      77 |   }
+      78 |   // Runtime caches may warm, but old homepage trees/listeners must be released.
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/homepage-b2.spec.ts:75:65
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5a-evidence/browser-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [desktop] › tests/smoke/living-city.spec.ts:22:1 › repeated client navigation owns one canvas and handles lost rendering 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/living-city-repeated-clien-9fc57--and-handles-lost-rendering-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5a-evidence/browser-results/living-city-repeated-clien-9fc57--and-handles-lost-rendering-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/living-city-repeated-clien-9fc57--and-handles-lost-rendering-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/living-city-repeated-clien-9fc57--and-handles-lost-rendering-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [mobile] › tests/smoke/chapter-one.spec.ts:129:1 › Chapter 1 can be completed using keyboard traversal and activation only 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.evaluate: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: /Tentukan langkah/ })
+
+
+      132 |   async function tabTo(target: Locator) {
+      133 |     for (let attempt = 0; attempt < 60; attempt++) {
+    > 134 |       if (await target.evaluate(element => element === document.activeElement)) return;
+          |                        ^
+      135 |       await page.keyboard.press('Tab');
+      136 |     }
+      137 |     throw new Error(`Control was not reachable by Tab: ${await target.innerText()}`);
+        at tabTo (/home/muhammadshumin/Projects/trusttrail/tests/smoke/chapter-one.spec.ts:134:24)
+        at activate (/home/muhammadshumin/Projects/trusttrail/tests/smoke/chapter-one.spec.ts:139:52)
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/chapter-one.spec.ts:155:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/chapter-one-Chapter-1-can--1a640-aversal-and-activation-only-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5a-evidence/browser-results/chapter-one-Chapter-1-can--1a640-aversal-and-activation-only-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/chapter-one-Chapter-1-can--1a640-aversal-and-activation-only-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/chapter-one-Chapter-1-can--1a640-aversal-and-activation-only-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [mobile] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Ganti aplikasi', exact: true })
+
+
+       at helpers.ts:24
+
+      22 |   if (await page.locator('.trusttrail-os').getAttribute('data-os') === 'desktop') await page.getByRole('button', { name: `Tampilkan ${name}`, exact: true }).click();
+      23 |   else {
+    > 24 |     await page.getByRole('button', { name: 'Ganti aplikasi', exact: true }).click();
+         |                                                                             ^
+      25 |     await page.getByRole('dialog', { name: 'Menu TrustTrail' }).getByRole('button', { name: new RegExp(`^${name}`) }).click();
+      26 |   }
+      27 | }
+        at openGameApp (/home/muhammadshumin/Projects/trusttrail/tests/smoke/helpers.ts:24:77)
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/chapter-two.spec.ts:126:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/chapter-two-reflows-profil-5102f-without-losing-conversation-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5a-evidence/browser-results/chapter-two-reflows-profil-5102f-without-losing-conversation-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/chapter-two-reflows-profil-5102f-without-losing-conversation-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/chapter-two-reflows-profil-5102f-without-losing-conversation-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) [mobile] › tests/smoke/homepage-b2.spec.ts:60:1 › repeated homepage visits release detached DOM and event listeners 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/
+    Call log:
+      - navigating to "http://127.0.0.1:4173/", waiting until "load"
+
+
+      66 |     return Object.fromEntries(metrics.filter(metric => ['Nodes', 'JSEventListeners'].includes(metric.name)).map(metric => [metric.name, metric.value]));
+      67 |   }
+    > 68 |   await page.goto('/');
+         |              ^
+      69 |   await expect(page.locator('.living-city')).toHaveAttribute('data-city-status', 'ready');
+      70 |   await page.getByRole('link', { name: 'Panduan & privasi' }).click();
+      71 |   const baseline = await readMetrics();
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/homepage-b2.spec.ts:68:14
+
+    Error Context: docs/phase-5a-evidence/browser-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/homepage-b2-repeated-homep-1c860-hed-DOM-and-event-listeners-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  9) [mobile] › tests/smoke/living-city.spec.ts:3:1 › city canvas remains behind HTML and pauses outside the hero 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/
+    Call log:
+      - navigating to "http://127.0.0.1:4173/", waiting until "load"
+
+
+      2 |
+      3 | test('city canvas remains behind HTML and pauses outside the hero', async ({ page }) => {
+    > 4 |   await page.goto('/');
+        |              ^
+      5 |   const city = page.locator('.living-city');
+      6 |   await expect(city).toHaveAttribute('data-city-status', 'ready');
+      7 |   await expect(city.locator('canvas')).toHaveCount(1);
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/living-city.spec.ts:4:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/living-city-city-canvas-re-be963-and-pauses-outside-the-hero-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5a-evidence/browser-results/living-city-city-canvas-re-be963-and-pauses-outside-the-hero-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/living-city-city-canvas-re-be963-and-pauses-outside-the-hero-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/living-city-city-canvas-re-be963-and-pauses-outside-the-hero-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10) [mobile] › tests/smoke/living-city.spec.ts:22:1 › repeated client navigation owns one canvas and handles lost rendering 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/
+    Call log:
+      - navigating to "http://127.0.0.1:4173/", waiting until "load"
+
+
+      23 |   const errors: string[] = [];
+      24 |   page.on('pageerror', error => errors.push(error.message));
+    > 25 |   await page.goto('/');
+         |              ^
+      26 |   for (let i = 0; i < 4; i++) {
+      27 |     await expect(page.locator('.living-city')).toHaveAttribute('data-city-status', 'ready');
+      28 |     await expect(page.locator('.living-city-canvas')).toHaveCount(1);
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/living-city.spec.ts:25:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/living-city-repeated-clien-9fc57--and-handles-lost-rendering-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5a-evidence/browser-results/living-city-repeated-clien-9fc57--and-handles-lost-rendering-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/living-city-repeated-clien-9fc57--and-handles-lost-rendering-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/living-city-repeated-clien-9fc57--and-handles-lost-rendering-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  11) [mobile] › tests/smoke/living-city.spec.ts:43:1 › homepage works when the lazy renderer cannot be downloaded 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/
+    Call log:
+      - navigating to "http://127.0.0.1:4173/", waiting until "load"
+
+
+      43 | test('homepage works when the lazy renderer cannot be downloaded', async ({ page }) => {
+      44 |   await page.route('**/createCityScene-*.js', route => route.abort());
+    > 45 |   await page.goto('/');
+         |              ^
+      46 |   await expect(page.locator('.living-city')).toHaveAttribute('data-city-status', 'fallback');
+      47 |   await expect(page.locator('.living-city-fallback')).toBeVisible();
+      48 |   await expect(page.locator('.living-city-canvas')).toHaveCount(0);
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/living-city.spec.ts:45:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/living-city-homepage-works-b2c97-nderer-cannot-be-downloaded-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5a-evidence/browser-results/living-city-homepage-works-b2c97-nderer-cannot-be-downloaded-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/living-city-homepage-works-b2c97-nderer-cannot-be-downloaded-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/living-city-homepage-works-b2c97-nderer-cannot-be-downloaded-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  12) [mobile] › tests/smoke/living-city.spec.ts:53:1 › reduced motion avoids renderer downloads and supports a live preference change 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/
+    Call log:
+      - navigating to "http://127.0.0.1:4173/", waiting until "load"
+
+
+      55 |   page.on('request', request => { if (/createCityScene-/.test(request.url())) rendererRequests.push(request.url()); });
+      56 |   await page.emulateMedia({ reducedMotion: 'reduce' });
+    > 57 |   await page.goto('/');
+         |              ^
+      58 |   await expect(page.locator('.living-city')).toHaveAttribute('data-city-status', 'reduced-motion');
+      59 |   await expect(page.locator('.living-city-canvas')).toHaveCount(0);
+      60 |   expect(rendererRequests).toEqual([]);
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/living-city.spec.ts:57:14
+
+    Error Context: docs/phase-5a-evidence/browser-results/living-city-reduced-motion-a6702-ts-a-live-preference-change-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/living-city-reduced-motion-a6702-ts-a-live-preference-change-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/living-city-reduced-motion-a6702-ts-a-live-preference-change-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  13) [mobile] › tests/smoke/living-city.spec.ts:68:1 › init can finish after client navigation without appending a stale canvas 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/
+    Call log:
+      - navigating to "http://127.0.0.1:4173/", waiting until "load"
+
+
+      72 |   const gate = new Promise<void>(resolve => { release = resolve; });
+      73 |   await page.route('**/WebGLRenderer-*.js', async route => { requested(); await gate; await route.continue(); });
+    > 74 |   await page.goto('/');
+         |              ^
+      75 |   await requestedPromise;
+      76 |   await page.getByRole('link', { name: 'Panduan & privasi' }).click();
+      77 |   release();
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/living-city.spec.ts:74:14
+
+    Error Context: docs/phase-5a-evidence/browser-results/living-city-init-can-finis-ade75-ut-appending-a-stale-canvas-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/living-city-init-can-finis-ade75-ut-appending-a-stale-canvas-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/living-city-init-can-finis-ade75-ut-appending-a-stale-canvas-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  14) [mobile] › tests/smoke/living-city.spec.ts:84:1 › one scene resizes at all four requested widths without overflowing or blocking controls 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/
+    Call log:
+      - navigating to "http://127.0.0.1:4173/", waiting until "load"
+
+
+      83 |
+      84 | test('one scene resizes at all four requested widths without overflowing or blocking controls', async ({ page }) => {
+    > 85 |   await page.goto('/');
+         |              ^
+      86 |   const city = page.locator('.living-city');
+      87 |   await expect(city).toHaveAttribute('data-city-status', 'ready');
+      88 |   for (const width of [1440, 768, 390, 360]) {
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/living-city.spec.ts:85:14
+
+    Error Context: docs/phase-5a-evidence/browser-results/living-city-one-scene-resi-be856-lowing-or-blocking-controls-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/living-city-one-scene-resi-be856-lowing-or-blocking-controls-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/living-city-one-scene-resi-be856-lowing-or-blocking-controls-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  15) [mobile] › tests/smoke/living-city.spec.ts:101:1 › unsupported WebGL keeps the static city and start control available 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/
+    Call log:
+      - navigating to "http://127.0.0.1:4173/", waiting until "load"
+
+
+      108 |     } as typeof getContext;
+      109 |   });
+    > 110 |   await page.goto('/');
+          |              ^
+      111 |   await expect(page.locator('.living-city')).toHaveAttribute('data-city-status', 'fallback');
+      112 |   await expect(page.locator('.living-city-fallback')).toBeVisible();
+      113 |   await expect(page.locator('.living-city canvas')).toHaveCount(0);
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/living-city.spec.ts:110:14
+
+    Error Context: docs/phase-5a-evidence/browser-results/living-city-unsupported-We-66ed2-and-start-control-available-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/living-city-unsupported-We-66ed2-and-start-control-available-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/living-city-unsupported-We-66ed2-and-start-control-available-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  16) [mobile] › tests/smoke/living-city.spec.ts:118:1 › a missing city layer selects the static composite and leaves navigation usable 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/
+    Call log:
+      - navigating to "http://127.0.0.1:4173/", waiting until "load"
+
+
+      118 | test('a missing city layer selects the static composite and leaves navigation usable', async ({ page }) => {
+      119 |   await page.route(/\/city-mid(-compact)?\.webp$/, route => route.abort());
+    > 120 |   await page.goto('/');
+          |              ^
+      121 |   await expect(page.locator('.living-city')).toHaveAttribute('data-city-status', 'fallback');
+      122 |   await expect(page.locator('.living-city canvas')).toHaveCount(0);
+      123 |   await expect(page.locator('.living-city-fallback img')).toHaveAttribute('src', '/assets/living-city/city-static.webp');
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/living-city.spec.ts:120:14
+
+    Error Context: docs/phase-5a-evidence/browser-results/living-city-a-missing-city-c7145-nd-leaves-navigation-usable-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/living-city-a-missing-city-c7145-nd-leaves-navigation-usable-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/living-city-a-missing-city-c7145-nd-leaves-navigation-usable-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  17) [mobile] › tests/smoke/living-city.spec.ts:128:1 › navigation during texture loading cancels the old scene without damaging its replacement 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/
+    Call log:
+      - navigating to "http://127.0.0.1:4173/", waiting until "domcontentloaded"
+
+
+      134 |   const gate = new Promise<void>(resolve => { release = resolve; });
+      135 |   await page.route(/\/city-mid(-compact)?\.webp$/, async route => { requested(); await gate; await route.continue().catch(() => {}); });
+    > 136 |   await page.goto('/', { waitUntil: 'domcontentloaded' });
+          |              ^
+      137 |   await requestStarted;
+      138 |   await page.getByRole('link', { name: 'Panduan & privasi' }).click();
+      139 |   release();
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/living-city.spec.ts:136:14
+
+    Error Context: docs/phase-5a-evidence/browser-results/living-city-navigation-dur-46f46-ut-damaging-its-replacement-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/living-city-navigation-dur-46f46-ut-damaging-its-replacement-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/living-city-navigation-dur-46f46-ut-damaging-its-replacement-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  18) [mobile] › tests/smoke/living-city.spec.ts:147:1 › reduced motion downloads the static artwork without loading animated layer textures 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/
+    Call log:
+      - navigating to "http://127.0.0.1:4173/", waiting until "load"
+
+
+      149 |   page.on('request', request => { if (request.url().includes('/assets/living-city/')) requested.push(new URL(request.url()).pathname); });
+      150 |   await page.emulateMedia({ reducedMotion: 'reduce' });
+    > 151 |   await page.goto('/');
+          |              ^
+      152 |   await expect(page.locator('.living-city')).toHaveAttribute('data-city-status', 'reduced-motion');
+      153 |   const compact = (page.viewportSize()?.width ?? 1440) < 768;
+      154 |   expect(requested).toEqual([`/assets/living-city/city-static${compact ? '-compact' : ''}.webp`]);
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/living-city.spec.ts:151:14
+
+    Error Context: docs/phase-5a-evidence/browser-results/living-city-reduced-motion-6aba8-ing-animated-layer-textures-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/living-city-reduced-motion-6aba8-ing-animated-layer-textures-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/living-city-reduced-motion-6aba8-ing-animated-layer-textures-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  19) [mobile] › tests/smoke/visual-dossier.spec.ts:4:1 › OS application browsing is keyboard accessible and never creates gameplay progress 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/play
+    Call log:
+      - navigating to "http://127.0.0.1:4173/play", waiting until "load"
+
+
+      3 |
+      4 | test('OS application browsing is keyboard accessible and never creates gameplay progress', async ({ page }) => {
+    > 5 |   await page.goto('/play');
+        |              ^
+      6 |   const before = await page.evaluate(key => localStorage.getItem(key), saveKey);
+      7 |   await page.locator('#os-menu-trigger').focus();
+      8 |   await page.keyboard.press('Enter');
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/visual-dossier.spec.ts:5:14
+
+    Error Context: docs/phase-5a-evidence/browser-results/visual-dossier-OS-applicat-c3f39-r-creates-gameplay-progress-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/visual-dossier-OS-applicat-c3f39-r-creates-gameplay-progress-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/visual-dossier-OS-applicat-c3f39-r-creates-gameplay-progress-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  20) [mobile] › tests/smoke/visual-dossier.spec.ts:19:1 › interactive homepage preview reserves layout while city artwork is delayed 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/
+    Call log:
+      - navigating to "http://127.0.0.1:4173/", waiting until "domcontentloaded"
+
+
+      21 |   const gate = new Promise<void>(resolve => { release = resolve; });
+      22 |   await page.route(/\/city-mid(-compact)?\.webp$/, async route => { await gate; await route.continue(); });
+    > 23 |   await page.goto('/', { waitUntil: 'domcontentloaded' });
+         |              ^
+      24 |   await page.evaluate(() => document.fonts.ready);
+      25 |   const frame = page.locator('.portal-game-preview');
+      26 |   const before = await frame.evaluate(element => ({ width: (element as HTMLElement).offsetWidth, height: (element as HTMLElement).offsetHeight }));
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/visual-dossier.spec.ts:23:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/visual-dossier-interactive-872ed-ile-city-artwork-is-delayed-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs/phase-5a-evidence/browser-results/visual-dossier-interactive-872ed-ile-city-artwork-is-delayed-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/visual-dossier-interactive-872ed-ile-city-artwork-is-delayed-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/visual-dossier-interactive-872ed-ile-city-artwork-is-delayed-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  21) [mobile] › tests/smoke/visual-dossier.spec.ts:38:1 › failed wallpaper leaves the OS, narrative and game actions usable 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/
+    Call log:
+      - navigating to "http://127.0.0.1:4173/", waiting until "load"
+
+
+      38 | test('failed wallpaper leaves the OS, narrative and game actions usable', async ({ page }) => {
+      39 |   await page.route('**/pixel/relay-coast.png', route => route.abort());
+    > 40 |   await page.goto('/');
+         |              ^
+      41 |   await page.getByRole('button', { name: /Mulai investigasi/ }).first().click();
+      42 |   await expect(page.getByRole('button', { name: /Buka berkas pertama/ })).toBeVisible();
+      43 |   await page.getByRole('button', { name: /Buka berkas pertama/ }).click();
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/visual-dossier.spec.ts:40:14
+
+    Error Context: docs/phase-5a-evidence/browser-results/visual-dossier-failed-wall-e2185-ive-and-game-actions-usable-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/visual-dossier-failed-wall-e2185-ive-and-game-actions-usable-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/visual-dossier-failed-wall-e2185-ive-and-game-actions-usable-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  22) [mobile] › tests/smoke/visual-dossier.spec.ts:48:1 › touch and keyboard discovery feedback respects reduced motion and records only one clue 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/play
+    Call log:
+      - navigating to "http://127.0.0.1:4173/play", waiting until "load"
+
+
+       at helpers.ts:5
+
+      3 | export const saveKey = 'trusttrail:save:v1';
+      4 | export async function enterChapterOne(page: Page) {
+    > 5 |   await page.goto('/play');
+        |              ^
+      6 |   await page.getByRole('button', { name: /Mulai investigasi/ }).click();
+      7 |   await page.getByRole('button', { name: /Buka berkas pertama/ }).click();
+      8 |   for (let i = 0; i < 3; i++) await page.getByRole('button', { name: /Lanjut cerita/ }).click();
+        at enterChapterOne (/home/muhammadshumin/Projects/trusttrail/tests/smoke/helpers.ts:5:14)
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/visual-dossier.spec.ts:50:9
+
+    Error Context: docs/phase-5a-evidence/browser-results/visual-dossier-touch-and-k-f29c3-n-and-records-only-one-clue-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/visual-dossier-touch-and-k-f29c3-n-and-records-only-one-clue-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/visual-dossier-touch-and-k-f29c3-n-and-records-only-one-clue-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  23) [mobile] › tests/smoke/window-management.spec.ts:21:1 › desktop dragging, bounds, cancellation and window controls never write game state 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/play
+    Call log:
+      - navigating to "http://127.0.0.1:4173/play", waiting until "load"
+
+
+       at helpers.ts:5
+
+      3 | export const saveKey = 'trusttrail:save:v1';
+      4 | export async function enterChapterOne(page: Page) {
+    > 5 |   await page.goto('/play');
+        |              ^
+      6 |   await page.getByRole('button', { name: /Mulai investigasi/ }).click();
+      7 |   await page.getByRole('button', { name: /Buka berkas pertama/ }).click();
+      8 |   for (let i = 0; i < 3; i++) await page.getByRole('button', { name: /Lanjut cerita/ }).click();
+        at enterChapterOne (/home/muhammadshumin/Projects/trusttrail/tests/smoke/helpers.ts:5:14)
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/window-management.spec.ts:23:9
+
+    Error Context: docs/phase-5a-evidence/browser-results/window-management-desktop--6e293-rols-never-write-game-state-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/window-management-desktop--6e293-rols-never-write-game-state-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/window-management-desktop--6e293-rols-never-write-game-state-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  24) [mobile] › tests/smoke/window-management.spec.ts:60:1 › click and keyboard placement support comparison, reset and mobile reflow 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/play
+    Call log:
+      - navigating to "http://127.0.0.1:4173/play", waiting until "load"
+
+
+       at helpers.ts:5
+
+      3 | export const saveKey = 'trusttrail:save:v1';
+      4 | export async function enterChapterOne(page: Page) {
+    > 5 |   await page.goto('/play');
+        |              ^
+      6 |   await page.getByRole('button', { name: /Mulai investigasi/ }).click();
+      7 |   await page.getByRole('button', { name: /Buka berkas pertama/ }).click();
+      8 |   for (let i = 0; i < 3; i++) await page.getByRole('button', { name: /Lanjut cerita/ }).click();
+        at enterChapterOne (/home/muhammadshumin/Projects/trusttrail/tests/smoke/helpers.ts:5:14)
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/window-management.spec.ts:62:9
+
+    Error Context: docs/phase-5a-evidence/browser-results/window-management-click-an-cc4e0-son-reset-and-mobile-reflow-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/window-management-click-an-cc4e0-son-reset-and-mobile-reflow-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/window-management-click-an-cc4e0-son-reset-and-mobile-reflow-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  25) [mobile] › tests/smoke/window-management.spec.ts:104:1 › Motion respects reduced motion while desktop drag remains direct and homepage content stays visible 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/
+    Call log:
+      - navigating to "http://127.0.0.1:4173/", waiting until "load"
+
+
+      104 | test('Motion respects reduced motion while desktop drag remains direct and homepage content stays visible', async ({ page }) => {
+      105 |   await page.emulateMedia({ reducedMotion: 'reduce' });
+    > 106 |   await page.goto('/');
+          |              ^
+      107 |   for (const width of [360, 390, 768, 1440]) {
+      108 |     await page.setViewportSize({ width, height: width < 768 ? 844 : 1000 });
+      109 |     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+        at /home/muhammadshumin/Projects/trusttrail/tests/smoke/window-management.spec.ts:106:14
+
+    Error Context: docs/phase-5a-evidence/browser-results/window-management-Motion-r-15749-epage-content-stays-visible-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs/phase-5a-evidence/browser-results/window-management-Motion-r-15749-epage-content-stays-visible-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace docs/phase-5a-evidence/browser-results/window-management-Motion-r-15749-epage-content-stays-visible-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  25 failed
+    [desktop] › tests/smoke/chapter-one.spec.ts:167:1 › active email and source comparison reflow at 320, 360, 768 and 1440 pixels 
+    [desktop] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation 
+    [desktop] › tests/smoke/homepage-b2.spec.ts:27:1 › rapid OS and archive selections keep final content, focus and geometry stable 
+    [desktop] › tests/smoke/homepage-b2.spec.ts:60:1 › repeated homepage visits release detached DOM and event listeners 
+    [desktop] › tests/smoke/living-city.spec.ts:22:1 › repeated client navigation owns one canvas and handles lost rendering 
+    [mobile] › tests/smoke/chapter-one.spec.ts:129:1 › Chapter 1 can be completed using keyboard traversal and activation only 
+    [mobile] › tests/smoke/chapter-two.spec.ts:120:1 › reflows profile, chat and source at 320, 390, 768 and 1440 without losing conversation 
+    [mobile] › tests/smoke/homepage-b2.spec.ts:60:1 › repeated homepage visits release detached DOM and event listeners 
+    [mobile] › tests/smoke/living-city.spec.ts:3:1 › city canvas remains behind HTML and pauses outside the hero 
+    [mobile] › tests/smoke/living-city.spec.ts:22:1 › repeated client navigation owns one canvas and handles lost rendering 
+    [mobile] › tests/smoke/living-city.spec.ts:43:1 › homepage works when the lazy renderer cannot be downloaded 
+    [mobile] › tests/smoke/living-city.spec.ts:53:1 › reduced motion avoids renderer downloads and supports a live preference change 
+    [mobile] › tests/smoke/living-city.spec.ts:68:1 › init can finish after client navigation without appending a stale canvas 
+    [mobile] › tests/smoke/living-city.spec.ts:84:1 › one scene resizes at all four requested widths without overflowing or blocking controls 
+    [mobile] › tests/smoke/living-city.spec.ts:101:1 › unsupported WebGL keeps the static city and start control available 
+    [mobile] › tests/smoke/living-city.spec.ts:118:1 › a missing city layer selects the static composite and leaves navigation usable 
+    [mobile] › tests/smoke/living-city.spec.ts:128:1 › navigation during texture loading cancels the old scene without damaging its replacement 
+    [mobile] › tests/smoke/living-city.spec.ts:147:1 › reduced motion downloads the static artwork without loading animated layer textures 
+    [mobile] › tests/smoke/visual-dossier.spec.ts:4:1 › OS application browsing is keyboard accessible and never creates gameplay progress 
+    [mobile] › tests/smoke/visual-dossier.spec.ts:19:1 › interactive homepage preview reserves layout while city artwork is delayed 
+    [mobile] › tests/smoke/visual-dossier.spec.ts:38:1 › failed wallpaper leaves the OS, narrative and game actions usable 
+    [mobile] › tests/smoke/visual-dossier.spec.ts:48:1 › touch and keyboard discovery feedback respects reduced motion and records only one clue 
+    [mobile] › tests/smoke/window-management.spec.ts:21:1 › desktop dragging, bounds, cancellation and window controls never write game state 
+    [mobile] › tests/smoke/window-management.spec.ts:60:1 › click and keyboard placement support comparison, reset and mobile reflow 
+    [mobile] › tests/smoke/window-management.spec.ts:104:1 › Motion respects reduced motion while desktop drag remains direct and homepage content stays visible 
+  79 passed (4.8m)

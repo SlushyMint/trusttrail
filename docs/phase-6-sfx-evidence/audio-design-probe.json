@@ -1,0 +1,1904 @@
+[
+  {
+    "width": 320,
+    "overflow": 0,
+    "controls": [
+      {
+        "type": "checkbox",
+        "targetWidth": 244,
+        "targetHeight": 44,
+        "focusOutline": "none"
+      },
+      {
+        "type": "range",
+        "targetWidth": 244,
+        "targetHeight": 44,
+        "focusOutline": "solid"
+      }
+    ],
+    "probe": {
+      "viewport": {
+        "w": 320,
+        "h": 900
+      },
+      "page": {
+        "height": 900,
+        "screens": 1,
+        "words": 176,
+        "img": 0,
+        "video": 0,
+        "canvas": 0,
+        "svg": 11,
+        "sections": 9,
+        "horizontalOverflow": 0,
+        "overflowCulprits": [],
+        "uiFragments": 0,
+        "uiAbuse": false,
+        "realPictures": 0,
+        "videoCount": 0,
+        "uiPictures": 0,
+        "pictureSamples": [],
+        "blendText": 0,
+        "sideScrollers": 0,
+        "brokenImages": [],
+        "emoji": [],
+        "videosNoPoster": 0
+      },
+      "hero": {
+        "text": "←",
+        "words": 1,
+        "chars": 1,
+        "lines": 1,
+        "size": 26,
+        "vw": 8.1,
+        "font": "Inter",
+        "weight": 400,
+        "tracking": 0,
+        "leading": 1,
+        "upper": false,
+        "italic": false,
+        "mono": false,
+        "align": "center",
+        "position": "left",
+        "widthRatio": 0.14,
+        "top": 90,
+        "tag": "button",
+        "kind": "heading"
+      },
+      "h1": {
+        "text": "Mail",
+        "words": 1,
+        "lines": 1,
+        "size": 22,
+        "font": "Silkscreen"
+      },
+      "headings": [
+        {
+          "text": "←",
+          "words": 1,
+          "chars": 1,
+          "lines": 1,
+          "size": 26,
+          "vw": 8.1,
+          "font": "Inter",
+          "weight": 400,
+          "tracking": 0,
+          "leading": 1,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "center",
+          "position": "left",
+          "widthRatio": 0.14,
+          "top": 90,
+          "tag": "button",
+          "kind": "heading"
+        },
+        {
+          "text": "Mail",
+          "words": 1,
+          "chars": 4,
+          "lines": 1,
+          "size": 22,
+          "vw": 6.9,
+          "font": "Silkscreen",
+          "weight": 400,
+          "tracking": -0.035,
+          "leading": 1.4,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "left",
+          "position": "center",
+          "widthRatio": 0.58,
+          "top": 106,
+          "tag": "h1",
+          "kind": "heading"
+        },
+        {
+          "text": "Undangan tahap akhir NovaTech Internship Program",
+          "words": 6,
+          "chars": 48,
+          "lines": 2,
+          "size": 22,
+          "vw": 6.9,
+          "font": "Inter",
+          "weight": 600,
+          "tracking": 0,
+          "leading": 1.35,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "left",
+          "position": "center",
+          "widthRatio": 0.88,
+          "top": 244,
+          "tag": "h3",
+          "kind": "heading"
+        },
+        {
+          "text": "←",
+          "words": 1,
+          "chars": 1,
+          "lines": 1,
+          "size": 23,
+          "vw": 7.2,
+          "font": "Inter",
+          "weight": 400,
+          "tracking": 0,
+          "leading": 0.96,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "center",
+          "position": "left",
+          "widthRatio": 0.07,
+          "top": 845,
+          "tag": "span",
+          "kind": "heading"
+        },
+        {
+          "text": "▤",
+          "words": 1,
+          "chars": 1,
+          "lines": 1,
+          "size": 23,
+          "vw": 7.2,
+          "font": "Inter",
+          "weight": 400,
+          "tracking": 0,
+          "leading": 0.96,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "center",
+          "position": "right",
+          "widthRatio": 0.06,
+          "top": 845,
+          "tag": "span",
+          "kind": "heading"
+        }
+      ],
+      "headingSummary": {
+        "count": 5,
+        "maxLines": 2,
+        "over2Lines": 0,
+        "statements": 0,
+        "centered": 3,
+        "medianWords": 1,
+        "mixedFontHeadings": 0
+      },
+      "type": {
+        "families": [
+          {
+            "family": "Inter",
+            "share": 0.93,
+            "mono": false
+          },
+          {
+            "family": "Silkscreen",
+            "share": 0.07,
+            "mono": false
+          }
+        ],
+        "familyCount": 2,
+        "sizes": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          22,
+          23,
+          26
+        ],
+        "sizeCount": 9,
+        "notLoaded": [],
+        "body": {
+          "font": "Inter",
+          "size": 15,
+          "leading": 1.7,
+          "weight": 400,
+          "tracking": 0,
+          "contrast": 13.6
+        },
+        "measureChars": 37,
+        "max": {
+          "size": 26,
+          "vw": 8.1,
+          "font": "Inter",
+          "text": "←"
+        },
+        "monoShare": 0,
+        "monoProseShare": 0,
+        "monoFamilies": [],
+        "monoSamples": [],
+        "microLabels": 0,
+        "microLabelShare": 0,
+        "microSamples": [],
+        "upperShare": 0.05,
+        "centerShare": 0.12,
+        "smallText": 14
+      },
+      "eyebrows": [
+        {
+          "text": "SIMULASI FIKTIF Tersimpan di browser ini",
+          "above": "←",
+          "upper": false,
+          "tracked": false,
+          "mono": false,
+          "pill": false,
+          "size": 11,
+          "top": 52
+        },
+        {
+          "text": "SIMULASI FIKTIF Tersimpan di browser ini",
+          "above": "Mail",
+          "upper": false,
+          "tracked": false,
+          "mono": false,
+          "pill": false,
+          "size": 11,
+          "top": 52
+        },
+        {
+          "text": "PESAN MASUK 01",
+          "above": "Undangan tahap akhir NovaTech Internship",
+          "upper": true,
+          "tracked": false,
+          "mono": false,
+          "pill": false,
+          "size": 11,
+          "top": 219
+        },
+        {
+          "text": "Tidak ada data dikirim",
+          "above": "←",
+          "upper": false,
+          "tracked": false,
+          "mono": false,
+          "pill": false,
+          "size": 11,
+          "top": 810
+        },
+        {
+          "text": "Semua alamat fiktif",
+          "above": "▤",
+          "upper": false,
+          "tracked": false,
+          "mono": false,
+          "pill": false,
+          "size": 11,
+          "top": 810
+        }
+      ],
+      "numbered": [],
+      "color": {
+        "bodyBg": "#0b1423",
+        "bodyBgHsl": {
+          "h": 218,
+          "s": 0.52,
+          "l": 0.09
+        },
+        "dark": true,
+        "sectionBgs": [
+          {
+            "color": "#0b1423",
+            "top": 0,
+            "hsl": {
+              "h": 218,
+              "s": 0.52,
+              "l": 0.09
+            }
+          },
+          {
+            "color": "#1a2a3a",
+            "top": 20,
+            "hsl": {
+              "h": 210,
+              "s": 0.38,
+              "l": 0.16
+            }
+          },
+          {
+            "color": "#142231",
+            "top": 148,
+            "hsl": {
+              "h": 211,
+              "s": 0.42,
+              "l": 0.14
+            }
+          }
+        ],
+        "textColors": [
+          {
+            "color": "#e3edf2",
+            "share": 0.63
+          },
+          {
+            "color": "#a9bac7",
+            "share": 0.27
+          },
+          {
+            "color": "#78d8c3",
+            "share": 0.05
+          },
+          {
+            "color": "#f0bf79",
+            "share": 0.04
+          },
+          {
+            "color": "#0b1423",
+            "share": 0.01
+          }
+        ],
+        "button": {
+          "bg": "#203d43",
+          "hsl": {
+            "h": 190,
+            "s": 0.35,
+            "l": 0.19
+          },
+          "fg": "#78d8c3"
+        },
+        "lowContrast": []
+      },
+      "buttons": {
+        "count": 3,
+        "inHero": 3,
+        "radius": 0,
+        "height": 48,
+        "withShadow": 1,
+        "withGradient": 0,
+        "mono": 0,
+        "upper": 0,
+        "heroLabels": [
+          "Tutup ×",
+          "Periksa pengirim",
+          "Tentukan langkah →"
+        ]
+      },
+      "surfaces": {
+        "shadowStatic": 1,
+        "shadowOverlay": 1,
+        "shadowSamples": [
+          "button.px-button.px-primary → rgba(255, 255, 255, 0.094) 1px 1px 0px 0px inset, rgb(9, 15, 25) 2px 2px 0px 0px"
+        ],
+        "gradients": 0,
+        "scrims": 0,
+        "gradientSamples": [],
+        "gradientText": 0,
+        "hairlines": 8,
+        "hairlineSamples": [
+          "div.drawer__header 284px",
+          "div.saku-review-note 320px",
+          "header.saku-app-header 320px",
+          "div.px-mail-toolbar 320px",
+          "div.px-document-heading 280px"
+        ],
+        "outlinedBoxes": 1,
+        "dashed": 0,
+        "blurred": 0,
+        "roundedBoxes": 0,
+        "boxRadius": 0,
+        "squareMedia": 0,
+        "roundedMedia": 0,
+        "mediaRadius": 0,
+        "textShadow": 0,
+        "cardRows": []
+      },
+      "heroMedia": [],
+      "nav": {
+        "links": 0,
+        "fixed": false,
+        "height": 70,
+        "floatingPill": false,
+        "blur": false
+      },
+      "fontsLoaded": [
+        "inter",
+        "silkscreen"
+      ]
+    }
+  },
+  {
+    "width": 360,
+    "overflow": 0,
+    "controls": [
+      {
+        "type": "checkbox",
+        "targetWidth": 284,
+        "targetHeight": 44,
+        "focusOutline": "none"
+      },
+      {
+        "type": "range",
+        "targetWidth": 284,
+        "targetHeight": 44,
+        "focusOutline": "solid"
+      }
+    ],
+    "probe": {
+      "viewport": {
+        "w": 360,
+        "h": 900
+      },
+      "page": {
+        "height": 900,
+        "screens": 1,
+        "words": 176,
+        "img": 0,
+        "video": 0,
+        "canvas": 0,
+        "svg": 11,
+        "sections": 9,
+        "horizontalOverflow": 0,
+        "overflowCulprits": [],
+        "uiFragments": 0,
+        "uiAbuse": false,
+        "realPictures": 0,
+        "videoCount": 0,
+        "uiPictures": 0,
+        "pictureSamples": [],
+        "blendText": 0,
+        "sideScrollers": 0,
+        "brokenImages": [],
+        "emoji": [],
+        "videosNoPoster": 0
+      },
+      "hero": {
+        "text": "←",
+        "words": 1,
+        "chars": 1,
+        "lines": 1,
+        "size": 26,
+        "vw": 7.2,
+        "font": "Inter",
+        "weight": 400,
+        "tracking": 0,
+        "leading": 1,
+        "upper": false,
+        "italic": false,
+        "mono": false,
+        "align": "center",
+        "position": "left",
+        "widthRatio": 0.12,
+        "top": 90,
+        "tag": "button",
+        "kind": "heading"
+      },
+      "h1": {
+        "text": "Mail",
+        "words": 1,
+        "lines": 1,
+        "size": 22,
+        "font": "Silkscreen"
+      },
+      "headings": [
+        {
+          "text": "←",
+          "words": 1,
+          "chars": 1,
+          "lines": 1,
+          "size": 26,
+          "vw": 7.2,
+          "font": "Inter",
+          "weight": 400,
+          "tracking": 0,
+          "leading": 1,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "center",
+          "position": "left",
+          "widthRatio": 0.12,
+          "top": 90,
+          "tag": "button",
+          "kind": "heading"
+        },
+        {
+          "text": "Mail",
+          "words": 1,
+          "chars": 4,
+          "lines": 1,
+          "size": 22,
+          "vw": 6.1,
+          "font": "Silkscreen",
+          "weight": 400,
+          "tracking": -0.035,
+          "leading": 1.4,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "left",
+          "position": "center",
+          "widthRatio": 0.63,
+          "top": 106,
+          "tag": "h1",
+          "kind": "heading"
+        },
+        {
+          "text": "Undangan tahap akhir NovaTech Internship Program",
+          "words": 6,
+          "chars": 48,
+          "lines": 2,
+          "size": 22,
+          "vw": 6.1,
+          "font": "Inter",
+          "weight": 600,
+          "tracking": 0,
+          "leading": 1.35,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "left",
+          "position": "center",
+          "widthRatio": 0.89,
+          "top": 244,
+          "tag": "h3",
+          "kind": "heading"
+        },
+        {
+          "text": "←",
+          "words": 1,
+          "chars": 1,
+          "lines": 1,
+          "size": 23,
+          "vw": 6.4,
+          "font": "Inter",
+          "weight": 400,
+          "tracking": 0,
+          "leading": 0.96,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "center",
+          "position": "left",
+          "widthRatio": 0.06,
+          "top": 845,
+          "tag": "span",
+          "kind": "heading"
+        },
+        {
+          "text": "▤",
+          "words": 1,
+          "chars": 1,
+          "lines": 1,
+          "size": 23,
+          "vw": 6.4,
+          "font": "Inter",
+          "weight": 400,
+          "tracking": 0,
+          "leading": 0.96,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "center",
+          "position": "right",
+          "widthRatio": 0.05,
+          "top": 845,
+          "tag": "span",
+          "kind": "heading"
+        }
+      ],
+      "headingSummary": {
+        "count": 5,
+        "maxLines": 2,
+        "over2Lines": 0,
+        "statements": 0,
+        "centered": 3,
+        "medianWords": 1,
+        "mixedFontHeadings": 0
+      },
+      "type": {
+        "families": [
+          {
+            "family": "Inter",
+            "share": 0.93,
+            "mono": false
+          },
+          {
+            "family": "Silkscreen",
+            "share": 0.07,
+            "mono": false
+          }
+        ],
+        "familyCount": 2,
+        "sizes": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          22,
+          23,
+          26
+        ],
+        "sizeCount": 9,
+        "notLoaded": [],
+        "body": {
+          "font": "Inter",
+          "size": 15,
+          "leading": 1.7,
+          "weight": 400,
+          "tracking": 0,
+          "contrast": 13.6
+        },
+        "measureChars": 43,
+        "max": {
+          "size": 26,
+          "vw": 7.2,
+          "font": "Inter",
+          "text": "←"
+        },
+        "monoShare": 0,
+        "monoProseShare": 0,
+        "monoFamilies": [],
+        "monoSamples": [],
+        "microLabels": 0,
+        "microLabelShare": 0,
+        "microSamples": [],
+        "upperShare": 0.05,
+        "centerShare": 0.12,
+        "smallText": 14
+      },
+      "eyebrows": [
+        {
+          "text": "SIMULASI FIKTIF Tersimpan di browser ini",
+          "above": "←",
+          "upper": false,
+          "tracked": false,
+          "mono": false,
+          "pill": false,
+          "size": 11,
+          "top": 52
+        },
+        {
+          "text": "SIMULASI FIKTIF Tersimpan di browser ini",
+          "above": "Mail",
+          "upper": false,
+          "tracked": false,
+          "mono": false,
+          "pill": false,
+          "size": 11,
+          "top": 52
+        },
+        {
+          "text": "PESAN MASUK 01",
+          "above": "Undangan tahap akhir NovaTech Internship",
+          "upper": true,
+          "tracked": false,
+          "mono": false,
+          "pill": false,
+          "size": 11,
+          "top": 219
+        },
+        {
+          "text": "Tidak ada data dikirim",
+          "above": "←",
+          "upper": false,
+          "tracked": false,
+          "mono": false,
+          "pill": false,
+          "size": 11,
+          "top": 810
+        },
+        {
+          "text": "Semua alamat fiktif",
+          "above": "▤",
+          "upper": false,
+          "tracked": false,
+          "mono": false,
+          "pill": false,
+          "size": 11,
+          "top": 810
+        }
+      ],
+      "numbered": [],
+      "color": {
+        "bodyBg": "#0b1423",
+        "bodyBgHsl": {
+          "h": 218,
+          "s": 0.52,
+          "l": 0.09
+        },
+        "dark": true,
+        "sectionBgs": [
+          {
+            "color": "#0b1423",
+            "top": 0,
+            "hsl": {
+              "h": 218,
+              "s": 0.52,
+              "l": 0.09
+            }
+          },
+          {
+            "color": "#1a2a3a",
+            "top": 20,
+            "hsl": {
+              "h": 210,
+              "s": 0.38,
+              "l": 0.16
+            }
+          },
+          {
+            "color": "#142231",
+            "top": 148,
+            "hsl": {
+              "h": 211,
+              "s": 0.42,
+              "l": 0.14
+            }
+          }
+        ],
+        "textColors": [
+          {
+            "color": "#e3edf2",
+            "share": 0.63
+          },
+          {
+            "color": "#a9bac7",
+            "share": 0.27
+          },
+          {
+            "color": "#78d8c3",
+            "share": 0.05
+          },
+          {
+            "color": "#f0bf79",
+            "share": 0.04
+          },
+          {
+            "color": "#0b1423",
+            "share": 0.01
+          }
+        ],
+        "button": {
+          "bg": "#203d43",
+          "hsl": {
+            "h": 190,
+            "s": 0.35,
+            "l": 0.19
+          },
+          "fg": "#78d8c3"
+        },
+        "lowContrast": []
+      },
+      "buttons": {
+        "count": 3,
+        "inHero": 3,
+        "radius": 0,
+        "height": 48,
+        "withShadow": 1,
+        "withGradient": 0,
+        "mono": 0,
+        "upper": 0,
+        "heroLabels": [
+          "Tutup ×",
+          "Periksa pengirim",
+          "Tentukan langkah →"
+        ]
+      },
+      "surfaces": {
+        "shadowStatic": 1,
+        "shadowOverlay": 1,
+        "shadowSamples": [
+          "button.px-button.px-primary → rgba(255, 255, 255, 0.094) 1px 1px 0px 0px inset, rgb(9, 15, 25) 2px 2px 0px 0px"
+        ],
+        "gradients": 0,
+        "scrims": 0,
+        "gradientSamples": [],
+        "gradientText": 0,
+        "hairlines": 8,
+        "hairlineSamples": [
+          "div.drawer__header 324px",
+          "div.saku-review-note 360px",
+          "header.saku-app-header 360px",
+          "div.px-mail-toolbar 360px",
+          "div.px-document-heading 320px"
+        ],
+        "outlinedBoxes": 1,
+        "dashed": 0,
+        "blurred": 0,
+        "roundedBoxes": 0,
+        "boxRadius": 0,
+        "squareMedia": 0,
+        "roundedMedia": 0,
+        "mediaRadius": 0,
+        "textShadow": 0,
+        "cardRows": []
+      },
+      "heroMedia": [],
+      "nav": {
+        "links": 0,
+        "fixed": false,
+        "height": 70,
+        "floatingPill": false,
+        "blur": false
+      },
+      "fontsLoaded": [
+        "inter",
+        "silkscreen"
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "overflow": 0,
+    "controls": [
+      {
+        "type": "checkbox",
+        "targetWidth": 314,
+        "targetHeight": 44,
+        "focusOutline": "none"
+      },
+      {
+        "type": "range",
+        "targetWidth": 314,
+        "targetHeight": 44,
+        "focusOutline": "solid"
+      }
+    ],
+    "probe": {
+      "viewport": {
+        "w": 390,
+        "h": 900
+      },
+      "page": {
+        "height": 900,
+        "screens": 1,
+        "words": 176,
+        "img": 0,
+        "video": 0,
+        "canvas": 0,
+        "svg": 11,
+        "sections": 9,
+        "horizontalOverflow": 0,
+        "overflowCulprits": [],
+        "uiFragments": 0,
+        "uiAbuse": false,
+        "realPictures": 0,
+        "videoCount": 0,
+        "uiPictures": 0,
+        "pictureSamples": [],
+        "blendText": 0,
+        "sideScrollers": 0,
+        "brokenImages": [],
+        "emoji": [],
+        "videosNoPoster": 0
+      },
+      "hero": {
+        "text": "←",
+        "words": 1,
+        "chars": 1,
+        "lines": 1,
+        "size": 26,
+        "vw": 6.7,
+        "font": "Inter",
+        "weight": 400,
+        "tracking": 0,
+        "leading": 1,
+        "upper": false,
+        "italic": false,
+        "mono": false,
+        "align": "center",
+        "position": "left",
+        "widthRatio": 0.11,
+        "top": 90,
+        "tag": "button",
+        "kind": "heading"
+      },
+      "h1": {
+        "text": "Mail",
+        "words": 1,
+        "lines": 1,
+        "size": 22,
+        "font": "Silkscreen"
+      },
+      "headings": [
+        {
+          "text": "←",
+          "words": 1,
+          "chars": 1,
+          "lines": 1,
+          "size": 26,
+          "vw": 6.7,
+          "font": "Inter",
+          "weight": 400,
+          "tracking": 0,
+          "leading": 1,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "center",
+          "position": "left",
+          "widthRatio": 0.11,
+          "top": 90,
+          "tag": "button",
+          "kind": "heading"
+        },
+        {
+          "text": "Mail",
+          "words": 1,
+          "chars": 4,
+          "lines": 1,
+          "size": 22,
+          "vw": 5.6,
+          "font": "Silkscreen",
+          "weight": 400,
+          "tracking": -0.035,
+          "leading": 1.4,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "left",
+          "position": "center",
+          "widthRatio": 0.66,
+          "top": 106,
+          "tag": "h1",
+          "kind": "heading"
+        },
+        {
+          "text": "Undangan tahap akhir NovaTech Internship Program",
+          "words": 6,
+          "chars": 48,
+          "lines": 2,
+          "size": 22,
+          "vw": 5.6,
+          "font": "Inter",
+          "weight": 600,
+          "tracking": 0,
+          "leading": 1.35,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "left",
+          "position": "center",
+          "widthRatio": 0.9,
+          "top": 244,
+          "tag": "h3",
+          "kind": "heading"
+        },
+        {
+          "text": "←",
+          "words": 1,
+          "chars": 1,
+          "lines": 1,
+          "size": 23,
+          "vw": 5.9,
+          "font": "Inter",
+          "weight": 400,
+          "tracking": 0,
+          "leading": 0.96,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "center",
+          "position": "left",
+          "widthRatio": 0.06,
+          "top": 845,
+          "tag": "span",
+          "kind": "heading"
+        },
+        {
+          "text": "▤",
+          "words": 1,
+          "chars": 1,
+          "lines": 1,
+          "size": 23,
+          "vw": 5.9,
+          "font": "Inter",
+          "weight": 400,
+          "tracking": 0,
+          "leading": 0.96,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "center",
+          "position": "right",
+          "widthRatio": 0.05,
+          "top": 845,
+          "tag": "span",
+          "kind": "heading"
+        }
+      ],
+      "headingSummary": {
+        "count": 5,
+        "maxLines": 2,
+        "over2Lines": 0,
+        "statements": 0,
+        "centered": 3,
+        "medianWords": 1,
+        "mixedFontHeadings": 0
+      },
+      "type": {
+        "families": [
+          {
+            "family": "Inter",
+            "share": 0.93,
+            "mono": false
+          },
+          {
+            "family": "Silkscreen",
+            "share": 0.07,
+            "mono": false
+          }
+        ],
+        "familyCount": 2,
+        "sizes": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          22,
+          23,
+          26
+        ],
+        "sizeCount": 9,
+        "notLoaded": [],
+        "body": {
+          "font": "Inter",
+          "size": 15,
+          "leading": 1.7,
+          "weight": 400,
+          "tracking": 0,
+          "contrast": 13.6
+        },
+        "measureChars": 47,
+        "max": {
+          "size": 26,
+          "vw": 6.7,
+          "font": "Inter",
+          "text": "←"
+        },
+        "monoShare": 0,
+        "monoProseShare": 0,
+        "monoFamilies": [],
+        "monoSamples": [],
+        "microLabels": 0,
+        "microLabelShare": 0,
+        "microSamples": [],
+        "upperShare": 0.05,
+        "centerShare": 0.12,
+        "smallText": 14
+      },
+      "eyebrows": [
+        {
+          "text": "SIMULASI FIKTIF Tersimpan di browser ini",
+          "above": "←",
+          "upper": false,
+          "tracked": false,
+          "mono": false,
+          "pill": false,
+          "size": 11,
+          "top": 52
+        },
+        {
+          "text": "SIMULASI FIKTIF Tersimpan di browser ini",
+          "above": "Mail",
+          "upper": false,
+          "tracked": false,
+          "mono": false,
+          "pill": false,
+          "size": 11,
+          "top": 52
+        },
+        {
+          "text": "PESAN MASUK 01",
+          "above": "Undangan tahap akhir NovaTech Internship",
+          "upper": true,
+          "tracked": false,
+          "mono": false,
+          "pill": false,
+          "size": 11,
+          "top": 219
+        },
+        {
+          "text": "Tidak ada data dikirim",
+          "above": "←",
+          "upper": false,
+          "tracked": false,
+          "mono": false,
+          "pill": false,
+          "size": 11,
+          "top": 810
+        },
+        {
+          "text": "Semua alamat fiktif",
+          "above": "▤",
+          "upper": false,
+          "tracked": false,
+          "mono": false,
+          "pill": false,
+          "size": 11,
+          "top": 810
+        }
+      ],
+      "numbered": [],
+      "color": {
+        "bodyBg": "#0b1423",
+        "bodyBgHsl": {
+          "h": 218,
+          "s": 0.52,
+          "l": 0.09
+        },
+        "dark": true,
+        "sectionBgs": [
+          {
+            "color": "#0b1423",
+            "top": 0,
+            "hsl": {
+              "h": 218,
+              "s": 0.52,
+              "l": 0.09
+            }
+          },
+          {
+            "color": "#1a2a3a",
+            "top": 20,
+            "hsl": {
+              "h": 210,
+              "s": 0.38,
+              "l": 0.16
+            }
+          },
+          {
+            "color": "#142231",
+            "top": 148,
+            "hsl": {
+              "h": 211,
+              "s": 0.42,
+              "l": 0.14
+            }
+          }
+        ],
+        "textColors": [
+          {
+            "color": "#e3edf2",
+            "share": 0.63
+          },
+          {
+            "color": "#a9bac7",
+            "share": 0.27
+          },
+          {
+            "color": "#78d8c3",
+            "share": 0.05
+          },
+          {
+            "color": "#f0bf79",
+            "share": 0.04
+          },
+          {
+            "color": "#0b1423",
+            "share": 0.01
+          }
+        ],
+        "button": {
+          "bg": "#203d43",
+          "hsl": {
+            "h": 190,
+            "s": 0.35,
+            "l": 0.19
+          },
+          "fg": "#78d8c3"
+        },
+        "lowContrast": []
+      },
+      "buttons": {
+        "count": 3,
+        "inHero": 3,
+        "radius": 0,
+        "height": 48,
+        "withShadow": 1,
+        "withGradient": 0,
+        "mono": 0,
+        "upper": 0,
+        "heroLabels": [
+          "Tutup ×",
+          "Periksa pengirim",
+          "Tentukan langkah →"
+        ]
+      },
+      "surfaces": {
+        "shadowStatic": 1,
+        "shadowOverlay": 1,
+        "shadowSamples": [
+          "button.px-button.px-primary → rgba(255, 255, 255, 0.094) 1px 1px 0px 0px inset, rgb(9, 15, 25) 2px 2px 0px 0px"
+        ],
+        "gradients": 0,
+        "scrims": 0,
+        "gradientSamples": [],
+        "gradientText": 0,
+        "hairlines": 8,
+        "hairlineSamples": [
+          "div.drawer__header 354px",
+          "div.saku-review-note 390px",
+          "header.saku-app-header 390px",
+          "div.px-mail-toolbar 390px",
+          "div.px-document-heading 350px"
+        ],
+        "outlinedBoxes": 1,
+        "dashed": 0,
+        "blurred": 0,
+        "roundedBoxes": 0,
+        "boxRadius": 0,
+        "squareMedia": 0,
+        "roundedMedia": 0,
+        "mediaRadius": 0,
+        "textShadow": 0,
+        "cardRows": []
+      },
+      "heroMedia": [],
+      "nav": {
+        "links": 0,
+        "fixed": false,
+        "height": 70,
+        "floatingPill": false,
+        "blur": false
+      },
+      "fontsLoaded": [
+        "inter",
+        "silkscreen"
+      ]
+    }
+  },
+  {
+    "width": 768,
+    "overflow": 0,
+    "controls": [
+      {
+        "type": "checkbox",
+        "targetWidth": 556,
+        "targetHeight": 44,
+        "focusOutline": "none"
+      },
+      {
+        "type": "range",
+        "targetWidth": 556,
+        "targetHeight": 44,
+        "focusOutline": "solid"
+      }
+    ],
+    "probe": {
+      "viewport": {
+        "w": 768,
+        "h": 900
+      },
+      "page": {
+        "height": 900,
+        "screens": 1,
+        "words": 208,
+        "img": 0,
+        "video": 0,
+        "canvas": 0,
+        "svg": 11,
+        "sections": 9,
+        "horizontalOverflow": 0,
+        "overflowCulprits": [],
+        "uiFragments": 0,
+        "uiAbuse": false,
+        "realPictures": 0,
+        "videoCount": 0,
+        "uiPictures": 0,
+        "pictureSamples": [],
+        "blendText": 0,
+        "sideScrollers": 0,
+        "brokenImages": [],
+        "emoji": [],
+        "videosNoPoster": 0
+      },
+      "hero": {
+        "text": "←",
+        "words": 1,
+        "chars": 1,
+        "lines": 1,
+        "size": 26,
+        "vw": 3.4,
+        "font": "Inter",
+        "weight": 400,
+        "tracking": 0,
+        "leading": 1,
+        "upper": false,
+        "italic": false,
+        "mono": false,
+        "align": "center",
+        "position": "left",
+        "widthRatio": 0.06,
+        "top": 90,
+        "tag": "button",
+        "kind": "heading"
+      },
+      "h1": {
+        "text": "Mail",
+        "words": 1,
+        "lines": 1,
+        "size": 22,
+        "font": "Silkscreen"
+      },
+      "headings": [
+        {
+          "text": "←",
+          "words": 1,
+          "chars": 1,
+          "lines": 1,
+          "size": 26,
+          "vw": 3.4,
+          "font": "Inter",
+          "weight": 400,
+          "tracking": 0,
+          "leading": 1,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "center",
+          "position": "left",
+          "widthRatio": 0.06,
+          "top": 90,
+          "tag": "button",
+          "kind": "heading"
+        }
+      ],
+      "headingSummary": {
+        "count": 1,
+        "maxLines": 1,
+        "over2Lines": 0,
+        "statements": 0,
+        "centered": 1,
+        "medianWords": null,
+        "mixedFontHeadings": 0
+      },
+      "type": {
+        "families": [
+          {
+            "family": "Inter",
+            "share": 0.93,
+            "mono": false
+          },
+          {
+            "family": "Silkscreen",
+            "share": 0.07,
+            "mono": false
+          }
+        ],
+        "familyCount": 2,
+        "sizes": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          22,
+          23,
+          26
+        ],
+        "sizeCount": 10,
+        "notLoaded": [],
+        "body": {
+          "font": "Inter",
+          "size": 15,
+          "leading": 1.7,
+          "weight": 400,
+          "tracking": 0,
+          "contrast": 13.6
+        },
+        "measureChars": 65,
+        "max": {
+          "size": 26,
+          "vw": 3.4,
+          "font": "Inter",
+          "text": "←"
+        },
+        "monoShare": 0,
+        "monoProseShare": 0,
+        "monoFamilies": [],
+        "monoSamples": [],
+        "microLabels": 0,
+        "microLabelShare": 0,
+        "microSamples": [],
+        "upperShare": 0.05,
+        "centerShare": 0.1,
+        "smallText": 16
+      },
+      "eyebrows": [
+        {
+          "text": "SIMULASI FIKTIF Tersimpan di browser ini",
+          "above": "←",
+          "upper": false,
+          "tracked": false,
+          "mono": false,
+          "pill": false,
+          "size": 11,
+          "top": 52
+        }
+      ],
+      "numbered": [
+        {
+          "text": "02",
+          "size": 12,
+          "top": 216
+        }
+      ],
+      "color": {
+        "bodyBg": "#0b1423",
+        "bodyBgHsl": {
+          "h": 218,
+          "s": 0.52,
+          "l": 0.09
+        },
+        "dark": true,
+        "sectionBgs": [
+          {
+            "color": "#0b1423",
+            "top": 0,
+            "hsl": {
+              "h": 218,
+              "s": 0.52,
+              "l": 0.09
+            }
+          },
+          {
+            "color": "#1a2a3a",
+            "top": 20,
+            "hsl": {
+              "h": 210,
+              "s": 0.38,
+              "l": 0.16
+            }
+          },
+          {
+            "color": "#142231",
+            "top": 148,
+            "hsl": {
+              "h": 211,
+              "s": 0.42,
+              "l": 0.14
+            }
+          }
+        ],
+        "textColors": [
+          {
+            "color": "#e3edf2",
+            "share": 0.58
+          },
+          {
+            "color": "#a9bac7",
+            "share": 0.33
+          },
+          {
+            "color": "#78d8c3",
+            "share": 0.04
+          },
+          {
+            "color": "#f0bf79",
+            "share": 0.03
+          },
+          {
+            "color": "#0b1423",
+            "share": 0.01
+          }
+        ],
+        "button": {
+          "bg": "#203d43",
+          "hsl": {
+            "h": 190,
+            "s": 0.35,
+            "l": 0.19
+          },
+          "fg": "#78d8c3"
+        },
+        "lowContrast": []
+      },
+      "buttons": {
+        "count": 3,
+        "inHero": 3,
+        "radius": 0,
+        "height": 48,
+        "withShadow": 1,
+        "withGradient": 0,
+        "mono": 0,
+        "upper": 0,
+        "heroLabels": [
+          "Tutup ×",
+          "Periksa pengirim",
+          "Tentukan langkah →"
+        ]
+      },
+      "surfaces": {
+        "shadowStatic": 1,
+        "shadowOverlay": 1,
+        "shadowSamples": [
+          "button.px-button.px-primary → rgba(255, 255, 255, 0.094) 1px 1px 0px 0px inset, rgb(9, 15, 25) 2px 2px 0px 0px"
+        ],
+        "gradients": 0,
+        "scrims": 0,
+        "gradientSamples": [],
+        "gradientText": 0,
+        "hairlines": 9,
+        "hairlineSamples": [
+          "div.drawer__header 596px",
+          "div.saku-review-note 768px",
+          "header.saku-app-header 768px",
+          "div.px-mail-toolbar 768px",
+          "nav.px-mail-list 220px"
+        ],
+        "outlinedBoxes": 1,
+        "dashed": 0,
+        "blurred": 0,
+        "roundedBoxes": 0,
+        "boxRadius": 0,
+        "squareMedia": 0,
+        "roundedMedia": 0,
+        "mediaRadius": 0,
+        "textShadow": 0,
+        "cardRows": []
+      },
+      "heroMedia": [],
+      "nav": {
+        "links": 0,
+        "fixed": false,
+        "height": 70,
+        "floatingPill": false,
+        "blur": false
+      },
+      "fontsLoaded": [
+        "inter",
+        "silkscreen"
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "overflow": 0,
+    "controls": [
+      {
+        "type": "checkbox",
+        "targetWidth": 556,
+        "targetHeight": 44,
+        "focusOutline": "none"
+      },
+      {
+        "type": "range",
+        "targetWidth": 556,
+        "targetHeight": 44,
+        "focusOutline": "solid"
+      }
+    ],
+    "probe": {
+      "viewport": {
+        "w": 1440,
+        "h": 900
+      },
+      "page": {
+        "height": 900,
+        "screens": 1,
+        "words": 372,
+        "img": 0,
+        "video": 0,
+        "canvas": 0,
+        "svg": 30,
+        "sections": 9,
+        "horizontalOverflow": 0,
+        "overflowCulprits": [],
+        "uiFragments": 0,
+        "uiAbuse": false,
+        "realPictures": 1,
+        "videoCount": 0,
+        "uiPictures": 0,
+        "pictureSamples": [],
+        "blendText": 0,
+        "sideScrollers": 0,
+        "brokenImages": [],
+        "emoji": [],
+        "videosNoPoster": 0
+      },
+      "hero": {
+        "text": "00",
+        "words": 1,
+        "chars": 2,
+        "lines": 1,
+        "size": 36,
+        "vw": 2.5,
+        "font": "Silkscreen",
+        "weight": 400,
+        "tracking": 0,
+        "leading": 1,
+        "upper": false,
+        "italic": false,
+        "mono": false,
+        "align": "left",
+        "position": "right",
+        "widthRatio": 0.04,
+        "top": 354,
+        "tag": "span",
+        "kind": "heading"
+      },
+      "h1": {
+        "text": "Undangan tanpa lamaran",
+        "words": 3,
+        "lines": 1,
+        "size": 24,
+        "font": "Silkscreen"
+      },
+      "headings": [
+        {
+          "text": "00",
+          "words": 1,
+          "chars": 2,
+          "lines": 1,
+          "size": 36,
+          "vw": 2.5,
+          "font": "Silkscreen",
+          "weight": 400,
+          "tracking": 0,
+          "leading": 1,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "left",
+          "position": "right",
+          "widthRatio": 0.04,
+          "top": 354,
+          "tag": "span",
+          "kind": "heading"
+        }
+      ],
+      "headingSummary": {
+        "count": 1,
+        "maxLines": 1,
+        "over2Lines": 0,
+        "statements": 0,
+        "centered": 0,
+        "medianWords": null,
+        "mixedFontHeadings": 0
+      },
+      "type": {
+        "families": [
+          {
+            "family": "Inter",
+            "share": 0.88,
+            "mono": false
+          },
+          {
+            "family": "Silkscreen",
+            "share": 0.11,
+            "mono": false
+          },
+          {
+            "family": "monospace",
+            "share": 0,
+            "mono": true
+          }
+        ],
+        "familyCount": 3,
+        "sizes": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          20,
+          22,
+          24,
+          36
+        ],
+        "sizeCount": 11,
+        "notLoaded": [],
+        "body": {
+          "font": "Inter",
+          "size": 13,
+          "leading": 1.6,
+          "weight": 400,
+          "tracking": 0,
+          "contrast": 7.3
+        },
+        "measureChars": 91,
+        "max": {
+          "size": 36,
+          "vw": 2.5,
+          "font": "Silkscreen",
+          "text": "00"
+        },
+        "monoShare": 0,
+        "monoProseShare": 0,
+        "monoFamilies": [
+          "monospace"
+        ],
+        "monoSamples": [
+          "_",
+          "□",
+          "×",
+          "_",
+          "□",
+          "×"
+        ],
+        "microLabels": 0,
+        "microLabelShare": 0,
+        "microSamples": [],
+        "upperShare": 0.05,
+        "centerShare": 0.11,
+        "smallText": 44
+      },
+      "eyebrows": [
+        {
+          "text": "Jejak yang kamu temukan.",
+          "above": "00",
+          "upper": false,
+          "tracked": false,
+          "mono": false,
+          "pill": false,
+          "size": 16,
+          "top": 315
+        }
+      ],
+      "numbered": [
+        {
+          "text": "02",
+          "size": 12,
+          "top": 280
+        },
+        {
+          "text": "00",
+          "size": 36,
+          "top": 354
+        }
+      ],
+      "color": {
+        "bodyBg": "#0b1423",
+        "bodyBgHsl": {
+          "h": 218,
+          "s": 0.52,
+          "l": 0.09
+        },
+        "dark": true,
+        "sectionBgs": [
+          {
+            "color": "#1a2a3a",
+            "top": 20,
+            "hsl": {
+              "h": 210,
+              "s": 0.38,
+              "l": 0.16
+            }
+          },
+          {
+            "color": "#0b1423",
+            "top": 45,
+            "hsl": {
+              "h": 218,
+              "s": 0.52,
+              "l": 0.09
+            }
+          }
+        ],
+        "textColors": [
+          {
+            "color": "#a9bac7",
+            "share": 0.51
+          },
+          {
+            "color": "#e3edf2",
+            "share": 0.42
+          },
+          {
+            "color": "#78d8c3",
+            "share": 0.03
+          },
+          {
+            "color": "#f0bf79",
+            "share": 0.03
+          },
+          {
+            "color": "#0b1423",
+            "share": 0.01
+          }
+        ],
+        "button": {
+          "bg": "#142231",
+          "hsl": {
+            "h": 211,
+            "s": 0.42,
+            "l": 0.14
+          },
+          "fg": "#e3edf2"
+        },
+        "lowContrast": []
+      },
+      "buttons": {
+        "count": 33,
+        "inHero": 33,
+        "radius": 0,
+        "height": 44,
+        "withShadow": 3,
+        "withGradient": 0,
+        "mono": 0,
+        "upper": 0,
+        "heroLabels": [
+          "Tutup ×",
+          "Mail & sumber berdampingan",
+          "Rapikan jendela",
+          "Periksa pengirim",
+          "Tentukan langkah →"
+        ]
+      },
+      "surfaces": {
+        "shadowStatic": 9,
+        "shadowOverlay": 1,
+        "shadowSamples": [
+          "section#os-app-mail.px-window.px-window-mail → rgb(96, 124, 144) 1px 1px 0px 0px inset, rgb(52, 73, 91) -1px -1px 0px 0px inset",
+          "div.os-window-position-panel → rgb(9, 15, 25) 4px 4px 0px 0px",
+          "button.px-button.px-primary → rgba(255, 255, 255, 0.094) 1px 1px 0px 0px inset, rgb(9, 15, 25) 2px 2px 0px 0px",
+          "section#os-app-browser.px-window.px-window-browser → rgb(96, 124, 144) 1px 1px 0px 0px inset, rgb(52, 73, 91) -1px -1px 0px 0px inset"
+        ],
+        "gradients": 0,
+        "scrims": 0,
+        "gradientSamples": [],
+        "gradientText": 0,
+        "hairlines": 15,
+        "hairlineSamples": [
+          "header.px-system-bar 1440px",
+          "div.drawer__header 596px",
+          "header.px-titlebar.os-draggable-titlebar 882px",
+          "div.px-mail-toolbar 882px",
+          "nav.px-mail-list 192px"
+        ],
+        "outlinedBoxes": 4,
+        "dashed": 0,
+        "blurred": 0,
+        "roundedBoxes": 0,
+        "boxRadius": 0,
+        "squareMedia": 1,
+        "roundedMedia": 0,
+        "mediaRadius": 0,
+        "textShadow": 0,
+        "cardRows": []
+      },
+      "heroMedia": [
+        {
+          "type": "bg-image",
+          "ratio": 0.89
+        }
+      ],
+      "nav": {
+        "links": 3,
+        "fixed": false,
+        "height": 45,
+        "floatingPill": false,
+        "blur": false
+      },
+      "fontsLoaded": [
+        "inter",
+        "silkscreen"
+      ]
+    }
+  }
+]

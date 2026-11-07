@@ -21,6 +21,7 @@ import { AppFrame, type WindowSlot } from './AppFrame';
 import './window-management.css';
 import { Tutorial } from '../onboarding/Tutorial';
 import { advanceTutorial, readTutorial, storeTutorial, tutorialEligible, stages, type TutorialState, type Stage } from '../onboarding/tutorial';
+import { useAudioService } from '../audio/audio-context';
 
 type Surface = AppId | 'home' | 'guide' | 'report' | 'missing';
 const surfaces: { id: Surface; title: string; icon: PixelKind }[] = [
@@ -32,6 +33,7 @@ const surfaces: { id: Surface; title: string; icon: PixelKind }[] = [
 ];
 
 export function OperatingSystem() {
+  const audio = useAudioService();
   const { game, save } = useGame();
   const { send } = useGameActions();
   const desktop = useDesktopLayout();
@@ -100,6 +102,7 @@ export function OperatingSystem() {
     setMenu(false);
   }
   function openApp(id: AppId) {
+    if (id !== selected || hiddenApps.includes(id)) audio?.cue('application');
     if (tutorialVisible) setTutorial(current => advanceTutorial(current, id));
     raise(id);
     setOpened(items => items.includes(id) ? items : [...items, id]);
@@ -110,6 +113,7 @@ export function OperatingSystem() {
   function raise(id: string) { setOrder(items => items.at(-1) === id ? items : [...items.filter(item => item !== id), id]); }
   function resetLayout() { setSlots({}); setMaximized(null); setLayoutVersion(version => version + 1); }
   function compareWindows() {
+    audio?.cue('application');
     const artifactApp = chapter.portal ? 'mail' : storyApp;
     setOpened(items => [...new Set([...items, artifactApp, 'browser' as AppId])]);
     setHiddenApps(items => items.filter(id => id !== artifactApp && id !== 'browser'));

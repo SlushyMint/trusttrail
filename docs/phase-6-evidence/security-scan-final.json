@@ -1,0 +1,40 @@
+{
+  "scope": [
+    "src",
+    "public",
+    "dist",
+    "index.html",
+    "art-direction.html",
+    "dual-os.html",
+    "package.json",
+    "package-lock.json",
+    "vercel.json",
+    "vite.config.ts",
+    ".npmrc",
+    ".gitignore"
+  ],
+  "files": 193,
+  "textFiles": 119,
+  "bytes": 13674732,
+  "publicBytes": 6493205,
+  "findings": [],
+  "exposedConfiguration": [],
+  "supplyChain": {
+    "lockfileVersion": 3,
+    "packages": 326,
+    "missingIntegrity": [],
+    "bundledPackages": [
+      "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/core",
+      "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/runtime",
+      "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/wasi-threads",
+      "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@napi-rs/wasm-runtime",
+      "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@tybys/wasm-util",
+      "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/tslib"
+    ],
+    "nonRegistrySources": [],
+    "installScripts": [
+      "node_modules/fsevents"
+    ]
+  },
+  "limitation": "Pattern scan, not proof of absence. Private credential directories and Git metadata are intentionally excluded."
+}
