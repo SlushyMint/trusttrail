@@ -15,3 +15,12 @@ Thumbs.db
 .vscode/*
 !.vscode/extensions.json
 # Product documents and AGENTS.md are intentionally not ignored.
+
+# Local hosting metadata, credentials and temporary validation artifacts
+.vercel/
+.aws/
+.codex/
+output/
+.vitest/
+.vercel
+.env*

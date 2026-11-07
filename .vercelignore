@@ -1,0 +1,35 @@
+# Local project/account metadata and credentials
+.vercel/
+.git/
+.aws/
+.codex/
+.agents/
+.env
+.env.*
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+
+# Rebuild dependencies and output remotely; do not upload local artifacts
+node_modules/
+dist/
+coverage/
+test-results/
+playwright-report/
+output/
+.cache/
+.vitest/
+.taste-skill/
+*.tsbuildinfo
+*.local
+*.log
+
+# Documentation/evidence and private organizer materials are not build inputs
+docs/
+**/*.pdf
+GDD.md
+TrustTrail_Production_Blueprint_v1.1.md
+
+# Unused reference image: publication rights have not been confirmed
+public/assets/city-layer-concept.png
